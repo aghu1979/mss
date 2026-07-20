@@ -1,0 +1,59 @@
+name: Deploy Mihomo Configs
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - 'template/**'
+      - 'scripts/deploy_configs.py'
+  schedule:
+    - cron: '0 20 * * *' 
+  workflow_dispatch:
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Main Branch
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.10'
+
+      - name: Install Dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install ruamel.yaml
+
+      - name: Generate Configs
+        run: |
+          # 此时处于 main 分支，正常生成文件至 release/configs/ 目录
+          python scripts/deploy_configs.py
+
+      - name: Deploy to Release Branch (Isolated Method)
+        run: |
+          # 1. 配置 Git 机器人身份
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          
+          # 2. 隔离克隆：将云端干净的 release 分支克隆到一个叫 release_repo 的独立文件夹
+          git clone -b release https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git release_repo
+          
+          # 3. 将刚才生成的配置文件，强行覆盖到这个干净的文件夹里
+          mkdir -p release_repo/configs
+          cp release/configs/*.yaml release_repo/configs/
+          
+          # 4. 进入这个独立文件夹，进行提交
+          cd release_repo
+          git add configs/
+          git commit -m "Auto-deploy configs by GitHub Actions" || echo "No changes to commit"
+          
+          # 5. 推送前最后做一次同步（以防在此期间您的订阅清洗工作流又更新了）
+          git pull --rebase origin release
+          
+          # 6. 安全推送到云端
+          git push origin release
