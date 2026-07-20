@@ -1,0 +1,6 @@
+https://dewei01.dewei.dpdns.org/sub?token=ecd15dc6f057f456e33f9a2e3671e684
+https://dewei02.dewei.dpdns.org/sub?token=605bdb20f5e416dce8f9dca85906a814
+https://dewei03.dewei.dpdns.org/sub?token=07fd402ec58e9af0c46979fcaf7d70b0
+https://asia01.dewei.cf/sub?token=b2acf66412ff1971d779b9408bf5c56b
+https://asia02.dewei.cf/sub?token=417144fd64f75e74336201b4411f86df
+https://asia03.dewei.cf/sub?token=29d9519721832832e0934dc3ae9bf5df
