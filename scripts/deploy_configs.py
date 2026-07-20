@@ -254,12 +254,13 @@ def lookup_geo_asn(host):
 class MihomoTester:
     def __init__(self, proxy_dicts, work_dir):
         self.proxies = proxy_dicts; self.work_dir = work_dir
-        self.api_base = "http://127.0.0.1:9090"; self.proxy_port = 7890; self.process = None
+        # 【修改点】使用冷门高位端口进行后台自动化探活，防止与用户日常运行的面板冲突
+        self.api_base = "http://127.0.0.1:39090"; self.proxy_port = 37890; self.process = None
 
     def start(self):
         if not self.proxies: return
         os.makedirs(f"{self.work_dir}/.temp_mihomo", exist_ok=True)
-        config = {"port": self.proxy_port, "external-controller": "127.0.0.1:9090", "proxies": self.proxies, "proxy-groups": [{"name": "API-TEST", "type": "select", "proxies": [p['name'] for p in self.proxies]}]}
+        config = {"port": self.proxy_port, "external-controller": "127.0.0.1:39090", "proxies": self.proxies, "proxy-groups": [{"name": "API-TEST", "type": "select", "proxies": [p['name'] for p in self.proxies]}]}
         with open(f"{self.work_dir}/.temp_mihomo/config.yaml", 'w', encoding='utf-8') as f: yaml.dump(config, f, allow_unicode=True)
         self.process = subprocess.Popen(["./mihomo", "-d", f"{self.work_dir}/.temp_mihomo", "-f", f"{self.work_dir}/.temp_mihomo/config.yaml"], cwd=self.work_dir, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
         time.sleep(3)
