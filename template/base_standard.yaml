@@ -217,8 +217,8 @@ proxy-groups:
   hidden: true
 
 # ==============================================================================
-# 03 & 04 & 05 (规则与底层模块，全量保留，由 Python 负责裁剪)
-# 此部分与 base_smart.yaml 完全一致，保证双边网络解析行为对齐
+# 03. 规则集配置 (Rule Providers)
+# 03-05部分与 base_smart.yaml 完全一致，保证双边网络解析行为对齐
 # ==============================================================================
 rule-providers:
   directs: &dom
@@ -387,6 +387,9 @@ rule-providers:
     path: rules/webrtc.mrs
     url: "https://raw.githubusercontent.com/MeALiYeYe/ProxyConfigFiles/main/Mihomo/rule/WebRTC/WebRTC.mrs"
 
+# ==============================================================================
+# 04. 路由规则匹配 (Rules)
+# ==============================================================================
 rules:
 - DST-PORT,53,⭕️ DNS_Hijack
 - DST-PORT,853,⭕️ DNS_Hijack
@@ -460,18 +463,26 @@ rules:
 - RULE-SET,cn_ip,Domestic,no-resolve
 - MATCH,Final
 
-mixed-port: 7890
-redir-port: 7891
-tproxy-port: 1536
-port: 8080
-socks-port: 1080
+# ==============================================================================
+# 05. 运行环境与底层支持 (通过 Python 动态裁剪)
+# ==============================================================================
+# 代理端口规范化 (采用统一混合端口，避开常用开发端口)
+mixed-port: 10801
+redir-port: 10802
+tproxy-port: 10803
+# port: 8080       # (已移除)
+# socks-port: 1080 # (已移除)
+
 ipv6: true
 mode: rule
 log-level: warning
 unified-delay: true
 tcp-concurrent: true
 allow-lan: true
-external-controller: 0.0.0.0:9090
+
+# API 控制面板 (使用 9093 防冲突，并添加安全密钥)
+external-controller: 0.0.0.0:9093
+secret: "10242048" # 强烈建议自行修改此密码
 
 skip-auth-prefixes:
 - 127.0.0.0/8
@@ -502,6 +513,66 @@ sniffer:
   force-dns-mapping: true
   parse-pure-ip: true
   override-destination: false
+  sniff:
+    HTTP:
+      ports: [80, 8080-8880]
+      override-destination: true
+    TLS:
+      ports: [443, 8443, 5228-5230]
+    QUIC:
+      ports: [443, 8443]
+  force-domain:
+  - "+.v2ex.com"
+  skip-domain:
+  - "+.local"
+  - "+.lan"
+  - "localhost"
+  - "Mijia Cloud"
+  - "miwifi.com"
+  - "+.ts.net"
+  - "+.rustdesk.com"
+  - "+.anydesk.com"
+  - "+.teamviewer.com"
+  - "+.oray.com"
+  - "+.oray.net"
+  - "+.easytier.top"
+
+tun:
+  enable: true
+  device: Mihomo
+  stack: system
+  dns-hijack:
+  - any:53
+  - tcp://any:53
+  udp-timeout: 300
+  auto-route: true
+  auto-detect-interface: true
+  strict-route: true
+
+dns:
+  enable: true
+  listen: :1053
+  ipv6: true
+  prefer-h3: true
+  enhanced-mode: fake-ip
+  fake-ip-range: 198.18.0.0/16
+  fake-ip-range6: fdfe:dcba:9876::/64
+  fake-ip-filter-mode: rule
+  fake-ip-filter:
+    - RULE-SET,googlefcm,real-ip
+    - RULE-SET,ntp,real-ip
+    - RULE-SET,directs,real-ip
+    - RULE-SET,cn,real-ip
+    - MATCH,fake-ip
+  nameserver:
+    - https://dns.google/dns-query
+    - https://cloudflare-dns.com/dns-query
+  nameserver-policy:
+    "geosite:cn":
+      - 223.5.5.5
+      - 223.6.6.6
+    "geosite:geolocation-!cn":
+      - https://dns.google/dns-query
   sniff:
     HTTP:
       ports: [80, 8080-8880]
