@@ -1,0 +1,590 @@
+# ==========================================================
+# ===== Mihomo 终极构建母版 (基础智能版)
+# ===== 已集成云端调度、三层漏斗分流与全量底层模块
+# ==========================================================
+
+proxy-providers:
+  SubPre:
+    type: http
+    url: "https://mss.dewei.cf/moon/subs/SubPre.yaml?token=your_secure_password"
+    path: proxies/SubPre.yaml
+    interval: 86400
+    health-check: {enable: true, url: "https://www.gstatic.com/generate_204", interval: 600}
+    headers: {User-Agent: ["ClashMetaForAndroid/2.11.2.Meta", "clash.meta", "mihomo"]}
+  SubCF:
+    type: http
+    url: "https://mss.dewei.cf/moon/subs/SubCF.yaml?token=your_secure_password"
+    path: proxies/SubCF.yaml
+    interval: 86400
+    health-check: {enable: true, url: "https://www.gstatic.com/generate_204", interval: 600}
+    headers: {User-Agent: ["ClashMetaForAndroid/2.11.2.Meta", "clash.meta", "mihomo"]}
+  SubFree:
+    type: http
+    url: "https://mss.dewei.cf/moon/subs/SubFree.yaml?token=your_secure_password"
+    path: proxies/SubFree.yaml
+    interval: 86400
+    health-check: {enable: true, url: "https://www.gstatic.com/generate_204", interval: 600}
+    headers: {User-Agent: ["ClashMetaForAndroid/2.11.2.Meta", "clash.meta", "mihomo"]}
+  BaiduProxy:
+    type: http
+    url: "https://cdn.jsdelivr.net/gh/MeALiYeYe/ProxyConfigFiles@main/Mihomo/BaiduProxy.yaml"
+    path: proxies/BaiduProxy.yaml
+    interval: 86400
+    health-check: {enable: true, url: "https://wifi.vivo.com.cn/generate_204", interval: 600}
+
+proxy-groups:
+# ----------------------------------------------------------
+# 01. 核心前台业务组 (前端面板显示)
+# ----------------------------------------------------------
+- name: Ai
+  type: select
+  proxies: [Pre-台湾, Pre-香港, Pre-狮城, Pre-日本, Pre-美国]
+  icon: "https://cdn.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/ChatGPT.png"
+
+- name: Telegram
+  type: select
+  proxies: [Pre-狮城, Pre-香港, Pre-台湾, Pre-日本, Pre-美国]
+  icon: "https://cdn.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Telegram.png"
+
+- name: Discord
+  type: select
+  proxies: [Pre-日本, Pre-狮城, Pre-香港, Pre-台湾, Pre-美国]
+  icon: "https://cdn.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Discord.png"
+
+- name: Github
+  type: select
+  proxies: [Pre-香港, Pre-狮城, Pre-日本, Pre-美国, CF-All, 🟢 直连]
+  icon: "https://cdn.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/GitHub.png"
+
+- name: Youtube
+  type: select
+  proxies: [CF-All, CF-香港, CF-日本, CF-狮城, CF-美国, Pre-美国, Free-Fallback]
+  icon: "https://cdn.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/YouTube.png"
+
+- name: Porn
+  type: select
+  proxies: [CF-All, CF-日本, CF-美国, CF-狮城, Free-Fallback]
+  icon: "https://cdn.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Pornhub_1.png"
+
+- name: Media
+  type: select
+  proxies: [CF-狮城, CF-日本, CF-香港, CF-美国, CF-All, Pre-狮城, Pre-日本, Free-Fallback]
+  icon: "https://cdn.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/ForeignMedia.png"
+
+- name: Tiktok
+  type: select
+  proxies: [CF-日本, CF-台湾, CF-美国, CF-狮城, Pre-台湾, Pre-日本, Free-Fallback]
+  icon: "https://cdn.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/TikTok.png"
+
+- name: Google
+  type: select
+  proxies: [Pre-香港, Pre-台湾, Pre-狮城, Pre-日本, CF-All, Free-Fallback]
+  icon: "https://cdn.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Google_Search.png"
+
+- name: Apple
+  type: select
+  proxies: [🟢 直连, Pre-香港, Pre-台湾, Pre-日本]
+  icon: "https://cdn.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Apple.png"
+
+- name: Microsoft
+  type: select
+  proxies: [🟢 直连, Pre-香港, Pre-台湾, Pre-日本]
+  icon: "https://cdn.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Microsoft.png"
+
+- name: Cloudflare
+  type: select
+  proxies: [CF-All, Pre-香港, Pre-美国, 🟢 直连]
+  icon: "https://cdn.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Cloudflare.png"
+
+- name: Foreign
+  type: select
+  proxies: [Pre-香港, Pre-台湾, Pre-狮城, Pre-日本, Pre-美国, CF-All, Free-Fallback, 🟢 直连]
+  icon: "https://cdn.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Global.png"
+
+- name: Final
+  type: select
+  proxies: [Foreign, 🟢 直连]
+  icon: "https://cdn.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Final.png"
+
+- name: DNServer
+  type: url-test
+  use: [SubPre]
+  url: "https://www.gstatic.com/generate_204"
+  interval: 300
+  tolerance: 50
+  icon: "https://cdn.jsdelivr.net/gh/GitMetaio/Surfing@main/app/icon/DNS.svg"
+
+# ----------------------------------------------------------
+# 02. 后台隐式支撑组 (底层调度逻辑)
+# ----------------------------------------------------------
+
+# --- 💎 专线池 (SubPre) - Smart 模式 ---
+- &Pre_Smart
+  name: Pre-香港
+  type: smart
+  use: [SubPre]
+  interval: 300
+  uselightgbm: true
+  collectdata: false
+  prefer-asn: true
+  max-failed-times: 3
+  url: "https://www.gstatic.com/generate_204"
+  lazy: true
+  hidden: true
+  filter: '(?i)(?:港|香港|🇭🇰|HK|Hong\s?Kong)'
+- <<: *Pre_Smart
+  name: Pre-台湾
+  filter: '(?i)(?:台|台湾|🇹🇼|TW|Taiwan)'
+- <<: *Pre_Smart
+  name: Pre-狮城
+  filter: '(?i)(?:坡|新加坡|🇸🇬|SG|Singapore)'
+- <<: *Pre_Smart
+  name: Pre-日本
+  filter: '(?i)(?:日|日本|🇯🇵|JP|Japan)'
+- <<: *Pre_Smart
+  name: Pre-美国
+  filter: '(?i)(?:美|美国|🇺🇸|US|United\s?States|America)'
+
+# --- ☁️ CF池 (SubCF) - Smart 模式 ---
+- &CF_Smart
+  name: CF-All
+  type: smart
+  use: [SubCF]
+  interval: 300
+  uselightgbm: true
+  collectdata: false
+  prefer-asn: true
+  max-failed-times: 3
+  url: "https://www.gstatic.com/generate_204"
+  lazy: true
+  hidden: true
+- <<: *CF_Smart
+  name: CF-香港
+  filter: '(?i)(?:港|香港|🇭🇰|HK|Hong\s?Kong)'
+- <<: *CF_Smart
+  name: CF-台湾
+  filter: '(?i)(?:台|台湾|🇹🇼|TW|Taiwan)'
+- <<: *CF_Smart
+  name: CF-狮城
+  filter: '(?i)(?:坡|新加坡|🇸🇬|SG|Singapore)'
+- <<: *CF_Smart
+  name: CF-日本
+  filter: '(?i)(?:日|日本|🇯🇵|JP|Japan)'
+- <<: *CF_Smart
+  name: CF-美国
+  filter: '(?i)(?:美|美国|🇺🇸|US|United\s?States|America)'
+
+# --- 🎁 免费池 (SubFree) - 暴力回退模式 (保证最后有网) ---
+- name: Free-Fallback
+  type: fallback
+  use: [SubFree]
+  url: "https://www.gstatic.com/generate_204"
+  interval: 180
+  lazy: true
+  hidden: true
+
+# --- 国内与基础分流 ---
+- name: 江苏
+  type: smart
+  use: [BaiduProxy]
+  interval: 300
+  uselightgbm: true
+  lazy: true
+  hidden: true
+  filter: '(?i)(?:南京|苏州)'
+- name: 广东
+  type: smart
+  use: [BaiduProxy]
+  interval: 300
+  uselightgbm: true
+  lazy: true
+  hidden: true
+  filter: '(?i)(?:广州|深圳)'
+- name: 北京
+  type: smart
+  use: [BaiduProxy]
+  interval: 300
+  uselightgbm: true
+  lazy: true
+  hidden: true
+  filter: '(?i)(?:北京|保定)'
+- name: Location
+  type: select
+  proxies: [🟢 直连, 江苏, 广东, 北京]
+- name: Domestic
+  type: select
+  proxies: [🟢 直连, 江苏, 广东, 北京]
+  hidden: true
+- name: WebRTC
+  type: select
+  proxies: [⛔️ 拒绝, ⭕️ DNS_Hijack, 🟢 直连]
+- name: 🟢 直连
+  type: select
+  proxies: [DIRECT]
+  udp: true
+  hidden: true
+- name: ⛔️ 拒绝
+  type: select
+  proxies: [REJECT]
+  hidden: true
+- name: ⭕️ DNS_Hijack
+  type: select
+  proxies: [REJECT]
+  hidden: true
+
+# ==============================================================================
+# 03. 规则集配置 (Rule Providers)
+# ==============================================================================
+rule-providers:
+  directs: &dom
+    type: http
+    behavior: domain
+    format: mrs
+    interval: 86400
+    path: rules/directs.mrs
+    url: "https://raw.githubusercontent.com/MeALiYeYe/ProxyConfigFiles/main/Mihomo/rule/Direct/Direct.mrs"
+  rejects:
+    <<: *dom
+    path: rules/rejects.mrs
+    url: "https://raw.githubusercontent.com/MeALiYeYe/ProxyConfigFiles/main/Mihomo/rule/Reject/Reject.mrs"
+  proxys:
+    <<: *dom
+    path: rules/proxys.mrs
+    url: "https://raw.githubusercontent.com/MeALiYeYe/ProxyConfigFiles/main/Mihomo/rule/Proxy/Proxy.mrs"
+  fakelocation:
+    <<: *dom
+    path: rules/fakelocation.mrs
+    url: "https://raw.githubusercontent.com/MeALiYeYe/ProxyConfigFiles/main/Mihomo/rule/FakeLocation/FakeLocation.mrs"
+  directs_ip: &ipc
+    type: http
+    behavior: ipcidr
+    format: mrs
+    interval: 86400
+    path: rules/directs_ip.mrs
+    url: "https://raw.githubusercontent.com/MeALiYeYe/ProxyConfigFiles/main/Mihomo/rule/Direct/Direct_ip.mrs"
+  rejects_ip:
+    <<: *ipc
+    path: rules/rejects_ip.mrs
+    url: "https://raw.githubusercontent.com/MeALiYeYe/ProxyConfigFiles/main/Mihomo/rule/Reject/Reject_ip.mrs"
+  proxys_ip:
+    <<: *ipc
+    path: rules/proxys_ip.mrs
+    url: "https://raw.githubusercontent.com/MeALiYeYe/ProxyConfigFiles/main/Mihomo/rule/Proxy/Proxy_ip.mrs"
+  fakelocation_ip:
+    <<: *ipc
+    path: rules/fakelocation_ip.mrs
+    url: "https://raw.githubusercontent.com/MeALiYeYe/ProxyConfigFiles/main/Mihomo/rule/FakeLocation/FakeLocation_ip.mrs"
+  private:
+    <<: *dom
+    path: rules/private.mrs
+    url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/private.mrs"
+  private_ip:
+    <<: *ipc
+    path: rules/private_ip.mrs
+    url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geoip/private.mrs"
+  ntp:
+    <<: *dom
+    path: rules/ntp.mrs
+    url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/category-ntp.mrs"
+  httpdns-cn:
+    <<: *dom
+    path: rules/httpdns-cn.mrs
+    url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/category-httpdns-cn.mrs"
+  geolocation-!cn:
+    <<: *dom
+    path: rules/geolocation-!cn.mrs
+    url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/geolocation-!cn.mrs"
+  cn:
+    <<: *dom
+    path: rules/cn.mrs
+    url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/cn.mrs"
+  cn_ip:
+    <<: *ipc
+    path: rules/cn_ip.mrs
+    url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geoip/cn.mrs"
+  ai-chat-!cn:
+    <<: *dom
+    path: rules/ai-chat-!cn.mrs
+    url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/category-ai-chat-!cn.mrs"
+  apple:
+    <<: *dom
+    path: rules/apple.mrs
+    url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo-lite/geosite/apple.mrs"
+  apple_ip:
+    <<: *ipc
+    path: rules/apple_ip.mrs
+    url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo-lite/geoip/apple.mrs"
+  cloudflare:
+    <<: *dom
+    path: rules/cloudflare.mrs
+    url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/cloudflare.mrs"
+  cloudflare_ip:
+    <<: *ipc
+    path: rules/cloudflare_ip.mrs
+    url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geoip/cloudflare.mrs"
+  discord:
+    <<: *dom
+    path: rules/discord.mrs
+    url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/discord.mrs"
+  entertainment:
+    <<: *dom
+    path: rules/entertainment.mrs
+    url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/category-entertainment.mrs"
+  github:
+    <<: *dom
+    path: rules/github.mrs
+    url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/github.mrs"
+  googlefcm:
+    <<: *dom
+    path: rules/googlefcm.mrs
+    url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/googlefcm.mrs"
+  google:
+    <<: *dom
+    path: rules/google.mrs
+    url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/google.mrs"
+  google_ip:
+    <<: *ipc
+    path: rules/google_ip.mrs
+    url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geoip/google.mrs"
+  reddit:
+    <<: *dom
+    path: rules/reddit.mrs
+    url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/reddit.mrs"
+  microsoft:
+    <<: *dom
+    path: rules/microsoft.mrs
+    url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/microsoft.mrs"
+  telegram:
+    <<: *dom
+    path: rules/telegram.mrs
+    url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/telegram.mrs"
+  telegram_ip:
+    <<: *ipc
+    path: rules/telegram_ip.mrs
+    url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geoip/telegram.mrs"
+  tiktok:
+    <<: *dom
+    path: rules/tiktok.mrs
+    url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/tiktok.mrs"
+  youtube:
+    <<: *dom
+    path: rules/youtube.mrs
+    url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/youtube.mrs"
+  ads-awavenue:
+    <<: *dom
+    path: rules/ads-awavenue.mrs
+    url: "https://raw.githubusercontent.com/TG-Twilight/AWAvenue-Ads-Rule/main/Filters/AWAvenue-Ads-Rule-Clash.mrs"
+  ads-mrxx007:
+    <<: *dom
+    path: rules/ads-mrxx007.mrs
+    url: "https://raw.githubusercontent.com/MRXX007/myadrules-convert/refs/heads/main/10007.mrs"
+  ads-all:
+    <<: *dom
+    path: rules/ads-all.mrs
+    url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/category-ads-all.mrs"
+  porn-hub:
+    type: http
+    behavior: domain
+    format: yaml
+    interval: 86400
+    path: rules/porn-hub.yaml
+    url: "https://raw.githubusercontent.com/Accademia/Additional_Rule_For_Clash/refs/heads/main/Pornhub/Pornhub_Domain.yaml"  
+  mindgeek-porn:
+    <<: *dom
+    path: rules/mindgeek-porn.mrs
+    url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/mindgeek-porn.mrs"
+  category-porn:
+    <<: *dom
+    path: rules/category-porn.mrs
+    url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/category-porn.mrs"
+  webrtc:
+    <<: *dom
+    path: rules/webrtc.mrs
+    url: "https://raw.githubusercontent.com/MeALiYeYe/ProxyConfigFiles/main/Mihomo/rule/WebRTC/WebRTC.mrs"
+
+# ==============================================================================
+# 04. 路由规则匹配 (Rules)
+# ==============================================================================
+rules:
+- DST-PORT,53,⭕️ DNS_Hijack
+- DST-PORT,853,⭕️ DNS_Hijack
+- DST-PORT,8853,⭕️ DNS_Hijack
+- DOMAIN-KEYWORD,stun,WebRTC
+- DOMAIN-KEYWORD,turn,WebRTC
+- AND,((NETWORK,udp),(DST-PORT,3478-3479)),WebRTC
+- AND,((NETWORK,udp),(DST-PORT,5349-5350)),WebRTC
+- AND,((NETWORK,udp),(DST-PORT,19302-19309)),WebRTC
+- RULE-SET,webrtc,WebRTC
+- PROCESS-NAME,com.carriez.rustdesk,🟢 直连
+- PROCESS-NAME,com.anydesk.anydeskandroid,🟢 直连
+- PROCESS-NAME,com.teamviewer.teamviewer.market.mobile,🟢 直连
+- PROCESS-NAME,com.microsoft.rdc.androidx,🟢 直连
+- PROCESS-NAME,com.oray.sunlogin.mac,🟢 直连
+- DOMAIN-SUFFIX,rustdesk.com,🟢 直连
+- DOMAIN-SUFFIX,anydesk.com,🟢 直连
+- DOMAIN-SUFFIX,net.anydesk.com,🟢 直连
+- DOMAIN-SUFFIX,teamviewer.com,🟢 直连
+- DOMAIN-SUFFIX,oray.com,🟢 直连
+- DOMAIN-SUFFIX,oray.net,🟢 直连
+- DOMAIN-SUFFIX,easytier.top,🟢 直连
+- DST-PORT,3389,🟢 直连
+- DST-PORT,5938,🟢 直连
+- DST-PORT,11080,🟢 直连
+- IP-CIDR,192.168.0.0/16,🟢 直连,no-resolve
+- IP-CIDR,10.0.0.0/8,🟢 直连,no-resolve
+- IP-CIDR,172.16.0.0/12,🟢 直连,no-resolve
+- IP-CIDR,127.0.0.0/8,🟢 直连,no-resolve
+- IP-CIDR6,fc00::/7,🟢 直连,no-resolve
+- IP-CIDR6,fe80::/10,🟢 直连,no-resolve
+- DST-PORT,5228-5230,Google
+- RULE-SET,googlefcm,Google
+- DST-PORT,123,🟢 直连
+- RULE-SET,ntp,🟢 直连
+- RULE-SET,httpdns-cn,🟢 直连
+- RULE-SET,private,🟢 直连
+- RULE-SET,private_ip,🟢 直连,no-resolve
+- RULE-SET,ads-awavenue,⛔️ 拒绝
+- RULE-SET,ads-mrxx007,⛔️ 拒绝
+- RULE-SET,ads-all,⛔️ 拒绝
+- RULE-SET,rejects,⛔️ 拒绝
+- RULE-SET,rejects_ip,⛔️ 拒绝,no-resolve
+- RULE-SET,directs,Domestic
+- RULE-SET,directs_ip,Domestic,no-resolve
+- RULE-SET,proxys,Foreign
+- RULE-SET,proxys_ip,Foreign,no-resolve
+- RULE-SET,fakelocation,Location
+- RULE-SET,fakelocation_ip,Location,no-resolve
+- DOMAIN-SUFFIX,4d4y.com,CF-日本
+- RULE-SET,youtube,Youtube
+- RULE-SET,tiktok,Tiktok
+- RULE-SET,discord,Discord
+- RULE-SET,cloudflare,Cloudflare
+- RULE-SET,cloudflare_ip,Cloudflare,no-resolve 
+- RULE-SET,entertainment,Media
+- RULE-SET,telegram,Telegram
+- RULE-SET,telegram_ip,Telegram,no-resolve
+- RULE-SET,google,Google
+- RULE-SET,google_ip,Google,no-resolve
+- RULE-SET,github,Github
+- RULE-SET,ai-chat-!cn,Ai
+- RULE-SET,reddit,Foreign
+- RULE-SET,porn-hub,Porn
+- RULE-SET,mindgeek-porn,Porn
+- RULE-SET,category-porn,Porn
+- RULE-SET,apple,Apple
+- RULE-SET,microsoft,Microsoft
+- RULE-SET,geolocation-!cn,Foreign
+- RULE-SET,cn,Domestic
+- RULE-SET,cn_ip,Domestic,no-resolve
+- MATCH,Final
+
+# ==============================================================================
+# 05. 运行环境与底层支持 (通过 Python 动态裁剪)
+# ==============================================================================
+mixed-port: 7890
+redir-port: 7891
+tproxy-port: 1536
+port: 8080
+socks-port: 1080
+ipv6: true
+mode: rule
+log-level: warning
+unified-delay: true
+tcp-concurrent: true
+allow-lan: true
+external-controller: 0.0.0.0:9090
+
+skip-auth-prefixes:
+- 127.0.0.0/8
+- 192.168.0.0/16
+- 10.0.0.0/8
+- 172.16.0.0/12
+
+geo-auto-update: true
+geo-update-interval: 360
+geox-url:
+  geoip: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/release/geoip.metadb"
+  geosite: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/release/geosite.dat"
+  asn: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/release/GeoLite2-ASN.mmdb"
+
+lgbm-auto-update: true
+lgbm-update-interval: 360
+lgbm-url: "https://raw.githubusercontent.com/vernesong/mihomo/releases/download/LightGBM-Model/Model-large.bin"
+
+profile:
+  store-selected: true
+  store-fake-ip: true
+  smart-collector-size: 100
+
+ntp:
+  enable: true
+  write-to-system: false
+  server: time.apple.com
+  port: 123
+  interval: 30
+
+sniffer:
+  enable: true
+  force-dns-mapping: true
+  parse-pure-ip: true
+  override-destination: false
+  sniff:
+    HTTP:
+      ports: [80, 8080-8880]
+      override-destination: true
+    TLS:
+      ports: [443, 8443, 5228-5230]
+    QUIC:
+      ports: [443, 8443]
+  force-domain:
+  - "+.v2ex.com"
+  skip-domain:
+  - "+.local"
+  - "+.lan"
+  - "localhost"
+  - "Mijia Cloud"
+  - "miwifi.com"
+  - "+.ts.net"
+  - "+.rustdesk.com"
+  - "+.anydesk.com"
+  - "+.teamviewer.com"
+  - "+.oray.com"
+  - "+.oray.net"
+  - "+.easytier.top"
+
+tun:
+  enable: true
+  device: Mihomo
+  stack: system
+  dns-hijack:
+  - any:53
+  - tcp://any:53
+  udp-timeout: 300
+  auto-route: true
+  auto-detect-interface: true
+  strict-route: true
+
+dns:
+  enable: true
+  listen: :1053
+  ipv6: true
+  prefer-h3: true
+  enhanced-mode: fake-ip
+  fake-ip-range: 198.18.0.0/16
+  fake-ip-range6: fdfe:dcba:9876::/64
+  fake-ip-filter-mode: rule
+  fake-ip-filter:
+    - RULE-SET,googlefcm,real-ip
+    - RULE-SET,ntp,real-ip
+    - RULE-SET,directs,real-ip
+    - RULE-SET,cn,real-ip
+    - MATCH,fake-ip
+  nameserver:
+    - https://dns.google/dns-query
+    - https://cloudflare-dns.com/dns-query
+  nameserver-policy:
+    "geosite:cn":
+      - 223.5.5.5
+      - 223.6.6.6
+    "geosite:geolocation-!cn":
+      - https://dns.google/dns-query
