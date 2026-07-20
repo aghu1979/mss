@@ -73,7 +73,8 @@ jobs:
     - name: 9. 推送多态产物至 release 分支
       run: |
         mkdir -p repo_release/subs
-        cp repo_main/subs/Sub*.txt repo_release/subs/ 2>/dev/null || true
+        # cp repo_main/subs/Sub*.txt repo_release/subs/ 2>/dev/null || true
+        cp repo_main/subs/SubPre.txt repo_main/subs/SubCF.txt repo_main/subs/SubFree.txt repo_release/subs/ 2>/dev/null || true
         cp repo_main/subs/Sub*.yaml repo_release/subs/ 2>/dev/null || true
         cp repo_main/subs/blacklist.txt repo_release/subs/ 2>/dev/null || true
         cp repo_main/README.md repo_release/ || true
