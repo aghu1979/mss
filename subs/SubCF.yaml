@@ -1,182 +1,1512 @@
 proxies:
 - name: SubCF-GB-01
-  type: vless
-  server: 91.193.58.164
-  port: 443
-  uuid: 0eefa577-6dc5-4e5f-8bfc-79919140f823
-  tls: true
-  sni: dewei02.dewei.dpdns.org
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: dewei02.dewei.dpdns.org
-- name: SubCF-GB-02
-  type: vless
-  server: 91.193.59.49
-  port: 443
-  uuid: 0eefa577-6dc5-4e5f-8bfc-79919140f823
-  tls: true
-  sni: dewei02.pages.dev
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: dewei02.pages.dev
-- name: SubCF-NL-01
-  type: vless
-  server: 188.164.248.187
-  port: 443
-  uuid: 0eefa577-6dc5-4e5f-8bfc-79919140f823
-  tls: true
-  sni: dewei02.pages.dev
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: dewei02.pages.dev
-- name: SubCF-NL-02
-  type: vless
-  server: 188.164.248.141
-  port: 443
-  uuid: 0eefa577-6dc5-4e5f-8bfc-79919140f823
-  tls: true
-  sni: dewei02.dewei.dpdns.org
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: dewei02.dewei.dpdns.org
-- name: SubCF-US-01
-  type: vless
-  server: 23.94.61.157
-  port: 34237
-  uuid: 0eefa577-6dc5-4e5f-8bfc-79919140f823
-  tls: true
-  sni: dewei01.dewei.dpdns.org
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: dewei01.dewei.dpdns.org
-- name: SubCF-US-02
-  type: vless
-  server: 104.168.167.197
-  port: 27213
-  uuid: 0eefa577-6dc5-4e5f-8bfc-79919140f823
-  tls: true
-  sni: dewei01.pages.dev
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: dewei01.pages.dev
-- name: SubCF-US-03
-  type: vless
-  server: 104.168.167.197
-  port: 27213
-  uuid: 0eefa577-6dc5-4e5f-8bfc-79919140f823
-  tls: true
-  sni: asia01.pages.dev
-  network: ws
-  ws-opts:
-    path: /content/seller
-    headers:
-      Host: asia01.pages.dev
-- name: SubCF-GB-03
   type: trojan
-  server: 91.193.58.23
-  port: 443
-  password: 0eefa577-6dc5-4e5f-8bfc-79919140f823
-  network: ws
-  ws-opts:
-    path: /item
-    headers:
-      Host: asia02.dewei.cf
-- name: SubCF-GB-04
-  type: trojan
-  server: 91.193.59.165
-  port: 2096
-  password: 0eefa577-6dc5-4e5f-8bfc-79919140f823
-  network: ws
-  ws-opts:
-    path: /live
-    headers:
-      Host: asia02.dewei.cf
-- name: SubCF-NL-03
-  type: trojan
-  server: 188.164.248.162
+  server: 91.193.58.103
   port: 8443
   password: 0eefa577-6dc5-4e5f-8bfc-79919140f823
   network: ws
   ws-opts:
-    path: /channel
+    path: /u/pages
     headers:
       Host: asia02.dewei.cf
+- name: SubCF-NL-01
+  type: vless
+  server: 188.164.248.152
+  port: 443
+  uuid: 0eefa577-6dc5-4e5f-8bfc-79919140f823
+  tls: true
+  sni: dewei02.pages.dev
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: dewei02.pages.dev
+- name: SubCF-GB-02
+  type: trojan
+  server: 91.193.59.54
+  port: 8443
+  password: 0eefa577-6dc5-4e5f-8bfc-79919140f823
+  network: ws
+  ws-opts:
+    path: /comic/settings
+    headers:
+      Host: asia02.dewei.cf
+- name: SubCF-NL-02
+  type: trojan
+  server: 188.164.248.217
+  port: 2083
+  password: 0eefa577-6dc5-4e5f-8bfc-79919140f823
+  network: ws
+  ws-opts:
+    path: /go.html
+    headers:
+      Host: asia02.dewei.cf
+- name: SubCF-NL-03
+  type: trojan
+  server: 188.164.248.50
+  port: 2096
+  password: 0eefa577-6dc5-4e5f-8bfc-79919140f823
+  network: ws
+  ws-opts:
+    path: /lives/comics/play
+    headers:
+      Host: asia02.dewei.cf
+- name: SubCF-US-01
+  type: vless
+  server: Join.my.Telegram.channel.CMLiussss.to.unlock.more.premium.nodes.cf.090227.xyz
+  port: 443
+  uuid: 0eefa577-6dc5-4e5f-8bfc-79919140f823
+  tls: true
+  sni: asia01.dewei.cf
+  network: ws
+  ws-opts:
+    path: /shop
+    headers:
+      Host: asia01.dewei.cf
+- name: SubCF-NL-04
+  type: trojan
+  server: 188.164.248.204
+  port: 2053
+  password: 0eefa577-6dc5-4e5f-8bfc-79919140f823
+  network: ws
+  ws-opts:
+    path: /redirect.php
+    headers:
+      Host: asia02.dewei.cf
+- name: SubCF-GB-03
+  type: trojan
+  server: 91.193.58.196
+  port: 2087
+  password: 0eefa577-6dc5-4e5f-8bfc-79919140f823
+  network: ws
+  ws-opts:
+    path: /items/out
+    headers:
+      Host: asia02.dewei.cf
+- name: SubCF-US-02
+  type: vless
+  server: Join.my.Telegram.channel.CMLiussss.to.unlock.more.premium.nodes.cf.090227.xyz
+  port: 443
+  uuid: 0eefa577-6dc5-4e5f-8bfc-79919140f823
+  tls: true
+  sni: dewei01.pages.dev
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: dewei01.pages.dev
+- name: SubCF-GB-04
+  type: vless
+  server: 91.193.59.76
+  port: 443
+  uuid: 0eefa577-6dc5-4e5f-8bfc-79919140f823
+  tls: true
+  sni: dewei02.pages.dev
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: dewei02.pages.dev
+- name: SubCF-US-03
+  type: vless
+  server: 152.70.143.175
+  port: 29187
+  uuid: 0eefa577-6dc5-4e5f-8bfc-79919140f823
+  tls: true
+  sni: dewei01.pages.dev
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: dewei01.pages.dev
 - name: SubCF-US-04
   type: vless
-  server: Join.my.Telegram.channel.CMLiussss.to.unlock.more.premium.nodes.cf.090227.xyz
-  port: 443
+  server: 129.146.134.26
+  port: 34237
   uuid: 0eefa577-6dc5-4e5f-8bfc-79919140f823
   tls: true
-  sni: dewei01.pages.dev
+  sni: asia01.dewei.cf
   network: ws
   ws-opts:
-    path: /
+    path: /live/mobile
     headers:
-      Host: dewei01.pages.dev
+      Host: asia01.dewei.cf
 - name: SubCF-US-05
   type: vless
-  server: Join.my.Telegram.channel.CMLiussss.to.unlock.more.premium.nodes.cf.090227.xyz
+  server: 154.21.95.165
   port: 443
   uuid: 0eefa577-6dc5-4e5f-8bfc-79919140f823
   tls: true
-  sni: asia01.pages.dev
-  network: ws
-  ws-opts:
-    path: /products
-    headers:
-      Host: asia01.pages.dev
-- name: SubCF-US-06
-  type: vless
-  server: 157.230.140.153
-  port: 2053
-  uuid: 0eefa577-6dc5-4e5f-8bfc-79919140f823
-  tls: true
-  sni: dewei01.pages.dev
+  sni: dewei03.dewei.dpdns.org
   network: ws
   ws-opts:
     path: /
     headers:
-      Host: dewei01.pages.dev
+      Host: dewei03.dewei.dpdns.org
+- name: SubCF-US-06
+  type: trojan
+  server: 104.26.15.186
+  port: 8443
+  password: 0eefa577-6dc5-4e5f-8bfc-79919140f823
+  network: ws
+  ws-opts:
+    path: /archive/payment/album
+    headers:
+      Host: asia02.dewei.cf
 - name: SubCF-US-07
+  type: trojan
+  server: 8.35.211.6
+  port: 2053
+  password: 0eefa577-6dc5-4e5f-8bfc-79919140f823
+  network: ws
+  ws-opts:
+    path: /trade
+    headers:
+      Host: asia02.dewei.cf
+- name: SubCF-US-08
   type: vless
-  server: 165.227.60.231
+  server: 104.17.123.160
+  port: 443
+  uuid: 0eefa577-6dc5-4e5f-8bfc-79919140f823
+  tls: true
+  sni: dewei02.dewei.dpdns.org
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: dewei02.dewei.dpdns.org
+- name: SubCF-US-09
+  type: vless
+  server: 104.26.4.10
+  port: 443
+  uuid: 0eefa577-6dc5-4e5f-8bfc-79919140f823
+  tls: true
+  sni: dewei02.dewei.dpdns.org
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: dewei02.dewei.dpdns.org
+- name: SubCF-US-10
+  type: trojan
+  server: 172.67.66.120
+  port: 2083
+  password: 0eefa577-6dc5-4e5f-8bfc-79919140f823
+  network: ws
+  ws-opts:
+    path: /m/friends
+    headers:
+      Host: asia02.dewei.cf
+- name: SubCF-US-11
+  type: vless
+  server: 104.19.34.7
+  port: 443
+  uuid: 0eefa577-6dc5-4e5f-8bfc-79919140f823
+  tls: true
+  sni: dewei02.pages.dev
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: dewei02.pages.dev
+- name: SubCF-US-12
+  type: vless
+  server: 173.245.58.203
+  port: 443
+  uuid: 0eefa577-6dc5-4e5f-8bfc-79919140f823
+  tls: true
+  sni: dewei02.dewei.dpdns.org
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: dewei02.dewei.dpdns.org
+- name: SubCF-US-13
+  type: vless
+  server: 104.17.221.102
+  port: 443
+  uuid: 0eefa577-6dc5-4e5f-8bfc-79919140f823
+  tls: true
+  sni: dewei02.pages.dev
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: dewei02.pages.dev
+- name: SubCF-US-14
+  type: vless
+  server: 8.35.211.246
+  port: 443
+  uuid: 0eefa577-6dc5-4e5f-8bfc-79919140f823
+  tls: true
+  sni: dewei02.dewei.dpdns.org
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: dewei02.dewei.dpdns.org
+- name: SubCF-US-15
+  type: trojan
+  server: 104.16.250.119
+  port: 443
+  password: 0eefa577-6dc5-4e5f-8bfc-79919140f823
+  network: ws
+  ws-opts:
+    path: /htm/readme/pdf
+    headers:
+      Host: asia02.dewei.cf
+- name: SubCF-US-16
+  type: vless
+  server: 198.41.223.17
+  port: 443
+  uuid: 0eefa577-6dc5-4e5f-8bfc-79919140f823
+  tls: true
+  sni: dewei02.pages.dev
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: dewei02.pages.dev
+- name: SubCF-US-17
+  type: vless
+  server: 198.41.209.186
+  port: 443
+  uuid: 0eefa577-6dc5-4e5f-8bfc-79919140f823
+  tls: true
+  sni: dewei02.dewei.dpdns.org
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: dewei02.dewei.dpdns.org
+- name: SubCF-US-18
+  type: trojan
+  server: 162.159.46.107
+  port: 443
+  password: 0eefa577-6dc5-4e5f-8bfc-79919140f823
+  network: ws
+  ws-opts:
+    path: /watch
+    headers:
+      Host: asia02.dewei.cf
+- name: SubCF-US-19
+  type: trojan
+  server: 198.41.223.98
+  port: 2053
+  password: 0eefa577-6dc5-4e5f-8bfc-79919140f823
+  network: ws
+  ws-opts:
+    path: /outbound/cart
+    headers:
+      Host: asia02.dewei.cf
+- name: SubCF-US-20
+  type: vless
+  server: 104.19.145.107
+  port: 443
+  uuid: 0eefa577-6dc5-4e5f-8bfc-79919140f823
+  tls: true
+  sni: dewei02.pages.dev
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: dewei02.pages.dev
+- name: SubCF-US-21
+  type: vless
+  server: 162.159.33.210
+  port: 443
+  uuid: 0eefa577-6dc5-4e5f-8bfc-79919140f823
+  tls: true
+  sni: dewei02.dewei.dpdns.org
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: dewei02.dewei.dpdns.org
+- name: SubCF-US-22
+  type: vless
+  server: 104.16.241.194
+  port: 443
+  uuid: 0eefa577-6dc5-4e5f-8bfc-79919140f823
+  tls: true
+  sni: dewei02.pages.dev
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: dewei02.pages.dev
+- name: SubCF-US-23
+  type: vless
+  server: 104.16.244.75
+  port: 443
+  uuid: 0eefa577-6dc5-4e5f-8bfc-79919140f823
+  tls: true
+  sni: dewei02.dewei.dpdns.org
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: dewei02.dewei.dpdns.org
+- name: SubCF-US-24
+  type: trojan
+  server: 104.19.149.64
+  port: 2087
+  password: 0eefa577-6dc5-4e5f-8bfc-79919140f823
+  network: ws
+  ws-opts:
+    path: /topic/stream
+    headers:
+      Host: asia02.dewei.cf
+- name: SubCF-US-25
+  type: vless
+  server: 104.17.176.129
+  port: 443
+  uuid: 0eefa577-6dc5-4e5f-8bfc-79919140f823
+  tls: true
+  sni: dewei02.pages.dev
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: dewei02.pages.dev
+- name: SubCF-US-26
+  type: vless
+  server: 172.67.75.18
+  port: 443
+  uuid: 0eefa577-6dc5-4e5f-8bfc-79919140f823
+  tls: true
+  sni: dewei02.pages.dev
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: dewei02.pages.dev
+- name: SubCF-US-27
+  type: trojan
+  server: 104.17.19.201
+  port: 443
+  password: 0eefa577-6dc5-4e5f-8bfc-79919140f823
+  network: ws
+  ws-opts:
+    path: /doujin/my/items
+    headers:
+      Host: asia02.dewei.cf
+- name: SubCF-US-28
+  type: vless
+  server: 104.17.19.178
+  port: 443
+  uuid: 0eefa577-6dc5-4e5f-8bfc-79919140f823
+  tls: true
+  sni: dewei02.pages.dev
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: dewei02.pages.dev
+- name: SubCF-US-29
+  type: trojan
+  server: 104.17.147.80
+  port: 8443
+  password: 0eefa577-6dc5-4e5f-8bfc-79919140f823
+  network: ws
+  ws-opts:
+    path: /event
+    headers:
+      Host: asia02.dewei.cf
+- name: SubCF-US-30
+  type: trojan
+  server: 162.159.38.40
+  port: 2087
+  password: 0eefa577-6dc5-4e5f-8bfc-79919140f823
+  network: ws
+  ws-opts:
+    path: /upload/detail
+    headers:
+      Host: asia02.dewei.cf
+- name: SubCF-US-31
+  type: trojan
+  server: 104.17.63.131
+  port: 2083
+  password: 0eefa577-6dc5-4e5f-8bfc-79919140f823
+  network: ws
+  ws-opts:
+    path: /books
+    headers:
+      Host: asia02.dewei.cf
+- name: SubCF-US-32
+  type: vless
+  server: 104.17.110.196
+  port: 443
+  uuid: 0eefa577-6dc5-4e5f-8bfc-79919140f823
+  tls: true
+  sni: dewei02.dewei.dpdns.org
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: dewei02.dewei.dpdns.org
+- name: SubCF-US-33
+  type: trojan
+  server: 104.19.149.49
+  port: 443
+  password: 0eefa577-6dc5-4e5f-8bfc-79919140f823
+  network: ws
+  ws-opts:
+    path: /thread
+    headers:
+      Host: asia02.dewei.cf
+- name: SubCF-US-34
+  type: trojan
+  server: 198.41.208.150
+  port: 2096
+  password: 0eefa577-6dc5-4e5f-8bfc-79919140f823
+  network: ws
+  ws-opts:
+    path: /seasons
+    headers:
+      Host: asia02.dewei.cf
+- name: SubCF-US-35
+  type: trojan
+  server: 104.17.97.107
+  port: 443
+  password: 0eefa577-6dc5-4e5f-8bfc-79919140f823
+  network: ws
+  ws-opts:
+    path: /playlist/courses/link
+    headers:
+      Host: asia02.dewei.cf
+- name: SubCF-US-36
+  type: trojan
+  server: 8.35.211.206
+  port: 2053
+  password: 0eefa577-6dc5-4e5f-8bfc-79919140f823
+  network: ws
+  ws-opts:
+    path: /version/episodes/drama
+    headers:
+      Host: asia02.dewei.cf
+- name: SubCF-US-37
+  type: trojan
+  server: 104.17.223.238
+  port: 2096
+  password: 0eefa577-6dc5-4e5f-8bfc-79919140f823
+  network: ws
+  ws-opts:
+    path: /section/special
+    headers:
+      Host: asia02.dewei.cf
+- name: SubCF-US-38
+  type: vless
+  server: 108.162.198.0
+  port: 443
+  uuid: 0eefa577-6dc5-4e5f-8bfc-79919140f823
+  tls: true
+  sni: dewei02.pages.dev
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: dewei02.pages.dev
+- name: SubCF-US-39
+  type: trojan
+  server: 104.17.160.167
+  port: 2053
+  password: 0eefa577-6dc5-4e5f-8bfc-79919140f823
+  network: ws
+  ws-opts:
+    path: /topics/streaming/share
+    headers:
+      Host: asia02.dewei.cf
+- name: SubCF-US-40
+  type: vless
+  server: 172.67.64.148
+  port: 443
+  uuid: 0eefa577-6dc5-4e5f-8bfc-79919140f823
+  tls: true
+  sni: dewei02.pages.dev
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: dewei02.pages.dev
+- name: SubCF-US-41
+  type: trojan
+  server: 104.16.155.102
+  port: 8443
+  password: 0eefa577-6dc5-4e5f-8bfc-79919140f823
+  network: ws
+  ws-opts:
+    path: /info
+    headers:
+      Host: asia02.dewei.cf
+- name: SubCF-US-42
+  type: vless
+  server: 104.19.35.243
+  port: 443
+  uuid: 0eefa577-6dc5-4e5f-8bfc-79919140f823
+  tls: true
+  sni: dewei02.pages.dev
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: dewei02.pages.dev
+- name: SubCF-US-43
+  type: vless
+  server: 162.159.38.72
+  port: 443
+  uuid: 0eefa577-6dc5-4e5f-8bfc-79919140f823
+  tls: true
+  sni: dewei02.dewei.dpdns.org
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: dewei02.dewei.dpdns.org
+- name: SubCF-US-44
+  type: trojan
+  server: 104.17.110.199
+  port: 2053
+  password: 0eefa577-6dc5-4e5f-8bfc-79919140f823
+  network: ws
+  ws-opts:
+    path: /lives
+    headers:
+      Host: asia02.dewei.cf
+- name: SubCF-US-45
+  type: vless
+  server: 173.245.59.96
+  port: 443
+  uuid: 0eefa577-6dc5-4e5f-8bfc-79919140f823
+  tls: true
+  sni: dewei02.dewei.dpdns.org
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: dewei02.dewei.dpdns.org
+- name: SubCF-US-46
+  type: vless
+  server: 162.159.40.36
+  port: 443
+  uuid: 0eefa577-6dc5-4e5f-8bfc-79919140f823
+  tls: true
+  sni: dewei02.pages.dev
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: dewei02.pages.dev
+- name: SubCF-US-47
+  type: trojan
+  server: 104.17.168.210
+  port: 2096
+  password: 0eefa577-6dc5-4e5f-8bfc-79919140f823
+  network: ws
+  ws-opts:
+    path: /services
+    headers:
+      Host: asia02.dewei.cf
+- name: SubCF-US-48
+  type: vless
+  server: 104.17.24.186
+  port: 443
+  uuid: 0eefa577-6dc5-4e5f-8bfc-79919140f823
+  tls: true
+  sni: dewei02.dewei.dpdns.org
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: dewei02.dewei.dpdns.org
+- name: SubCF-US-49
+  type: trojan
+  server: 162.159.40.112
+  port: 2053
+  password: 0eefa577-6dc5-4e5f-8bfc-79919140f823
+  network: ws
+  ws-opts:
+    path: /library
+    headers:
+      Host: asia02.dewei.cf
+- name: SubCF-US-50
+  type: vless
+  server: 104.19.52.135
+  port: 443
+  uuid: 0eefa577-6dc5-4e5f-8bfc-79919140f823
+  tls: true
+  sni: dewei02.pages.dev
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: dewei02.pages.dev
+- name: SubCF-US-51
+  type: trojan
+  server: 104.19.147.56
+  port: 8443
+  password: 0eefa577-6dc5-4e5f-8bfc-79919140f823
+  network: ws
+  ws-opts:
+    path: /out.php/zh
+    headers:
+      Host: asia02.dewei.cf
+- name: SubCF-US-52
+  type: vless
+  server: 104.18.33.35
+  port: 443
+  uuid: 0eefa577-6dc5-4e5f-8bfc-79919140f823
+  tls: true
+  sni: dewei02.dewei.dpdns.org
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: dewei02.dewei.dpdns.org
+- name: SubCF-US-53
+  type: trojan
+  server: 104.17.112.195
+  port: 8443
+  password: 0eefa577-6dc5-4e5f-8bfc-79919140f823
+  network: ws
+  ws-opts:
+    path: /htm
+    headers:
+      Host: asia02.dewei.cf
+- name: SubCF-US-54
+  type: trojan
+  server: 104.17.217.12
+  port: 443
+  password: 0eefa577-6dc5-4e5f-8bfc-79919140f823
+  network: ws
+  ws-opts:
+    path: /doujin/links
+    headers:
+      Host: asia02.dewei.cf
+- name: SubCF-US-55
+  type: vless
+  server: 104.19.49.53
+  port: 443
+  uuid: 0eefa577-6dc5-4e5f-8bfc-79919140f823
+  tls: true
+  sni: dewei02.dewei.dpdns.org
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: dewei02.dewei.dpdns.org
+- name: SubCF-US-56
+  type: vless
+  server: 198.41.209.178
+  port: 443
+  uuid: 0eefa577-6dc5-4e5f-8bfc-79919140f823
+  tls: true
+  sni: dewei02.dewei.dpdns.org
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: dewei02.dewei.dpdns.org
+- name: SubCF-US-57
+  type: trojan
+  server: 108.162.198.235
+  port: 2083
+  password: 0eefa577-6dc5-4e5f-8bfc-79919140f823
+  network: ws
+  ws-opts:
+    path: /my/events
+    headers:
+      Host: asia02.dewei.cf
+- name: SubCF-US-58
+  type: vless
+  server: 104.16.150.2
+  port: 443
+  uuid: 0eefa577-6dc5-4e5f-8bfc-79919140f823
+  tls: true
+  sni: dewei02.dewei.dpdns.org
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: dewei02.dewei.dpdns.org
+- name: SubCF-US-59
+  type: trojan
+  server: 8.39.125.244
+  port: 2083
+  password: 0eefa577-6dc5-4e5f-8bfc-79919140f823
+  network: ws
+  ws-opts:
+    path: /vod/game/temp
+    headers:
+      Host: asia02.dewei.cf
+- name: SubCF-US-60
+  type: trojan
+  server: 8.35.211.149
+  port: 443
+  password: 0eefa577-6dc5-4e5f-8bfc-79919140f823
+  network: ws
+  ws-opts:
+    path: /torrent/doc
+    headers:
+      Host: asia02.dewei.cf
+- name: SubCF-US-61
+  type: trojan
+  server: 104.18.33.227
+  port: 2053
+  password: 0eefa577-6dc5-4e5f-8bfc-79919140f823
+  network: ws
+  ws-opts:
+    path: /html
+    headers:
+      Host: asia02.dewei.cf
+- name: SubCF-US-62
+  type: vless
+  server: 104.17.126.121
+  port: 443
+  uuid: 0eefa577-6dc5-4e5f-8bfc-79919140f823
+  tls: true
+  sni: dewei02.pages.dev
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: dewei02.pages.dev
+- name: SubCF-US-63
+  type: vless
+  server: 104.17.118.43
+  port: 443
+  uuid: 0eefa577-6dc5-4e5f-8bfc-79919140f823
+  tls: true
+  sni: dewei02.dewei.dpdns.org
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: dewei02.dewei.dpdns.org
+- name: SubCF-US-64
+  type: trojan
+  server: 104.17.125.28
+  port: 2087
+  password: 0eefa577-6dc5-4e5f-8bfc-79919140f823
+  network: ws
+  ws-opts:
+    path: /film/message
+    headers:
+      Host: asia02.dewei.cf
+- name: SubCF-US-65
+  type: trojan
+  server: 104.17.126.52
+  port: 2053
+  password: 0eefa577-6dc5-4e5f-8bfc-79919140f823
+  network: ws
+  ws-opts:
+    path: /data
+    headers:
+      Host: asia02.dewei.cf
+- name: SubCF-US-66
+  type: trojan
+  server: 104.17.105.33
+  port: 2096
+  password: 0eefa577-6dc5-4e5f-8bfc-79919140f823
+  network: ws
+  ws-opts:
+    path: /tech/special/code
+    headers:
+      Host: asia02.dewei.cf
+- name: SubCF-US-67
+  type: trojan
+  server: 104.19.33.27
+  port: 443
+  password: 0eefa577-6dc5-4e5f-8bfc-79919140f823
+  network: ws
+  ws-opts:
+    path: /tag
+    headers:
+      Host: asia02.dewei.cf
+- name: SubCF-US-68
+  type: trojan
+  server: 8.39.125.89
+  port: 2087
+  password: 0eefa577-6dc5-4e5f-8bfc-79919140f823
+  network: ws
+  ws-opts:
+    path: /zh
+    headers:
+      Host: asia02.dewei.cf
+- name: SubCF-US-69
+  type: vless
+  server: 104.26.10.177
+  port: 443
+  uuid: 0eefa577-6dc5-4e5f-8bfc-79919140f823
+  tls: true
+  sni: dewei02.dewei.dpdns.org
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: dewei02.dewei.dpdns.org
+- name: SubCF-US-70
+  type: vless
+  server: 104.19.146.251
+  port: 443
+  uuid: 0eefa577-6dc5-4e5f-8bfc-79919140f823
+  tls: true
+  sni: dewei02.dewei.dpdns.org
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: dewei02.dewei.dpdns.org
+- name: SubCF-US-71
+  type: vless
+  server: 173.245.59.187
+  port: 443
+  uuid: 0eefa577-6dc5-4e5f-8bfc-79919140f823
+  tls: true
+  sni: dewei02.dewei.dpdns.org
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: dewei02.dewei.dpdns.org
+- name: SubCF-US-72
+  type: vless
+  server: 8.35.211.60
+  port: 443
+  uuid: 0eefa577-6dc5-4e5f-8bfc-79919140f823
+  tls: true
+  sni: dewei02.dewei.dpdns.org
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: dewei02.dewei.dpdns.org
+- name: SubCF-US-73
+  type: trojan
+  server: 162.159.34.122
+  port: 2087
+  password: 0eefa577-6dc5-4e5f-8bfc-79919140f823
+  network: ws
+  ws-opts:
+    path: /out.php/upload
+    headers:
+      Host: asia02.dewei.cf
+- name: SubCF-US-74
+  type: trojan
+  server: 104.17.217.62
+  port: 8443
+  password: 0eefa577-6dc5-4e5f-8bfc-79919140f823
+  network: ws
+  ws-opts:
+    path: /images
+    headers:
+      Host: asia02.dewei.cf
+- name: SubCF-US-75
+  type: vless
+  server: 162.159.39.39
+  port: 443
+  uuid: 0eefa577-6dc5-4e5f-8bfc-79919140f823
+  tls: true
+  sni: dewei02.pages.dev
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: dewei02.pages.dev
+- name: SubCF-US-76
+  type: trojan
+  server: 104.17.116.92
+  port: 2053
+  password: 0eefa577-6dc5-4e5f-8bfc-79919140f823
+  network: ws
+  ws-opts:
+    path: /discount
+    headers:
+      Host: asia02.dewei.cf
+- name: SubCF-US-77
+  type: trojan
+  server: 172.67.79.129
+  port: 8443
+  password: 0eefa577-6dc5-4e5f-8bfc-79919140f823
+  network: ws
+  ws-opts:
+    path: /ja/community/item
+    headers:
+      Host: asia02.dewei.cf
+- name: SubCF-US-78
+  type: vless
+  server: 173.245.59.94
+  port: 443
+  uuid: 0eefa577-6dc5-4e5f-8bfc-79919140f823
+  tls: true
+  sni: dewei02.pages.dev
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: dewei02.pages.dev
+- name: SubCF-US-79
+  type: vless
+  server: 104.17.116.72
+  port: 443
+  uuid: 0eefa577-6dc5-4e5f-8bfc-79919140f823
+  tls: true
+  sni: dewei02.pages.dev
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: dewei02.pages.dev
+- name: SubCF-US-80
+  type: vless
+  server: 104.16.250.108
+  port: 443
+  uuid: 0eefa577-6dc5-4e5f-8bfc-79919140f823
+  tls: true
+  sni: dewei02.pages.dev
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: dewei02.pages.dev
+- name: SubCF-US-81
+  type: trojan
+  server: 104.19.32.178
+  port: 443
+  password: 0eefa577-6dc5-4e5f-8bfc-79919140f823
+  network: ws
+  ws-opts:
+    path: /product/special
+    headers:
+      Host: asia02.dewei.cf
+- name: SubCF-US-82
+  type: vless
+  server: 154.21.95.165
+  port: 443
+  uuid: 0eefa577-6dc5-4e5f-8bfc-79919140f823
+  tls: true
+  sni: asia03.dewei.cf
+  network: ws
+  ws-opts:
+    path: /p/ad/friend
+    headers:
+      Host: asia03.dewei.cf
+- name: SubCF-US-83
+  type: vless
+  server: 104.17.215.19
+  port: 443
+  uuid: 0eefa577-6dc5-4e5f-8bfc-79919140f823
+  tls: true
+  sni: dewei02.dewei.dpdns.org
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: dewei02.dewei.dpdns.org
+- name: SubCF-US-84
+  type: vless
+  server: 104.18.33.249
+  port: 443
+  uuid: 0eefa577-6dc5-4e5f-8bfc-79919140f823
+  tls: true
+  sni: dewei02.pages.dev
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: dewei02.pages.dev
+- name: SubCF-US-85
+  type: trojan
+  server: 104.19.34.214
+  port: 443
+  password: 0eefa577-6dc5-4e5f-8bfc-79919140f823
+  network: ws
+  ws-opts:
+    path: /detail
+    headers:
+      Host: asia02.dewei.cf
+- name: SubCF-US-86
+  type: trojan
+  server: 162.159.33.5
+  port: 443
+  password: 0eefa577-6dc5-4e5f-8bfc-79919140f823
+  network: ws
+  ws-opts:
+    path: /ads
+    headers:
+      Host: asia02.dewei.cf
+- name: SubCF-US-87
+  type: trojan
+  server: 104.17.127.249
+  port: 8443
+  password: 0eefa577-6dc5-4e5f-8bfc-79919140f823
+  network: ws
+  ws-opts:
+    path: /bt/special/outbound
+    headers:
+      Host: asia02.dewei.cf
+- name: SubCF-US-88
+  type: vless
+  server: 104.26.5.92
+  port: 443
+  uuid: 0eefa577-6dc5-4e5f-8bfc-79919140f823
+  tls: true
+  sni: dewei02.pages.dev
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: dewei02.pages.dev
+- name: SubCF-US-89
+  type: trojan
+  server: 108.162.198.218
+  port: 8443
+  password: 0eefa577-6dc5-4e5f-8bfc-79919140f823
+  network: ws
+  ws-opts:
+    path: /m
+    headers:
+      Host: asia02.dewei.cf
+- name: SubCF-US-90
+  type: trojan
+  server: 104.17.106.110
+  port: 8443
+  password: 0eefa577-6dc5-4e5f-8bfc-79919140f823
+  network: ws
+  ws-opts:
+    path: /program/payment
+    headers:
+      Host: asia02.dewei.cf
+- name: SubCF-US-91
+  type: trojan
+  server: 172.67.71.50
+  port: 2096
+  password: 0eefa577-6dc5-4e5f-8bfc-79919140f823
+  network: ws
+  ws-opts:
+    path: /zh-cn
+    headers:
+      Host: asia02.dewei.cf
+- name: SubCF-US-92
+  type: trojan
+  server: 104.17.21.112
+  port: 2087
+  password: 0eefa577-6dc5-4e5f-8bfc-79919140f823
+  network: ws
+  ws-opts:
+    path: /city/account
+    headers:
+      Host: asia02.dewei.cf
+- name: SubCF-US-93
+  type: vless
+  server: 104.17.167.114
+  port: 443
+  uuid: 0eefa577-6dc5-4e5f-8bfc-79919140f823
+  tls: true
+  sni: dewei02.pages.dev
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: dewei02.pages.dev
+- name: SubCF-US-94
+  type: vless
+  server: 104.17.52.196
+  port: 443
+  uuid: 0eefa577-6dc5-4e5f-8bfc-79919140f823
+  tls: true
+  sni: dewei02.pages.dev
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: dewei02.pages.dev
+- name: SubCF-US-95
+  type: vless
+  server: 198.41.208.125
+  port: 443
+  uuid: 0eefa577-6dc5-4e5f-8bfc-79919140f823
+  tls: true
+  sni: dewei02.dewei.dpdns.org
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: dewei02.dewei.dpdns.org
+- name: SubCF-US-96
+  type: vless
+  server: 162.159.37.206
+  port: 443
+  uuid: 0eefa577-6dc5-4e5f-8bfc-79919140f823
+  tls: true
+  sni: dewei02.dewei.dpdns.org
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: dewei02.dewei.dpdns.org
+- name: SubCF-US-97
+  type: trojan
+  server: 198.41.209.198
+  port: 2083
+  password: 0eefa577-6dc5-4e5f-8bfc-79919140f823
+  network: ws
+  ws-opts:
+    path: /mobile/detail/categories
+    headers:
+      Host: asia02.dewei.cf
+- name: SubCF-US-98
+  type: trojan
+  server: 8.39.125.91
+  port: 2083
+  password: 0eefa577-6dc5-4e5f-8bfc-79919140f823
+  network: ws
+  ws-opts:
+    path: /m
+    headers:
+      Host: asia02.dewei.cf
+- name: SubCF-US-99
+  type: vless
+  server: 104.17.62.66
+  port: 443
+  uuid: 0eefa577-6dc5-4e5f-8bfc-79919140f823
+  tls: true
+  sni: dewei02.pages.dev
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: dewei02.pages.dev
+- name: SubCF-US-100
+  type: vless
+  server: 108.162.198.167
+  port: 443
+  uuid: 0eefa577-6dc5-4e5f-8bfc-79919140f823
+  tls: true
+  sni: dewei02.pages.dev
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: dewei02.pages.dev
+- name: SubCF-US-101
+  type: vless
+  server: 172.67.78.39
+  port: 443
+  uuid: 0eefa577-6dc5-4e5f-8bfc-79919140f823
+  tls: true
+  sni: dewei02.dewei.dpdns.org
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: dewei02.dewei.dpdns.org
+- name: SubCF-US-102
+  type: trojan
+  server: 104.17.170.135
+  port: 443
+  password: 0eefa577-6dc5-4e5f-8bfc-79919140f823
+  network: ws
+  ws-opts:
+    path: /live/acg
+    headers:
+      Host: asia02.dewei.cf
+- name: SubCF-US-103
+  type: vless
+  server: 104.17.54.172
+  port: 443
+  uuid: 0eefa577-6dc5-4e5f-8bfc-79919140f823
+  tls: true
+  sni: dewei02.dewei.dpdns.org
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: dewei02.dewei.dpdns.org
+- name: SubCF-US-104
+  type: trojan
+  server: 8.35.211.101
+  port: 2087
+  password: 0eefa577-6dc5-4e5f-8bfc-79919140f823
+  network: ws
+  ws-opts:
+    path: /activity
+    headers:
+      Host: asia02.dewei.cf
+- name: SubCF-US-105
+  type: trojan
+  server: 108.162.198.206
+  port: 2083
+  password: 0eefa577-6dc5-4e5f-8bfc-79919140f823
+  network: ws
+  ws-opts:
+    path: /doc/ajax
+    headers:
+      Host: asia02.dewei.cf
+- name: SubCF-US-106
+  type: vless
+  server: 104.26.9.222
+  port: 443
+  uuid: 0eefa577-6dc5-4e5f-8bfc-79919140f823
+  tls: true
+  sni: dewei02.dewei.dpdns.org
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: dewei02.dewei.dpdns.org
+- name: SubCF-US-107
+  type: vless
+  server: 172.66.3.117
+  port: 443
+  uuid: 0eefa577-6dc5-4e5f-8bfc-79919140f823
+  tls: true
+  sni: dewei02.dewei.dpdns.org
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: dewei02.dewei.dpdns.org
+- name: SubCF-US-108
+  type: vless
+  server: 104.17.177.181
+  port: 443
+  uuid: 0eefa577-6dc5-4e5f-8bfc-79919140f823
+  tls: true
+  sni: dewei02.pages.dev
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: dewei02.pages.dev
+- name: SubCF-US-109
+  type: trojan
+  server: 104.17.112.138
+  port: 443
+  password: 0eefa577-6dc5-4e5f-8bfc-79919140f823
+  network: ws
+  ws-opts:
+    path: /u
+    headers:
+      Host: asia02.dewei.cf
+- name: SubCF-US-110
+  type: vless
+  server: 172.67.71.139
+  port: 443
+  uuid: 0eefa577-6dc5-4e5f-8bfc-79919140f823
+  tls: true
+  sni: dewei02.dewei.dpdns.org
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: dewei02.dewei.dpdns.org
+- name: SubCF-US-111
+  type: trojan
+  server: 104.17.217.47
+  port: 8443
+  password: 0eefa577-6dc5-4e5f-8bfc-79919140f823
+  network: ws
+  ws-opts:
+    path: /show/manhua
+    headers:
+      Host: asia02.dewei.cf
+- name: SubCF-US-112
+  type: vless
+  server: 104.16.242.159
+  port: 443
+  uuid: 0eefa577-6dc5-4e5f-8bfc-79919140f823
+  tls: true
+  sni: dewei02.dewei.dpdns.org
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: dewei02.dewei.dpdns.org
+- name: SubCF-US-113
+  type: trojan
+  server: 172.67.71.145
+  port: 2096
+  password: 0eefa577-6dc5-4e5f-8bfc-79919140f823
+  network: ws
+  ws-opts:
+    path: /ad/u
+    headers:
+      Host: asia02.dewei.cf
+- name: SubCF-US-114
+  type: vless
+  server: 104.19.54.86
+  port: 443
+  uuid: 0eefa577-6dc5-4e5f-8bfc-79919140f823
+  tls: true
+  sni: dewei02.dewei.dpdns.org
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: dewei02.dewei.dpdns.org
+- name: SubCF-US-115
+  type: trojan
+  server: 172.66.1.63
+  port: 443
+  password: 0eefa577-6dc5-4e5f-8bfc-79919140f823
+  network: ws
+  ws-opts:
+    path: /category
+    headers:
+      Host: asia02.dewei.cf
+- name: SubCF-US-116
+  type: trojan
+  server: 8.35.211.82
+  port: 443
+  password: 0eefa577-6dc5-4e5f-8bfc-79919140f823
+  network: ws
+  ws-opts:
+    path: /temp/page/favs
+    headers:
+      Host: asia02.dewei.cf
+- name: SubCF-US-117
+  type: vless
+  server: 104.18.33.221
+  port: 443
+  uuid: 0eefa577-6dc5-4e5f-8bfc-79919140f823
+  tls: true
+  sni: dewei02.pages.dev
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: dewei02.pages.dev
+- name: SubCF-US-118
+  type: trojan
+  server: 104.17.112.171
+  port: 2053
+  password: 0eefa577-6dc5-4e5f-8bfc-79919140f823
+  network: ws
+  ws-opts:
+    path: /help/watch
+    headers:
+      Host: asia02.dewei.cf
+- name: SubCF-US-119
+  type: vless
+  server: 104.17.104.12
+  port: 443
+  uuid: 0eefa577-6dc5-4e5f-8bfc-79919140f823
+  tls: true
+  sni: dewei02.pages.dev
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: dewei02.pages.dev
+- name: SubCF-US-120
+  type: trojan
+  server: 172.66.0.117
+  port: 2083
+  password: 0eefa577-6dc5-4e5f-8bfc-79919140f823
+  network: ws
+  ws-opts:
+    path: /category/comic/programs
+    headers:
+      Host: asia02.dewei.cf
+- name: SubCF-US-121
+  type: trojan
+  server: 104.19.150.177
+  port: 2096
+  password: 0eefa577-6dc5-4e5f-8bfc-79919140f823
+  network: ws
+  ws-opts:
+    path: /doujin/out.html/classify
+    headers:
+      Host: asia02.dewei.cf
+- name: SubCF-US-122
+  type: vless
+  server: 5.181.219.212
+  port: 443
+  uuid: 0eefa577-6dc5-4e5f-8bfc-79919140f823
+  tls: true
+  sni: dewei03.dewei.dpdns.org
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: dewei03.dewei.dpdns.org
+- name: SubCF-US-123
+  type: vless
+  server: 104.19.147.161
+  port: 443
+  uuid: 0eefa577-6dc5-4e5f-8bfc-79919140f823
+  tls: true
+  sni: dewei02.dewei.dpdns.org
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: dewei02.dewei.dpdns.org
+- name: SubCF-US-124
+  type: vless
+  server: 173.245.59.153
+  port: 443
+  uuid: 0eefa577-6dc5-4e5f-8bfc-79919140f823
+  tls: true
+  sni: dewei02.dewei.dpdns.org
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: dewei02.dewei.dpdns.org
+- name: SubCF-US-125
+  type: vless
+  server: 104.17.154.95
+  port: 443
+  uuid: 0eefa577-6dc5-4e5f-8bfc-79919140f823
+  tls: true
+  sni: dewei02.pages.dev
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: dewei02.pages.dev
+- name: SubCF-US-126
+  type: vless
+  server: 157.245.182.9
   port: 2087
   uuid: 0eefa577-6dc5-4e5f-8bfc-79919140f823
   tls: true
   sni: asia01.pages.dev
   network: ws
   ws-opts:
-    path: /my/doc/tv
+    path: /chat
     headers:
       Host: asia01.pages.dev
-- name: SubCF-US-08
+- name: SubCF-US-127
   type: vless
-  server: 192.9.135.182
-  port: 7800
+  server: 150.230.33.247
+  port: 19131
   uuid: 0eefa577-6dc5-4e5f-8bfc-79919140f823
   tls: true
-  sni: asia01.pages.dev
+  sni: asia01.dewei.cf
   network: ws
   ws-opts:
-    path: /season/stars/channels
+    path: /account
     headers:
-      Host: asia01.pages.dev
-- name: SubCF-US-09
+      Host: asia01.dewei.cf
+- name: SubCF-US-128
   type: vless
-  server: 207.246.97.245
+  server: 104.17.121.40
   port: 443
+  uuid: 0eefa577-6dc5-4e5f-8bfc-79919140f823
+  tls: true
+  sni: dewei02.pages.dev
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: dewei02.pages.dev
+- name: SubCF-GB-05
+  type: vless
+  server: 167.172.48.224
+  port: 2083
   uuid: 0eefa577-6dc5-4e5f-8bfc-79919140f823
   tls: true
   sni: dewei01.pages.dev
@@ -185,58 +1515,10 @@ proxies:
     path: /
     headers:
       Host: dewei01.pages.dev
-- name: SubCF-US-10
+- name: SubCF-GB-06
   type: vless
-  server: 154.21.95.165
-  port: 443
-  uuid: 0eefa577-6dc5-4e5f-8bfc-79919140f823
-  tls: true
-  sni: dewei03.dewei.dpdns.org
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: dewei03.dewei.dpdns.org
-- name: SubCF-US-11
-  type: vless
-  server: 5.181.219.212
-  port: 443
-  uuid: 0eefa577-6dc5-4e5f-8bfc-79919140f823
-  tls: true
-  sni: dewei03.dewei.dpdns.org
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: dewei03.dewei.dpdns.org
-- name: SubCF-US-12
-  type: vless
-  server: 142.248.218.181
-  port: 2053
-  uuid: 0eefa577-6dc5-4e5f-8bfc-79919140f823
-  tls: true
-  sni: asia01.dewei.cf
-  network: ws
-  ws-opts:
-    path: /download
-    headers:
-      Host: asia01.dewei.cf
-- name: SubCF-US-13
-  type: vless
-  server: 108.61.218.27
-  port: 443
-  uuid: 0eefa577-6dc5-4e5f-8bfc-79919140f823
-  tls: true
-  sni: asia01.pages.dev
-  network: ws
-  ws-opts:
-    path: /my
-    headers:
-      Host: asia01.pages.dev
-- name: SubCF-US-14
-  type: vless
-  server: 141.148.153.223
-  port: 36818
+  server: 46.101.5.100
+  port: 8443
   uuid: 0eefa577-6dc5-4e5f-8bfc-79919140f823
   tls: true
   sni: dewei01.dewei.dpdns.org
@@ -245,7 +1527,79 @@ proxies:
     path: /
     headers:
       Host: dewei01.dewei.dpdns.org
-- name: SubCF-US-15
+- name: SubCF-GB-07
+  type: vless
+  server: 165.232.43.156
+  port: 2096
+  uuid: 0eefa577-6dc5-4e5f-8bfc-79919140f823
+  tls: true
+  sni: dewei01.pages.dev
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: dewei01.pages.dev
+- name: SubCF-GB-08
+  type: vless
+  server: 167.99.80.243
+  port: 2083
+  uuid: 0eefa577-6dc5-4e5f-8bfc-79919140f823
+  tls: true
+  sni: dewei01.dewei.dpdns.org
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: dewei01.dewei.dpdns.org
+- name: SubCF-GB-09
+  type: vless
+  server: 91.132.95.212
+  port: 443
+  uuid: 0eefa577-6dc5-4e5f-8bfc-79919140f823
+  tls: true
+  sni: asia01.dewei.cf
+  network: ws
+  ws-opts:
+    path: /bbs/category/topics
+    headers:
+      Host: asia01.dewei.cf
+- name: SubCF-GB-10
+  type: vless
+  server: 64.227.40.56
+  port: 2087
+  uuid: 0eefa577-6dc5-4e5f-8bfc-79919140f823
+  tls: true
+  sni: asia01.dewei.cf
+  network: ws
+  ws-opts:
+    path: /play
+    headers:
+      Host: asia01.dewei.cf
+- name: SubCF-GB-11
+  type: vless
+  server: 139.59.190.151
+  port: 443
+  uuid: 0eefa577-6dc5-4e5f-8bfc-79919140f823
+  tls: true
+  sni: asia01.pages.dev
+  network: ws
+  ws-opts:
+    path: /pay/share/members
+    headers:
+      Host: asia01.pages.dev
+- name: SubCF-GB-12
+  type: vless
+  server: 138.68.131.141
+  port: 8443
+  uuid: 0eefa577-6dc5-4e5f-8bfc-79919140f823
+  tls: true
+  sni: asia01.dewei.cf
+  network: ws
+  ws-opts:
+    path: /jump.php/program/doc
+    headers:
+      Host: asia01.dewei.cf
+- name: SubCF-US-129
   type: vless
   server: 5.181.219.212
   port: 443
@@ -254,37 +1608,13 @@ proxies:
   sni: asia03.dewei.cf
   network: ws
   ws-opts:
-    path: /photo/view/list
+    path: /mag/project/order
     headers:
       Host: asia03.dewei.cf
-- name: SubCF-US-16
+- name: SubCF-NL-05
   type: vless
-  server: 154.21.95.165
-  port: 443
-  uuid: 0eefa577-6dc5-4e5f-8bfc-79919140f823
-  tls: true
-  sni: asia03.dewei.cf
-  network: ws
-  ws-opts:
-    path: /files/posts/classify
-    headers:
-      Host: asia03.dewei.cf
-- name: SubCF-US-17
-  type: vless
-  server: 38.207.188.26
-  port: 443
-  uuid: 0eefa577-6dc5-4e5f-8bfc-79919140f823
-  tls: true
-  sni: asia03.dewei.cf
-  network: ws
-  ws-opts:
-    path: /apps
-    headers:
-      Host: asia03.dewei.cf
-- name: SubCF-US-18
-  type: vless
-  server: 141.148.181.105
-  port: 38945
+  server: 188.166.17.13
+  port: 2053
   uuid: 0eefa577-6dc5-4e5f-8bfc-79919140f823
   tls: true
   sni: dewei01.pages.dev
@@ -293,33 +1623,117 @@ proxies:
     path: /
     headers:
       Host: dewei01.pages.dev
-- name: SubCF-US-19
+- name: SubCF-FR-01
   type: vless
-  server: 38.207.188.26
-  port: 443
+  server: 135.125.123.246
+  port: 5432
   uuid: 0eefa577-6dc5-4e5f-8bfc-79919140f823
   tls: true
-  sni: dewei03.dewei.dpdns.org
+  sni: dewei01.pages.dev
   network: ws
   ws-opts:
     path: /
     headers:
-      Host: dewei03.dewei.dpdns.org
-- name: SubCF-US-20
+      Host: dewei01.pages.dev
+- name: SubCF-GB-13
   type: vless
-  server: 172.245.30.17
-  port: 4443
+  server: 193.219.99.149
+  port: 8443
+  uuid: 0eefa577-6dc5-4e5f-8bfc-79919140f823
+  tls: true
+  sni: asia01.pages.dev
+  network: ws
+  ws-opts:
+    path: /resource
+    headers:
+      Host: asia01.pages.dev
+- name: SubCF-FR-02
+  type: vless
+  server: 141.94.205.161
+  port: 2053
+  uuid: 0eefa577-6dc5-4e5f-8bfc-79919140f823
+  tls: true
+  sni: dewei01.dewei.dpdns.org
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: dewei01.dewei.dpdns.org
+- name: SubCF-FR-03
+  type: vless
+  server: 31.57.109.126
+  port: 2053
+  uuid: 0eefa577-6dc5-4e5f-8bfc-79919140f823
+  tls: true
+  sni: dewei01.pages.dev
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: dewei01.pages.dev
+- name: SubCF-NL-06
+  type: vless
+  server: 64.227.74.46
+  port: 443
+  uuid: 0eefa577-6dc5-4e5f-8bfc-79919140f823
+  tls: true
+  sni: dewei01.dewei.dpdns.org
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: dewei01.dewei.dpdns.org
+- name: SubCF-NL-07
+  type: vless
+  server: 188.226.171.114
+  port: 443
+  uuid: 0eefa577-6dc5-4e5f-8bfc-79919140f823
+  tls: true
+  sni: dewei01.pages.dev
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: dewei01.pages.dev
+- name: SubCF-GB-14
+  type: vless
+  server: 134.209.183.179
+  port: 8443
   uuid: 0eefa577-6dc5-4e5f-8bfc-79919140f823
   tls: true
   sni: asia01.dewei.cf
   network: ws
   ws-opts:
-    path: /team
+    path: /cp/favs
     headers:
       Host: asia01.dewei.cf
-- name: SubCF-US-21
+- name: SubCF-US-130
   type: vless
-  server: 162.217.248.105
+  server: 45.151.132.228
+  port: 19034
+  uuid: 0eefa577-6dc5-4e5f-8bfc-79919140f823
+  tls: true
+  sni: asia01.dewei.cf
+  network: ws
+  ws-opts:
+    path: /jumping/channel/service
+    headers:
+      Host: asia01.dewei.cf
+- name: SubCF-NL-08
+  type: vless
+  server: 104.248.80.71
+  port: 2083
+  uuid: 0eefa577-6dc5-4e5f-8bfc-79919140f823
+  tls: true
+  sni: dewei01.dewei.dpdns.org
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: dewei01.dewei.dpdns.org
+- name: SubCF-NL-09
+  type: vless
+  server: 185.224.129.249
   port: 443
   uuid: 0eefa577-6dc5-4e5f-8bfc-79919140f823
   tls: true
@@ -329,10 +1743,382 @@ proxies:
     path: /
     headers:
       Host: dewei01.pages.dev
+- name: SubCF-NL-10
+  type: vless
+  server: 146.185.162.149
+  port: 8443
+  uuid: 0eefa577-6dc5-4e5f-8bfc-79919140f823
+  tls: true
+  sni: dewei01.pages.dev
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: dewei01.pages.dev
+- name: SubCF-NL-11
+  type: vless
+  server: 31.15.18.56
+  port: 8443
+  uuid: 0eefa577-6dc5-4e5f-8bfc-79919140f823
+  tls: true
+  sni: dewei01.pages.dev
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: dewei01.pages.dev
+- name: SubCF-FR-04
+  type: vless
+  server: 144.24.195.115
+  port: 23010
+  uuid: 0eefa577-6dc5-4e5f-8bfc-79919140f823
+  tls: true
+  sni: dewei01.dewei.dpdns.org
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: dewei01.dewei.dpdns.org
+- name: SubCF-NL-12
+  type: vless
+  server: 178.128.246.60
+  port: 443
+  uuid: 0eefa577-6dc5-4e5f-8bfc-79919140f823
+  tls: true
+  sni: dewei01.dewei.dpdns.org
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: dewei01.dewei.dpdns.org
+- name: SubCF-DE-01
+  type: vless
+  server: 144.31.192.252
+  port: 443
+  uuid: 0eefa577-6dc5-4e5f-8bfc-79919140f823
+  tls: true
+  sni: dewei01.dewei.dpdns.org
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: dewei01.dewei.dpdns.org
+- name: SubCF-FR-05
+  type: vless
+  server: 152.228.135.132
+  port: 2053
+  uuid: 0eefa577-6dc5-4e5f-8bfc-79919140f823
+  tls: true
+  sni: dewei01.dewei.dpdns.org
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: dewei01.dewei.dpdns.org
+- name: SubCF-NL-13
+  type: vless
+  server: 146.185.161.139
+  port: 443
+  uuid: 0eefa577-6dc5-4e5f-8bfc-79919140f823
+  tls: true
+  sni: asia01.dewei.cf
+  network: ws
+  ws-opts:
+    path: /store/index/act
+    headers:
+      Host: asia01.dewei.cf
+- name: SubCF-NL-14
+  type: vless
+  server: 147.90.26.34
+  port: 443
+  uuid: 0eefa577-6dc5-4e5f-8bfc-79919140f823
+  tls: true
+  sni: asia01.dewei.cf
+  network: ws
+  ws-opts:
+    path: /videos/home/watch
+    headers:
+      Host: asia01.dewei.cf
+- name: SubCF-DE-02
+  type: vless
+  server: 185.103.253.187
+  port: 443
+  uuid: 0eefa577-6dc5-4e5f-8bfc-79919140f823
+  tls: true
+  sni: dewei01.pages.dev
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: dewei01.pages.dev
+- name: SubCF-DE-03
+  type: vless
+  server: 46.101.145.137
+  port: 443
+  uuid: 0eefa577-6dc5-4e5f-8bfc-79919140f823
+  tls: true
+  sni: dewei01.dewei.dpdns.org
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: dewei01.dewei.dpdns.org
+- name: SubCF-NL-15
+  type: vless
+  server: 31.59.174.246
+  port: 2053
+  uuid: 0eefa577-6dc5-4e5f-8bfc-79919140f823
+  tls: true
+  sni: asia01.pages.dev
+  network: ws
+  ws-opts:
+    path: /album
+    headers:
+      Host: asia01.pages.dev
+- name: SubCF-NL-16
+  type: vless
+  server: 159.223.224.122
+  port: 8443
+  uuid: 0eefa577-6dc5-4e5f-8bfc-79919140f823
+  tls: true
+  sni: asia01.dewei.cf
+  network: ws
+  ws-opts:
+    path: /lives
+    headers:
+      Host: asia01.dewei.cf
+- name: SubCF-NL-17
+  type: vless
+  server: 164.92.212.225
+  port: 443
+  uuid: 0eefa577-6dc5-4e5f-8bfc-79919140f823
+  tls: true
+  sni: asia01.dewei.cf
+  network: ws
+  ws-opts:
+    path: /mall/go.php/dl
+    headers:
+      Host: asia01.dewei.cf
+- name: SubCF-DE-04
+  type: vless
+  server: 207.154.213.67
+  port: 443
+  uuid: 0eefa577-6dc5-4e5f-8bfc-79919140f823
+  tls: true
+  sni: asia01.pages.dev
+  network: ws
+  ws-opts:
+    path: /clip
+    headers:
+      Host: asia01.pages.dev
+- name: SubCF-DE-05
+  type: vless
+  server: 93.185.156.107
+  port: 8443
+  uuid: 0eefa577-6dc5-4e5f-8bfc-79919140f823
+  tls: true
+  sni: dewei01.dewei.dpdns.org
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: dewei01.dewei.dpdns.org
+- name: SubCF-DE-06
+  type: vless
+  server: 138.68.64.213
+  port: 2083
+  uuid: 0eefa577-6dc5-4e5f-8bfc-79919140f823
+  tls: true
+  sni: asia01.pages.dev
+  network: ws
+  ws-opts:
+    path: /blog/pictures
+    headers:
+      Host: asia01.pages.dev
+- name: SubCF-DE-07
+  type: vless
+  server: 204.10.194.107
+  port: 8443
+  uuid: 0eefa577-6dc5-4e5f-8bfc-79919140f823
+  tls: true
+  sni: asia01.dewei.cf
+  network: ws
+  ws-opts:
+    path: /library/site/favs
+    headers:
+      Host: asia01.dewei.cf
+- name: SubCF-DE-08
+  type: vless
+  server: 95.169.166.8
+  port: 8443
+  uuid: 0eefa577-6dc5-4e5f-8bfc-79919140f823
+  tls: true
+  sni: asia01.pages.dev
+  network: ws
+  ws-opts:
+    path: /act/qa/ask
+    headers:
+      Host: asia01.pages.dev
+- name: SubCF-PL-01
+  type: vless
+  server: 217.30.10.55
+  port: 443
+  uuid: 0eefa577-6dc5-4e5f-8bfc-79919140f823
+  tls: true
+  sni: dewei01.pages.dev
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: dewei01.pages.dev
+- name: SubCF-NL-18
+  type: vless
+  server: 144.31.199.154
+  port: 2053
+  uuid: 0eefa577-6dc5-4e5f-8bfc-79919140f823
+  tls: true
+  sni: asia01.dewei.cf
+  network: ws
+  ws-opts:
+    path: /collect/service
+    headers:
+      Host: asia01.dewei.cf
+- name: SubCF-DE-09
+  type: vless
+  server: 209.38.219.101
+  port: 2087
+  uuid: 0eefa577-6dc5-4e5f-8bfc-79919140f823
+  tls: true
+  sni: dewei01.dewei.dpdns.org
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: dewei01.dewei.dpdns.org
+- name: SubCF-DE-10
+  type: vless
+  server: 144.31.108.34
+  port: 443
+  uuid: 0eefa577-6dc5-4e5f-8bfc-79919140f823
+  tls: true
+  sni: asia01.pages.dev
+  network: ws
+  ws-opts:
+    path: /page/lang
+    headers:
+      Host: asia01.pages.dev
+- name: SubCF-AE-01
+  type: vless
+  server: 95.81.93.48
+  port: 443
+  uuid: 0eefa577-6dc5-4e5f-8bfc-79919140f823
+  tls: true
+  sni: dewei01.pages.dev
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: dewei01.pages.dev
+- name: SubCF-FI-01
+  type: vless
+  server: 185.193.102.119
+  port: 443
+  uuid: 0eefa577-6dc5-4e5f-8bfc-79919140f823
+  tls: true
+  sni: asia01.pages.dev
+  network: ws
+  ws-opts:
+    path: /topics/rank/show
+    headers:
+      Host: asia01.pages.dev
+- name: SubCF-LV-01
+  type: vless
+  server: 5.144.179.124
+  port: 2053
+  uuid: 0eefa577-6dc5-4e5f-8bfc-79919140f823
+  tls: true
+  sni: asia01.pages.dev
+  network: ws
+  ws-opts:
+    path: /playlist/films/clip
+    headers:
+      Host: asia01.pages.dev
+- name: SubCF-FI-02
+  type: vless
+  server: 135.181.151.136
+  port: 9443
+  uuid: 0eefa577-6dc5-4e5f-8bfc-79919140f823
+  tls: true
+  sni: asia01.pages.dev
+  network: ws
+  ws-opts:
+    path: /web/bd
+    headers:
+      Host: asia01.pages.dev
+- name: SubCF-FI-03
+  type: vless
+  server: 95.217.25.18
+  port: 2095
+  uuid: 0eefa577-6dc5-4e5f-8bfc-79919140f823
+  tls: true
+  sni: asia01.dewei.cf
+  network: ws
+  ws-opts:
+    path: /image/gif
+    headers:
+      Host: asia01.dewei.cf
+- name: SubCF-BG-01
+  type: vless
+  server: 13.140.29.178
+  port: 443
+  uuid: 0eefa577-6dc5-4e5f-8bfc-79919140f823
+  tls: true
+  sni: dewei01.dewei.dpdns.org
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: dewei01.dewei.dpdns.org
+- name: SubCF-LV-02
+  type: vless
+  server: 45.43.77.109
+  port: 443
+  uuid: 0eefa577-6dc5-4e5f-8bfc-79919140f823
+  tls: true
+  sni: asia01.pages.dev
+  network: ws
+  ws-opts:
+    path: /company/item/trade
+    headers:
+      Host: asia01.pages.dev
+- name: SubCF-BG-02
+  type: vless
+  server: 13.140.29.178
+  port: 8443
+  uuid: 0eefa577-6dc5-4e5f-8bfc-79919140f823
+  tls: true
+  sni: asia01.dewei.cf
+  network: ws
+  ws-opts:
+    path: /service/thread/film
+    headers:
+      Host: asia01.dewei.cf
+- name: SubCF-RU-01
+  type: vless
+  server: 212.8.226.252
+  port: 443
+  uuid: 0eefa577-6dc5-4e5f-8bfc-79919140f823
+  tls: true
+  sni: asia01.dewei.cf
+  network: ws
+  ws-opts:
+    path: /static/message/events
+    headers:
+      Host: asia01.dewei.cf
 - name: SubCF-JP-01
   type: vless
-  server: 8.209.253.101
-  port: 34237
+  server: 45.32.49.72
+  port: 9443
   uuid: 0eefa577-6dc5-4e5f-8bfc-79919140f823
   tls: true
   sni: dewei01.dewei.dpdns.org
@@ -355,14 +2141,14 @@ proxies:
       Host: dewei03.dewei.dpdns.org
 - name: SubCF-JP-03
   type: vless
-  server: 158.101.146.3
-  port: 54516
+  server: 45.32.49.72
+  port: 9443
   uuid: 0eefa577-6dc5-4e5f-8bfc-79919140f823
   tls: true
   sni: asia01.pages.dev
   network: ws
   ws-opts:
-    path: /out.html
+    path: /mall/book/go.php
     headers:
       Host: asia01.pages.dev
 - name: SubCF-JP-04
@@ -374,49 +2160,25 @@ proxies:
   sni: asia03.dewei.cf
   network: ws
   ws-opts:
-    path: /bd/f
+    path: /documents/settings
     headers:
       Host: asia03.dewei.cf
 - name: SubCF-JP-05
   type: vless
-  server: 138.2.32.76
-  port: 15821
+  server: 138.2.10.149
+  port: 45638
   uuid: 0eefa577-6dc5-4e5f-8bfc-79919140f823
   tls: true
-  sni: asia01.dewei.cf
+  sni: asia01.pages.dev
   network: ws
   ws-opts:
-    path: /docs/forums/doc
+    path: /ep/directory
     headers:
-      Host: asia01.dewei.cf
-- name: SubCF-GB-05
+      Host: asia01.pages.dev
+- name: SubCF-KR-01
   type: vless
-  server: 54.38.214.128
-  port: 443
-  uuid: 0eefa577-6dc5-4e5f-8bfc-79919140f823
-  tls: true
-  sni: dewei01.dewei.dpdns.org
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: dewei01.dewei.dpdns.org
-- name: SubCF-GB-06
-  type: vless
-  server: 193.219.99.56
-  port: 8443
-  uuid: 0eefa577-6dc5-4e5f-8bfc-79919140f823
-  tls: true
-  sni: asia01.dewei.cf
-  network: ws
-  ws-opts:
-    path: /magnet/blogs/favourites
-    headers:
-      Host: asia01.dewei.cf
-- name: SubCF-GB-07
-  type: vless
-  server: 167.172.54.31
-  port: 443
+  server: 131.186.24.124
+  port: 587
   uuid: 0eefa577-6dc5-4e5f-8bfc-79919140f823
   tls: true
   sni: dewei01.pages.dev
@@ -425,82 +2187,10 @@ proxies:
     path: /
     headers:
       Host: dewei01.pages.dev
-- name: SubCF-GB-08
+- name: SubCF-AU-01
   type: vless
-  server: 64.227.40.56
-  port: 2096
-  uuid: 0eefa577-6dc5-4e5f-8bfc-79919140f823
-  tls: true
-  sni: dewei01.dewei.dpdns.org
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: dewei01.dewei.dpdns.org
-- name: SubCF-GB-09
-  type: vless
-  server: 206.189.119.143
-  port: 2083
-  uuid: 0eefa577-6dc5-4e5f-8bfc-79919140f823
-  tls: true
-  sni: dewei01.dewei.dpdns.org
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: dewei01.dewei.dpdns.org
-- name: SubCF-NL-04
-  type: vless
-  server: 164.92.212.225
-  port: 2096
-  uuid: 0eefa577-6dc5-4e5f-8bfc-79919140f823
-  tls: true
-  sni: dewei01.dewei.dpdns.org
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: dewei01.dewei.dpdns.org
-- name: SubCF-US-22
-  type: vless
-  server: 23.254.225.251
-  port: 443
-  uuid: 0eefa577-6dc5-4e5f-8bfc-79919140f823
-  tls: true
-  sni: asia01.dewei.cf
-  network: ws
-  ws-opts:
-    path: /season/picture/m
-    headers:
-      Host: asia01.dewei.cf
-- name: SubCF-NL-05
-  type: vless
-  server: 167.99.33.153
-  port: 2083
-  uuid: 0eefa577-6dc5-4e5f-8bfc-79919140f823
-  tls: true
-  sni: dewei01.dewei.dpdns.org
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: dewei01.dewei.dpdns.org
-- name: SubCF-NL-06
-  type: vless
-  server: 68.183.14.79
-  port: 443
-  uuid: 0eefa577-6dc5-4e5f-8bfc-79919140f823
-  tls: true
-  sni: dewei01.dewei.dpdns.org
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: dewei01.dewei.dpdns.org
-- name: SubCF-GB-10
-  type: vless
-  server: 64.227.42.231
-  port: 443
+  server: 170.64.152.77
+  port: 7443
   uuid: 0eefa577-6dc5-4e5f-8bfc-79919140f823
   tls: true
   sni: dewei01.pages.dev
@@ -521,54 +2211,18 @@ proxies:
     path: /
     headers:
       Host: dewei03.dewei.dpdns.org
-- name: SubCF-GB-11
+- name: SubCF-AU-02
   type: vless
-  server: 130.185.144.78
-  port: 443
-  uuid: 0eefa577-6dc5-4e5f-8bfc-79919140f823
-  tls: true
-  sni: dewei01.dewei.dpdns.org
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: dewei01.dewei.dpdns.org
-- name: SubCF-RU-01
-  type: vless
-  server: 147.45.224.254
-  port: 443
-  uuid: 0eefa577-6dc5-4e5f-8bfc-79919140f823
-  tls: true
-  sni: dewei01.pages.dev
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: dewei01.pages.dev
-- name: SubCF-GB-12
-  type: vless
-  server: 144.126.193.181
-  port: 443
+  server: 192.9.190.80
+  port: 23862
   uuid: 0eefa577-6dc5-4e5f-8bfc-79919140f823
   tls: true
   sni: asia01.pages.dev
   network: ws
   ws-opts:
-    path: /album
+    path: /student/photos
     headers:
       Host: asia01.pages.dev
-- name: SubCF-NL-07
-  type: vless
-  server: 188.226.162.161
-  port: 2083
-  uuid: 0eefa577-6dc5-4e5f-8bfc-79919140f823
-  tls: true
-  sni: asia01.dewei.cf
-  network: ws
-  ws-opts:
-    path: /tech/acg/china
-    headers:
-      Host: asia01.dewei.cf
 - name: SubCF-HK-02
   type: vless
   server: 43.161.254.188
@@ -578,133 +2232,13 @@ proxies:
   sni: asia03.dewei.cf
   network: ws
   ws-opts:
-    path: /topics
+    path: /chat/novels/ask
     headers:
       Host: asia03.dewei.cf
-- name: SubCF-GB-13
+- name: SubCF-HK-03
   type: vless
-  server: 209.97.141.124
-  port: 443
-  uuid: 0eefa577-6dc5-4e5f-8bfc-79919140f823
-  tls: true
-  sni: asia01.dewei.cf
-  network: ws
-  ws-opts:
-    path: /page/home
-    headers:
-      Host: asia01.dewei.cf
-- name: SubCF-NL-08
-  type: vless
-  server: 165.22.206.200
-  port: 2053
-  uuid: 0eefa577-6dc5-4e5f-8bfc-79919140f823
-  tls: true
-  sni: asia01.pages.dev
-  network: ws
-  ws-opts:
-    path: /link/drama
-    headers:
-      Host: asia01.pages.dev
-- name: SubCF-GB-14
-  type: vless
-  server: 159.65.31.213
-  port: 443
-  uuid: 0eefa577-6dc5-4e5f-8bfc-79919140f823
-  tls: true
-  sni: asia01.dewei.cf
-  network: ws
-  ws-opts:
-    path: /photos/comic
-    headers:
-      Host: asia01.dewei.cf
-- name: SubCF-FR-01
-  type: vless
-  server: 146.59.225.19
-  port: 8443
-  uuid: 0eefa577-6dc5-4e5f-8bfc-79919140f823
-  tls: true
-  sni: asia01.pages.dev
-  network: ws
-  ws-opts:
-    path: /document/htm/play
-    headers:
-      Host: asia01.pages.dev
-- name: SubCF-NL-09
-  type: vless
-  server: 159.65.206.68
-  port: 2087
-  uuid: 0eefa577-6dc5-4e5f-8bfc-79919140f823
-  tls: true
-  sni: asia01.pages.dev
-  network: ws
-  ws-opts:
-    path: /tag/friend
-    headers:
-      Host: asia01.pages.dev
-- name: SubCF-NL-10
-  type: vless
-  server: 45.91.203.74
-  port: 4443
-  uuid: 0eefa577-6dc5-4e5f-8bfc-79919140f823
-  tls: true
-  sni: asia01.dewei.cf
-  network: ws
-  ws-opts:
-    path: /new/f/wiki
-    headers:
-      Host: asia01.dewei.cf
-- name: SubCF-DE-01
-  type: vless
-  server: 172.104.142.102
-  port: 2053
-  uuid: 0eefa577-6dc5-4e5f-8bfc-79919140f823
-  tls: true
-  sni: dewei01.pages.dev
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: dewei01.pages.dev
-- name: SubCF-FR-02
-  type: vless
-  server: 51.91.254.78
-  port: 8443
-  uuid: 0eefa577-6dc5-4e5f-8bfc-79919140f823
-  tls: true
-  sni: asia01.pages.dev
-  network: ws
-  ws-opts:
-    path: /ask
-    headers:
-      Host: asia01.pages.dev
-- name: SubCF-GB-15
-  type: vless
-  server: 178.128.34.102
-  port: 443
-  uuid: 0eefa577-6dc5-4e5f-8bfc-79919140f823
-  tls: true
-  sni: asia01.dewei.cf
-  network: ws
-  ws-opts:
-    path: /out
-    headers:
-      Host: asia01.dewei.cf
-- name: SubCF-DE-02
-  type: vless
-  server: 159.223.21.209
-  port: 2087
-  uuid: 0eefa577-6dc5-4e5f-8bfc-79919140f823
-  tls: true
-  sni: dewei01.pages.dev
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: dewei01.pages.dev
-- name: SubCF-DE-03
-  type: vless
-  server: 167.99.131.232
-  port: 2087
+  server: 221.125.10.8
+  port: 57537
   uuid: 0eefa577-6dc5-4e5f-8bfc-79919140f823
   tls: true
   sni: dewei01.dewei.dpdns.org
@@ -713,178 +2247,22 @@ proxies:
     path: /
     headers:
       Host: dewei01.dewei.dpdns.org
-- name: SubCF-DE-04
+- name: SubCF-RU-02
   type: vless
-  server: 206.81.30.239
+  server: 193.228.128.110
   port: 443
   uuid: 0eefa577-6dc5-4e5f-8bfc-79919140f823
   tls: true
   sni: asia01.pages.dev
   network: ws
   ws-opts:
-    path: /student
-    headers:
-      Host: asia01.pages.dev
-- name: SubCF-SE-01
-  type: vless
-  server: 20.240.203.135
-  port: 3000
-  uuid: 0eefa577-6dc5-4e5f-8bfc-79919140f823
-  tls: true
-  sni: dewei01.dewei.dpdns.org
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: dewei01.dewei.dpdns.org
-- name: SubCF-DE-05
-  type: vless
-  server: 209.38.241.6
-  port: 443
-  uuid: 0eefa577-6dc5-4e5f-8bfc-79919140f823
-  tls: true
-  sni: dewei01.pages.dev
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: dewei01.pages.dev
-- name: SubCF-NL-11
-  type: vless
-  server: 45.158.81.45
-  port: 443
-  uuid: 0eefa577-6dc5-4e5f-8bfc-79919140f823
-  tls: true
-  sni: asia01.dewei.cf
-  network: ws
-  ws-opts:
-    path: /clips/intro
-    headers:
-      Host: asia01.dewei.cf
-- name: SubCF-DE-06
-  type: vless
-  server: 209.38.225.21
-  port: 443
-  uuid: 0eefa577-6dc5-4e5f-8bfc-79919140f823
-  tls: true
-  sni: asia01.dewei.cf
-  network: ws
-  ws-opts:
-    path: /clip/file/games
-    headers:
-      Host: asia01.dewei.cf
-- name: SubCF-DE-07
-  type: vless
-  server: 164.92.190.122
-  port: 443
-  uuid: 0eefa577-6dc5-4e5f-8bfc-79919140f823
-  tls: true
-  sni: dewei01.pages.dev
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: dewei01.pages.dev
-- name: SubCF-DE-08
-  type: vless
-  server: 159.89.3.182
-  port: 443
-  uuid: 0eefa577-6dc5-4e5f-8bfc-79919140f823
-  tls: true
-  sni: dewei01.dewei.dpdns.org
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: dewei01.dewei.dpdns.org
-- name: SubCF-DE-09
-  type: vless
-  server: 157.90.198.231
-  port: 444
-  uuid: 0eefa577-6dc5-4e5f-8bfc-79919140f823
-  tls: true
-  sni: dewei01.pages.dev
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: dewei01.pages.dev
-- name: SubCF-DE-10
-  type: vless
-  server: 167.172.97.15
-  port: 2096
-  uuid: 0eefa577-6dc5-4e5f-8bfc-79919140f823
-  tls: true
-  sni: asia01.dewei.cf
-  network: ws
-  ws-opts:
-    path: /products/jump/book
-    headers:
-      Host: asia01.dewei.cf
-- name: SubCF-DE-11
-  type: vless
-  server: 167.71.43.254
-  port: 2053
-  uuid: 0eefa577-6dc5-4e5f-8bfc-79919140f823
-  tls: true
-  sni: dewei01.pages.dev
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: dewei01.pages.dev
-- name: SubCF-DE-12
-  type: vless
-  server: 138.197.190.75
-  port: 2053
-  uuid: 0eefa577-6dc5-4e5f-8bfc-79919140f823
-  tls: true
-  sni: asia01.pages.dev
-  network: ws
-  ws-opts:
-    path: /live/movies/type
+    path: /member/articles/htm
     headers:
       Host: asia01.pages.dev
 - name: SubCF-SG-01
   type: vless
-  server: 158.178.238.239
-  port: 4433
-  uuid: 0eefa577-6dc5-4e5f-8bfc-79919140f823
-  tls: true
-  sni: dewei01.pages.dev
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: dewei01.pages.dev
-- name: SubCF-AE-01
-  type: vless
-  server: 89.125.87.69
-  port: 8443
-  uuid: 0eefa577-6dc5-4e5f-8bfc-79919140f823
-  tls: true
-  sni: dewei01.dewei.dpdns.org
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: dewei01.dewei.dpdns.org
-- name: SubCF-DE-13
-  type: vless
-  server: 134.209.252.120
-  port: 443
-  uuid: 0eefa577-6dc5-4e5f-8bfc-79919140f823
-  tls: true
-  sni: dewei01.pages.dev
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: dewei01.pages.dev
-- name: SubCF-DE-14
-  type: vless
-  server: 157.230.97.112
-  port: 2087
+  server: 168.138.171.70
+  port: 23280
   uuid: 0eefa577-6dc5-4e5f-8bfc-79919140f823
   tls: true
   sni: dewei01.dewei.dpdns.org
@@ -895,28 +2273,16 @@ proxies:
       Host: dewei01.dewei.dpdns.org
 - name: SubCF-SG-02
   type: vless
-  server: 140.245.42.30
+  server: 152.42.169.132
   port: 443
   uuid: 0eefa577-6dc5-4e5f-8bfc-79919140f823
   tls: true
-  sni: dewei03.dewei.dpdns.org
+  sni: dewei01.pages.dev
   network: ws
   ws-opts:
     path: /
     headers:
-      Host: dewei03.dewei.dpdns.org
-- name: SubCF-AE-02
-  type: vless
-  server: 89.125.146.45
-  port: 443
-  uuid: 0eefa577-6dc5-4e5f-8bfc-79919140f823
-  tls: true
-  sni: asia01.pages.dev
-  network: ws
-  ws-opts:
-    path: /code
-    headers:
-      Host: asia01.pages.dev
+      Host: dewei01.pages.dev
 - name: SubCF-SG-03
   type: vless
   server: 18.139.162.187
@@ -929,31 +2295,19 @@ proxies:
     path: /
     headers:
       Host: dewei03.dewei.dpdns.org
-- name: SubCF-DE-15
-  type: vless
-  server: 185.204.170.214
-  port: 443
-  uuid: 0eefa577-6dc5-4e5f-8bfc-79919140f823
-  tls: true
-  sni: asia01.dewei.cf
-  network: ws
-  ws-opts:
-    path: /category/content/act
-    headers:
-      Host: asia01.dewei.cf
-- name: SubCF-DE-16
-  type: vless
-  server: 148.251.148.186
-  port: 443
-  uuid: 0eefa577-6dc5-4e5f-8bfc-79919140f823
-  tls: true
-  sni: asia01.pages.dev
-  network: ws
-  ws-opts:
-    path: /document
-    headers:
-      Host: asia01.pages.dev
 - name: SubCF-SG-04
+  type: vless
+  server: 140.245.42.30
+  port: 443
+  uuid: 0eefa577-6dc5-4e5f-8bfc-79919140f823
+  tls: true
+  sni: dewei03.dewei.dpdns.org
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: dewei03.dewei.dpdns.org
+- name: SubCF-SG-05
   type: vless
   server: 18.139.162.187
   port: 443
@@ -962,10 +2316,10 @@ proxies:
   sni: asia03.dewei.cf
   network: ws
   ws-opts:
-    path: /go.php/pdf
+    path: /doc/product/outbound
     headers:
       Host: asia03.dewei.cf
-- name: SubCF-SG-05
+- name: SubCF-SG-06
   type: vless
   server: 140.245.42.30
   port: 443
@@ -974,131 +2328,47 @@ proxies:
   sni: asia03.dewei.cf
   network: ws
   ws-opts:
-    path: /drama
+    path: /files
     headers:
       Host: asia03.dewei.cf
-- name: SubCF-SG-06
-  type: vless
-  server: 168.144.129.207
-  port: 8443
-  uuid: 0eefa577-6dc5-4e5f-8bfc-79919140f823
-  tls: true
-  sni: asia01.dewei.cf
-  network: ws
-  ws-opts:
-    path: /star/pics
-    headers:
-      Host: asia01.dewei.cf
-- name: SubCF-AU-01
-  type: vless
-  server: 192.9.190.80
-  port: 23862
-  uuid: 0eefa577-6dc5-4e5f-8bfc-79919140f823
-  tls: true
-  sni: asia01.dewei.cf
-  network: ws
-  ws-opts:
-    path: /collect/films
-    headers:
-      Host: asia01.dewei.cf
-- name: SubCF-FI-01
-  type: vless
-  server: 45.131.185.49
-  port: 443
-  uuid: 0eefa577-6dc5-4e5f-8bfc-79919140f823
-  tls: true
-  sni: dewei01.dewei.dpdns.org
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: dewei01.dewei.dpdns.org
-- name: SubCF-FI-02
-  type: vless
-  server: 65.109.190.54
-  port: 2021
-  uuid: 0eefa577-6dc5-4e5f-8bfc-79919140f823
-  tls: true
-  sni: asia01.pages.dev
-  network: ws
-  ws-opts:
-    path: /photo/zh-tw
-    headers:
-      Host: asia01.pages.dev
-- name: SubCF-RU-02
-  type: vless
-  server: 5.101.50.226
-  port: 443
-  uuid: 0eefa577-6dc5-4e5f-8bfc-79919140f823
-  tls: true
-  sni: asia01.pages.dev
-  network: ws
-  ws-opts:
-    path: /series/live
-    headers:
-      Host: asia01.pages.dev
 - name: SubCF-保留原名组-01
   type: vless
   server: saas.sin.fan
   port: 2096
   uuid: 0eefa577-6dc5-4e5f-8bfc-79919140f823
   tls: true
-  sni: asia03.dewei.cf
+  sni: dewei03.dewei.dpdns.org
   network: ws
   ws-opts:
-    path: /type
+    path: /
     headers:
-      Host: asia03.dewei.cf
+      Host: dewei03.dewei.dpdns.org
 - name: SubCF-保留原名组-02
   type: vless
   server: saas.sin.fan
   port: 2096
   uuid: 0eefa577-6dc5-4e5f-8bfc-79919140f823
   tls: true
-  sni: dewei03.dewei.dpdns.org
+  sni: asia03.dewei.cf
   network: ws
   ws-opts:
-    path: /
+    path: /wiki
     headers:
-      Host: dewei03.dewei.dpdns.org
+      Host: asia03.dewei.cf
 - name: SubCF-保留原名组-03
   type: vless
-  server: cloudflare.idc.rocks
+  server: fw8je9.cf.3666888.xyz
   port: 2096
   uuid: 0eefa577-6dc5-4e5f-8bfc-79919140f823
   tls: true
-  sni: dewei03.dewei.dpdns.org
+  sni: asia03.dewei.cf
   network: ws
   ws-opts:
-    path: /
+    path: /members/drama
     headers:
-      Host: dewei03.dewei.dpdns.org
+      Host: asia03.dewei.cf
 - name: SubCF-保留原名组-04
   type: vless
-  server: cloudflare.idc.rocks
-  port: 2096
-  uuid: 0eefa577-6dc5-4e5f-8bfc-79919140f823
-  tls: true
-  sni: asia03.dewei.cf
-  network: ws
-  ws-opts:
-    path: /pictures
-    headers:
-      Host: asia03.dewei.cf
-- name: SubCF-保留原名组-05
-  type: vless
-  server: fw8je9.cf.3666888.xyz
-  port: 2096
-  uuid: 0eefa577-6dc5-4e5f-8bfc-79919140f823
-  tls: true
-  sni: asia03.dewei.cf
-  network: ws
-  ws-opts:
-    path: /events
-    headers:
-      Host: asia03.dewei.cf
-- name: SubCF-保留原名组-06
-  type: vless
   server: fw8je9.cf.3666888.xyz
   port: 2096
   uuid: 0eefa577-6dc5-4e5f-8bfc-79919140f823
@@ -1109,3 +2379,27 @@ proxies:
     path: /
     headers:
       Host: dewei03.dewei.dpdns.org
+- name: SubCF-保留原名组-05
+  type: vless
+  server: cloudflare.idc.rocks
+  port: 2096
+  uuid: 0eefa577-6dc5-4e5f-8bfc-79919140f823
+  tls: true
+  sni: dewei03.dewei.dpdns.org
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: dewei03.dewei.dpdns.org
+- name: SubCF-保留原名组-06
+  type: vless
+  server: cloudflare.idc.rocks
+  port: 2096
+  uuid: 0eefa577-6dc5-4e5f-8bfc-79919140f823
+  tls: true
+  sni: asia03.dewei.cf
+  network: ws
+  ws-opts:
+    path: /htm
+    headers:
+      Host: asia03.dewei.cf
