@@ -1,0 +1,76 @@
+﻿# ==========================================================
+# ===== Mihomo 构建模板 --- 全局设置与配置锚点
+# ===== 作者：Mary
+# ===== 2026.07.27
+# ==========================================================
+
+# [正则筛选] 按国家全称严格分类
+FilterHK: &FilterHK '(?i)(?:港|香港|🇭🇰|HK|Hong\s?Kong)'
+FilterTW: &FilterTW '(?i)(?:台|台湾|🇼🇸|🇹🇼|TW|Taiwan)'
+FilterSG: &FilterSG '(?i)(?:坡|新加坡|🇸🇬|SG|Singapore)'
+FilterJP: &FilterJP '(?i)(?:日|日本|🇯🇵|JP|Japan)'
+FilterUS: &FilterUS '(?i)(?:美|美国|🇺🇸|US|States|America)'
+FilterOther: &FilterOther '^(?!.*(香港|台湾|新加坡|日本|美国|🇭🇰|🇼🇸|🇨🇳|🇹🇼|🇸🇬|🇯🇵|🇺🇸|HK|TW|SG|JP|US))'
+
+# [垃圾过滤净化列表]
+ExcludeFilter: &ExcludeFilter '(?i)(?:佣金|套餐|官网|官方|网址|售后|免翻|过期|剩余|到期|流量|更新|点外|重置|免流|使用|教程|优惠|超实惠|址|频道|群|订阅|AFF|Days|Date|TG)'
+
+# [外部资源与模型更新]
+geo-auto-update: true
+geo-update-interval: 168
+geox-url:
+  asn: "https://cdn.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@release/GeoLite2-ASN.mmdb"
+
+lgbm-auto-update: true
+lgbm-update-interval: 360
+lgbm-url: "https://github.com/vernesong/mihomo/releases/download/LightGBM-Model/Model-middle.bin"
+
+profile:
+  store-selected: true
+  store-fake-ip: true
+  smart-collector-size: 100
+
+# [DNS 接管]
+dns:
+  enable: true
+  listen: :1053
+  ipv6: false
+  prefer-h3: true
+  enhanced-mode: fake-ip
+  fake-ip-range: 198.18.0.0/16
+  fake-ip-filter:
+    - "RULE-SET:private"
+    - "RULE-SET:ntp"
+  default-nameserver:
+    - 223.5.5.5
+    - 119.29.29.29
+  cndoh: &cndoh
+    - 'quic://dns.alidns.com#🟢 直连'
+    - 'https://dns.alidns.com/dns-query#🟢 直连'
+  cgdoh: &cgdoh
+    - 'https://dns.google/dns-query#👑 SubPre-All'
+    - 'https://cloudflare-dns.com/dns-query#👑 SubPre-All'
+  nameserver-policy:
+    'RULE-SET:ads-all,awavenue,rejects': rcode://name_error
+    'RULE-SET:cn,apple,microsoft,directs': *cndoh
+  nameserver: *cgdoh
+
+# [全局策略组模板锚点 (供 rule-providers&rules 模块调用)]
+Groupd: &Groupd
+  type: select
+  proxies:
+    - 🟢 直连
+    - 🌐 默认代理
+
+  Groupp: &Groupp
+    type: select
+    proxies:
+      - 👑 SubPre-All
+      - ☁️ SubCF-All
+      - 🌐 默认代理
+
+  Smartp: &Smartp
+    type: url-test
+    url: "https://www.gstatic.com/generate_204"
+    interval: 300
+    tolerance: 50
