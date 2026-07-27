@@ -1,4 +1,4 @@
-﻿# ==========================================================
+# ==========================================================
 # ===== Mihomo 构建模板 --- 规则与策略 (语法修复版)
 # ===== 作者：Mary
 # ===== 2026.07.27
@@ -339,16 +339,6 @@ proxy-groups:
 # 分流规则提供者 (全 Mrs 格式，大幅节省常驻内存)
 # ====================================================
 rule-providers:
-  dom: &dom
-    type: http
-    behavior: domain
-    format: mrs
-    interval: 86400
-  ipc: &ipc
-    type: http
-    behavior: ipcidr
-    format: mrs
-    interval: 86400
 
   directs:
     <<: *dom
