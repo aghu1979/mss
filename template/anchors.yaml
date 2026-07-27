@@ -1,4 +1,4 @@
-﻿# ==========================================================
+# ==========================================================
 # ===== Mihomo 构建模板 --- 全局设置与配置锚点
 # ===== 作者：Mary
 # ===== 2026.07.27
@@ -62,15 +62,15 @@ Groupd: &Groupd
     - 🟢 直连
     - 🌐 默认代理
 
-  Groupp: &Groupp
-    type: select
-    proxies:
-      - 👑 SubPre-All
-      - ☁️ SubCF-All
-      - 🌐 默认代理
+Groupp: &Groupp
+  type: select
+  proxies:
+    - 👑 SubPre-All
+    - ☁️ SubCF-All
+    - 🌐 默认代理
 
-  Smartp: &Smartp
-    type: url-test
-    url: "https://www.gstatic.com/generate_204"
-    interval: 300
-    tolerance: 50
+Smartp: &Smartp
+  type: url-test
+  url: "https://www.gstatic.com/generate_204"
+  interval: 300
+  tolerance: 50
