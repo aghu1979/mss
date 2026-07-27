@@ -29,10 +29,9 @@ tun:
   strict-route: true # 开启大陆IP分流时，Box 脚本会自动接管并修改此处
 
 # ==========================================================
-# ===== Mihomo 构建模板 --- 全局设置与配置锚点
-# ===== 作者：Mary
-# ===== 2026.07.27
+# ===== Mihomo 全局字典库 (锚点配置表)
 # ==========================================================
+# [基础环境] (省略之前已有的 Filter、DNS 等设置...)
 
 # [正则筛选] 按国家全称严格分类
 FilterHK: &FilterHK '(?i)(?:港|香港|🇭🇰|HK|Hong\s?Kong)'
@@ -104,11 +103,12 @@ Smartp: &Smartp
   url: "https://www.gstatic.com/generate_204"
   interval: 300
   tolerance: 50
+  proxies:
+    - 👑 SubPre-All
+    - ☁️ SubCF-All
 
 # ==========================================================
 # ===== Mihomo 构建模板 --- 订阅提供商
-# ===== 作者：Mary
-# ===== 2026.07.27
 # ==========================================================
 
 SubPre: &SubPre "https://github.boki.moe/https://raw.githubusercontent.com/aghu1979/mss/refs/heads/release/subs/SubPre.yaml"
@@ -128,7 +128,7 @@ Proxyer: &Proxyer
   type: http
   interval: 86400
   exclude-filter: *ExcludeFilter
-  health-check:
+  health-check: 
     enable: true
     url: *ProxyTest
     interval: 86400 
@@ -137,6 +137,18 @@ Proxyer: &Proxyer
     - "ClashMetaForAndroid/2.11.2.Meta"
     - "clash.meta"
     - "mihomo"
+
+dom: &dom
+  type: http
+  behavior: domain
+  format: mrs
+  interval: 86400
+
+ipc: &ipc
+  type: http
+  behavior: ipcidr
+  format: mrs
+  interval: 86400
 
 # ==========================================================
 # 具体的订阅商配置 (向下引用上方的模板)
@@ -500,16 +512,6 @@ proxy-groups:
 # 分流规则提供者 (全 Mrs 格式，大幅节省常驻内存)
 # ====================================================
 rule-providers:
-  dom: &dom
-    type: http
-    behavior: domain
-    format: mrs
-    interval: 86400
-  ipc: &ipc
-    type: http
-    behavior: ipcidr
-    format: mrs
-    interval: 86400
 
   directs:
     <<: *dom
