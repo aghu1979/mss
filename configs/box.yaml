@@ -31,7 +31,6 @@ tun:
 # ==========================================================
 # ===== Mihomo 全局字典库 (锚点配置表)
 # ==========================================================
-# [基础环境] (省略之前已有的 Filter、DNS 等设置...)
 
 # [正则筛选] 按国家全称严格分类
 FilterHK: &FilterHK '(?i)(?:港|香港|🇭🇰|HK|Hong\s?Kong)'
@@ -688,10 +687,10 @@ rule-providers:
 # 路由规则匹配
 # ====================================================
 rules:
-  # 0. 【优先处理特定自定义域名】
-  - DOMAIN-SUFFIX,4d4y.com,HiPDA
+# 🛡️ 0. 【优先处理特定自定义域名】
+- DOMAIN-SUFFIX,4d4y.com,HiPDA
 
-# 🔧 1. 【DNS 劫持放行 (最高优先级)】
+# 🛡️ 1. 【DNS 劫持放行 (最高优先级)】
 - DST-PORT,53,⭕️ DNS_Hijack
 - DST-PORT,853,⭕️ DNS_Hijack
 - DST-PORT,8853,⭕️ DNS_Hijack
@@ -711,7 +710,7 @@ rules:
 - PROCESS-NAME,com.microsoft.rdc.androidx,🟢 直连
 - PROCESS-NAME,com.oray.sunlogin.mac,🟢 直连
 
-# ️ 4. 【通用协议与端口直连】
+# ️🛡️ 4. 【通用协议与端口直连】
 - DOMAIN-SUFFIX,rustdesk.com,🟢 直连
 - DOMAIN-SUFFIX,anydesk.com,🟢 直连
 - DOMAIN-SUFFIX,net.anydesk.com,🟢 直连
@@ -723,7 +722,7 @@ rules:
 - DST-PORT,5938,🟢 直连
 - DST-PORT,11080,🟢 直连
 
-#  5. 【局域网直连绕透】
+# 🛡️ 5. 【局域网直连绕透】
 - IP-CIDR,192.168.0.0/16,🟢 直连,no-resolve
 - IP-CIDR,10.0.0.0/8,🟢 直连,no-resolve
 - IP-CIDR,172.16.0.0/12,🟢 直连,no-resolve
@@ -731,11 +730,11 @@ rules:
 - IP-CIDR6,fc00::/7,🟢 直连,no-resolve
 - IP-CIDR6,fe80::/10,🟢 直连,no-resolve
 
-#  6. 【Android FCM 推送调度】
+# 🛡️ 6. 【Android FCM 推送调度】
 - DST-PORT,5228-5230,GoogleFCM
 - RULE-SET,googlefcm,GoogleFCM
 
-# 🔧 7. 【常规基础直连与拦截】
+# 🛡️ 7. 【常规基础直连与拦截】
 - DST-PORT,123,🟢 直连
 - RULE-SET,ntp,🟢 直连
 - RULE-SET,httpdns-cn,🟢 直连
@@ -754,7 +753,7 @@ rules:
 - RULE-SET,fakelocation,Location
 - RULE-SET,fakelocation_ip,Location,no-resolve
 
-# 🔧 8. 【常规业务分流】
+# 🛡️ 8. 【常规业务分流】
 - RULE-SET,youtube,Youtube
 - RULE-SET,tiktok,Tiktok
 # - RULE-SET,discord,Discord # 注释说明：原文件中该规则缺少对应的 rule-provider 和 proxy-group，已注释以防内核启动报错。
