@@ -26,7 +26,7 @@ tun:
   udp-timeout: 300
   auto-route: true
   auto-detect-interface: true
-  strict-route: true # 开启大陆IP分流时，Box 脚本会自动接管并修改此处\n\n﻿# ==========================================================
+  strict-route: true # 开启大陆IP分流时，Box 脚本会自动接管并修改此处\n\n# ==========================================================
 # ===== Mihomo 构建模板 --- 全局设置与配置锚点
 # ===== 作者：Mary
 # ===== 2026.07.27
@@ -90,18 +90,18 @@ Groupd: &Groupd
     - 🟢 直连
     - 🌐 默认代理
 
-  Groupp: &Groupp
-    type: select
-    proxies:
-      - 👑 SubPre-All
-      - ☁️ SubCF-All
-      - 🌐 默认代理
+Groupp: &Groupp
+  type: select
+  proxies:
+    - 👑 SubPre-All
+    - ☁️ SubCF-All
+    - 🌐 默认代理
 
-  Smartp: &Smartp
-    type: url-test
-    url: "https://www.gstatic.com/generate_204"
-    interval: 300
-    tolerance: 50\n\n﻿# ==========================================================
+Smartp: &Smartp
+  type: url-test
+  url: "https://www.gstatic.com/generate_204"
+  interval: 300
+  tolerance: 50\n\n﻿# ==========================================================
 # ===== Mihomo 构建模板 --- 订阅提供商
 # ===== 作者：Mary
 # ===== 2026.07.27
