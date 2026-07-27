@@ -1,4 +1,3 @@
-#name: Deploy Mihomo Configs
 name: 自动部署 Mihomo Configs
 
 on:
@@ -11,9 +10,8 @@ on:
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
-    # 关键：只在清洗流水线成功时才执行
     if: ${{ github.event.workflow_run.conclusion == 'success' || github.event_name == 'workflow_dispatch' }}
-
+    
     permissions:
       contents: write
 
@@ -28,15 +26,14 @@ jobs:
 
       - name: Generate Configs
         run: |
-          # 执行上一步提供的文本拼接合并脚本
           python scripts/deploy_configs.py
 
-      - name: Deploy to Release Branch (Isolated Method)
+      - name: Deploy to Release Branch
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
           
-          git clone -b release https://x-access-token:${{ secrets.GITHUB_TOKEN }}@[github.com/$](https://github.com/$){{ github.repository }}.git release_repo
+          git clone -b release https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git release_repo
           
           mkdir -p release_repo/configs
           cp release/configs/*.yaml release_repo/configs/
