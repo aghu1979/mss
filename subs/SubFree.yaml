@@ -1,211 +1,172 @@
 proxies:
 - name: SubFree-US-01
-  type: trojan
-  server: 151.101.1.194
+  type: vless
+  server: 13.248.215.36
   port: 443
-  password: MiTiVPN
+  uuid: 57d68ec3-6cc5-10e9-2bca-5ba3994aa783
   tls: true
-  sni: ssl.fastly.com
-  skip-cert-verify: true
+  sni: l.m.j.u.w.9.y.i.m.y.s.8.p.y.us.art-us.kdns.fr
   network: ws
   ws-opts:
-    path: /---@MiTiVPN---@MiTiVPN---@MiTiVPN---@MiTiVPN---@MiTiVPN---@MiTiVPN---@MiTiVPN---@MiTiVPN---@MiTiVPN---@MiTiVPN---@MiTiVPN---@MiTiVPN---@MiTiVPN---@MiTiVPN---@MiTiVPN---@MiTiVPN=sws
+    path: /glasspanel/0038ba35_0_1bdabe931208/
     headers:
-      Host: mitivpn--mitivpn--mitivpn-mitivpn--mitivpn-mitivpn.global.ssl.fastly.net
+      Host: l.m.j.u.w.9.y.i.m.y.s.8.p.y.us.art-us.kdns.fr
 - name: SubFree-US-02
   type: vless
-  server: 199.232.206.245
+  server: 76.223.77.48
   port: 443
-  uuid: 4d2b9de1-8be0-4434-9900-91eccb8422fa
+  uuid: 57d68ec3-6cc5-10e9-2bca-5ba3994aa783
   tls: true
-  sni: ssl.fastly.com
-- name: SubFree-US-03
-  type: vless
-  server: 199.232.22.39
-  port: 443
-  uuid: 891710f4-45f3-41b1-99a6-6f1510f83c10
-  tls: true
-  sni: ssl.fastly.com
+  sni: 2.r.y.a.j.7.c.z.d.z.8.f.f.r.us.art-us.kdns.fr
   network: ws
   ws-opts:
-    path: /TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER?ed
+    path: /glasspanel/0038ba35_0_1bdabe931208/
     headers:
-      Host: pan21.global.ssl.fastly.net
-- name: SubFree-US-04
-  type: vless
-  server: 167.82.101.159
-  port: 80
-  uuid: 891aae9a-5c05-4692-9f45-a1b31e356980
-- name: SubFree-US-05
-  type: trojan
-  server: 151.101.34.144
-  port: 443
-  password: 1N2o5bPwwA
-  tls: true
-  sni: global.fastly.com
+      Host: 2.r.y.a.j.7.c.z.d.z.8.f.f.r.us.art-us.kdns.fr
 - name: SubFree-US-06
   type: trojan
-  server: 151.101.0.0
-  port: 80
-  password: Mitivpn
+  server: 152.70.143.65
+  port: 2053
+  password: 8r%3C%5B9%27l6hAO%238ZQi
+  tls: true
+  sni: Koma-YT.PAGeS.Dev
   network: ws
   ws-opts:
-    path: /ed=mitivpn
+    path: /trTelegram🇨🇳+@WangCai2
     headers:
-      Host: 3-mitivpn.global.ssl.fastly.net
+      Host: Koma-YT.PAGeS.Dev
 - name: SubFree-US-07
-  type: vless
-  server: 151.101.1.6
-  port: 80
-  uuid: Telegram-VPNCUSTOMIZE-
-  sni: hajlab.ucdavis.edu
+  type: trojan
+  server: 152.70.143.65
+  port: 2053
+  password: 8r%3C%5B9%27l6hAO%238ZQi
+  sni: Koma-YT.PAGeS.Dev
   network: ws
   ws-opts:
-    path: /@VPNCUSTOMIZE-----@VPNCUSTOMIZE-----@VPNCUSTOMIZE---@VPNCUSTOMIZE---@VPNCUSTOMIZE---@VPNCUSTOMIZE---@VPNCUSTOMIZE?ed=2560
+    path: /trTelegram @WangCai2
     headers:
-      Host: JoinBedeeeeee--VPNCUSTOMIZE.ir.
-- name: SubFree-US-08
-  type: vless
-  server: 151.101.3.8
-  port: 80
-  uuid: qeshmserver
+      Host: Koma-YT.PAGeS.Dev
 - name: SubFree-US-09
-  type: trojan
-  server: 141.193.213.21
-  port: 443
-  password: humanity
-  sni: www.calmloud.com
-  network: ws
-  ws-opts:
-    path: /assignment
-    headers:
-      Host: www.calmloud.com
-- name: SubFree-US-10
-  type: trojan
-  server: 198.62.62.23
-  port: 443
-  password: humanity
-  tls: true
-  sni: www.calmlunch.com
-  network: ws
-  ws-opts:
-    path: //assignment
-    headers:
-      Host: www.calmlunch.com
-- name: SubFree-TR-01
   type: vless
-  server: 198.202.211.1
-  port: 443
-  uuid: 963c91fc-1ce7-4fc7-806f-0a2e7b03bfee
-  tls: true
-  sni: sinavm3.soft10.ir
+  server: 18.238.109.28
+  port: 80
+  uuid: f27894bf-349c-44e6-a0ce-4c787e18476f
   network: ws
   ws-opts:
-    path: /assignment----SiNAVM----SiNAVM----SiNAVM----SiNAVM----SiNAVM----SiNAVM----SiNAVM----SiNAVM----SiNAVM----SiNAVM----SiNAVM----SiNAVM----SiNAVM----SiNAVM----SiNAVM----SiNAVM----SiNAVM----SiNAVM
+    path: /GDkX4xpB/
     headers:
-      Host: sinavm3.soft10.ir
+      Host: duatoup3wk8q2.cloudfront.net
+- name: SubFree-US-10
+  type: vless
+  server: 18.238.109.26
+  port: 80
+  uuid: f27894bf-349c-44e6-a0ce-4c787e18476f
+  network: ws
+  ws-opts:
+    path: /GDkX4xpB/
+    headers:
+      Host: duatoup3wk8q2.cloudfront.net
 - name: SubFree-US-11
   type: trojan
-  server: 151.101.34.144
+  server: 129.146.137.214
   port: 443
-  password: 4aFbwy5BHa
-  tls: true
-  sni: global.fastly.com
-- name: SubFree-DE-01
-  type: trojan
-  server: 151.101.34.144
-  port: 443
-  password: 4aFbwy5BHa
-  tls: true
-  sni: global.fastly.com
+  password: 8r%3C%5B9%27l6hAO%238ZQi
+  sni: Koma-YT.PAGeS.Dev
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /trTelegram
+    headers:
+      Host: Koma-YT.PAGeS.Dev
 - name: SubFree-US-12
   type: trojan
-  server: 140.248.185.252
+  server: 129.146.137.214
   port: 443
-  password: MITIVPN
-  tls: true
-  sni: ssl.fastly.com
+  password: 8r%3C%5B9%27l6hAO%238ZQi
+  sni: Koma-YT.PAGeS.Dev
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /---@MiTiVPN/---@MiTiVPN/---@MiTiVPN/---@MiTiVPN/---@MiTiVPN=usa
-    headers:
-      Host: mitivpn--------mitivpn.global.ssl.fastly.net
+    path: /trTelegram @WangCai2
 - name: SubFree-US-13
   type: trojan
-  server: 151.101.110.219
+  server: 129.146.137.214
   port: 443
-  password: MITIVPN
-  tls: true
-  sni: global.fastly.com
-  network: ws
-  ws-opts:
-    path: /MiTiVPN=De
-    headers:
-      Host: esalat-king-mitivpn.global.ssl.fastly.net
+  password: 8r%3C%5B9%27l6hAO%238ZQi
+  sni: Koma-YT.PAGeS.Dev
+  skip-cert-verify: true
 - name: SubFree-US-14
   type: trojan
-  server: 151.101.56.6
+  server: 129.146.137.214
   port: 443
-  password: MITIVPN
+  password: 8r%3C%5B9%27l6hAO%238ZQi
   tls: true
-  sni: global.fastly.com
-  network: ws
-  ws-opts:
-    path: /MiTiVPN=Usa
-    headers:
-      Host: esalat-king-mitivpn.global.ssl.fastly.net
+  sni: Koma-YT.PAGeS.Dev
 - name: SubFree-US-15
   type: trojan
-  server: 151.101.56.7
+  server: 129.146.137.214
   port: 443
-  password: MITIVPN
-  tls: true
-  sni: ssl.fastly.com
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /---@MiTiVPN/---@MiTiVPN/---@MiTiVPN/---@MiTiVPN/---@MiTiVPN=de
-    headers:
-      Host: mitivpn-mitivpn-mitivpn.global.ssl.fastly.net
+  password: 8r%3C%5B9%27l6hAO%238ZQi
+  sni: Koma-YT.PAGeS.Dev
 - name: SubFree-US-16
   type: trojan
-  server: 170.114.45.6
+  server: 129.146.196.8
   port: 443
-  password: MITIVPN
-  tls: true
-  sni: UsAa-bUs.MaQRor.Ir
+  password: 8r%3C%5B9%27l6hAO%238ZQi
+  sni: Koma-YT.PAGeS.Dev
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /---@MiTiVPN/---@MiTiVPN/---@MiTiVPN/---@MiTiVPN/---@MiTiVPN=U-s
+    path: /trTelegram
     headers:
-      Host: my-usa-ol.MaQRor.Ir
+      Host: Koma-YT.PAGeS.Dev
 - name: SubFree-US-17
   type: trojan
-  server: 199.232.22.39
+  server: 129.146.196.8
   port: 443
-  password: MITIVPN
-  tls: true
-  sni: ssl.fastly.com
+  password: 8r%3C%5B9%27l6hAO%238ZQi
+  sni: Koma-YT.PAGeS.Dev
+  skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /---@MiTiVPN/---@MiTiVPN/---@MiTiVPN/---@MiTiVPN/---@MiTiVPN=u--s
+    path: /trTelegram @WangCai2
     headers:
-      Host: mitivpn--mitivpn--mitivpn-mitivpn---mitivpn.global.ssl.fastly.net
+      Host: Koma-YT.PAGeS.Dev
 - name: SubFree-US-18
   type: trojan
-  server: 151.101.1.194
-  port: 443
-  password: MiTiVPN
+  server: 152.70.143.65
+  port: 2053
+  password: 8r%3C%5B9%27l6hAO%238ZQi
   tls: true
-  sni: ssl.fastly.com
+  sni: Koma-YT.PAGeS.Dev
   network: ws
   ws-opts:
-    path: /---@MiTiVPN---@MiTiVPN---@MiTiVPN---@MiTiVPN---@MiTiVPN---@MiTiVPN---@MiTiVPN---@MiTiVPN---@MiTiVPN---@MiTiVPN---@MiTiVPN---@MiTiVPN---@MiTiVPN---@MiTiVPN---@MiTiVPN---@MiTiVPN=sws
+    path: /trTelegram🇨🇳 @WangCai2
     headers:
-      Host: mitivpn--mitivpn--mitivpn-mitivpn--mitivpn-mitivpn.global.ssl.fastly.net
+      Host: Koma-YT.PAGeS.Dev
 - name: SubFree-US-19
+  type: trojan
+  server: 199.232.153.242
+  port: 80
+  password: MiTiVPN
+  network: ws
+  ws-opts:
+    path: /?https://t.me/WangCai2🇨🇳
+    headers:
+      Host: www.f6r.ir
+- name: SubFree-US-20
+  type: trojan
+  server: 129.146.137.214
+  port: 443
+  password: 8r%3C%5B9%27l6hAO%238ZQi
+  sni: Koma-YT.PAGeS.Dev
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /trTelegram @WangCai2
+    headers:
+      Host: Koma-YT.PAGeS.Dev
+- name: SubFree-US-21
   type: trojan
   server: 151.101.1.194
   port: 443
@@ -218,20 +179,7 @@ proxies:
     path: /---@MiTiVPN/---@MiTiVPN/---@MiTiVPN/---@MiTiVPN/---@MiTiVPN=s---W
     headers:
       Host: mitivpn--mitivpn--mitivpn-mitivpn--mitivpn-mitivpn.global.ssl.fastly.net
-- name: SubFree-US-20
-  type: trojan
-  server: 151.101.1.194
-  port: 443
-  password: MiTiVPN
-  tls: true
-  sni: ssl.fastly.com
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /---@MiTiVPN/---@MiTiVPN/---@MiTiVPN/---@MiTiVPN/---@MiTiVPN=sws-s
-    headers:
-      Host: mitivpn--mitivpn--mitivpn-mitivpn--mitivpn-mitivpn.global.ssl.fastly.net
-- name: SubFree-US-21
+- name: SubFree-US-22
   type: trojan
   server: 151.101.110.219
   port: 443
@@ -241,229 +189,29 @@ proxies:
   network: ws
   ws-opts:
     path: /MiTiVPN=NL
-    headers:
-      Host: esalat-mitivpn.global.ssl.fastly.net
-- name: SubFree-US-22
-  type: trojan
-  server: 151.101.56.6
-  port: 443
-  password: MiTiVPN
-  tls: true
-  sni: ssl.fastly.com
-  network: ws
-  ws-opts:
-    path: /MiTiVPN=fL
     headers:
       Host: esalat-mitivpn.global.ssl.fastly.net
 - name: SubFree-US-23
-  type: trojan
-  server: 199.232.237.250
-  port: 443
-  password: MiTiVPN
-  tls: true
-  sni: ssl.fastly.com
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /---@MiTiVPN/---@MiTiVPN/---@MiTiVPN/---@MiTiVPN/---@MiTiVPN=NL
-    headers:
-      Host: mitivpn----a.global.ssl.fastly.net
-- name: SubFree-US-24
-  type: trojan
-  server: 199.232.78.140
-  port: 443
-  password: MiTiVPN
-  tls: true
-  sni: ssl.fastly.com
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /---@MiTiVPN/---@MiTiVPN/---@MiTiVPN/---@MiTiVPN/---@MiTiVPN=fl
-    headers:
-      Host: mitivpn-mitivpn-mitivpn.global.ssl.fastly.net
-- name: SubFree-GB-01
-  type: trojan
-  server: 91.193.58.201
-  port: 443
-  password: MiTiVPN
-  tls: true
-  sni: PioHosting.ir
-  network: ws
-  ws-opts:
-    path: /MiTiVPN=NL
-    headers:
-      Host: Proxy-Se7en---Proxy-Se7en---Proxy-Se7en---Proxy-Se7en---Proxy-Se7en---Proxy-Se7en---Proxy-Se7en
-- name: SubFree-US-25
-  type: trojan
-  server: 151.101.0.0
-  port: 80
-  password: Mitivpn
-  network: ws
-  ws-opts:
-    path: '@SylphNet'
-    headers:
-      Host: '@SylphNet'
-- name: SubFree-US-26
-  type: trojan
-  server: 151.101.110.219
-  port: 443
-  password: Mitivpn
-  tls: true
-  sni: global.fastly.com
-  network: ws
-  ws-opts:
-    path: /de
-    headers:
-      Host: 3-mitivpn.global.ssl.fastly.net
-- name: SubFree-US-27
-  type: vless
-  server: 151.101.193.54
-  port: 80
-  uuid: 11fba8e2-4b10-41c7-bc60-f12901f41d34
-  network: ws
-  ws-opts:
-    headers:
-      Host: BankMelat.glObal.ssl.faStly.nEt.
-- name: SubFree-US-28
-  type: vless
-  server: 199.232.23.6
-  port: 443
-  uuid: 142c10ed-ddfd-4b89-9b6c-2effbdd48466
-  tls: true
-  sni: global.fastly.com
-- name: SubFree-US-29
-  type: vless
-  server: 151.101.3.147
-  port: 80
-  uuid: 24d49ddd-67c1-4821-b5b9-f12107366978
-- name: SubFree-US-31
-  type: vless
-  server: 167.82.0.4
-  port: 80
-  uuid: 3f1b8434-e322-4f10-b852-b89db394d7de
-  network: ws
-  ws-opts:
-    headers:
-      Host: BankMelat.glObal.ssl.faStly.nEt.
-- name: SubFree-US-32
-  type: vless
-  server: 66.33.22.36
-  port: 443
-  uuid: 3f5ebdae-4d8e-db0c-41fd-15029566f398
-  tls: true
-  sni: subgift5.up.railway.app
-  network: ws
-  ws-opts:
-    path: /ws/3f5ebdae-4d8e-db0c-41fd-15029566f398
-    headers:
-      Host: subgift5.up.railway.app
-- name: SubFree-DE-02
-  type: vless
-  server: 151.101.56.7
-  port: 443
-  uuid: 4d2b9de1-8be0-4434-9900-91eccb8422fa
-  tls: true
-  sni: ssl.fastly.com
-- name: SubFree-US-33
-  type: vless
-  server: 141.193.213.21
-  port: 443
-  uuid: 4f013568-a58b-4b04-b5dd-4d52bf1c33a4
-  tls: true
-  sni: amoosamiii.net
-  network: ws
-  ws-opts:
-    path: /poiuyws
-    headers:
-      Host: Proxy-Se7en---Proxy-Se7en---Proxy-Se7en---Proxy-Se7en---Proxy-Se7en---Proxy-Se7en---Proxy-Se7en
-- name: SubFree-US-34
-  type: vless
-  server: 199.232.78.160
-  port: 443
-  uuid: 52c0dab9-2187-49a4-8e31-f1db94bd7a9e
-  tls: true
-  sni: speedtest.net
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: alesis724.global.ssl.fastly.net
-- name: SubFree-US-35
-  type: vless
-  server: 151.101.69.223
-  port: 443
-  uuid: 5f65c1ae-9e7a-48ea-8ecf-6822365cd177
-  tls: true
-  sni: sp…</div>
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: apiv2.global.ssl.fastly.net
-- name: SubFree-US-36
-  type: vless
-  server: 151.101.56.7
-  port: 80
-  uuid: 66ea0b4c-8c39-4e8b-92f0-0a9065218d37
-  network: ws
-  ws-opts:
-    headers:
-      Host: BankMelat.glObal.ssl.faStly.nEt.
-- name: SubFree-US-37
   type: vless
   server: 199.232.78.159
   port: 443
-  uuid: 79a5be11-ec1f-4e18-b7fc-aef854234c43
+  uuid: 6e2e03e2-4f66-479a-a186-a34d66ca8c91
   tls: true
   sni: ssl.fastly.com
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER?ed
+    path: /TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER?ed=2053
     headers:
-      Host: pan1.global.ssl.fastly.net
-- name: SubFree-DE-03
-  type: vless
-  server: 45.80.111.1
-  port: 8880
-  uuid: 83fa679c-2333-4a81-a48d-c3705c145d70
-- name: SubFree-US-38
+      Host: pan11.global.ssl.fastly.net
+- name: SubFree-US-24
   type: vless
   server: 199.232.237.245
   port: 443
   uuid: 8e9cbf76-b74a-46b3-8270-9453e281e613
   tls: true
   sni: global.fastly.com
-- name: SubFree-DE-04
-  type: vless
-  server: 151.101.56.7
-  port: 443
-  uuid: 92f3873f-78a4-4f08-adb2-825ca7f34a9a
-  tls: true
-  sni: ssl.fastly.com
-- name: SubFree-US-39
-  type: vless
-  server: 151.101.65.57
-  port: 80
-  uuid: 96eec36e-2c44-5b09-898e-6f0f0526e57f
-- name: SubFree-US-40
-  type: vless
-  server: 199.232.237.245
-  port: 443
-  uuid: AlfredConfig
-  tls: true
-  sni: global.fastly.com
-- name: SubFree-US-41
-  type: vless
-  server: 151.101.129.57
-  port: 80
-  uuid: InternetAzadRobot-AliKiller
-- name: SubFree-US-42
-  type: vless
-  server: 151.101.1.57
-  port: 80
-  uuid: InternetAzadRobot
-- name: SubFree-US-43
+- name: SubFree-US-25
   type: vless
   server: 199.232.78.159
   port: 443
@@ -476,63 +224,7 @@ proxies:
     path: /TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER?ed=2053
     headers:
       Host: pan11.global.ssl.fastly.net
-- name: SubFree-US-44
-  type: vless
-  server: 151.101.57.134
-  port: 443
-  uuid: XpnTeam-139
-  tls: true
-  sni: default.ssl.fastly.net
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: Appxdn.global.ssl.fastly.net
-- name: SubFree-US-45
-  type: vless
-  server: 188.244.122.189
-  port: 80
-  uuid: b063d7b6-1ad5-4fd0-8557-57f5adbe1ea3
-  network: ws
-  ws-opts:
-    path: /Telegram:@vmessorg-Telegram:@vmessorg-Telegram:@vmessorg?ed=80
-    headers:
-      Host: join-to.vmessorg.Community.
-- name: SubFree-US-46
-  type: vless
-  server: 167.82.0.1
-  port: 80
-  uuid: b8b65abb-c32d-45e5-b485-be473aaeba31
-  network: ws
-  ws-opts:
-    headers:
-      Host: BankMelat.glObal.ssl.faStly.nEt.
-- name: SubFree-US-47
-  type: vless
-  server: 151.101.109.223
-  port: 443
-  uuid: c8541f02-4efd-401d-beb7-dc017b12ee94
-  tls: true
-  sni: default.ssl.fastly.net
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: pan1.global.ssl.fastly.net
-- name: SubFree-US-48
-  type: vless
-  server: 151.101.130.219
-  port: 443
-  uuid: cada6913-7b6d-43c8-a3bd-8cdaa0c52f11
-  tls: true
-  sni: speedtest.net
-  network: ws
-  ws-opts:
-    path: /ConfigMS-ConfigMS-ConfigMS-ConfigMS-ConfigMS-ConfigMS-ConfigMS-ConfigMS-ConfigMS-ConfigMS-ConfigMS-ConfigMS-ConfigMS-ConfigMS-ConfigMS-ConfigMS-ConfigMS-ConfigMS-ConfigMS-ConfigMS-ConfigMS-ConfigMS-ConfigMS-ConfigMS-ConfigMS-ConfigMS-ConfigMS-ConfigMS-ConfigMS-ConfigMS?ed=2048
-    headers:
-      Host: barkat5.ir
-- name: SubFree-US-49
+- name: SubFree-US-26
   type: vless
   server: 151.101.56.7
   port: 80
@@ -541,19 +233,357 @@ proxies:
   ws-opts:
     headers:
       Host: BankMelat.glObal.ssl.faStly.nEt.
-- name: SubFree-US-50
+- name: SubFree-US-27
+  type: vless
+  server: 151.101.34.144
+  port: 443
+  uuid: ef2459fd-336f-42c8-8e40-a6f80ca724d7
+  tls: true
+  sni: global.fastly.com
+- name: SubFree-US-28
   type: vless
   server: 199.232.78.159
   port: 443
-  uuid: d15cce83-9de9-4e37-98bc-ea5a8882f213
+  uuid: 6f797549-7b0d-48f6-b825-6334d4e4fa4d
   tls: true
-  sni: default.ssl.fastly.net
+  sni: ssl.fastly.com
   network: ws
   ws-opts:
     path: /
     headers:
-      Host: Appxdn.global.ssl.fastly.net
+      Host: towndtime.global.ssl.fastly.neT.
+- name: SubFree-US-29
+  type: vless
+  server: 151.101.193.54
+  port: 80
+  uuid: c9380ef8-23f8-422e-81fe-ebbb032202cf
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: BankMelat.glObal.ssl.faStly.nEt.
+- name: SubFree-US-30
+  type: vless
+  server: 199.232.222.178
+  port: 443
+  uuid: cbcf2255-6d66-4039-b7d6-c10d6ffc99e7
+  tls: true
+  sni: ssl.fastly.com
+  network: ws
+  ws-opts:
+    path: /TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER?ed
+    headers:
+      Host: pan1.global.ssl.fastly.net
+- name: SubFree-US-31
+  type: trojan
+  server: 140.248.185.253
+  port: 443
+  password: '%4D%69%54%69%56%50%4E'
+  tls: true
+  sni: ssl.fastly.com
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /ed=MiTiVPN
+    headers:
+      Host: mitivpn-s2.global.ssl.fastly.net
+- name: SubFree-US-32
+  type: trojan
+  server: 151.101.1.194
+  port: 443
+  password: '%4D%69%54%69%56%50%4E'
+  tls: true
+  sni: global.fastly.com
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /ed=mitivpn
+    headers:
+      Host: MiTiVPN-s2.global.ssl.fastly.net
+- name: SubFree-US-33
+  type: trojan
+  server: 151.101.1.194
+  port: 443
+  password: '%4D%69%54%69%56%50%4E'
+  tls: true
+  sni: global.fastly.com
+- name: SubFree-US-34
+  type: trojan
+  server: 151.101.128.128
+  port: 80
+  password: '%4d%69%54%69%56%50%4e'
+- name: SubFree-US-35
+  type: trojan
+  server: 151.101.110.219
+  port: 443
+  password: '%4d%69%74%69%76%70%6e'
+  tls: true
+  sni: global.fastly.com
+  network: ws
+  ws-opts:
+    path: /de=mitivpn
+    headers:
+      Host: 3-mitivpn.global.ssl.fastly.net
+- name: SubFree-US-36
+  type: trojan
+  server: 151.101.194.219
+  port: 443
+  password: 09520f00-9f39-11ef-91e0-1239d0255272
+  sni: usa.test3.net
+  network: ws
+  ws-opts:
+    path: /howdy
+    headers:
+      Host: usa.test3.net
+- name: SubFree-US-37
+  type: trojan
+  server: 151.101.66.219
+  port: 443
+  password: 09520f00-9f39-11ef-91e0-1239d0255272
+  sni: usa.test3.net
+  network: ws
+  ws-opts:
+    path: /howdy
+    headers:
+      Host: usa.test3.net
+- name: SubFree-US-38
+  type: trojan
+  server: 151.101.34.144
+  port: 443
+  password: 4aFbwy5BHa
+- name: SubFree-US-39
+  type: trojan
+  server: 151.101.34.144
+  port: 443
+  password: 4aFbwy5BHa
+  tls: true
+  sni: global.fastly.com
+- name: SubFree-US-40
+  type: trojan
+  server: 199.232.206.245
+  port: 443
+  password: 7b12dfabbe374661a12d11d698d86fbd
+- name: SubFree-US-41
+  type: trojan
+  server: 151.101.110.219
+  port: 443
+  password: M%69t%69vpn
+  tls: true
+  sni: ssl.fastly.com
+  network: ws
+  ws-opts:
+    path: /boost
+    headers:
+      Host: 3-mitivpn.global.ssl.fastly.net
+- name: SubFree-US-42
+  type: trojan
+  server: 140.248.185.252
+  port: 443
+  password: MITIVPN
+  tls: true
+  sni: ssl.fastly.com
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /---@MiTiVPN/---@MiTiVPN/---@MiTiVPN/---@MiTiVPN/---@MiTiVPN=usa
+    headers:
+      Host: mitivpn--------mitivpn.global.ssl.fastly.net
+- name: SubFree-US-43
+  type: trojan
+  server: 140.248.185.252
+  port: 443
+  password: MITIVPN
+  tls: true
+  sni: ssl.fastly.com
+  network: ws
+  ws-opts:
+    path: /---@MiTiVPN/---@MiTiVPN/---@MiTiVPN/---@MiTiVPN/---@MiTiVPN=usa
+    headers:
+      Host: mitivpn--------mitivpn.global.ssl.fastly.net
+- name: SubFree-US-44
+  type: trojan
+  server: 151.101.110.219
+  port: 443
+  password: MITIVPN
+  tls: true
+  sni: global.fastly.com
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /ed=mitivpn
+    headers:
+      Host: mitivpn-6.global.ssl.fastly.net
+- name: SubFree-US-45
+  type: trojan
+  server: 151.101.56.6
+  port: 443
+  password: MITIVPN
+- name: SubFree-US-46
+  type: trojan
+  server: 151.101.56.7
+  port: 443
+  password: MITIVPN
+  tls: true
+  sni: ssl.fastly.com
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /MiTiVPN=De
+    headers:
+      Host: miticonfig.global.ssl.fastly.net
+- name: SubFree-US-47
+  type: trojan
+  server: 151.101.56.7
+  port: 443
+  password: MITIVPN
+  tls: true
+  sni: ssl.fastly.com
+  network: ws
+  ws-opts:
+    path: /---@MiTiVPN/---@MiTiVPN/---@MiTiVPN/---@MiTiVPN/---@MiTiVPN=DD-E
+    headers:
+      Host: mitivpn--mitivpn------mitivpn.global.ssl.fastly.net
+- name: SubFree-US-48
+  type: trojan
+  server: 151.101.56.7
+  port: 443
+  password: MITIVPN
+  tls: true
+  sni: ssl.fastly.com
+  network: ws
+  ws-opts:
+    path: /---@MiTiVPN/---@MiTiVPN/---@MiTiVPN/---@MiTiVPN/---@MiTiVPN=GE
+    headers:
+      Host: miticonfig.global.ssl.fastly.net
+- name: SubFree-US-49
+  type: trojan
+  server: 151.101.56.7
+  port: 443
+  password: MITIVPN
+  tls: true
+  sni: ssl.fastly.com
+  network: ws
+  ws-opts:
+    path: /---@MiTiVPN/---@MiTiVPN/---@MiTiVPN/---@MiTiVPN/---@MiTiVPN=d--ee
+    headers:
+      Host: mitivpn--mitivpn------mitivpn.global.ssl.fastly.net
+- name: SubFree-US-50
+  type: trojan
+  server: 140.248.185.253
+  port: 443
+  password: MiTiVPN
+- name: SubFree-DE-01
+  type: vless
+  server: 151.101.56.7
+  port: 80
+  uuid: cfde0aba-0985-4034-ab92-50b1534b126c
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: BankMelat.glObal.ssl.faStly.nEt.
 - name: SubFree-RU-01
+  type: vless
+  server: 185.148.104.30
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: vms.lifetime51.workers.dev
+- name: SubFree-GB-01
+  type: vless
+  server: 89.116.46.50
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  ws-opts:
+    path: /?ed
+    headers:
+      Host: vms.lifetime07.workers.dev
+- name: SubFree-GB-02
+  type: vless
+  server: 91.193.58.15
+  port: 2083
+  uuid: a1de0630-5786-48a0-84f6-dc6f2de10d6d
+  tls: true
+  sni: vlso.1d.mom
+  network: ws
+  ws-opts:
+    path: /socks5=888:888@8.210.127.248:1080
+    headers:
+      Host: vlso.1d.mom
+- name: SubFree-DE-02
+  type: trojan
+  server: 151.101.34.144
+  port: 443
+  password: 4aFbwy5BHa
+  tls: true
+  sni: global.fastly.com
+- name: SubFree-GB-03
+  type: trojan
+  server: 91.193.58.201
+  port: 443
+  password: MiTiVPN
+  tls: true
+  sni: PioHosting.ir
+  network: ws
+  ws-opts:
+    path: /MiTiVPN=NL
+    headers:
+      Host: Proxy-Se7en---Proxy-Se7en---Proxy-Se7en---Proxy-Se7en---Proxy-Se7en---Proxy-Se7en---Proxy-Se7en
+- name: SubFree-SG-01
+  type: trojan
+  server: 27.50.48.49
+  port: 443
+  password: mitivpn
+  tls: true
+  sni: gamingdll.ir
+  network: ws
+  ws-opts:
+    path: /index.html/ed=mitivpn
+    headers:
+      Host: gamingdll.ir
+- name: SubFree-RU-02
+  type: vless
+  server: 45.8.211.217
+  port: 443
+  uuid: 14b59caf-a196-4ec2-8c70-c7b388062f5b
+- name: SubFree-SG-02
+  type: vless
+  server: 69.46.46.80
+  port: 443
+  uuid: 16f3dd21-8664-4ece-af5d-3b70061ee97d
+  tls: true
+  sni: uni04.up.railway.app
+  network: ws
+  ws-opts:
+    path: /unicorn
+    headers:
+      Host: uni04.up.railway.app
+- name: SubFree-DE-03
+  type: vless
+  server: 151.101.56.7
+  port: 443
+  uuid: 4d2b9de1-8be0-4434-9900-91eccb8422fa
+  tls: true
+  sni: ssl.fastly.com
+- name: SubFree-DE-04
+  type: vless
+  server: 151.101.56.7
+  port: 443
+  uuid: 92f3873f-78a4-4f08-adb2-825ca7f34a9a
+  tls: true
+  sni: ssl.fastly.com
+- name: SubFree-DE-05
+  type: vless
+  server: 45.80.111.1
+  port: 2083
+  uuid: 938e2c26-3d8e-4c1d-9a1a-a9c8d306cf12
+  tls: true
+  sni: Sa.sorixset.ir
+- name: SubFree-RU-03
   type: vless
   server: 45.142.120.30
   port: 8880
@@ -563,47 +593,80 @@ proxies:
     path: /
     headers:
       Host: vms.lifetime08.workers.dev
-- name: SubFree-GB-02
+- name: SubFree-GB-04
   type: trojan
-  server: 91.193.58.201
+  server: 91.193.58.31
   port: 443
-  password: MiTiVPN
+  password: '521314'
   tls: true
-  sni: PioHosting.ir
+  sni: hhtj.hhllfly.kdns.fr
   network: ws
   ws-opts:
-    path: /MiTiVPN=fL
+    path: /pyip=Telegram-WangCai2🇨🇳
     headers:
-      Host: Proxy-Se7en---Proxy-Se7en---Proxy-Se7en---Proxy-Se7en---Proxy-Se7en---Proxy-Se7en---Proxy-Se7en
-- name: SubFree-GB-03
+      Host: hhtj.hhllfly.kdns.fr
+- name: SubFree-DE-06
+  type: trojan
+  server: 45.80.111.7
+  port: 443
+  password: humanity
+  tls: true
+  sni: www.calmlunch.com
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /assignment
+- name: SubFree-DE-07
+  type: trojan
+  server: 45.80.111.7
+  port: 443
+  password: humanity
+  tls: true
+  sni: www.calmlunch.com
+  network: ws
+  ws-opts:
+    path: /assignment
+- name: SubFree-GB-05
   type: vless
   server: 199.232.245.94
   port: 443
   uuid: 08bc2f46-c8ae-421e-93cc-e1225923fa50
   tls: true
   sni: global.fastly.com
-- name: SubFree-GB-04
+- name: SubFree-GB-06
   type: vless
   server: 199.232.77.215
   port: 443
   uuid: 08bc2f46-c8ae-421e-93cc-e1225923fa50
   tls: true
   sni: global.fastly.com
-- name: SubFree-GB-05
+- name: SubFree-GB-07
   type: vless
   server: 199.232.78.150
   port: 443
   uuid: 08bc2f46-c8ae-421e-93cc-e1225923fa50
   tls: true
   sni: global.fastly.com
-- name: SubFree-GB-06
+- name: SubFree-GB-08
   type: vless
   server: 199.232.78.155
   port: 443
   uuid: 08bc2f46-c8ae-421e-93cc-e1225923fa50
   tls: true
   sni: ' global.fastly.com'
-- name: SubFree-GB-07
+- name: SubFree-PH-01
+  type: vless
+  server: 45.8.211.217
+  port: 443
+  uuid: 14b59caf-a196-4ec2-8c70-c7b388062f5b
+  tls: true
+  sni: vangoghhh.info
+  network: ws
+  ws-opts:
+    path: /rdfgtws
+    headers:
+      Host: vangoghhh.info
+- name: SubFree-GB-09
   type: vless
   server: 91.193.58.201
   port: 443
@@ -627,26 +690,75 @@ proxies:
     path: /@JavidnamanIran/Javid-SHAH-KingRezaPahlavi/
     headers:
       Host: crm.lotussec.com
-- name: SubFree-RU-02
+- name: SubFree-TH-02
   type: vless
-  server: 176.124.223.16
+  server: 185.193.28.212
+  port: 443
+  uuid: 17540a16-a0dd-5694-7e1e-14e281ccc032
+  tls: true
+  sni: crm.lotussec.com
+  network: ws
+  ws-opts:
+    path: /@JavidnamanIran/Javid-SHAH-KingRezaPahlavi/
+    headers:
+      Host: crm.lotussec.com
+- name: SubFree-TH-03
+  type: vless
+  server: 66.81.247.155
+  port: 443
+  uuid: 17540a16-a0dd-5694-7e1e-14e281ccc032
+  tls: true
+  sni: crm.lotussec.com
+  network: ws
+  ws-opts:
+    path: /@JavidnamanIran/Javid-SHAH-KingRezaPahlavi/
+    headers:
+      Host: crm.lotussec.com
+- name: SubFree-IN-01
+  type: vless
+  server: 188.42.88.24
+  port: 2053
+  uuid: 23eb25bc-f233-4762-9759-01157944cc29
+  tls: true
+  sni: noone2.bingnet.online
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    headers:
+      Host: noone2.bingnet.online
+- name: SubFree-GB-10
+  type: vless
+  server: 45.85.118.16
   port: 2087
   uuid: 38a43f18-b4d9-443f-9ff1-4cf9de3d666e
   tls: true
   sni: valid22.validbv9501.ir
   network: ws
   ws-opts:
-    path: /eyJqdW5rIjoiS0ZJaGhSaG14Z0NMeCIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbIjE0Ni4xMDMuMTE0LjEzNCJdfQ==
+    path: /eyJqdW5rIjoiS0ZJaGhSaG14Z0NMeCIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbIjE0Ni4xMDMuMTE0LjEzNCJdfQ
     headers:
       Host: valid22.validbv9501.ir
-- name: SubFree-IN-01
+- name: SubFree-IN-02
   type: vless
   server: 66.81.247.155
   port: 8443
   uuid: 45ab962c-0e61-464b-ddc6-5fdd7338398f
   tls: true
   sni: jokerv.membergolabi.ir.
-- name: SubFree-DE-05
+- name: SubFree-IN-03
+  type: vless
+  server: 151.101.110.219
+  port: 443
+  uuid: 4da72a60-61b9-4571-a054-1bba24bf6728
+  tls: true
+  sni: speedtest.net
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: nesfeshzksab.global.ssl.fastly.neT.
+- name: SubFree-DE-08
   type: vless
   server: 185.16.110.238
   port: 2096
@@ -658,100 +770,71 @@ proxies:
     path: /?ed=2560
     headers:
       Host: sni.jpmj.dev
-- name: SubFree-TH-02
+- name: SubFree-IN-04
   type: vless
-  server: 89.116.250.135
+  server: 199.232.78.159
   port: 443
-  uuid: 7481c11c-40b3-4b5b-912f-efab8cd8e067
+  uuid: 75b38c79-92e3-454b-b98e-52fbd254884d
   tls: true
-  sni: h.sadfsadfasqwedwqsjdnasdfasdopasopppaajk.ir
-- name: SubFree-IN-02
-  type: vless
-  server: 199.232.9.94
-  port: 443
-  uuid: 86fdb625-1a7f-4784-99a6-a96b3a80fc6d
-  tls: true
-  sni: speedtest.net
+  sni: ssl.fastly.com
   network: ws
   ws-opts:
-    path: /vip1
+    path: /
     headers:
-      Host: hamshahriesfahan.com
-- name: SubFree-GB-08
+      Host: towndtime.global.ssl.fastly.neT.
+- name: SubFree-IN-05
   type: vless
-  server: 164.38.155.135
+  server: 199.232.78.159
   port: 443
-  uuid: AlfredConfig
+  uuid: 75b38c79-92e3-454b-b98e-52fbd254884d
   tls: true
-  sni: alfi.yas-nowin.ir
+  sni: ssl.fastly.com
   network: ws
   ws-opts:
-    path: /?ed=2048
+    path: /
     headers:
-      Host: alfi.yas-nowin.ir
-- name: SubFree-GB-09
+      Host: usai.global.ssl.fastly.net
+- name: SubFree-IN-06
+  type: vless
+  server: 64.186.234.50
+  port: 443
+  uuid: eeb6823c-b926-4ea2-866a-5542edd26e59
+  tls: true
+  sni: t1s1.rittbo.kdns.fr
+  network: ws
+  ws-opts:
+    path: /fp=chromefp=chrome
+    headers:
+      Host: t1s1.rittbo.kdns.fr
+- name: SubFree-GB-11
   type: vless
   server: 199.232.245.94
   port: 443
   uuid: ef2459fd-336f-42c8-8e40-a6f80ca724d7
   tls: true
   sni: global.fastly.com
-- name: SubFree-GB-10
+- name: SubFree-GB-12
+  type: vless
+  server: 199.232.77.215
+  port: 443
+  uuid: ef2459fd-336f-42c8-8e40-a6f80ca724d7
+  tls: true
+  sni: global.fastly.com
+- name: SubFree-GB-13
   type: vless
   server: 199.232.78.150
   port: 443
   uuid: ef2459fd-336f-42c8-8e40-a6f80ca724d7
   tls: true
   sni: global.fastly.com
-- name: SubFree-GB-11
+- name: SubFree-GB-14
   type: vless
-  server: 91.193.58.128
-  port: 2096
-  uuid: f40ea80a-7848-4d49-b2ff-19585e4db8de
-  tls: true
-  sni: sw.captainsparo.ir
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: sw.captainsparo.ir
-- name: SubFree-RU-03
-  type: vless
-  server: 45.67.215.159
-  port: 2087
-  uuid: probabblynot-ch
-  tls: true
-  sni: probabblynot.fazelextremeisreal.com
-  network: ws
-  ws-opts:
-    path: /@probabblynot
-    headers:
-      Host: probabblynot.fazelextremeisreal.com
-- name: SubFree-GB-12
-  type: vless
-  server: 45.131.211.136
+  server: 199.232.78.155
   port: 443
-  uuid: 14b59caf-a196-4ec2-8c70-c7b388062f5b
+  uuid: ef2459fd-336f-42c8-8e40-a6f80ca724d7
   tls: true
-  sni: vangoghhh.info
-  network: ws
-  ws-opts:
-    path: /rdfgtws
-    headers:
-      Host: vangoghhh.info
-- name: SubFree-IN-03
-  type: vless
-  server: 91.193.58.201
-  port: 443
-  uuid: 14b59caf-a196-4ec2-8c70-c7b388062f5b
-  tls: true
-  sni: vangoghhh.info
-  network: ws
-  ws-opts:
-    path: /rdfgtws
-    headers:
-      Host: vangoghhh.info
-- name: SubFree-GB-13
+  sni: ' global.fastly.com'
+- name: SubFree-GB-15
   type: vless
   server: 45.8.211.217
   port: 443
@@ -763,20 +846,7 @@ proxies:
     path: /rdfgtws
     headers:
       Host: vangoghhh.info
-- name: SubFree-RU-04
-  type: vless
-  server: 45.67.215.233
-  port: 443
-  uuid: 55b0463c-e27f-455b-a25a-70123297b9f4
-  tls: true
-  sni: rAyAn-cOnFiG-sg-1.pAriSa.dPdNs.oRg
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /ws
-    headers:
-      Host: rAyAn-cOnFiG-sg-1.pAriSa.dPdNs.oRg
-- name: SubFree-GB-14
+- name: SubFree-GB-16
   type: trojan
   server: 164.38.155.135
   port: 443
@@ -788,29 +858,7 @@ proxies:
     path: /MiTiVPN=De
     headers:
       Host: 95r.ir
-- name: SubFree-GB-15
-  type: trojan
-  server: 91.193.58.201
-  port: 443
-  password: '%4D%69%54%69%56%50%4E'
-  tls: true
-  sni: PioHosting.ir
-  network: ws
-  ws-opts:
-    path: /MiTiVPN=NL
-    headers:
-      Host: PioHosting.ir
-- name: SubFree-GB-16
-  type: trojan
-  server: 91.193.58.201
-  port: 443
-  password: '%4D%69%54%69%56%50%4E'
 - name: SubFree-GB-17
-  type: trojan
-  server: 91.193.58.201
-  port: 443
-  password: '%4D%69%54%69%56%50%4E'
-- name: SubFree-GB-18
   type: trojan
   server: 91.193.58.201
   port: 443
@@ -822,7 +870,17 @@ proxies:
     path: /MiTiVPN=NL
     headers:
       Host: 95r.ir
-- name: SubFree-SG-01
+- name: SubFree-GB-18
+  type: trojan
+  server: 109.176.239.3
+  port: 80
+  password: '%4d%69%54%69%56%50%4e'
+  network: ws
+  ws-opts:
+    path: /MiTiVPN=NL
+    headers:
+      Host: Nl.App-Cloud.ir
+- name: SubFree-SG-03
   type: trojan
   server: 206.238.236.187
   port: 2096
@@ -846,304 +904,19 @@ proxies:
     path: /Telegram-id-DarkVPNpro-Telegram-id-DarkVPNpro-Telegram-id-DarkVPNpro-Telegram-id-DarkVPNpro-Telegram-id-DarkVPNpro-Telegram-id-DarkVPNpro-Telegram-id-DarkVPNpro-Telegram-id-DarkVPNpro-Telegram-id-DarkVPNpro-Telegram-id-DarkVPNpro-Telegram-id-DarkVPNpro-Telegram-id-DarkVPNpro-Telegram-id-DarkVPNpro-Telegram-id-DarkVPNpro
     headers:
       Host: mission-lmpossi7bledeadreckoningpart0ne.irandarkpro.gq
-- name: SubFree-SG-02
-  type: trojan
-  server: 92.243.74.253
-  port: 443
-  password: 8r%3C%5B9%27l6hAO%238ZQi
-  sni: Koma-YT.PAGeS.Dev
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /trTelegram
-    headers:
-      Host: Koma-YT.PAGeS.Dev
-- name: SubFree-SG-03
-  type: trojan
-  server: 92.243.74.253
-  port: 443
-  password: 8r%3C%5B9%27l6hAO%238ZQi
-  tls: true
-  sni: Koma-YT.PAGeS.Dev
-- name: SubFree-SG-04
-  type: trojan
-  server: 92.243.74.253
-  port: 443
-  password: 8r%3C%5B9%27l6hAO%238ZQi
-  sni: Koma-YT.PAGeS.Dev
-  network: ws
-  ws-opts:
-    path: /trTelegram
-    headers:
-      Host: Koma-YT.PAGeS.Dev
 - name: SubFree-GB-20
-  type: vless
-  server: 91.193.58.21
-  port: 2087
-  uuid: 099244b9-2168-4dbd-870e-cbbe9d6eb573
+  type: trojan
+  server: 104.239.72.27
+  port: 443
+  password: '521314'
   tls: true
-  sni: whitecreeper.pages.dev
+  sni: hhtj.hhllfly.kdns.fr
   network: ws
   ws-opts:
-    path: /proxyip=ProxyIP.SG.CMLiussss.Net
+    path: /pyip=Telegram-WangCai2🇨🇳
     headers:
-      Host: whitecreeper.pages.dev
-- name: SubFree-RU-05
-  type: vless
-  server: 45.8.211.217
-  port: 443
-  uuid: 14b59caf-a196-4ec2-8c70-c7b388062f5b
-- name: SubFree-DE-06
-  type: vless
-  server: 45.80.111.1
-  port: 2083
-  uuid: 3682a59c-b75a-4383-95ae-2977e4df805c
-  tls: true
-  sni: Sa.sorixset.ir
+      Host: hhtj.hhllfly.kdns.fr
 - name: SubFree-GB-21
-  type: vless
-  server: 188.164.248.77
-  port: 2083
-  uuid: 663cf772-829c-4bc6-893d-b7d021d42f5b
-  tls: true
-  sni: vp7.cc.cd
-  network: ws
-  ws-opts:
-    path: /?TELEGRAM-MARAMBASHI_MARAMBASHI_MARAMBASHI_MARAMBASHI_MARAMBASHI?ed=512
-    headers:
-      Host: vp7.cc.cd
-- name: SubFree-GB-22
-  type: vless
-  server: 94.247.142.241
-  port: 443
-  uuid: 775213ac-3976-439a-8977-3277c0e4735d
-  tls: true
-  sni: fq521.6789.cloudns.be
-  network: ws
-  ws-opts:
-    path: twitterfreecodessecurityfp
-- name: SubFree-DE-07
-  type: vless
-  server: 45.80.111.1
-  port: 8880
-  uuid: 86dc27f6-a1e3-4cd2-87eb-8f14f5f43ab5
-- name: SubFree-GB-23
-  type: vless
-  server: 199.232.78.159
-  port: 443
-  uuid: 876a99e3-e6a5-4d49-a0dc-b0876dc55e33
-  tls: true
-  sni: ssl.fastly.com
-  network: ws
-  ws-opts:
-    path: /?TELEGRAM-MARAMBASHI_MARAMBASHI_MARAMBASHI_MARAMBASHI_MARAMBASHI?ed=512
-    headers:
-      Host: lsjaoijji.global.ssl.fastly.neT
-- name: SubFree-GB-24
-  type: vless
-  server: 45.80.111.1
-  port: 8880
-  uuid: 89e2646a-41c1-44bf-9892-3b80e40da72b
-- name: SubFree-DE-08
-  type: vless
-  server: 45.80.111.1
-  port: 2083
-  uuid: 938e2c26-3d8e-4c1d-9a1a-a9c8d306cf12
-  tls: true
-  sni: Sa.sorixset.ir
-- name: SubFree-DE-09
-  type: trojan
-  server: 185.18.250.252
-  port: 443
-  password: humanity
-  tls: true
-  sni: www.gossipglove.com
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /assignment
-    headers:
-      Host: www.gossipglove.com
-- name: SubFree-TH-03
-  type: trojan
-  server: 198.62.62.23
-  port: 443
-  password: humanity
-  tls: true
-  sni: www.calmlunch.com
-  network: ws
-  ws-opts:
-    path: /assignment
-    headers:
-      Host: www.calmlunch.com
-- name: SubFree-DE-10
-  type: trojan
-  server: 45.80.111.7
-  port: 443
-  password: humanity
-  tls: true
-  sni: www.calmlunch.com
-  network: ws
-  ws-opts:
-    path: /assignment
-- name: SubFree-DE-11
-  type: trojan
-  server: 45.80.111.7
-  port: 443
-  password: humanity
-  tls: true
-  sni: www.calmlunch.com
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /assignment
-- name: SubFree-DE-12
-  type: trojan
-  server: 45.80.111.7
-  port: 443
-  password: humanity
-  tls: true
-  sni: www.calmlunch.com
-  network: ws
-  ws-opts:
-    path: /assignment
-- name: SubFree-RU-06
-  type: vless
-  server: 45.8.211.217
-  port: 443
-  uuid: 14b59caf-a196-4ec2-8c70-c7b388062f5b
-  tls: true
-  sni: vangoghhh.info
-  network: ws
-  ws-opts:
-    path: /rdfgtws
-    headers:
-      Host: vangoghhh.info
-- name: SubFree-TH-04
-  type: vless
-  server: 185.193.28.212
-  port: 443
-  uuid: 17540a16-a0dd-5694-7e1e-14e281ccc032
-  tls: true
-  sni: crm.lotussec.com
-  network: ws
-  ws-opts:
-    path: /@JavidnamanIran/Javid-SHAH-KingRezaPahlavi/
-    headers:
-      Host: crm.lotussec.com
-- name: SubFree-TH-05
-  type: vless
-  server: 66.81.247.155
-  port: 443
-  uuid: 17540a16-a0dd-5694-7e1e-14e281ccc032
-  tls: true
-  sni: crm.lotussec.com
-  network: ws
-  ws-opts:
-    path: /@JavidnamanIran/Javid-SHAH-KingRezaPahlavi/
-    headers:
-      Host: crm.lotussec.com
-- name: SubFree-IN-04
-  type: vless
-  server: 31.43.179.111
-  port: 2096
-  uuid: 359b9ad3-0009-4655-8872-d0ab566751d3
-  tls: true
-  sni: d03298146e8e2fe6.hozheen.ir
-  network: ws
-  ws-opts:
-    path: /ws?ed=2560
-    headers:
-      Host: newgen14.hozheen.ir
-- name: SubFree-IN-05
-  type: vless
-  server: 188.164.248.143
-  port: 2087
-  uuid: 7b102311-43fd-4e8f-877e-8090623c101d
-  tls: true
-  sni: vp24.cc.cd
-  network: ws
-  ws-opts:
-    path: /fp=chrome
-    headers:
-      Host: vp24.cc.cd
-- name: SubFree-GB-25
-  type: vless
-  server: 199.232.77.215
-  port: 443
-  uuid: ef2459fd-336f-42c8-8e40-a6f80ca724d7
-  tls: true
-  sni: global.fastly.com
-- name: SubFree-GB-26
-  type: vless
-  server: 199.232.78.155
-  port: 443
-  uuid: ef2459fd-336f-42c8-8e40-a6f80ca724d7
-  tls: true
-  sni: ' global.fastly.com'
-- name: SubFree-GB-27
-  type: trojan
-  server: 164.38.155.135
-  port: 443
-  password: '%4D%69%54%69%56%50%4E'
-- name: SubFree-GB-28
-  type: trojan
-  server: 164.38.155.135
-  port: 443
-  password: '%4D%69%54%69%56%50%4E'
-  tls: true
-  sni: 95r.ir
-  network: ws
-  ws-opts:
-    path: /MiTiVPN=De
-    headers:
-      Host: 95r.ir
-- name: SubFree-GB-29
-  type: trojan
-  server: 91.193.58.201
-  port: 443
-  password: '%4D%69%54%69%56%50%4E'
-  tls: true
-  network: ws
-  ws-opts:
-    path: /MiTiVPN=fL
-    headers:
-      Host: Fl.App-Cloud.ir
-- name: SubFree-GB-30
-  type: trojan
-  server: 91.193.58.201
-  port: 443
-  password: '%4D%69%54%69%56%50%4E'
-  tls: true
-  sni: PioHosting.ir
-  network: ws
-  ws-opts:
-    path: /MiTiVPN=NL
-    headers:
-      Host: PioHosting.ir
-- name: SubFree-GB-31
-  type: trojan
-  server: 109.176.239.3
-  port: 80
-  password: '%4d%69%54%69%56%50%4e'
-  network: ws
-  ws-opts:
-    path: /MiTiVPN=NL
-    headers:
-      Host: Nl.App-Cloud.ir
-- name: SubFree-SG-05
-  type: trojan
-  server: 206.238.236.187
-  port: 2096
-  password: 0d89a36e-36bc-41d2-8bd3-bbd639991f29
-  tls: true
-  sni: nicorobin.eula.cloudns.org
-  network: ws
-  ws-opts:
-    path: /Telegram@Linkvws?ed=2560
-    headers:
-      Host: nicorobin.eula.cloudns.org
-- name: SubFree-GB-32
   type: trojan
   server: 164.38.155.27
   port: 443
@@ -1155,6 +928,107 @@ proxies:
     path: /pyip=Telegram-WangCai2🇨🇳
     headers:
       Host: hhtj.hhllfly.kdns.fr
+- name: SubFree-RU-04
+  type: trojan
+  server: 185.148.106.27
+  port: 443
+  password: '521314'
+  tls: true
+  sni: hhtj.hhllfly.kdns.fr
+  network: ws
+  ws-opts:
+    path: /pyip=Telegram-WangCai2🇨🇳
+    headers:
+      Host: hhtj.hhllfly.kdns.fr
+- name: SubFree-DE-09
+  type: trojan
+  server: 188.244.122.27
+  port: 443
+  password: '521314'
+  tls: true
+  sni: hhtj.hhllfly.kdns.fr
+  network: ws
+  ws-opts:
+    path: /pyip=Telegram-WangCai2🇨🇳
+    headers:
+      Host: hhtj.hhllfly.kdns.fr
+- name: SubFree-RU-05
+  type: trojan
+  server: 45.67.215.9
+  port: 443
+  password: '521314'
+  tls: true
+  sni: tjplay.lxdxo.kdns.fr
+  network: ws
+  ws-opts:
+    path: /Telegram @WangCai2
+- name: SubFree-GB-22
+  type: trojan
+  server: 91.193.58.105
+  port: 443
+  password: '521314'
+  tls: true
+  sni: hhtj.hhllfly.kdns.fr
+  network: ws
+  ws-opts:
+    path: /pyip=Telegram-WangCai2🇨🇳
+    headers:
+      Host: hhtj.hhllfly.kdns.fr
+- name: SubFree-GB-23
+  type: trojan
+  server: 91.193.58.135
+  port: 443
+  password: '521314'
+  tls: true
+  sni: hhtj.hhllfly.kdns.fr
+  network: ws
+  ws-opts:
+    path: /pyip=Telegram-WangCai2🇨🇳
+    headers:
+      Host: hhtj.hhllfly.kdns.fr
+- name: SubFree-GB-24
+  type: trojan
+  server: 91.193.58.161
+  port: 443
+  password: '521314'
+  tls: true
+  sni: hhtj.hhllfly.kdns.fr
+  network: ws
+  ws-opts:
+    path: /pyip=Telegram-WangCai2🇨🇳
+    headers:
+      Host: hhtj.hhllfly.kdns.fr
+- name: SubFree-GB-25
+  type: trojan
+  server: 91.193.58.240
+  port: 443
+  password: '521314'
+  tls: true
+  sni: hhtj.hhllfly.kdns.fr
+  network: ws
+  ws-opts:
+    path: /pyip=Telegram-WangCai2🇨🇳
+    headers:
+      Host: hhtj.hhllfly.kdns.fr
+- name: SubFree-GB-26
+  type: trojan
+  server: 91.193.58.83
+  port: 443
+  password: '521314'
+  tls: true
+  sni: hhtj.hhllfly.kdns.fr
+  network: ws
+  ws-opts:
+    path: /pyip=Telegram-WangCai2🇨🇳
+    headers:
+      Host: hhtj.hhllfly.kdns.fr
+- name: SubFree-GB-27
+  type: trojan
+  server: 91.193.58.8
+  port: 2087
+  password: 6953ed5d9cff4c32895fecf21b1dfdc9
+  tls: true
+  sni: nab.velizor.ir
 - name: SubFree-RU-07
   type: trojan
   server: 45.67.215.214
@@ -1191,28 +1065,134 @@ proxies:
     path: /@TirexNet
     headers:
       Host: tirex.sugarbreaker1.workers.dev
-- name: SubFree-SG-06
+- name: SubFree-RU-10
+  type: trojan
+  server: 45.67.215.214
+  port: 443
+  password: 78defd88-d333-67a5-9c34-d3bcef5816eb
+  tls: true
+  sni: tirex.sugarbreaker1.workers.dev
+  network: ws
+  ws-opts:
+    path: /@TirexNet
+    headers:
+      Host: tirex.sugarbreaker1.workers.dev
+- name: SubFree-RU-11
+  type: trojan
+  server: 45.67.215.249
+  port: 443
+  password: 78defd88-d333-67a5-9c34-d3bcef5816eb
+  tls: true
+  sni: tirex.sugarbreaker1.workers.dev
+  network: ws
+  ws-opts:
+    path: /@TirexNet
+    headers:
+      Host: tirex.sugarbreaker1.workers.dev
+- name: SubFree-RU-12
+  type: trojan
+  server: 45.67.215.249
+  port: 443
+  password: 78defd88-d333-67a5-9c34-d3bcef5816eb
+  tls: true
+  sni: tirex.sugarbreaker1.workers.dev
+  network: ws
+  ws-opts:
+    path: /@TirexNet
+    headers:
+      Host: tirex.sugarbreaker1.workers.dev
+- name: SubFree-RU-13
+  type: trojan
+  server: 45.67.215.249
+  port: 443
+  password: 78defd88-d333-67a5-9c34-d3bcef5816eb
+  tls: true
+  sni: tirex.sugarbreaker1.workers.dev
+  network: ws
+  ws-opts:
+    path: /@TirexNet
+    headers:
+      Host: tirex.sugarbreaker1.workers.dev
+- name: SubFree-SG-04
   type: trojan
   server: 92.243.75.253
   port: 443
   password: 8r%253C%255B9%2527l6hAO%25238ZQi
   sni: Koma-YT.PAGeS.Dev
-- name: SubFree-RU-10
+- name: SubFree-HK-01
   type: trojan
-  server: 185.148.105.253
+  server: 154.92.9.253
   port: 443
   password: 8r%3C%5B9%27l6hAO%238ZQi
   tls: true
   sni: Koma-YT.PAGeS.Dev
-- name: SubFree-SG-08
+- name: SubFree-HK-02
   type: trojan
-  server: 92.243.74.253
+  server: 154.92.9.25
   port: 443
   password: 8r%3C%5B9%27l6hAO%238ZQi
   sni: Koma-YT.PAGeS.Dev
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /trTelegram @WangCai2
+    headers:
+      Host: Koma-YT.PAGeS.Dev
+- name: SubFree-HK-03
+  type: trojan
+  server: 154.92.9.25
+  port: 443
+  password: 8r%3C%5B9%27l6hAO%238ZQi
+  tls: true
+  sni: Koma-YT.PAGeS.Dev
+- name: SubFree-HK-04
+  type: trojan
+  server: 154.92.9.25
+  port: 443
+  password: 8r%3C%5B9%27l6hAO%238ZQi
+  sni: Koma-YT.PAGeS.Dev
+- name: SubFree-SG-05
+  type: trojan
+  server: 27.50.48.253
+  port: 443
+  password: 8r%3C%5B9%27l6hAO%238ZQi
+  sni: Koma-YT.PAGeS.Dev
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /trTelegram
+    headers:
+      Host: Koma-YT.PAGeS.Dev
+- name: SubFree-SG-06
+  type: trojan
+  server: 27.50.48.253
+  port: 443
+  password: 8r%3C%5B9%27l6hAO%238ZQi
+  sni: Koma-YT.PAGeS.Dev
+  network: ws
+  ws-opts:
+    path: /trTelegram
+- name: SubFree-SG-07
+  type: trojan
+  server: 27.50.49.253
+  port: 443
+  password: 8r%3C%5B9%27l6hAO%238ZQi
+  sni: Koma-YT.PAGeS.Dev
+- name: SubFree-SG-08
+  type: trojan
+  server: 27.50.49.253
+  port: 443
+  password: 8r%3C%5B9%27l6hAO%238ZQi
+  sni: Koma-YT.PAGeS.Dev
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /trTelegram
+    headers:
+      Host: Koma-YT.PAGeS.Dev
 - name: SubFree-SG-09
   type: trojan
-  server: 92.243.74.253
+  server: 27.50.49.253
   port: 443
   password: 8r%3C%5B9%27l6hAO%238ZQi
   sni: Koma-YT.PAGeS.Dev
@@ -1224,17 +1204,7 @@ proxies:
       Host: Koma-YT.PAGeS.Dev
 - name: SubFree-SG-10
   type: trojan
-  server: 92.243.74.253
-  port: 443
-  password: 8r%3C%5B9%27l6hAO%238ZQi
-  sni: Koma-YT.PAGeS.Dev
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /trTelegram
-- name: SubFree-SG-11
-  type: trojan
-  server: 92.243.74.253
+  server: 27.50.49.253
   port: 443
   password: 8r%3C%5B9%27l6hAO%238ZQi
   sni: Koma-YT.PAGeS.Dev
@@ -1262,6 +1232,7 @@ proxies:
   server: 92.243.74.253
   port: 443
   password: 8r%3C%5B9%27l6hAO%238ZQi
+  tls: true
   sni: Koma-YT.PAGeS.Dev
 - name: SubFree-SG-15
   type: trojan
@@ -1269,9 +1240,6 @@ proxies:
   port: 443
   password: 8r%3C%5B9%27l6hAO%238ZQi
   sni: Koma-YT.PAGeS.Dev
-  network: ws
-  ws-opts:
-    path: /trTelegram
 - name: SubFree-SG-16
   type: trojan
   server: 92.243.74.253
@@ -1281,6 +1249,8 @@ proxies:
   network: ws
   ws-opts:
     path: /trTelegram
+    headers:
+      Host: Koma-YT.PAGeS.Dev
 - name: SubFree-SG-17
   type: trojan
   server: 92.243.74.253
@@ -1289,10 +1259,17 @@ proxies:
   sni: Koma-YT.PAGeS.Dev
   network: ws
   ws-opts:
-    path: /trTelegram @WangCai2
-    headers:
-      Host: Koma-YT.PAGeS.Dev
+    path: /trTelegram
 - name: SubFree-SG-18
+  type: trojan
+  server: 92.243.74.253
+  port: 443
+  password: 8r%3C%5B9%27l6hAO%238ZQi
+  sni: Koma-YT.PAGeS.Dev
+  network: ws
+  ws-opts:
+    path: /trTelegram
+- name: SubFree-SG-19
   type: trojan
   server: 92.243.75.253
   port: 443
@@ -1304,31 +1281,415 @@ proxies:
     path: /trTelegram
     headers:
       Host: Koma-YT.PAGeS.Dev
-- name: SubFree-SG-19
-  type: trojan
-  server: 92.243.75.253
-  port: 443
-  password: 8r%3C%5B9%27l6hAO%238ZQi
-  sni: Koma-YT.PAGeS.Dev
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /trTelegram @WangCai2
-    headers:
-      Host: Koma-YT.PAGeS.Dev
 - name: SubFree-SG-20
   type: trojan
   server: 92.243.75.253
   port: 443
   password: 8r%3C%5B9%27l6hAO%238ZQi
+  tls: true
   sni: Koma-YT.PAGeS.Dev
+- name: SubFree-SG-21
+  type: trojan
+  server: 92.243.75.253
+  port: 443
+  password: 8r%3C%5B9%27l6hAO%238ZQi
+  sni: Koma-YT.PAGeS.Dev
+- name: SubFree-RU-16
+  type: trojan
+  server: 176.124.223.40
+  port: 2053
+  password: Aimer
+  tls: true
+  sni: epgb.aimercc.dpdns.org
+  network: ws
+  ws-opts:
+    path: /?ed=2560
+- name: SubFree-RU-18
+  type: trojan
+  server: 176.124.223.92
+  port: 443
+  password: Aimer
+  sni: epgc.aimercc.dpdns.org
   skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: epgc.aimercc.dpdns.org
+- name: SubFree-RU-19
+  type: trojan
+  server: 176.124.223.92
+  port: 443
+  password: Aimer
+  tls: true
+  sni: epgc.aimercc.dpdns.org
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /?ed=2560&proxyip=ts.hpc.tw
+    headers:
+      Host: epgc.aimercc.dpdns.org
+- name: SubFree-RU-20
+  type: trojan
+  server: 176.124.223.92
+  port: 443
+  password: Aimer
+  sni: epgc.aimercc.dpdns.org
+  network: ws
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: epgc.aimercc.dpdns.org
+- name: SubFree-RU-21
+  type: trojan
+  server: 213.241.198.56
+  port: 2083
+  password: Aimer
+  tls: true
+  sni: epgc.aimercc.dpdns.org
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /?ed=2560&proxyip=ts.hpc.tw
+    headers:
+      Host: epgc.aimercc.dpdns.org
+- name: SubFree-SG-30
+  type: trojan
+  server: 27.50.48.21
+  port: 443
+  password: Aimer
+  sni: epgc.aimercc.dpdns.org
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: epgc.aimercc.dpdns.org
+- name: SubFree-SG-36
+  type: trojan
+  server: 27.50.49.208
+  port: 443
+  password: Aimer
+  sni: epgc.aimercc.dpdns.org
+  network: ws
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: epgc.aimercc.dpdns.org
+- name: SubFree-SG-40
+  type: trojan
+  server: 27.50.49.37
+  port: 2053
+  password: Aimer
+  sni: epgb.aimercc.dpdns.org
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: epgb.aimercc.dpdns.org
+- name: SubFree-SG-41
+  type: trojan
+  server: 27.50.49.74
+  port: 2087
+  password: Aimer
+  sni: epgc.aimercc.dpdns.org
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: epgc.aimercc.dpdns.org
+- name: SubFree-RU-24
+  type: trojan
+  server: 45.67.215.217
+  port: 2087
+  password: Aimer
+  tls: true
+  sni: epgb.aimercc.dpdns.org
+  network: ws
+  ws-opts:
+    path: /?ed=2560
+- name: SubFree-RU-26
+  type: trojan
+  server: 77.232.140.114
+  port: 2053
+  password: Aimer
+  sni: epgc.aimercc.dpdns.org
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: epgc.aimercc.dpdns.org
+- name: SubFree-RU-27
+  type: trojan
+  server: 77.232.140.114
+  port: 2053
+  password: Aimer
+  tls: true
+  sni: epgb.aimercc.dpdns.org
+  network: ws
+  ws-opts:
+    path: /?ed=2560
+- name: SubFree-RU-28
+  type: trojan
+  server: 77.232.140.114
+  port: 2053
+  password: Aimer
+  tls: true
+  sni: epgc.aimercc.dpdns.org
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /?ed=2560&proxyip=ts.hpc.tw
+    headers:
+      Host: epgc.aimercc.dpdns.org
+- name: SubFree-SG-43
+  type: trojan
+  server: 92.243.74.239
+  port: 8443
+  password: Aimer
+  sni: epgb.aimercc.dpdns.org
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: epgb.aimercc.dpdns.org
+- name: SubFree-SG-45
+  type: trojan
+  server: 92.243.74.23
+  port: 2096
+  password: Aimer
+  sni: epgc.aimercc.dpdns.org
+  network: ws
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: epgc.aimercc.dpdns.org
+- name: SubFree-SG-48
+  type: trojan
+  server: 92.243.74.3
+  port: 8443
+  password: Aimer
+  sni: epgb.aimercc.dpdns.org
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: epgb.aimercc.dpdns.org
+- name: SubFree-SG-49
+  type: trojan
+  server: 92.243.74.3
+  port: 8443
+  password: Aimer
+  tls: true
+  sni: epgb.aimercc.dpdns.org
+  network: ws
+  ws-opts:
+    path: /?ed=2560
+- name: SubFree-SG-50
+  type: trojan
+  server: 92.243.74.3
+  port: 8443
+  password: Aimer
+  sni: epgc.aimercc.dpdns.org
+  network: ws
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: epgc.aimercc.dpdns.org
+- name: SubFree-GB-28
+  type: trojan
+  server: 164.38.155.135
+  port: 443
+  password: MITIVPN
+  tls: true
+  sni: 95r.ir
+  network: ws
+  ws-opts:
+    path: /MiTiVPN=De
+    headers:
+      Host: 95r.ir
+- name: SubFree-GB-29
+  type: trojan
+  server: 164.38.155.135
+  port: 443
+  password: MITIVPN
+  tls: true
+  sni: 95r.ir
+  network: ws
+  ws-opts:
+    path: /MiTiVPN=De
+    headers:
+      Host: 95r.ir
+- name: SubFree-GB-30
+  type: trojan
+  server: 164.38.155.135
+  port: 443
+  password: MITIVPN
+  sni: 95r.ir
+- name: SubFree-GB-31
+  type: trojan
+  server: 164.38.155.135
+  port: 443
+  password: MITIVPN
+  tls: true
+  sni: 95r.ir
+  network: ws
+  ws-opts:
+    path: /MiTiVPN=De
+    headers:
+      Host: 95r.ir
+- name: SubFree-GB-32
+  type: trojan
+  server: 164.38.155.135
+  port: 443
+  password: MITIVPN
 - name: SubFree-GB-33
   type: trojan
   server: 164.38.155.135
   port: 443
-  password: M%49TIVPN
-- name: SubFree-RU-11
+  password: MITIVPN
+  tls: true
+  sni: 95r.ir
+  network: ws
+  ws-opts:
+    path: /MiTiVPN=De
+    headers:
+      Host: 95r.ir
+- name: SubFree-GB-34
+  type: trojan
+  server: 164.38.155.135
+  port: 443
+  password: MITIVPN
+- name: SubFree-GB-35
+  type: trojan
+  server: 164.38.155.135
+  port: 443
+  password: MITIVPN
+- name: SubFree-GB-36
+  type: trojan
+  server: 164.38.155.135
+  port: 443
+  password: MITIVPN
+  tls: true
+  sni: 95r.ir
+  network: ws
+  ws-opts:
+    path: /MiTiVPN=De
+    headers:
+      Host: 95r.ir
+- name: SubFree-GB-37
+  type: trojan
+  server: 164.38.155.135
+  port: 443
+  password: MITIVPN
+  tls: true
+  sni: 95r.ir
+  network: ws
+  ws-opts:
+    path: /MiTiVPN=De
+    headers:
+      Host: 95r.ir
+- name: SubFree-DE-10
+  type: trojan
+  server: 45.80.111.7
+  port: 443
+  password: MITIVPN
+  tls: true
+  sni: u---as.MaQror.ir
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /---@MiTiVPN/---@MiTiVPN/---@MiTiVPN/---@MiTiVPN/---@MiTiVPN=usa
+    headers:
+      Host: us-sss-us.MaQror.ir
+- name: SubFree-GB-38
+  type: trojan
+  server: 164.38.155.135
+  port: 443
+  password: MiTiVPN
+  tls: true
+  sni: 95r.ir
+  network: ws
+  ws-opts:
+    path: /MiTiVPN=De
+    headers:
+      Host: 95r.ir
+- name: SubFree-GB-39
+  type: trojan
+  server: 91.193.58.201
+  port: 443
+  password: MiTiVPN
+  tls: true
+  sni: PioHosting.ir
+  network: ws
+  ws-opts:
+    path: /MiTiVPN=NL
+    headers:
+      Host: PioHosting.ir
+- name: SubFree-GB-40
+  type: trojan
+  server: 91.193.58.201
+  port: 443
+  password: MiTiVPN
+  tls: true
+  sni: fl.App-Cloud.ir
+  network: ws
+  ws-opts:
+    path: /MiTiVPN=fL
+    headers:
+      Host: Fl.App-Cloud.ir
+- name: SubFree-GB-41
+  type: trojan
+  server: 91.193.58.201
+  port: 443
+  password: MiTiVPN
+  sni: Fl.App-Cloud.ir
+- name: SubFree-GB-42
+  type: trojan
+  server: 91.193.58.201
+  port: 443
+  password: MiTiVPN
+  sni: fl.App-Cloud.ir
+  network: ws
+  ws-opts:
+    path: /MiTiVPN=fL
+    headers:
+      Host: Fl.App-Cloud.ir
+- name: SubFree-GB-43
+  type: trojan
+  server: 91.193.58.201
+  port: 443
+  password: MiTiVPN
+  tls: true
+  sni: PioHosting.ir
+  network: ws
+  ws-opts:
+    path: /MiTiVPN=fL
+    headers:
+      Host: PioHosting.ir
+- name: SubFree-DE-11
+  type: trojan
+  server: 89.116.46.210
+  port: 443
+  password: Telegram-Config0plus
+  tls: true
+  sni: go.appsflyer.com.r3xxe.eu.cc
+  network: ws
+  ws-opts:
+    path: /ca-cl
+    headers:
+      Host: go.appsflyer.com.r3xxe.eu.cc
+- name: SubFree-RU-30
+  type: trojan
+  server: 194.53.53.4
+  port: 443
+  password: auto
+- name: SubFree-RU-31
   type: trojan
   server: 194.53.53.4
   port: 443
@@ -1340,47 +1701,18 @@ proxies:
     path: /
     headers:
       Host: e9464f45.trauma-2r4.pages.dev
-- name: SubFree-GB-34
+- name: SubFree-RU-34
   type: trojan
-  server: 91.193.58.8
-  port: 2087
-  password: ba8499823a974085bba83ef7f680e35c
+  server: 45.142.120.4
+  port: 2096
+  password: bpb-trojan
   tls: true
-  sni: pil.velizor.ir
-- name: SubFree-GB-35
-  type: trojan
-  server: 91.193.58.8
-  port: 2087
-  password: ba8499823a974085bba83ef7f680e35c
-  tls: true
-  sni: pil.velizor.ir
-- name: SubFree-GB-36
-  type: trojan
-  server: 91.193.58.8
-  port: 2087
-  password: ba8499823a974085bba83ef7f680e35c
-  tls: true
-  sni: pil.velizor.ir
-- name: SubFree-IN-06
-  type: vless
-  server: 45.142.120.40
-  port: 8880
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  sni: 403B3611-99bC-43b7-88D7-26ed5d0825A9-3.PageS.DEV
   network: ws
   ws-opts:
-    path: /
+    path: /troUbg9Q3QgD0TJRfy?ed=2560
     headers:
-      Host: vms.lifetime08.workers.dev
-- name: SubFree-RU-15
-  type: vless
-  server: 185.148.104.30
-  port: 8880
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: vms.lifetime51.workers.dev
+      Host: 403b3611-99bc-43b7-88d7-26ed5d0825a9-3.pages.dev
 - name: SubFree-DE-13
   type: trojan
   server: 89.116.46.68
@@ -1393,211 +1725,17 @@ proxies:
     path: /my-wbv
     headers:
       Host: zaintest.vuclip.com.cyylr.eu.cc
-- name: SubFree-SG-21
-  type: trojan
-  server: 27.50.48.49
-  port: 443
-  password: mitivpn
-  tls: true
-  sni: gamingdll.ir
-  network: ws
-  ws-opts:
-    path: /index.html/ed=mitivpn
-    headers:
-      Host: gamingdll.ir
-- name: SubFree-SG-22
-  type: vless
-  server: 92.243.74.4
-  port: 8443
-  uuid: 7b102311-43fd-4e8f-877e-8090623c101d
-  tls: true
-  sni: vp29.cc.cd
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: vp29.cc.cd
-- name: SubFree-GB-37
-  type: vless
-  server: 89.116.250.135
-  port: 443
-  uuid: 14b59caf-a196-4ec2-8c70-c7b388062f5b
-  tls: true
-  sni: vangoghhh.info
-  network: ws
-  ws-opts:
-    path: /rdfgtws
-    headers:
-      Host: vangoghhh.info
-- name: SubFree-GB-38
-  type: trojan
-  server: 91.193.58.201
-  port: 443
-  password: '%4D%69%54%69%56%50%4E'
-  tls: true
-  sni: 95r.ir
-  network: ws
-  ws-opts:
-    path: /MiTiVPN=NL
-    headers:
-      Host: 95r.ir
-- name: SubFree-RU-16
-  type: trojan
-  server: 176.124.223.27
-  port: 443
-  password: '521314'
-  tls: true
-  sni: hhtj.hhllfly.kdns.fr
-  network: ws
-  ws-opts:
-    path: /pyip=Telegram-WangCai2🇨🇳
-    headers:
-      Host: hhtj.hhllfly.kdns.fr
 - name: SubFree-DE-14
   type: trojan
-  server: 185.135.9.27
+  server: 89.116.46.68
   port: 443
-  password: '521314'
-  tls: true
-  sni: hhtj.hhllfly.kdns.fr
+  password: de4dbc41-fe13-4498-b5b4-083e451270f6
+  sni: zaintest.vuclip.com.cyylr.eu.cc
   network: ws
   ws-opts:
-    path: /pyip=Telegram-WangCai2🇨🇳
+    path: /my-wbv
     headers:
-      Host: hhtj.hhllfly.kdns.fr
-- name: SubFree-GB-39
-  type: trojan
-  server: 91.193.58.8
-  port: 2087
-  password: 6953ed5d9cff4c32895fecf21b1dfdc9
-  tls: true
-  sni: nab.velizor.ir
-- name: SubFree-RU-17
-  type: trojan
-  server: 45.67.215.214
-  port: 443
-  password: 78defd88-d333-67a5-9c34-d3bcef5816eb
-  tls: true
-  sni: tirex.sugarbreaker1.workers.dev
-  network: ws
-  ws-opts:
-    path: /@TirexNet
-    headers:
-      Host: tirex.sugarbreaker1.workers.dev
-- name: SubFree-RU-18
-  type: trojan
-  server: 45.67.215.214
-  port: 443
-  password: 78defd88-d333-67a5-9c34-d3bcef5816eb
-  tls: true
-  sni: tirex.sugarbreaker1.workers.dev
-  network: ws
-  ws-opts:
-    path: /@TirexNet
-    headers:
-      Host: tirex.sugarbreaker1.workers.dev
-- name: SubFree-RU-19
-  type: trojan
-  server: 45.67.215.214
-  port: 443
-  password: 78defd88-d333-67a5-9c34-d3bcef5816eb
-  tls: true
-  sni: tirex.sugarbreaker1.workers.dev
-  network: ws
-  ws-opts:
-    path: /@TirexNet
-    headers:
-      Host: tirex.sugarbreaker1.workers.dev
-- name: SubFree-RU-20
-  type: trojan
-  server: 45.67.215.214
-  port: 443
-  password: 78defd88-d333-67a5-9c34-d3bcef5816eb
-  tls: true
-  sni: tirex.sugarbreaker1.workers.dev
-  network: ws
-  ws-opts:
-    path: /@VPNine1
-    headers:
-      Host: tirex.sugarbreaker1.workers.dev
-- name: SubFree-RU-21
-  type: trojan
-  server: 45.67.215.249
-  port: 443
-  password: 78defd88-d333-67a5-9c34-d3bcef5816eb
-  tls: true
-  sni: tirex.sugarbreaker1.workers.dev
-  network: ws
-  ws-opts:
-    path: /@TirexNet
-    headers:
-      Host: tirex.sugarbreaker1.workers.dev
-- name: SubFree-RU-22
-  type: trojan
-  server: 45.67.215.249
-  port: 443
-  password: 78defd88-d333-67a5-9c34-d3bcef5816eb
-  tls: true
-  sni: tirex.sugarbreaker1.workers.dev
-  network: ws
-  ws-opts:
-    path: /@TirexNet
-    headers:
-      Host: tirex.sugarbreaker1.workers.dev
-- name: SubFree-RU-23
-  type: trojan
-  server: 45.67.215.249
-  port: 443
-  password: 78defd88-d333-67a5-9c34-d3bcef5816eb
-  tls: true
-  sni: tirex.sugarbreaker1.workers.dev
-  network: ws
-  ws-opts:
-    path: /@TirexNet
-    headers:
-      Host: tirex.sugarbreaker1.workers.dev
-- name: SubFree-SG-23
-  type: trojan
-  server: 92.243.75.253
-  port: 443
-  password: 8r%3C%5B9%27l6hAO%238ZQi
-  tls: true
-  sni: Koma-YT.PAGeS.Dev
-- name: SubFree-SG-24
-  type: trojan
-  server: 92.243.75.253
-  port: 443
-  password: 8r%3C%5B9%27l6hAO%238ZQi
-  sni: Koma-YT.PAGeS.Dev
-- name: SubFree-GB-40
-  type: trojan
-  server: 164.38.155.135
-  port: 443
-  password: M%49TIVPN
-  tls: true
-  sni: 95r.ir
-  network: ws
-  ws-opts:
-    path: /MiTiVPN=De
-    headers:
-      Host: 95r.ir
-- name: SubFree-RU-25
-  type: trojan
-  server: 194.53.53.4
-  port: 443
-  password: auto
-- name: SubFree-RU-26
-  type: trojan
-  server: 194.53.53.4
-  port: 443
-  password: auto
-  tls: true
-  sni: e9464f45.trauma-2r4.pages.dev
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: e9464f45.trauma-2r4.pages.dev
+      Host: zaintest.vuclip.com.cyylr.eu.cc
 - name: SubFree-DE-15
   type: trojan
   server: 89.116.46.68
@@ -1615,28 +1753,6 @@ proxies:
   server: 89.116.46.68
   port: 443
   password: de4dbc41-fe13-4498-b5b4-083e451270f6
-  sni: zaintest.vuclip.com.cyylr.eu.cc
-  network: ws
-  ws-opts:
-    path: /my-wbv
-    headers:
-      Host: zaintest.vuclip.com.cyylr.eu.cc
-- name: SubFree-DE-17
-  type: trojan
-  server: 89.116.46.68
-  port: 443
-  password: de4dbc41-fe13-4498-b5b4-083e451270f6
-  sni: zaintest.vuclip.com.cyylr.eu.cc
-  network: ws
-  ws-opts:
-    path: /my-wbv
-    headers:
-      Host: zaintest.vuclip.com.cyylr.eu.cc
-- name: SubFree-DE-18
-  type: trojan
-  server: 89.116.46.68
-  port: 443
-  password: de4dbc41-fe13-4498-b5b4-083e451270f6
   tls: true
   sni: zaintest.vuclip.com.cyylr.eu.cc
   network: ws
@@ -1644,6 +1760,112 @@ proxies:
     path: /my-wbv
     headers:
       Host: zaintest.vuclip.com.cyylr.eu.cc
+- name: SubFree-GB-47
+  type: trojan
+  server: 185.238.228.195
+  port: 2096
+  password: slch2024
+  tls: true
+  sni: ocost-dy.wmlefl.cc
+  network: ws
+  ws-opts:
+    path: Telegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3
+    headers:
+      Host: ocost-dy.wmlefl.cc
+- name: SubFree-GB-48
+  type: trojan
+  server: 91.193.58.0
+  port: 443
+  password: trojan
+  tls: true
+  sni: wahaha.yingyangkuaixian.dpdns.org
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: wahaha.yingyangkuaixian.dpdns.org
+- name: SubFree-GB-49
+  type: trojan
+  server: 25.25.25.216
+  port: 2096
+  password: ttfang
+  tls: true
+  sni: ttfang.fange.me
+  network: ws
+  ws-opts:
+    path: Telegram🇨🇳
+    headers:
+      Host: ttfang.fange.me
+- name: SubFree-GB-50
+  type: trojan
+  server: 25.25.25.216
+  port: 2096
+  password: ttfang
+  tls: true
+  sni: ttfang.fange.me
+  network: ws
+  ws-opts:
+    path: Telegram🇨🇳
+- name: SubFree-RU-36
+  type: trojan
+  server: 31.12.75.216
+  port: 2096
+  password: ttfang
+  tls: true
+  sni: ttfang.fange.me
+  network: ws
+  ws-opts:
+    path: Telegram
+- name: SubFree-RU-37
+  type: trojan
+  server: 45.142.120.216
+  port: 2096
+  password: ttfang
+  tls: true
+  sni: ttfang.fange.me
+  network: ws
+  ws-opts:
+    path: Telegram
+- name: SubFree-RU-38
+  type: trojan
+  server: 45.67.215.216
+  port: 2096
+  password: ttfang
+  tls: true
+  sni: ttfang.fange.me
+  network: ws
+  ws-opts:
+    path: Telegram🇨🇳
+- name: SubFree-DE-17
+  type: trojan
+  server: 45.80.111.216
+  port: 2096
+  password: ttfang
+  tls: true
+  sni: ttfang.fange.me
+  network: ws
+  ws-opts:
+    path: Telegram🇨🇳
+- name: SubFree-DE-18
+  type: vless
+  server: 151.101.193.54
+  port: 80
+  uuid: c9380ef8-23f8-422e-81fe-ebbb032202cf
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: BankMelat.glObal.ssl.faStly.nEt.
+- name: SubFree-RU-39
+  type: vless
+  server: 185.148.106.50
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: vms.lifetime54.workers.dev
 - name: SubFree-DE-19
   type: trojan
   server: 89.116.46.68
@@ -1657,237 +1879,156 @@ proxies:
     headers:
       Host: zaintest.vuclip.com.cyylr.eu.cc
 - name: SubFree-DE-20
-  type: trojan
-  server: 89.116.46.68
-  port: 443
-  password: de4dbc41-fe13-4498-b5b4-083e451270f6
-  tls: true
-  sni: zaintest.vuclip.com.cyylr.eu.cc
-  network: ws
-  ws-opts:
-    path: /my-wbv
-    headers:
-      Host: zaintest.vuclip.com.cyylr.eu.cc
-- name: SubFree-RU-27
-  type: trojan
-  server: 185.148.105.27
-  port: 443
-  password: '521314'
-  tls: true
-  sni: hhtj.hhllfly.kdns.fr
-  network: ws
-  ws-opts:
-    path: /pyip=Telegram-WangCai2🇨🇳
-    headers:
-      Host: hhtj.hhllfly.kdns.fr
-- name: SubFree-RU-28
-  type: trojan
-  server: 185.148.106.27
-  port: 443
-  password: '521314'
-  tls: true
-  sni: hhtj.hhllfly.kdns.fr
-  network: ws
-  ws-opts:
-    path: /pyip=Telegram-WangCai2🇨🇳
-    headers:
-      Host: hhtj.hhllfly.kdns.fr
-- name: SubFree-RU-29
-  type: trojan
-  server: 185.148.106.27
-  port: 443
-  password: '521314'
-  tls: true
-  sni: hhtj.hhllfly.kdns.fr
-  network: ws
-  ws-opts:
-    path: /pyip=Telegram-WangCai2🇨🇳
-    headers:
-      Host: hhtj.hhllfly.kdns.fr
-- name: SubFree-RU-30
-  type: trojan
-  server: 185.148.107.27
-  port: 443
-  password: '521314'
-  tls: true
-  sni: hhtj.hhllfly.kdns.fr
-  network: ws
-  ws-opts:
-    path: /pyip=Telegram-WangCai2🇨🇳
-    headers:
-      Host: hhtj.hhllfly.kdns.fr
-- name: SubFree-GB-41
-  type: trojan
-  server: 185.170.166.27
-  port: 443
-  password: '521314'
-  tls: true
-  sni: hhtj.hhllfly.kdns.fr
-  network: ws
-  ws-opts:
-    path: /pyip=Telegram-WangCai2🇨🇳
-    headers:
-      Host: hhtj.hhllfly.kdns.fr
-- name: SubFree-GB-42
-  type: trojan
-  server: 185.193.28.27
-  port: 443
-  password: '521314'
-  tls: true
-  sni: hhtj.hhllfly.kdns.fr
-  network: ws
-  ws-opts:
-    path: /pyip=Telegram-WangCai2🇨🇳
-    headers:
-      Host: hhtj.hhllfly.kdns.fr
-- name: SubFree-GB-43
-  type: trojan
-  server: 185.193.31.27
-  port: 443
-  password: '521314'
-  tls: true
-  sni: hhtj.hhllfly.kdns.fr
-  network: ws
-  ws-opts:
-    path: /pyip=Telegram-WangCai2🇨🇳
-    headers:
-      Host: hhtj.hhllfly.kdns.fr
-- name: SubFree-GB-44
-  type: trojan
-  server: 164.38.155.135
-  port: 443
-  password: M%69T%69VPN
-  tls: true
-  sni: 95r.ir
-  network: ws
-  ws-opts:
-    path: /MiTiVPN=De
-    headers:
-      Host: 95r.ir
-- name: SubFree-GB-45
-  type: trojan
-  server: 91.193.58.201
-  port: 443
-  password: M%69TiVPN
-- name: SubFree-GB-46
-  type: trojan
-  server: 91.193.58.201
-  port: 443
-  password: M%69TiVPN
-  tls: true
-  sni: 95r.ir
-  network: ws
-  ws-opts:
-    path: /MiTiVPN=NL
-    headers:
-      Host: 95r.ir
-- name: SubFree-RU-32
-  type: trojan
-  server: 194.53.53.4
-  port: 443
-  password: auto
-  tls: true
-  sni: e9464f45.trauma-2r4.pages.dev
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: e9464f45.trauma-2r4.pages.dev
-- name: SubFree-SG-25
-  type: trojan
-  server: 206.238.237.1
-  port: 2087
-  password: dns68
-  tls: true
-  sni: trojan.putata.us.kg
-  network: ws
-  ws-opts:
-    path: /?ed=2560
-    headers:
-      Host: trojan.putata.us.kg
-- name: SubFree-SG-26
   type: vless
-  server: 141.193.213.20
-  port: 2096
-  uuid: edb26c67-44b7-4448-ac19-625f503db1a5
+  server: 45.80.111.1
+  port: 2083
+  uuid: 3682a59c-b75a-4383-95ae-2977e4df805c
   tls: true
-  sni: lk.thenuka.online
+  sni: Sa.sorixset.ir
+- name: SubFree-DE-21
+  type: vless
+  server: 45.80.111.1
+  port: 8880
+  uuid: 83fa679c-2333-4a81-a48d-c3705c145d70
+- name: SubFree-IN-07
+  type: trojan
+  server: 46.202.30.27
+  port: 443
+  password: MiTiVPN
+  tls: true
+  sni: g-o-MiTiVPN---MiTiVPNj.aPp-cLoud.IR
+  skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /
+    path: /---@VPNine1---@VPNine1/---@VPNine1---@VPNine1/---@VPNine1---@VPNine1/nl
     headers:
-      Host: lk.thenuka.online
-- name: SubFree-RU-33
+      Host: op-mitivpn--MiTiVPN---MiTiVPN-o.aPp-cLoud.IR
+- name: SubFree-DE-22
+  type: trojan
+  server: 185.18.250.252
+  port: 443
+  password: humanity
+  tls: true
+  sni: www.gossipglove.com
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /assignment
+    headers:
+      Host: www.gossipglove.com
+- name: SubFree-TH-04
+  type: trojan
+  server: 198.62.62.23
+  port: 443
+  password: humanity
+  tls: true
+  sni: www.calmlunch.com
+  network: ws
+  ws-opts:
+    path: /assignment
+    headers:
+      Host: www.calmlunch.com
+- name: SubFree-DE-23
+  type: trojan
+  server: 45.80.111.7
+  port: 443
+  password: humanity
+  tls: true
+  sni: www.calmlunch.com
+  network: ws
+  ws-opts:
+    path: /assignment
+- name: SubFree-IN-08
   type: vless
-  server: 185.148.106.50
+  server: 154.197.64.30
   port: 8880
   uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
   network: ws
   ws-opts:
     path: /
     headers:
-      Host: vms.lifetime54.workers.dev
-- name: SubFree-GB-47
-  type: trojan
-  server: 104.239.72.27
-  port: 443
-  password: '521314'
-  tls: true
-  sni: hhtj.hhllfly.kdns.fr
+      Host: vms.lifetime36.workers.dev
+- name: SubFree-IN-09
+  type: vless
+  server: 185.170.166.30
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
   network: ws
   ws-opts:
-    path: /pyip=Telegram-WangCai2🇨🇳
+    path: /
     headers:
-      Host: hhtj.hhllfly.kdns.fr
-- name: SubFree-DE-21
-  type: trojan
-  server: 188.244.122.27
+      Host: vms.lifetime04.workers.dev
+- name: SubFree-IN-10
+  type: vless
+  server: 199.232.9.94
   port: 443
-  password: '521314'
+  uuid: 86fdb625-1a7f-4784-99a6-a96b3a80fc6d
   tls: true
-  sni: hhtj.hhllfly.kdns.fr
+  sni: speedtest.net
   network: ws
   ws-opts:
-    path: /pyip=Telegram-WangCai2🇨🇳
+    path: /vip1
     headers:
-      Host: hhtj.hhllfly.kdns.fr
-- name: SubFree-SG-27
-  type: trojan
-  server: 27.50.49.27
-  port: 443
-  password: '521314'
-  tls: true
-  sni: hhtj.hhllfly.kdns.fr
+      Host: hamshahriesfahan.com
+- name: SubFree-PH-02
+  type: vless
+  server: 154.17.238.183
+  port: 64414
+  uuid: b7479b73-8cea-4a82-97e8-bacf9bd86605
+  sni: apple.com
+- name: SubFree-IN-11
+  type: vless
+  server: 203.32.121.53
+  port: 8080
+  uuid: b907aea0-cf1a-489f-aef7-b55a1ac04f34
   network: ws
   ws-opts:
-    path: /pyip=Telegram-WangCai2🇨🇳
+    path: /Telegram:@VPNine1-Telegram:@VPNine1-Telegram:@VPNine1?ed=8080
     headers:
-      Host: hhtj.hhllfly.kdns.fr
-- name: SubFree-RU-34
-  type: trojan
-  server: 31.12.75.27
-  port: 443
-  password: '521314'
+      Host: join-to.vmessorg.Community.
+- name: SubFree-IN-12
+  type: vless
+  server: 182.16.61.2
+  port: 45647
+  uuid: caec0d8d-ab2f-4247-b97d-7fb1a34ab195
+- name: SubFree-RU-40
+  type: vless
+  server: 45.67.215.159
+  port: 2087
+  uuid: probabblynot-ch
   tls: true
-  sni: hhtj.hhllfly.kdns.fr
+  sni: probabblynot.fazelextremeisreal.com
   network: ws
   ws-opts:
-    path: /pyip=Telegram-WangCai2🇨🇳
+    path: /@probabblynot
     headers:
-      Host: hhtj.hhllfly.kdns.fr
-- name: SubFree-RU-35
-  type: trojan
-  server: 45.142.120.27
+      Host: probabblynot.fazelextremeisreal.com
+- name: SubFree-IN-13
+  type: vless
+  server: 91.193.58.201
   port: 443
-  password: '521314'
+  uuid: 14b59caf-a196-4ec2-8c70-c7b388062f5b
   tls: true
-  sni: hhtj.hhllfly.kdns.fr
+  sni: vangoghhh.info
   network: ws
   ws-opts:
-    path: /pyip=Telegram-WangCai2🇨🇳
+    path: /rdfgtws
     headers:
-      Host: hhtj.hhllfly.kdns.fr
-- name: SubFree-RU-36
+      Host: vangoghhh.info
+- name: SubFree-RU-41
+  type: vless
+  server: 45.67.215.233
+  port: 443
+  uuid: 55b0463c-e27f-455b-a25a-70123297b9f4
+  tls: true
+  sni: rAyAn-cOnFiG-sg-1.pAriSa.dPdNs.oRg
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /ws
+    headers:
+      Host: rAyAn-cOnFiG-sg-1.pAriSa.dPdNs.oRg
+- name: SubFree-RU-42
   type: trojan
   server: 45.67.215.9
   port: 443
@@ -1897,150 +2038,7 @@ proxies:
   network: ws
   ws-opts:
     path: /Telegram @VPNine1
-- name: SubFree-HK-02
-  type: trojan
-  server: 154.92.9.253
-  port: 443
-  password: 8r%3C%5B9%27l6hAO%238ZQi
-  tls: true
-  sni: Koma-YT.PAGeS.Dev
-- name: SubFree-SG-28
-  type: trojan
-  server: 27.50.48.49
-  port: 443
-  password: External_Net
-  tls: true
-  sni: pub.khodemhm.qzz.io
-  skip-cert-verify: true
-- name: SubFree-DE-22
-  type: trojan
-  server: 89.116.46.68
-  port: 443
-  password: Telegram-Config0plus-6d81d136-dacb-47d7-8ce3-22985979e051
-  tls: true
-  sni: df.infra.test.shopee.co.id.cyylr.eu.cc
-  network: ws
-  ws-opts:
-    path: /ae-bo
-    headers:
-      Host: df.infra.test.shopee.co.id.cyylr.eu.cc
-- name: SubFree-DE-23
-  type: trojan
-  server: 89.116.46.68
-  port: 443
-  password: Telegram-Config0plus-6d81d136-dacb-47d7-8ce3-22985979e051
-  tls: true
-  sni: df.infra.test.shopee.co.id.cyylr.eu.cc
-  network: ws
-  ws-opts:
-    path: /ae-bo
-    headers:
-      Host: df.infra.test.shopee.co.id.cyylr.eu.cc
-- name: SubFree-SG-31
-  type: trojan
-  server: 206.238.237.1
-  port: 2087
-  password: dns68
-  tls: true
-  sni: trojan.putata.us.kg
-  network: ws
-  ws-opts:
-    path: /?ed=2560
-    headers:
-      Host: trojan.putata.us.kg
 - name: SubFree-DE-24
-  type: vless
-  server: 151.101.56.7
-  port: 80
-  uuid: 46445435-11cd-47e8-87dc-1acc159fc360
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: BankMelat.glObal.ssl.faStly.nEt.
-- name: SubFree-DE-25
-  type: vless
-  server: 89.116.46.50
-  port: 8880
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  network: ws
-  ws-opts:
-    path: /?ed
-    headers:
-      Host: vms.lifetime07.workers.dev
-- name: SubFree-GB-49
-  type: trojan
-  server: 185.238.228.27
-  port: 443
-  password: '521314'
-  tls: true
-  sni: hhtj.hhllfly.kdns.fr
-  network: ws
-  ws-opts:
-    path: /pyip=Telegram-WangCai2🇨🇳
-    headers:
-      Host: hhtj.hhllfly.kdns.fr
-- name: SubFree-RU-37
-  type: trojan
-  server: 193.9.49.27
-  port: 443
-  password: '521314'
-  tls: true
-  sni: hhtj.hhllfly.kdns.fr
-  network: ws
-  ws-opts:
-    path: /pyip=Telegram-WangCai2🇨🇳
-    headers:
-      Host: hhtj.hhllfly.kdns.fr
-- name: SubFree-GB-50
-  type: trojan
-  server: 194.36.55.27
-  port: 443
-  password: '521314'
-  tls: true
-  sni: hhtj.hhllfly.kdns.fr
-  network: ws
-  ws-opts:
-    path: /pyip=Telegram-WangCai2🇨🇳
-    headers:
-      Host: hhtj.hhllfly.kdns.fr
-- name: SubFree-RU-38
-  type: trojan
-  server: 194.53.53.27
-  port: 443
-  password: '521314'
-  tls: true
-  sni: hhtj.hhllfly.kdns.fr
-  network: ws
-  ws-opts:
-    path: /pyip=Telegram-WangCai2🇨🇳
-    headers:
-      Host: hhtj.hhllfly.kdns.fr
-- name: SubFree-SG-32
-  type: trojan
-  server: 27.50.48.27
-  port: 443
-  password: '521314'
-  tls: true
-  sni: hhtj.hhllfly.kdns.fr
-  network: ws
-  ws-opts:
-    path: /pyip=Telegram-WangCai2🇨🇳
-    headers:
-      Host: hhtj.hhllfly.kdns.fr
-- name: SubFree-RU-39
-  type: trojan
-  server: 45.8.211.27
-  port: 443
-  password: '521314'
-  tls: true
-  sni: hhtj.hhllfly.kdns.fr
-  network: ws
-  ws-opts:
-    path: /pyip=Telegram-WangCai2🇨🇳
-    headers:
-      Host: hhtj.hhllfly.kdns.fr
-- name: SubFree-DE-26
   type: trojan
   server: 45.80.111.27
   port: 443
@@ -2052,95 +2050,48 @@ proxies:
     path: /pyip=Telegram-WangCai2🇨🇳
     headers:
       Host: hhtj.hhllfly.kdns.fr
-- name: SubFree-HK-03
+- name: SubFree-RU-43
+  type: trojan
+  server: 45.67.215.214
+  port: 443
+  password: 78defd88-d333-67a5-9c34-d3bcef5816eb
+  tls: true
+  sni: tirex.sugarbreaker1.workers.dev
+  network: ws
+  ws-opts:
+    path: /@TirexNet
+    headers:
+      Host: tirex.sugarbreaker1.workers.dev
+- name: SubFree-RU-44
+  type: trojan
+  server: 45.67.215.214
+  port: 443
+  password: 78defd88-d333-67a5-9c34-d3bcef5816eb
+  tls: true
+  sni: tirex.sugarbreaker1.workers.dev
+  network: ws
+  ws-opts:
+    path: /@TirexNet
+    headers:
+      Host: tirex.sugarbreaker1.workers.dev
+- name: SubFree-RU-45
+  type: trojan
+  server: 45.67.215.214
+  port: 443
+  password: 78defd88-d333-67a5-9c34-d3bcef5816eb
+  tls: true
+  sni: tirex.sugarbreaker1.workers.dev
+  network: ws
+  ws-opts:
+    path: /@VPNine1
+    headers:
+      Host: tirex.sugarbreaker1.workers.dev
+- name: SubFree-HK-06
   type: trojan
   server: 154.92.9.253
   port: 443
   password: 8r%3C%5B9%27l6hAO%238ZQi
   sni: Koma-YT.PAGeS.Dev
-- name: SubFree-HK-05
-  type: trojan
-  server: 154.92.9.25
-  port: 443
-  password: 8r%3C%5B9%27l6hAO%238ZQi
-  sni: Koma-YT.PAGeS.Dev
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /trTelegram
-    headers:
-      Host: Koma-YT.PAGeS.Dev
-- name: SubFree-HK-06
-  type: trojan
-  server: 154.92.9.25
-  port: 443
-  password: 8r%3C%5B9%27l6hAO%238ZQi
-  tls: true
-  sni: Koma-YT.PAGeS.Dev
-- name: SubFree-HK-07
-  type: trojan
-  server: 154.92.9.25
-  port: 443
-  password: 8r%3C%5B9%27l6hAO%238ZQi
-  sni: Koma-YT.PAGeS.Dev
-- name: SubFree-SG-33
-  type: trojan
-  server: 27.50.48.253
-  port: 443
-  password: 8r%3C%5B9%27l6hAO%238ZQi
-  sni: Koma-YT.PAGeS.Dev
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /trTelegram🇨🇳 @WangCai2
-    headers:
-      Host: Koma-YT.PAGeS.Dev
-- name: SubFree-DE-27
-  type: trojan
-  server: 89.116.46.210
-  port: 443
-  password: Telegram-Config0plus
-  tls: true
-  sni: go.appsflyer.com.r3xxe.eu.cc
-  network: ws
-  ws-opts:
-    path: /ca-cl
-    headers:
-      Host: go.appsflyer.com.r3xxe.eu.cc
-- name: SubFree-DE-28
-  type: trojan
-  server: 89.116.46.210
-  port: 443
-  password: Telegram-Config0plus
-  tls: true
-  sni: go.appsflyer.com.r3xxe.eu.cc
-  network: ws
-  ws-opts:
-    path: /ca-cl
-    headers:
-      Host: go.appsflyer.com.r3xxe.eu.cc
-- name: SubFree-RU-40
-  type: trojan
-  server: 45.67.215.9
-  port: 443
-  password: '521314'
-  tls: true
-  sni: tjplay.lxdxo.kdns.fr
-  network: ws
-  ws-opts:
-    path: /Telegram @WangCai2
-- name: SubFree-DE-29
-  type: trojan
-  server: 5.175.141.27
-  port: 443
-  password: '521314'
-  tls: true
-  sni: hhtj.hhllfly.kdns.fr
-  network: ws
-  ws-opts:
-    path: /pyip=Telegram-WangCai2🇨🇳
-    headers:
-      Host: hhtj.hhllfly.kdns.fr
 - name: SubFree-HK-08
   type: trojan
   server: 154.92.9.25
@@ -2156,254 +2107,29 @@ proxies:
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /trTelegram @WangCai2
-    headers:
-      Host: Koma-YT.PAGeS.Dev
-- name: SubFree-SG-34
-  type: trojan
-  server: 27.50.48.253
-  port: 443
-  password: 8r%3C%5B9%27l6hAO%238ZQi
-  sni: Koma-YT.PAGeS.Dev
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
     path: /trTelegram
     headers:
       Host: Koma-YT.PAGeS.Dev
-- name: SubFree-SG-35
-  type: trojan
-  server: 27.50.48.253
-  port: 443
-  password: 8r%3C%5B9%27l6hAO%238ZQi
-  sni: Koma-YT.PAGeS.Dev
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /trTelegram @WangCai2
-    headers:
-      Host: Koma-YT.PAGeS.Dev
-- name: SubFree-SG-36
-  type: trojan
-  server: 27.50.48.253
-  port: 443
-  password: 8r%3C%5B9%27l6hAO%238ZQi
-  sni: Koma-YT.PAGeS.Dev
-  skip-cert-verify: true
-- name: SubFree-SG-37
-  type: trojan
-  server: 27.50.49.253
-  port: 443
-  password: 8r%3C%5B9%27l6hAO%238ZQi
-  sni: Koma-YT.PAGeS.Dev
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /trTelegram
-    headers:
-      Host: Koma-YT.PAGeS.Dev
-- name: SubFree-SG-38
-  type: trojan
-  server: 27.50.49.253
-  port: 443
-  password: 8r%3C%5B9%27l6hAO%238ZQi
-  sni: Koma-YT.PAGeS.Dev
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /trTelegram @WangCai2
-    headers:
-      Host: Koma-YT.PAGeS.Dev
-- name: SubFree-SG-39
-  type: trojan
-  server: 27.50.49.253
-  port: 443
-  password: 8r%3C%5B9%27l6hAO%238ZQi
-  sni: Koma-YT.PAGeS.Dev
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /trTelegram🇨🇳 @WangCai2
-- name: SubFree-SG-40
-  type: trojan
-  server: 27.50.49.253
-  port: 443
-  password: 8r%3C%5B9%27l6hAO%238ZQi
-  sni: Koma-YT.PAGeS.Dev
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /trTelegram @WangCai2
-- name: SubFree-SG-41
-  type: trojan
-  server: 27.50.49.253
-  port: 443
-  password: 8r%3C%5B9%27l6hAO%238ZQi
-  sni: Koma-YT.PAGeS.Dev
-  skip-cert-verify: true
-- name: SubFree-SG-42
-  type: trojan
-  server: 27.50.49.253
-  port: 443
-  password: 8r%3C%5B9%27l6hAO%238ZQi
-  sni: Koma-YT.PAGeS.Dev
-  skip-cert-verify: true
-- name: SubFree-SG-43
-  type: trojan
-  server: 27.50.49.253
-  port: 443
-  password: 8r%3C%5B9%27l6hAO%238ZQi
-  tls: true
-  sni: Koma-YT.PAGeS.Dev
-  network: ws
-  ws-opts:
-    path: '%2FtrTelegram%F0%9F%87%A8%F0%9F%87%B3%20%40WangCai2'
-- name: SubFree-SG-44
-  type: trojan
-  server: 27.50.49.253
-  port: 443
-  password: 8r%3C%5B9%27l6hAO%238ZQi
-  sni: Koma-YT.PAGeS.Dev
-- name: SubFree-SG-45
-  type: trojan
-  server: 27.50.49.253
-  port: 443
-  password: 8r%3C%5B9%27l6hAO%238ZQi
-  sni: Koma-YT.PAGeS.Dev
-  network: ws
-  ws-opts:
-    path: /trTelegram
-- name: SubFree-SG-46
-  type: trojan
-  server: 27.50.49.253
-  port: 443
-  password: 8r%3C%5B9%27l6hAO%238ZQi
-  sni: Koma-YT.PAGeS.Dev
-  network: ws
-  ws-opts:
-    path: /trTelegram @WangCai2
-- name: SubFree-RU-43
-  type: trojan
-  server: 45.142.120.4
-  port: 2096
-  password: bpb-trojan
-  tls: true
-  sni: 403B3611-99bC-43b7-88D7-26ed5d0825A9-3.PageS.DEV
-  network: ws
-  ws-opts:
-    path: /troUbg9Q3QgD0TJRfy?ed=2560
-    headers:
-      Host: 403b3611-99bc-43b7-88d7-26ed5d0825a9-3.pages.dev
-- name: SubFree-SG-48
-  type: vless
-  server: 43.169.18.179
-  port: 443
-  uuid: 06b65903-406d-4a41-8463-6fd5c0ee7798
-  tls: true
-  sni: sni.skylee4.cloudns.ch
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /proxyip=ProxyIP.CMLiussss.net
-    headers:
-      Host: sni.skylee4.cloudns.ch
-- name: SubFree-SG-49
-  type: vless
-  server: 69.46.46.80
-  port: 443
-  uuid: 16f3dd21-8664-4ece-af5d-3b70061ee97d
-  tls: true
-  sni: uni04.up.railway.app
-  network: ws
-  ws-opts:
-    path: /unicorn
-    headers:
-      Host: uni04.up.railway.app
-- name: SubFree-SG-50
-  type: trojan
-  server: 43.169.19.179
-  port: 443
-  password: '114514'
-  sni: tjaaa.hhllfly.kdns.fr
-  skip-cert-verify: true
-- name: SubFree-RU-46
-  type: vless
-  server: 185.178.208.176
-  port: 443
-  uuid: cdde4311-b759-4fbd-8b41-61c12cd36d69
-  tls: true
-  sni: founders-blog.online
-  network: ws
-  ws-opts:
-    path: /stream/615428/socket
-    headers:
-      Host: founders-blog.online
-- name: SubFree-IN-07
-  type: vless
-  server: 182.16.61.2
-  port: 45647
-  uuid: caec0d8d-ab2f-4247-b97d-7fb1a34ab195
 - name: SubFree-RU-47
-  type: vless
-  server: 185.178.208.176
+  type: trojan
+  server: 185.148.105.253
   port: 443
-  uuid: e5c54763-51c6-40e9-afc9-a4aadec33d49
+  password: 8r%3C%5B9%27l6hAO%238ZQi
   tls: true
-  sni: founders-blog.online
-  network: ws
-  ws-opts:
-    path: /stream/615428/socket
-    headers:
-      Host: founders-blog.online
-- name: SubFree-IN-08
-  type: vless
-  server: 144.225.187.179
-  port: 51015
-  uuid: c7ba28f1-dd0a-4fd8-941e-e622f24c8a19
-  sni: apple.com
+  sni: Koma-YT.PAGeS.Dev
 - name: SubFree-RU-48
-  type: vless
-  server: 45.67.215.233
-  port: 443
-  uuid: '%E2%9D%A4%EF%B8%8F%F0%9F%91%89%40ConfigFast%F0%9F%91%88'
-  tls: true
-  sni: inbshdh-82726362.poshakhowdy.ir
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: inbshdh-82726362.poshakhowdy.ir
-- name: SubFree-RU-49
   type: trojan
-  server: 45.8.211.217
-  port: 443
-  password: MITIVPN
-  tls: true
-  sni: de-j7o-doo.App-CloUd.IR
+  server: 176.124.223.40
+  port: 2053
+  password: Aimer
+  sni: epgb.aimercc.dpdns.org
+  skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /---@MiTiVPN/---@MiTiVPN/---@MiTiVPN/---@MiTiVPN/---@MiTiVPN=d-e
+    path: /?ed=2560
     headers:
-      Host: jDe1-2v-3.App-CloUd.IR
-- name: SubFree-RU-50
-  type: trojan
-  server: 45.8.211.217
-  port: 443
-  password: MITIVPN
-  tls: true
-  sni: de-j7o-doo.App-CloUd.IR
-  network: ws
-  ws-opts:
-    path: /---@MiTiVPN/---@MiTiVPN/---@MiTiVPN/---@MiTiVPN/---@MiTiVPN=d-e
-    headers:
-      Host: jDe1-2v-3.App-CloUd.IR
-- name: SubFree-IN-09
-  type: vless
-  server: 15.204.97.216
-  port: 23576
-  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
-  sni: fuck.rkn
-- name: SubFree-DE-32
+      Host: epgb.aimercc.dpdns.org
+- name: SubFree-DE-25
   type: trojan
   server: 45.80.111.7
   port: 443
@@ -2416,7 +2142,7 @@ proxies:
     path: /---@MiTiVPN/---@MiTiVPN/---@MiTiVPN/---@MiTiVPN/---@MiTiVPN=usa
     headers:
       Host: us-sss-us.MaQror.ir
-- name: SubFree-DE-33
+- name: SubFree-DE-26
   type: trojan
   server: 45.80.111.7
   port: 443
@@ -2426,7 +2152,7 @@ proxies:
   network: ws
   ws-opts:
     path: /---@MiTiVPN/---@MiTiVPN/---@MiTiVPN/---@MiTiVPN/---@MiTiVPN=usa
-- name: SubFree-DE-34
+- name: SubFree-DE-27
   type: trojan
   server: 45.80.111.7
   port: 443
@@ -2439,7 +2165,7 @@ proxies:
     path: /---@VPNine1/---@VPNine1/---@VPNine1/---@VPNine1/---@VPNine1=usa
     headers:
       Host: us-sss-us.MaQror.ir
-- name: SubFree-DE-35
+- name: SubFree-DE-28
   type: trojan
   server: 45.80.111.7
   port: 443
@@ -2451,7 +2177,7 @@ proxies:
     path: /---@MiTiVPN/---@MiTiVPN/---@MiTiVPN/---@MiTiVPN/---@MiTiVPN=usa
     headers:
       Host: us-sss-us.MaQror.ir
-- name: SubFree-DE-36
+- name: SubFree-DE-29
   type: trojan
   server: 45.80.111.7
   port: 443
@@ -2463,7 +2189,19 @@ proxies:
     path: /---@MiTiVPN/---@MiTiVPN/---@MiTiVPN/---@MiTiVPN/---@MiTiVPN=usa
     headers:
       Host: us-sss-us.MaQror.ir
-- name: SubFree-DE-37
+- name: SubFree-DE-30
+  type: trojan
+  server: 45.80.111.7
+  port: 443
+  password: MITIVPN
+  tls: true
+  sni: u---as.MaQror.ir
+  network: ws
+  ws-opts:
+    path: /---@MiTiVPN/---@MiTiVPN/---@MiTiVPN/---@MiTiVPN/---@MiTiVPN=usa
+    headers:
+      Host: us-sss-us.MaQror.ir
+- name: SubFree-DE-31
   type: trojan
   server: 45.80.111.7
   port: 443
@@ -2473,72 +2211,107 @@ proxies:
   network: ws
   ws-opts:
     path: /---@MiTiVPN/---@MiTiVPN/---@MiTiVPN/---@MiTiVPN/---@MiTiVPN=usa
-- name: SubFree-DE-38
+- name: SubFree-DE-33
   type: trojan
-  server: 45.80.111.7
+  server: 89.116.46.68
   port: 443
-  password: MITIVPN
+  password: Telegram-Config0plus-6d81d136-dacb-47d7-8ce3-22985979e051
   tls: true
-  sni: u---as.MaQror.ir
+  sni: df.infra.test.shopee.co.id.cyylr.eu.cc
   network: ws
   ws-opts:
-    path: /---@MiTiVPN/---@MiTiVPN/---@MiTiVPN/---@MiTiVPN/---@MiTiVPN=usa
+    path: /ae-bo
     headers:
-      Host: us-sss-us.MaQror.ir
-- name: SubFree-DE-39
+      Host: df.infra.test.shopee.co.id.cyylr.eu.cc
+- name: SubFree-DE-34
   type: trojan
-  server: 5.175.141.216
+  server: 89.116.46.68
+  port: 443
+  password: Telegram-Config0plus-6d81d136-dacb-47d7-8ce3-22985979e051
+  tls: true
+  sni: df.infra.test.shopee.co.id.cyylr.eu.cc
+  network: ws
+  ws-opts:
+    path: /ae-bo
+    headers:
+      Host: df.infra.test.shopee.co.id.cyylr.eu.cc
+- name: SubFree-DE-35
+  type: trojan
+  server: 89.116.46.210
+  port: 443
+  password: Telegram-Config0plus
+  tls: true
+  sni: go.appsflyer.com.r3xxe.eu.cc
+  network: ws
+  ws-opts:
+    path: /ca-cl
+    headers:
+      Host: go.appsflyer.com.r3xxe.eu.cc
+- name: SubFree-DE-37
+  type: trojan
+  server: 89.116.46.68
+  port: 443
+  password: de4dbc41-fe13-4498-b5b4-083e451270f6
+  sni: zaintest.vuclip.com.cyylr.eu.cc
+  network: ws
+  ws-opts:
+    path: /my-wbv
+    headers:
+      Host: zaintest.vuclip.com.cyylr.eu.cc
+- name: SubFree-DE-38
+  type: trojan
+  server: 45.80.111.216
   port: 2096
   password: ttfang
   tls: true
   sni: ttfang.fange.me
   network: ws
   ws-opts:
-    path: Telegram🇨🇳
-- name: SubFree-PH-01
+    path: Telegram
+- name: SubFree-IN-14
   type: vless
-  server: 199.232.78.159
-  port: 443
-  uuid: 876a99e3-e6a5-4d49-a0dc-b0876dc55e33
-  tls: true
-  sni: ssl.fastly.com
+  server: 45.142.120.40
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
   network: ws
   ws-opts:
     path: /
     headers:
-      Host: lsjaoijji.global.ssl.fastly.neT
+      Host: vms.lifetime08.workers.dev
+- name: SubFree-DE-39
+  type: vless
+  server: 167.82.0.1
+  port: 80
+  uuid: cfde0aba-0985-4034-ab92-50b1534b126c
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: BankMelat.glObal.ssl.faStly.nEt.
 - name: SubFree-DE-40
   type: trojan
-  server: 45.80.111.216
-  port: 2096
-  password: ttfang
+  server: 89.116.46.68
+  port: 443
+  password: de4dbc41-fe13-4498-b5b4-083e451270f6
   tls: true
-  sni: ttfang.fange.me
+  sni: zaintest.vuclip.com.cyylr.eu.cc
   network: ws
   ws-opts:
-    path: Telegram
+    path: /my-wbv
+    headers:
+      Host: zaintest.vuclip.com.cyylr.eu.cc
 - name: SubFree-DE-41
-  type: trojan
-  server: 45.80.111.216
-  port: 2096
-  password: ttfang
-  tls: true
-  sni: ttfang.fange.me
+  type: vless
+  server: 167.82.0.17
+  port: 80
+  uuid: c9380ef8-23f8-422e-81fe-ebbb032202cf
   network: ws
   ws-opts:
-    path: Telegram🇨🇳
+    path: /
+    headers:
+      Host: BankMelat.glObal.ssl.faStly.nEt.
 - name: SubFree-DE-42
   type: trojan
-  server: 5.175.141.216
-  port: 2096
-  password: ttfang
-  tls: true
-  sni: ttfang.fange.me
-  network: ws
-  ws-opts:
-    path: Telegram
-- name: SubFree-DE-43
-  type: trojan
   server: 45.80.111.7
   port: 443
   password: MITIVPN
@@ -2547,31 +2320,57 @@ proxies:
   network: ws
   ws-opts:
     path: /---@MiTiVPN/---@MiTiVPN/---@MiTiVPN/---@MiTiVPN/---@MiTiVPN=usa
-- name: SubFree-DE-44
-  type: trojan
-  server: 45.80.111.7
-  port: 443
-  password: MITIVPN
-  tls: true
-  sni: u---as.MaQror.ir
-  skip-cert-verify: true
+- name: SubFree-DE-45
+  type: vless
+  server: 167.82.0.4
+  port: 80
+  uuid: c9380ef8-23f8-422e-81fe-ebbb032202cf
   network: ws
   ws-opts:
-    path: /---@MiTiVPN/---@MiTiVPN/---@MiTiVPN/---@MiTiVPN/---@MiTiVPN=usa
+    path: /
     headers:
-      Host: us-sss-us.MaQror.ir
-- name: SubFree-DE-48
+      Host: BankMelat.glObal.ssl.faStly.nEt.
+- name: SubFree-HK-11
+  type: vless
+  server: 154.218.15.30
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: vms.lifetime47.workers.dev
+- name: SubFree-DE-46
   type: trojan
   server: 185.135.9.137
   port: 443
   password: NISHIKUITAN111
   skip-cert-verify: true
+- name: SubFree-DE-47
+  type: trojan
+  server: 45.80.111.7
+  port: 443
+  password: humanity
+  tls: true
+  sni: www.calmlunch.com
+  network: ws
+  ws-opts:
+    path: /assignment
+- name: SubFree-DE-48
+  type: trojan
+  server: 45.80.111.7
+  port: 443
+  password: humanity
+  tls: true
+  sni: www.calmlunch.com
+  network: ws
+  ws-opts:
+    path: /assignment
 - name: SubFree-DE-49
   type: trojan
   server: 45.80.111.7
   port: 443
   password: humanity
-  sni: www.calmlunch.com
 - name: SubFree-DE-50
   type: trojan
   server: 45.80.111.7
@@ -2582,87 +2381,230 @@ proxies:
   network: ws
   ws-opts:
     path: /assignment
-- name: SubFree-IN-10
-  type: trojan
-  server: 64.94.95.118
-  port: 57142
-  password: kkzh2prsyr2ik47as615
-  tls: true
-- name: SubFree-IN-11
+- name: SubFree-IN-15
   type: vless
-  server: 167.88.167.57
+  server: 154.193.55.183
   port: 443
-  uuid: 41cbcc75-759f-4707-984e-aea715046830
-  sni: site.rumedia-cdn.com
+  uuid: f75814f6-8f81-4847-b792-168c41f2dc85
+  sni: storage.yandex.net
+- name: SubFree-TH-05
+  type: vless
+  server: 3.170.185.43
+  port: 80
+  uuid: f27894bf-349c-44e6-a0ce-4c787e18476f
+  network: ws
+  ws-opts:
+    path: /GDkX4xpB/
+    headers:
+      Host: duatoup3wk8q2.cloudfront.net
+- name: SubFree-PH-03
+  type: vless
+  server: 47.89.186.170
+  port: 55861
+  uuid: d51ed55c-d6dd-400b-aaf6-017c33969bfe
+  sni: www.intel.com
+- name: SubFree-PH-04
+  type: vless
+  server: 69.48.201.136
+  port: 30016
+  uuid: 03dc60cb-a8d4-4226-93fe-0e6cbf77fe5a
+  network: ws
+  ws-opts:
+    path: /usserver
+    headers:
+      Host: uspanel.unixzone.us
+- name: SubFree-IN-16
+  type: vless
+  server: 103.106.228.126
+  port: 2053
+  uuid: 7b102311-43fd-4e8f-877e-8090623c101d
+  tls: true
+  sni: vp11.cc.cd
+  network: ws
+  ws-opts:
+    path: /fp=chrome
+    headers:
+      Host: vp11.cc.cd
 - name: SubFree-JP-01
   type: trojan
-  server: 156.246.94.155
-  port: 8443
-  password: '162534'
+  server: 45.76.102.47
+  port: 443
+  password: 4c3164ee-abcf-4091-abea-d1cd4937a68d
   tls: true
+  sni: jy.hhllfly.kdns.fr
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: jy.hhllfly.kdns.fr
+- name: SubFree-JP-02
+  type: trojan
+  server: 45.76.208.253
+  port: 443
+  password: 4c3164ee-abcf-4091-abea-d1cd4937a68d
+  sni: jy.hhllfly.kdns.fr
+  skip-cert-verify: true
+- name: SubFree-JP-03
+  type: trojan
+  server: 142.91.108.54
+  port: 443
+  password: 8r%3C%5B9%27l6hAO%238ZQi
+  sni: Koma-YT.PAGeS.Dev
+- name: SubFree-JP-04
+  type: trojan
+  server: 172.238.19.11
+  port: 443
+  password: E_hUHrn0%2B6VeZO%3Dv9%3DfLgoPDXZWGfcrejg
+  tls: true
+- name: SubFree-JP-05
+  type: trojan
+  server: 172.238.19.11
+  port: 443
+  password: E_hUHrn0+6VeZO=v9=fLgoPDXZWGfcrejg
+  tls: true
+  sni: 172.238.19.11
+- name: SubFree-JP-06
+  type: trojan
+  server: 172.238.19.11
+  port: 443
+  password: E_hUHrn0+6VeZO=v9=fLgoPDXZWGfcrejg
+  tls: true
+  sni: 172.238.19.11
+- name: SubFree-JP-07
+  type: trojan
+  server: 185.220.238.77
+  port: 11543
+  password: HutaoCloud
+  tls: true
+  sni: 185.220.238.77
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /api
+- name: SubFree-JP-08
+  type: trojan
+  server: 185.220.238.77
+  port: 11543
+  password: HutaoCloud
+  tls: true
+  sni: 185.220.238.77
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /api
+- name: SubFree-JP-09
+  type: trojan
+  server: 31.223.184.82
+  port: 443
+  password: IQ68037294
+  sni: stirring-bat.rooster465.autos
+- name: SubFree-JP-10
+  type: trojan
+  server: 85.234.83.52
+  port: 443
+  password: IQ68037294
+  sni: improved-anteater.rooster465.autos
+- name: SubFree-JP-11
+  type: trojan
+  server: 199.232.149.242
+  port: 80
+  password: MiTiVPN
+  network: ws
+  ws-opts:
+    path: /?https://t.me/WangCai2🇨🇳
+    headers:
+      Host: www.f6r.ir
+- name: SubFree-JP-12
+  type: trojan
+  server: 31.223.184.82
+  port: 443
+  password: WG39087154
+  sni: stirring-bat.rooster465.autos
+- name: SubFree-JP-13
+  type: trojan
+  server: 45.77.129.86
+  port: 2053
+  password: eeb6823c-b926-4ea2-866a-5542edd26e59
+  tls: true
+  sni: tjsp.hhxaf.cc.cd
+  network: ws
+  ws-opts: {}
+- name: SubFree-JP-14
+  type: trojan
+  server: 103.106.228.187
+  port: 54603
+  password: u2sVknrSIFjDojeqAUjgYk89m9szHcMQ
+  sni: 103.106.228.187
+  skip-cert-verify: true
+- name: SubFree-JP-15
+  type: trojan
+  server: 103.106.228.187
+  port: 54603
+  password: u2sVknrSIFjDojeqAUjgYk89m9szHcMQ
+  tls: true
+- name: SubFree-JP-16
+  type: trojan
+  server: 103.106.228.187
+  port: 54603
+  password: u2sVknrSIFjDojeqAUjgYk89m9szHcMQ
+  sni: 103.106.228.187
+  skip-cert-verify: true
+- name: SubFree-JP-17
+  type: trojan
+  server: 103.106.228.187
+  port: 54603
+  password: u2sVknrSIFjDojeqAUjgYkCnh9szHcMQ
+  tls: true
+  sni: 103.106.228.187
+  skip-cert-verify: true
+- name: SubFree-JP-18
+  type: trojan
+  server: 95.85.94.112
+  port: 443
+  password: IQ68037294
+  sni: sweeping-parakeet.rooster465.autos
+- name: SubFree-JP-19
+  type: trojan
+  server: 95.85.94.112
+  port: 443
+  password: IQ68037294
+  sni: sweeping-parakeet.rooster465.autos
+- name: SubFree-JP-20
+  type: trojan
+  server: 95.85.94.137
+  port: 443
+  password: JT80563429
+  sni: inspired-hound.rooster465.autos
+- name: SubFree-JP-21
+  type: trojan
+  server: 161.34.39.108
+  port: 443
+  password: tsuchiya
+  sni: aa.ccmusic.jp
+- name: SubFree-JP-23
+  type: trojan
+  server: 138.2.31.37
+  port: 443
+  password: '162534'
   sni: cchh2.pages.dev
+  skip-cert-verify: true
   network: ws
   ws-opts:
     path: /?ed=2560
     headers:
       Host: cchh2.pages.dev
-- name: SubFree-JP-02
+- name: SubFree-JP-24
   type: trojan
-  server: 161.248.62.42
+  server: 142.91.108.54
   port: 443
-  password: eeb6823c-b926-4ea2-866a-5542edd26e59
-  tls: true
-  sni: tjsp.hhxaf.cc.cd
+  password: '162534'
+  sni: cchh2.pages.dev
+  skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /
-    headers:
-      Host: tjsp.hhxaf.cc.cd
-- name: SubFree-JP-03
-  type: trojan
-  server: 161.248.62.42
-  port: 443
-  password: eeb6823c-b926-4ea2-866a-5542edd26e59
-  tls: true
-  sni: tjsp.hhxaf.cc.cd
-  network: ws
-  ws-opts:
-    path: /
-- name: SubFree-JP-04
-  type: trojan
-  server: 161.248.63.77
-  port: 443
-  password: eeb6823c-b926-4ea2-866a-5542edd26e59
-  tls: true
-  sni: hhcm.hhxaf.cc.cd
-  network: ws
-  ws-opts:
-    path: /
-- name: SubFree-JP-05
-  type: trojan
-  server: 161.248.63.77
-  port: 443
-  password: eeb6823c-b926-4ea2-866a-5542edd26e59
-  tls: true
-  sni: hhcm.hhxaf.cc.cd
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: hhcm.hhxaf.cc.cd
-- name: SubFree-JP-06
-  type: trojan
-  server: 23.27.169.249
-  port: 443
-  password: '666'
-  tls: true
-  sni: 7rdf6.h3mc.4f7.hh.hhhdl.kdns.fr
-  network: ws
-  ws-opts:
-    path: /glasspanel/guest000_0_5de14443985f/
-    headers:
-      Host: 7rdf6.h3mc.4f7.hh.hhhdl.kdns.fr
-- name: SubFree-JP-07
+    path: /?ed=2560
+- name: SubFree-JP-25
   type: trojan
   server: 142.91.108.54
   port: 443
@@ -2675,372 +2617,217 @@ proxies:
     path: /?ed=2560&https://t.me/WangCai2🇨🇳
     headers:
       Host: cchh2.pages.dev
-- name: SubFree-JP-08
+- name: SubFree-JP-26
   type: trojan
   server: 142.91.108.54
   port: 443
   password: '162534'
+  tls: true
   sni: cchh2.pages.dev
   network: ws
   ws-opts:
     path: /?ed=2560
-- name: SubFree-JP-09
+- name: SubFree-JP-27
+  type: trojan
+  server: 161.33.197.118
+  port: 443
+  password: '162534'
+  sni: cchh2.pages.dev
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: cchh2.pages.dev
+- name: SubFree-JP-30
+  type: trojan
+  server: 108.160.132.132
+  port: 443
+  password: 4c3164ee-abcf-4091-abea-d1cd4937a68d
+  tls: true
+  sni: jy.hhllfly.kdns.fr
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: jy.hhllfly.kdns.fr
+- name: SubFree-JP-32
+  type: trojan
+  server: 138.3.214.171
+  port: 443
+  password: 4c3164ee-abcf-4091-abea-d1cd4937a68d
+  tls: true
+  sni: jy.hhllfly.kdns.fr
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+- name: SubFree-JP-33
+  type: trojan
+  server: 138.3.214.171
+  port: 443
+  password: 4c3164ee-abcf-4091-abea-d1cd4937a68d
+  sni: jy.hhllfly.kdns.fr
+- name: SubFree-JP-34
+  type: trojan
+  server: 154.83.95.129
+  port: 443
+  password: 4c3164ee-abcf-4091-abea-d1cd4937a68d
+  tls: true
+  sni: jy.hhllfly.kdns.fr
+- name: SubFree-JP-35
+  type: trojan
+  server: 167.179.84.175
+  port: 443
+  password: 4c3164ee-abcf-4091-abea-d1cd4937a68d
+  tls: true
+  sni: jy.hhllfly.kdns.fr
+  network: ws
+  ws-opts:
+    path: /
+- name: SubFree-JP-36
+  type: trojan
+  server: 167.179.84.175
+  port: 443
+  password: 4c3164ee-abcf-4091-abea-d1cd4937a68d
+  tls: true
+  sni: jy.hhllfly.kdns.fr
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: jy.hhllfly.kdns.fr
+- name: SubFree-JP-37
+  type: trojan
+  server: 207.148.108.85
+  port: 443
+  password: 4c3164ee-abcf-4091-abea-d1cd4937a68d
+  tls: true
+  sni: jy.hhllfly.kdns.fr
+  network: ws
+  ws-opts:
+    path: /
+- name: SubFree-JP-38
+  type: trojan
+  server: 207.148.108.85
+  port: 443
+  password: 4c3164ee-abcf-4091-abea-d1cd4937a68d
+  tls: true
+  sni: jy.hhllfly.kdns.fr
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+- name: SubFree-JP-40
   type: trojan
   server: 45.76.102.47
   port: 443
   password: 4c3164ee-abcf-4091-abea-d1cd4937a68d
   sni: jy.hhllfly.kdns.fr
-- name: SubFree-JP-10
-  type: trojan
-  server: 103.125.216.22
-  port: 8443
-  password: 8r%253C%255B9%2527l6hAO%25238ZQi
-  sni: Koma-YT.PAGeS.Dev
-- name: SubFree-JP-11
-  type: trojan
-  server: 45.11.1.118
-  port: 44004
-  password: 8r%3C%5B9%27l6hAO%238ZQi
-  sni: Koma-YT.PAGeS.Dev
   skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /trTelegram
-    headers:
-      Host: Koma-YT.PAGeS.Dev
-- name: SubFree-JP-12
-  type: trojan
-  server: 31.223.184.238
-  port: 443
-  password: FC60532879
-  sni: frank-piranha.rooster465.autos
-- name: SubFree-JP-13
-  type: trojan
-  server: 31.223.184.249
-  port: 443
-  password: FC60532879
-  tls: true
-- name: SubFree-JP-14
-  type: trojan
-  server: 31.223.184.249
-  port: 443
-  password: FC60532879
-  tls: true
-  sni: wise-longhorn.rooster465.autos
-- name: SubFree-JP-15
-  type: trojan
-  server: 31.223.184.249
-  port: 443
-  password: FC60532879
-  sni: wise-longhorn.rooster465.autos
-- name: SubFree-JP-16
-  type: trojan
-  server: 95.85.94.185
-  port: 443
-  password: FC60532879
-  sni: maximum-elk.rooster465.autos
-- name: SubFree-JP-17
-  type: trojan
-  server: 31.223.184.164
-  port: 443
-  password: IQ68037294
-  tls: true
-  sni: flexible-pony.rooster465.autos
-- name: SubFree-JP-18
-  type: trojan
-  server: 31.223.184.164
-  port: 443
-  password: IQ68037294
-  sni: flexible-pony.rooster465.autos
-- name: SubFree-JP-19
-  type: trojan
-  server: 31.223.184.164
-  port: 443
-  password: IQ68037294
-  sni: flexible-pony.rooster465.autos
-- name: SubFree-JP-20
-  type: trojan
-  server: 31.223.184.178
-  port: 443
-  password: IQ68037294
-  sni: tough-shark.rooster465.autos
-- name: SubFree-JP-21
-  type: trojan
-  server: 31.223.184.238
-  port: 443
-  password: IQ68037294
-  sni: frank-piranha.rooster465.autos
-- name: SubFree-JP-22
-  type: trojan
-  server: 85.234.83.92
-  port: 443
-  password: IQ68037294
-  sni: enabling-gobbler.rooster465.autos
-- name: SubFree-JP-23
-  type: trojan
-  server: 94.177.131.138
-  port: 443
-  password: WG39087154
-- name: SubFree-JP-24
-  type: trojan
-  server: 95.85.94.35
-  port: 443
-  password: WG39087154
-  sni: certain-prawn.rooster465.autos
-- name: SubFree-JP-25
-  type: trojan
-  server: 154.31.114.10
-  port: 443
-  password: an70aOaIjcCF43gOlSB6eKER53Z38DYDx8l9RCSCpYTwXS3pueyAqyFZx2zDNA
-  tls: true
-- name: SubFree-JP-27
-  type: trojan
-  server: 108.160.132.132
-  port: 443
-  password: eeb6823c-b926-4ea2-866a-5542edd26e59
-  sni: tjsp.hhxaf.cc.cd
-- name: SubFree-JP-28
-  type: trojan
-  server: 108.160.132.132
-  port: 443
-  password: eeb6823c-b926-4ea2-866a-5542edd26e59
-  tls: true
-  sni: tjsp.hhxaf.cc.cd
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: tjsp.hhxaf.cc.cd
-- name: SubFree-JP-29
-  type: trojan
-  server: 108.160.132.132
-  port: 443
-  password: eeb6823c-b926-4ea2-866a-5542edd26e59
-  sni: tjsp.hhxaf.cc.cd
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: tjsp.hhxaf.cc.cd
-- name: SubFree-JP-30
-  type: trojan
-  server: 108.160.132.132
-  port: 443
-  password: eeb6823c-b926-4ea2-866a-5542edd26e59
-  tls: true
-  sni: tjsp.hhxaf.cc.cd
-  network: ws
-  ws-opts:
-    path: /
-- name: SubFree-JP-31
-  type: trojan
-  server: 158.51.110.12
-  port: 443
-  password: eeb6823c-b926-4ea2-866a-5542edd26e59
-  tls: true
-  sni: hhcm.hhxaf.cc.cd
-- name: SubFree-JP-32
-  type: trojan
-  server: 158.51.110.12
-  port: 443
-  password: eeb6823c-b926-4ea2-866a-5542edd26e59
-  tls: true
-  sni: hhcm.hhxaf.cc.cd
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: hhcm.hhxaf.cc.cd
-- name: SubFree-IN-12
-  type: vless
-  server: 14.137.238.17
-  port: 10000
-  uuid: 431fe973-a43a-4fac-bf83-2a772e0d0625
-- name: SubFree-JP-33
-  type: vless
-  server: 14.137.238.17
-  port: 10000
-  uuid: 431fe973-a43a-4fac-bf83-2a772e0d0625
-- name: SubFree-JP-34
-  type: trojan
-  server: 31.57.172.94
-  port: 443
-  password: '123123'
-  tls: true
-  sni: hhgy.hh0mg.kdns.fr
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: hhgy.hh0mg.kdns.fr
-- name: SubFree-JP-35
-  type: trojan
-  server: 142.91.108.54
-  port: 443
-  password: '162534'
-  sni: cchh2.pages.dev
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /?ed=2560
-    headers:
-      Host: cchh2.pages.dev
-- name: SubFree-JP-36
-  type: trojan
-  server: 142.91.108.54
-  port: 443
-  password: '162534'
-  sni: cchh2.pages.dev
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /?ed=2560
-- name: SubFree-JP-37
-  type: trojan
-  server: 142.91.108.54
-  port: 443
-  password: '162534'
-  sni: cchh2.pages.dev
-  network: ws
-  ws-opts:
-    path: /?ed=2560
-- name: SubFree-JP-38
-  type: trojan
-  server: 142.91.108.54
-  port: 443
-  password: '162534'
-  tls: true
-  sni: cchh2.pages.dev
-  network: ws
-  ws-opts:
-    path: /?ed=2560
-    headers:
-      Host: cchh2.pages.dev
-- name: SubFree-JP-39
-  type: trojan
-  server: 142.91.108.54
-  port: 443
-  password: '162534'
-  tls: true
-  sni: cchh2.pages.dev
-  network: ws
-  ws-opts:
-    path: /?ed=2560
-- name: SubFree-JP-40
-  type: trojan
-  server: 156.246.94.155
-  port: 8443
-  password: '162534'
-  sni: cchh2.pages.dev
-  network: ws
-  ws-opts:
-    path: /?ed=2560
-    headers:
-      Host: cchh2.pages.dev
 - name: SubFree-JP-41
   type: trojan
-  server: 158.101.132.216
-  port: 8443
-  password: '162534'
-  sni: cchh2.pages.dev
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /?ed=2560
-    headers:
-      Host: cchh2.pages.dev
-- name: SubFree-JP-42
-  type: trojan
-  server: 158.101.132.216
-  port: 8443
-  password: '162534'
-  tls: true
-  sni: cchh2.pages.dev
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /?ed=2560&https://t.me/WangCai2🇨🇳
-    headers:
-      Host: cchh2.pages.dev
+  server: 45.76.102.47
+  port: 443
+  password: 4c3164ee-abcf-4091-abea-d1cd4937a68d
+  sni: jy.hhllfly.kdns.fr
 - name: SubFree-JP-43
   type: trojan
-  server: 161.33.197.118
+  server: 45.76.198.248
   port: 443
-  password: '162534'
-  sni: cchh2.pages.dev
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /?ed=2560
-    headers:
-      Host: cchh2.pages.dev
+  password: 4c3164ee-abcf-4091-abea-d1cd4937a68d
+  sni: jy.hhllfly.kdns.fr
 - name: SubFree-JP-44
   type: trojan
-  server: 161.33.197.118
+  server: 45.76.198.248
   port: 443
-  password: '162534'
-  tls: true
-  sni: cchh2.pages.dev
+  password: 4c3164ee-abcf-4091-abea-d1cd4937a68d
+  sni: jy.hhllfly.kdns.fr
   skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /?ed=2560&https://t.me/WangCai2🇨🇳
-    headers:
-      Host: cchh2.pages.dev
 - name: SubFree-JP-45
   type: trojan
-  server: 31.57.172.187
+  server: 45.76.198.248
   port: 443
-  password: '162534'
-  sni: cchh2.pages.dev
-  skip-cert-verify: true
+  password: 4c3164ee-abcf-4091-abea-d1cd4937a68d
+  tls: true
+  sni: jy.hhllfly.kdns.fr
   network: ws
   ws-opts:
-    path: /?ed=2560
-    headers:
-      Host: cchh2.pages.dev
+    path: /
 - name: SubFree-JP-46
   type: trojan
-  server: 31.57.172.187
+  server: 45.76.198.248
   port: 443
-  password: '162534'
+  password: 4c3164ee-abcf-4091-abea-d1cd4937a68d
   tls: true
-  sni: cchh2.pages.dev
-  skip-cert-verify: true
+  sni: jy.hhllfly.kdns.fr
   network: ws
   ws-opts:
-    path: /?ed=2560&https://t.me/WangCai2🇨🇳
-    headers:
-      Host: cchh2.pages.dev
+    path: /?ed=2048
 - name: SubFree-JP-47
   type: trojan
-  server: 43.165.178.147
-  port: 8443
-  password: '162534'
-  sni: cchh2.pages.dev
+  server: 45.76.206.46
+  port: 443
+  password: 4c3164ee-abcf-4091-abea-d1cd4937a68d
+  sni: jy.hhllfly.kdns.fr
+- name: SubFree-JP-48
+  type: trojan
+  server: 45.76.206.46
+  port: 443
+  password: 4c3164ee-abcf-4091-abea-d1cd4937a68d
+  tls: true
+  sni: jy.hhllfly.kdns.fr
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /?ed=2560
+    path: /?ed=2048
     headers:
-      Host: cchh2.pages.dev
-- name: SubFree-IN-13
+      Host: jy.hhllfly.kdns.fr
+- name: SubFree-JP-49
+  type: trojan
+  server: 45.76.206.46
+  port: 443
+  password: 4c3164ee-abcf-4091-abea-d1cd4937a68d
+  tls: true
+  sni: jy.hhllfly.kdns.fr
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+- name: SubFree-JP-50
+  type: trojan
+  server: 45.76.208.253
+  port: 443
+  password: 4c3164ee-abcf-4091-abea-d1cd4937a68d
+  sni: jy.hhllfly.kdns.fr
+- name: SubFree-IN-17
   type: vless
-  server: 43.163.241.110
-  port: 24477
-  uuid: 2bc72bec-0c2a-4c6b-aa9f-138bfce7ba0d
-- name: SubFree-KR-01
-  type: vless
-  server: 64.176.226.26
-  port: 8443
+  server: 207.148.112.179
+  port: 443
   uuid: eeb6823c-b926-4ea2-866a-5542edd26e59
   tls: true
   sni: t1s1.rittbo.kdns.fr
   network: ws
   ws-opts:
-    path: /
+    path: /fp=chrome
     headers:
       Host: t1s1.rittbo.kdns.fr
+- name: SubFree-IN-18
+  type: vless
+  server: 3.114.220.22
+  port: 10583
+  uuid: 814bd064-544d-4255-a070-5705c03f6da9
+  sni: www.apple.com
+- name: SubFree-KR-01
+  type: vless
+  server: 132.145.89.30
+  port: 443
+  uuid: e6d8d743-a9bc-48c9-be99-8f3cc94d16e1
+  tls: true
+  sni: ako.pagate.top
+- name: SubFree-IN-19
+  type: vless
+  server: 104.194.148.210
+  port: 443
+  uuid: d199ad6c-707b-4dac-9561-e3879e933071
+  sni: www.intel.com
 - name: SubFree-KR-02
   type: trojan
   server: 141.164.42.2
@@ -3052,30 +2839,22 @@ proxies:
   type: trojan
   server: 141.164.42.2
   port: 443
-  password: '114514'
-  tls: true
-  sni: tjaaa.hhllfly.kdns.fr
+  password: 4c3164ee-abcf-4091-abea-d1cd4937a68d
+  sni: jy.hhllfly.kdns.fr
   skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: tjaaa.hhllfly.kdns.fr
 - name: SubFree-KR-04
   type: trojan
   server: 141.164.42.2
   port: 443
-  password: '114514'
-  sni: tjaaa.hhllfly.kdns.fr
+  password: 4c3164ee-abcf-4091-abea-d1cd4937a68d
+  tls: true
+  sni: jy.hhllfly.kdns.fr
+  network: ws
+  ws-opts:
+    path: /?ed=2048
 - name: SubFree-KR-05
   type: trojan
-  server: 141.164.42.2
-  port: 443
-  password: 4c3164ee-abcf-4091-abea-d1cd4937a68d
-  sni: jy.hhllfly.kdns.fr
-- name: SubFree-KR-06
-  type: trojan
-  server: 158.247.198.196
+  server: 152.70.239.74
   port: 443
   password: 4c3164ee-abcf-4091-abea-d1cd4937a68d
   tls: true
@@ -3085,14 +2864,7 @@ proxies:
     path: /?ed=2048
     headers:
       Host: jy.hhllfly.kdns.fr
-- name: SubFree-KR-07
-  type: trojan
-  server: 158.247.240.204
-  port: 8443
-  password: 4c3164ee-abcf-4091-abea-d1cd4937a68d
-  sni: jy.hhllfly.kdns.fr
-  skip-cert-verify: true
-- name: SubFree-KR-08
+- name: SubFree-KR-06
   type: trojan
   server: 158.247.240.204
   port: 8443
@@ -3102,13 +2874,19 @@ proxies:
   network: ws
   ws-opts:
     path: /?ed=2048
-- name: SubFree-KR-09
+- name: SubFree-KR-07
   type: trojan
-  server: 158.247.240.204
+  server: 158.247.255.3
   port: 8443
   password: 4c3164ee-abcf-4091-abea-d1cd4937a68d
+  tls: true
   sni: jy.hhllfly.kdns.fr
-- name: SubFree-KR-10
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: jy.hhllfly.kdns.fr
+- name: SubFree-KR-08
   type: trojan
   server: 64.176.226.26
   port: 8443
@@ -3120,10 +2898,50 @@ proxies:
     path: /?ed=2048
     headers:
       Host: jy.hhllfly.kdns.fr
+- name: SubFree-KR-09
+  type: trojan
+  server: 130.162.131.60
+  port: 9
+  password: 8r%3C%5B9%27l6hAO%238ZQi
+  tls: true
+  sni: Koma-YT.PAGeS.Dev
+  network: ws
+  ws-opts:
+    path: /trTelegram🇨🇳+@WangCai2
+    headers:
+      Host: Koma-YT.PAGeS.Dev
+- name: SubFree-KR-10
+  type: trojan
+  server: 132.226.23.185
+  port: 443
+  password: eeb6823c-b926-4ea2-866a-5542edd26e59
+  tls: true
+  sni: hhcm.hhxaf.cc.cd
+  network: ws
+  ws-opts:
+    path: /
+- name: SubFree-KR-11
+  type: trojan
+  server: 132.226.23.185
+  port: 443
+  password: eeb6823c-b926-4ea2-866a-5542edd26e59
+  sni: hhcm.hhxaf.cc.cd
 - name: SubFree-KR-12
   type: trojan
   server: 141.164.42.2
   port: 443
+  password: eeb6823c-b926-4ea2-866a-5542edd26e59
+  tls: true
+  sni: hhcm.hhxaf.cc.cd
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: hhcm.hhxaf.cc.cd
+- name: SubFree-KR-13
+  type: trojan
+  server: 146.56.187.1
+  port: 8443
   password: eeb6823c-b926-4ea2-866a-5542edd26e59
   tls: true
   sni: tjsp.hhxaf.cc.cd
@@ -3146,41 +2964,7 @@ proxies:
       Host: tjsp.hhxaf.cc.cd
 - name: SubFree-KR-15
   type: trojan
-  server: 146.56.187.1
-  port: 8443
-  password: eeb6823c-b926-4ea2-866a-5542edd26e59
-  tls: true
-  sni: tjsp.hhxaf.cc.cd
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: tjsp.hhxaf.cc.cd
-- name: SubFree-KR-16
-  type: trojan
-  server: 152.70.254.197
-  port: 443
-  password: eeb6823c-b926-4ea2-866a-5542edd26e59
-  tls: true
-  sni: tjsp.hhxaf.cc.cd
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: tjsp.hhxaf.cc.cd
-- name: SubFree-KR-17
-  type: trojan
-  server: 152.70.254.197
-  port: 443
-  password: eeb6823c-b926-4ea2-866a-5542edd26e59
-  tls: true
-  sni: tjsp.hhxaf.cc.cd
-  network: ws
-  ws-opts:
-    path: /
-- name: SubFree-KR-18
-  type: trojan
-  server: 193.123.232.91
+  server: 146.56.188.74
   port: 443
   password: eeb6823c-b926-4ea2-866a-5542edd26e59
   tls: true
@@ -3190,40 +2974,147 @@ proxies:
     path: /
     headers:
       Host: hhcm.hhxaf.cc.cd
+- name: SubFree-KR-16
+  type: trojan
+  server: 158.247.198.196
+  port: 443
+  password: eeb6823c-b926-4ea2-866a-5542edd26e59
+  tls: true
+  sni: hhcm.hhxaf.cc.cd
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: hhcm.hhxaf.cc.cd
+- name: SubFree-KR-17
+  type: trojan
+  server: 211.49.57.175
+  port: 443
+  password: eeb6823c-b926-4ea2-866a-5542edd26e59
+  sni: hhcm.hhxaf.cc.cd
+- name: SubFree-KR-18
+  type: trojan
+  server: 211.49.57.175
+  port: 443
+  password: eeb6823c-b926-4ea2-866a-5542edd26e59
+  tls: true
+  sni: hhcm.hhxaf.cc.cd
+  network: ws
+  ws-opts:
+    path: /freenettirSouth
+    headers:
+      Host: hhcm.hhxaf.cc.cd
 - name: SubFree-KR-19
-  type: vless
-  server: 193.123.232.91
+  type: trojan
+  server: 211.49.57.178
   port: 443
-  uuid: eeb6823c-b926-4ea2-866a-5542edd26e59
+  password: eeb6823c-b926-4ea2-866a-5542edd26e59
   tls: true
-  sni: t1s1.rittbo.kdns.fr
-  skip-cert-verify: true
+  sni: tjsp.hhxaf.cc.cd
   network: ws
   ws-opts:
     path: /
-    headers:
-      Host: t1s1.rittbo.kdns.fr
 - name: SubFree-KR-20
-  type: vless
-  server: 193.123.232.91
+  type: trojan
+  server: 211.49.57.178
   port: 443
+  password: eeb6823c-b926-4ea2-866a-5542edd26e59
+  tls: true
+  sni: hhcm.hhxaf.cc.cd
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: hhcm.hhxaf.cc.cd
+- name: SubFree-KR-21
+  type: trojan
+  server: 211.49.57.179
+  port: 443
+  password: eeb6823c-b926-4ea2-866a-5542edd26e59
+  tls: true
+  sni: tjsp.hhxaf.cc.cd
+  network: ws
+  ws-opts:
+    path: /
+- name: SubFree-KR-23
+  type: trojan
+  server: 64.110.71.6
+  port: 443
+  password: eeb6823c-b926-4ea2-866a-5542edd26e59
+  tls: true
+  sni: tjsp.hhxaf.cc.cd
+  network: ws
+  ws-opts:
+    path: /
+- name: SubFree-KR-24
+  type: trojan
+  server: 64.110.75.145
+  port: 443
+  password: eeb6823c-b926-4ea2-866a-5542edd26e59
+  tls: true
+  sni: hhcm.hhxaf.cc.cd
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: hhcm.hhxaf.cc.cd
+- name: SubFree-KR-25
+  type: trojan
+  server: 64.176.226.26
+  port: 8443
+  password: eeb6823c-b926-4ea2-866a-5542edd26e59
+  tls: true
+  sni: tjsp.hhxaf.cc.cd
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: tjsp.hhxaf.cc.cd
+- name: SubFree-TH-06
+  type: vless
+  server: 51.158.206.26
+  port: 23576
+  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
+  sni: fuck.rkn
+- name: SubFree-KR-26
+  type: vless
+  server: 64.176.226.26
+  port: 8443
   uuid: eeb6823c-b926-4ea2-866a-5542edd26e59
   tls: true
   sni: t1s1.rittbo.kdns.fr
-  skip-cert-verify: true
   network: ws
   ws-opts:
     path: /
     headers:
       Host: t1s1.rittbo.kdns.fr
-- name: SubFree-KR-21
+- name: SubFree-KR-27
+  type: trojan
+  server: 141.164.42.2
+  port: 443
+  password: '114514'
+  tls: true
+  sni: tjaaa.hhllfly.kdns.fr
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: tjaaa.hhllfly.kdns.fr
+- name: SubFree-KR-28
+  type: trojan
+  server: 141.164.42.2
+  port: 443
+  password: '114514'
+  sni: tjaaa.hhllfly.kdns.fr
+- name: SubFree-KR-29
   type: trojan
   server: 211.49.57.175
   port: 443
   password: '114514'
   sni: tjaaa.hhllfly.kdns.fr
   skip-cert-verify: true
-- name: SubFree-KR-22
+- name: SubFree-KR-30
   type: trojan
   server: 211.49.57.175
   port: 443
@@ -3236,7 +3127,7 @@ proxies:
     path: /
     headers:
       Host: tjaaa.hhllfly.kdns.fr
-- name: SubFree-KR-23
+- name: SubFree-KR-31
   type: trojan
   server: 211.49.57.179
   port: 443
@@ -3248,14 +3139,13 @@ proxies:
     path: /
     headers:
       Host: hhgy.hh0mg.kdns.fr
-- name: SubFree-KR-24
+- name: SubFree-KR-32
   type: trojan
   server: 141.164.42.2
   port: 443
   password: 4c3164ee-abcf-4091-abea-d1cd4937a68d
   sni: jy.hhllfly.kdns.fr
-  skip-cert-verify: true
-- name: SubFree-KR-25
+- name: SubFree-KR-33
   type: trojan
   server: 141.164.42.2
   port: 443
@@ -3267,7 +3157,7 @@ proxies:
     path: /?ed=2048
     headers:
       Host: jy.hhllfly.kdns.fr
-- name: SubFree-KR-26
+- name: SubFree-KR-34
   type: trojan
   server: 141.164.42.2
   port: 443
@@ -3280,19 +3170,13 @@ proxies:
     path: /?ed=2048
     headers:
       Host: jy.hhllfly.kdns.fr
-- name: SubFree-KR-27
-  type: trojan
-  server: 141.164.42.2
-  port: 443
-  password: 4c3164ee-abcf-4091-abea-d1cd4937a68d
-  sni: jy.hhllfly.kdns.fr
-- name: SubFree-KR-28
+- name: SubFree-KR-35
   type: trojan
   server: 158.247.240.204
   port: 8443
   password: 4c3164ee-abcf-4091-abea-d1cd4937a68d
   sni: jy.hhllfly.kdns.fr
-- name: SubFree-KR-29
+- name: SubFree-KR-36
   type: trojan
   server: 158.247.240.204
   port: 8443
@@ -3305,7 +3189,7 @@ proxies:
     path: /?ed=2048
     headers:
       Host: jy.hhllfly.kdns.fr
-- name: SubFree-KR-30
+- name: SubFree-KR-37
   type: trojan
   server: 118.218.10.159
   port: 443
@@ -3317,86 +3201,12 @@ proxies:
     path: /
     headers:
       Host: hhtj.hhllfly.kdns.fr
-- name: SubFree-KR-31
-  type: trojan
-  server: 130.162.131.60
-  port: 9
-  password: 8r%3C%5B9%27l6hAO%238ZQi
-  tls: true
-  sni: Koma-YT.PAGeS.Dev
-  network: ws
-  ws-opts:
-    path: /trTelegram🇨🇳 @WangCai2
-    headers:
-      Host: Koma-YT.PAGeS.Dev
-- name: SubFree-KR-32
-  type: trojan
-  server: 130.162.131.60
-  port: 9
-  password: 8r%3C%5B9%27l6hAO%238ZQi
-  tls: true
-  sni: Koma-YT.PAGeS.Dev
-  network: ws
-  ws-opts:
-    path: /trTelegram🇨🇳+@WangCai2
-    headers:
-      Host: Koma-YT.PAGeS.Dev
-- name: SubFree-KR-33
-  type: trojan
-  server: 141.164.42.2
-  port: 443
-  password: eeb6823c-b926-4ea2-866a-5542edd26e59
-  tls: true
-  sni: hhcm.hhxaf.cc.cd
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: hhcm.hhxaf.cc.cd
-- name: SubFree-KR-34
-  type: trojan
-  server: 141.164.42.2
-  port: 443
-  password: eeb6823c-b926-4ea2-866a-5542edd26e59
-  tls: true
-  sni: hhcm.hhxaf.cc.cd
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: hhcm.hhxaf.cc.cd
-- name: SubFree-KR-35
-  type: trojan
-  server: 141.164.42.2
-  port: 443
-  password: eeb6823c-b926-4ea2-866a-5542edd26e59
-  tls: true
-  sni: hhcm.hhxaf.cc.cd
-  network: ws
-  ws-opts:
-    path: /
-- name: SubFree-KR-38
-  type: trojan
-  server: 152.70.239.74
-  port: 443
-  password: 4c3164ee-abcf-4091-abea-d1cd4937a68d
-  tls: true
-  sni: jy.hhllfly.kdns.fr
-  network: ws
-  ws-opts:
-    path: /?ed=2048
-    headers:
-      Host: jy.hhllfly.kdns.fr
 - name: SubFree-KR-40
   type: trojan
   server: 132.226.23.185
   port: 443
   password: eeb6823c-b926-4ea2-866a-5542edd26e59
-  tls: true
   sni: hhcm.hhxaf.cc.cd
-  network: ws
-  ws-opts:
-    path: /
 - name: SubFree-KR-41
   type: trojan
   server: 132.226.23.185
@@ -3407,15 +3217,55 @@ proxies:
   network: ws
   ws-opts:
     path: /
-- name: SubFree-KR-42
-  type: trojan
-  server: 132.226.23.185
-  port: 443
-  password: eeb6823c-b926-4ea2-866a-5542edd26e59
-  sni: hhcm.hhxaf.cc.cd
 - name: SubFree-KR-43
   type: trojan
-  server: 146.56.187.1
+  server: 141.164.42.2
+  port: 443
+  password: eeb6823c-b926-4ea2-866a-5542edd26e59
+  tls: true
+  sni: hhcm.hhxaf.cc.cd
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: hhcm.hhxaf.cc.cd
+- name: SubFree-KR-44
+  type: trojan
+  server: 141.164.42.2
+  port: 443
+  password: eeb6823c-b926-4ea2-866a-5542edd26e59
+  tls: true
+  sni: tjsp.hhxaf.cc.cd
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: tjsp.hhxaf.cc.cd
+- name: SubFree-KR-46
+  type: trojan
+  server: 152.70.254.197
+  port: 443
+  password: eeb6823c-b926-4ea2-866a-5542edd26e59
+  tls: true
+  sni: tjsp.hhxaf.cc.cd
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: tjsp.hhxaf.cc.cd
+- name: SubFree-KR-47
+  type: trojan
+  server: 158.247.209.57
+  port: 443
+  password: eeb6823c-b926-4ea2-866a-5542edd26e59
+  tls: true
+  sni: hhcm.hhxaf.cc.cd
+  network: ws
+  ws-opts:
+    path: /
+- name: SubFree-KR-48
+  type: trojan
+  server: 158.247.240.204
   port: 8443
   password: eeb6823c-b926-4ea2-866a-5542edd26e59
   tls: true
@@ -3425,52 +3275,11 @@ proxies:
     path: /
     headers:
       Host: tjsp.hhxaf.cc.cd
-- name: SubFree-KR-44
-  type: trojan
-  server: 211.49.57.175
-  port: 443
-  password: eeb6823c-b926-4ea2-866a-5542edd26e59
-  tls: true
-  sni: hhcm.hhxaf.cc.cd
-  network: ws
-  ws-opts:
-    path: /
-- name: SubFree-KR-45
-  type: trojan
-  server: 211.49.57.175
-  port: 443
-  password: eeb6823c-b926-4ea2-866a-5542edd26e59
-  tls: true
-  sni: hhcm.hhxaf.cc.cd
-  network: ws
-  ws-opts:
-    path: /
-- name: SubFree-KR-46
-  type: trojan
-  server: 211.49.57.175
-  port: 443
-  password: eeb6823c-b926-4ea2-866a-5542edd26e59
-  sni: hhcm.hhxaf.cc.cd
-- name: SubFree-KR-47
-  type: trojan
-  server: 211.49.57.175
-  port: 443
-  password: eeb6823c-b926-4ea2-866a-5542edd26e59
-  sni: hhcm.hhxaf.cc.cd
-  skip-cert-verify: true
-- name: SubFree-KR-48
-  type: trojan
-  server: 211.49.57.175
-  port: 443
-  password: eeb6823c-b926-4ea2-866a-5542edd26e59
-  sni: hhcm.hhxaf.cc.cd
-  skip-cert-verify: true
 - name: SubFree-KR-49
   type: trojan
   server: 211.49.57.175
   port: 443
   password: eeb6823c-b926-4ea2-866a-5542edd26e59
-  tls: true
   sni: hhcm.hhxaf.cc.cd
   network: ws
   ws-opts:
@@ -3482,416 +3291,13 @@ proxies:
   password: eeb6823c-b926-4ea2-866a-5542edd26e59
   tls: true
   sni: hhcm.hhxaf.cc.cd
-- name: SubFree-TW-04
-  type: trojan
-  server: 103.137.22.71
-  port: 443
-  password: '114514'
-  sni: tjaaa.hhllfly.kdns.fr
-  network: ws
-  ws-opts:
-    path: https://t.me/WangCai2🇨🇳
-    headers:
-      Host: tjaaa.hhllfly.kdns.fr
-- name: SubFree-TW-05
-  type: trojan
-  server: 151.242.189.137
-  port: 443
-  password: '114514'
-  tls: true
-  sni: tjaaa.hhllfly.kdns.fr
-- name: SubFree-TW-06
-  type: trojan
-  server: 85.237.207.189
-  port: 443
-  password: 3ac6a6ca99f74941b1eaf892818e2ddb
-- name: SubFree-TW-07
-  type: trojan
-  server: 85.237.207.189
-  port: 443
-  password: 3ac6a6ca99f74941b1eaf892818e2ddb
-  tls: true
-- name: SubFree-TW-08
-  type: trojan
-  server: 103.137.22.71
-  port: 443
-  password: '114514'
-  sni: tjaaa.hhllfly.kdns.fr
-  network: ws
-  ws-opts:
-    path: https://t.me/WangCai2
-    headers:
-      Host: tjaaa.hhllfly.kdns.fr
-- name: SubFree-TW-09
-  type: trojan
-  server: 151.242.189.137
-  port: 443
-  password: '521314'
-  sni: hhtj.hhllfly.kdns.fr
-  skip-cert-verify: true
-- name: SubFree-TW-17
-  type: trojan
-  server: 60.250.152.208
-  port: 3462
-  password: 736cd94d-7b94-3e44-8106-3419f64eaf09
-  tls: true
-  sni: 45.32.28.232
-- name: SubFree-IN-14
-  type: vless
-  server: 107.189.22.189
-  port: 443
-  uuid: 53027040-3983-4104-82e8-6fdeaed7a8de
-  sni: www.nvidia.com
-- name: SubFree-TW-19
-  type: trojan
-  server: 125.228.236.138
-  port: 443
-  password: 5a2c16f9
-  tls: true
-  sni: 5c.hhhhh.eu.org
-  network: ws
-  ws-opts:
-    path: /125.228.236.138:443
-    headers:
-      Host: 5c.hhhhh.eu.org
-- name: SubFree-TW-20
-  type: vless
-  server: 59.125.69.20
-  port: 443
-  uuid: c1c04450-bf71-4049-ad0c-9cf6d94d9f1f
-  tls: true
-  sni: ty986gfazs.cainiaohub.xyz
-  network: ws
-  ws-opts:
-    path: /81574b6b-c9d7-44a0-b83d-dad56e8cb530
-    headers:
-      Host: ty986gfazs.cainiaohub.xyz
-- name: SubFree-IN-15
-  type: vless
-  server: 107.189.22.189
-  port: 443
-  uuid: e866cadb-d9b3-4892-a21d-b5035a872c12
-  sni: www.nvidia.com
-- name: SubFree-TW-21
-  type: vless
-  server: 60.249.101.14
-  port: 10000
-  uuid: 431fe973-a43a-4fac-bf83-2a772e0d0625
-- name: SubFree-TW-22
-  type: vless
-  server: 60.248.219.78
-  port: 443
-  uuid: c1c04450-bf71-4049-ad0c-9cf6d94d9f1f
-  tls: true
-  sni: ty986gfazs.cainiaohub.xyz
-  network: ws
-  ws-opts:
-    path: /81574b6b-c9d7-44a0-b83d-dad56e8cb530
-    headers:
-      Host: ty986gfazs.cainiaohub.xyz
-- name: SubFree-HK-12
-  type: vless
-  server: 85.113.71.85
-  port: 64531
-  uuid: ba58ca0c-0411-444e-80f7-e361ce49012d
-  sni: apple.com
-- name: SubFree-TH-06
-  type: vless
-  server: 51.158.206.26
-  port: 23576
-  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
-  sni: fuck.rkn
-- name: SubFree-IN-16
-  type: vless
-  server: 51.158.206.87
-  port: 23576
-  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
-  sni: fuck.rkn
-- name: SubFree-IN-17
-  type: vless
-  server: 51.158.206.8
-  port: 23576
-  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
-  sni: fuck.rkn
-- name: SubFree-IN-18
-  type: vless
-  server: 51.158.206.97
-  port: 23576
-  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
-  sni: fuck.rkn
-- name: SubFree-IN-19
-  type: vless
-  server: 51.158.206.98
-  port: 23576
-  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
-  sni: fuck.rkn
-- name: SubFree-PH-02
-  type: vless
-  server: 91.124.209.138
-  port: 2086
-  uuid: 28926c34-865c-447e-8d42-a17240af743b
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: cdn-cloudflare91.korvexe.ir
-- name: SubFree-PH-03
-  type: vless
-  server: 91.124.209.138
-  port: 2095
-  uuid: 28926c34-865c-447e-8d42-a17240af743b
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: cdn-cloudflare91.korvexe.ir
-- name: SubFree-PH-04
-  type: vless
-  server: 91.124.209.138
-  port: 8880
-  uuid: 28926c34-865c-447e-8d42-a17240af743b
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: cdn-cloudflare91.korvexe.ir
-- name: SubFree-PH-05
-  type: vless
-  server: 91.124.209.138
-  port: 8880
-  uuid: 28926c34-865c-447e-8d42-a17240af743b
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: cdn-cloudflare91.korvexe.ir
-- name: SubFree-HK-14
-  type: trojan
-  server: 154.3.32.164
-  port: 8443
-  password: '162534'
-  sni: cchh2.pages.dev
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /?ed=2560
-    headers:
-      Host: cchh2.pages.dev
-- name: SubFree-IN-20
-  type: vless
-  server: 45.192.2.115
-  port: 443
-  uuid: 0b8dfc50-9e2d-4b3c-85cd-870b478312a0
-  sni: yandex.net
 - name: SubFree-TH-07
   type: vless
   server: 51.158.206.80
   port: 23576
   uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
   sni: fuck.rkn
-- name: SubFree-IN-21
-  type: vless
-  server: 37.139.24.45
-  port: 443
-  uuid: bbbde6b4-eb72-4018-b702-1c782c528927
-  tls: true
-  sni: etppnyfi.j84lb8cxseup4s2nb3if.workers.dev
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: etppnyfi.j84lb8cxseup4s2nb3if.workers.dev
-- name: SubFree-IN-22
-  type: vless
-  server: 45.13.119.219
-  port: 8888
-  uuid: eb77be10-9d9e-527b-a78d-8caaf58992d6
-- name: SubFree-IN-23
-  type: vless
-  server: 199.232.169.135
-  port: 443
-  uuid: f408696c-cdbe-49a1-90e9-ab602003315c
-  tls: true
-  sni: speedtest.net
-  network: ws
-  ws-opts:
-    path: /MinoVpnCh?ed=2048
-    headers:
-      Host: googleb.net
-- name: SubFree-IN-24
-  type: vless
-  server: 38.54.84.46
-  port: 445
-  uuid: 2b1fb18c-65c4-4154-9d66-2e0c8c7fc729
-  sni: klingenappentwicklung.com
-- name: SubFree-PH-06
-  type: vless
-  server: 64.188.77.157
-  port: 2512
-  uuid: 439c8516-b796-47ca-991a-7e18540213d1
-  sni: cent1.happv2raytun.store
-- name: SubFree-IN-25
-  type: vless
-  server: 51.158.206.80
-  port: 23576
-  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
-  sni: fuck.rkn
-- name: SubFree-IN-26
-  type: vless
-  server: 217.60.23.230
-  port: 443
-  uuid: 7856eb14-06d6-423a-b4a6-353b3ce5c51a
-  sni: site.rumedia-cdn.com
-- name: SubFree-TW-26
-  type: trojan
-  server: 165.154.227.234
-  port: 443
-  password: 23bd63cd-67a9-4f5e-8522-8433598a3167
-  sni: data.amazon-azure.com
-- name: SubFree-TW-27
-  type: trojan
-  server: 165.154.227.234
-  port: 443
-  password: 2bd32a2b-713a-4060-8ec1-b2fecf6f159e
-  sni: data.amazon-azure.com
-  skip-cert-verify: true
-- name: SubFree-TH-08
-  type: vless
-  server: 152.233.35.228
-  port: 8443
-  uuid: 394f6981-a782-4779-9a85-e6cf22935d93
-  tls: true
-  sni: de1.fromblancwithlove.com
-- name: SubFree-TW-30
-  type: trojan
-  server: 165.154.227.234
-  port: 443
-  password: 518e8d1a-9a9d-4aed-99ba-4503f171d54a
-  sni: data.amazon-azure.com
-  skip-cert-verify: true
-- name: SubFree-TW-31
-  type: trojan
-  server: 165.154.227.234
-  port: 443
-  password: b64911c7-c458-4078-ad7d-84b781f293b9
-  sni: data.amazon-azure.com
-  skip-cert-verify: true
-- name: SubFree-IN-27
-  type: vless
-  server: 147.45.50.132
-  port: 443
-  uuid: 8bba3194-4856-46d1-8319-075817d87eb1
-  sni: nl16.sodahub.online
-- name: SubFree-PH-07
-  type: vless
-  server: 113.30.191.181
-  port: 443
-  uuid: c20c6ab3-0495-48e3-bf01-77144b2a89c1
-  tls: true
-  sni: jacbgoff.davdlpck1znnhvqh64hl.workers.dev
-  network: ws
-  ws-opts:
-    path: /ranking/help/downloads?ed=2560
-    headers:
-      Host: jacbgoff.davdlpck1znnhvqh64hl.workers.dev
-- name: SubFree-TW-32
-  type: trojan
-  server: 165.154.227.234
-  port: 443
-  password: a4408756-1d34-4df0-a6c9-e63226e0ab93
-  sni: data.amazon-azure.com
-- name: SubFree-IN-28
-  type: vless
-  server: 195.254.165.243
-  port: 443
-  uuid: 1f6531a1-a6eb-4274-9f51-4a0899456fcf
-  sni: play.google.com
-- name: SubFree-PH-08
-  type: vless
-  server: 51.158.206.103
-  port: 23576
-  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
-  sni: fuck.rkn
-- name: SubFree-IN-29
-  type: vless
-  server: 159.195.45.129
-  port: 443
-  uuid: 859a537b-09cf-4bce-8da4-ecbb72950e3a
-  sni: 3.oncloudnineservicestreang.com
-- name: SubFree-PH-09
-  type: vless
-  server: 45.95.233.185
-  port: 19168
-  uuid: c90fdc71-d7ac-4b66-8c0c-2be2a7b4ae0c
-  sni: apple.com
-  network: grpc
-  grpc-opts:
-    grpc-service-name: api
-- name: SubFree-TW-33
-  type: trojan
-  server: 165.154.227.234
-  port: 443
-  password: 23bd63cd-67a9-4f5e-8522-8433598a3167
-  sni: data.amazon-azure.com
-  skip-cert-verify: true
-- name: SubFree-TW-38
-  type: trojan
-  server: 61.220.126.180
-  port: 443
-  password: 981db44e-9f07-49eb-9ba0-6ab4939919a2
-  tls: true
-  sni: twnode11.oportal.cc
-- name: SubFree-TW-39
-  type: trojan
-  server: 165.154.227.234
-  port: 443
-  password: a4408756-1d34-4df0-a6c9-e63226e0ab93
-  sni: data.amazon-azure.com
-  skip-cert-verify: true
-- name: SubFree-TW-40
-  type: trojan
-  server: 165.154.227.234
-  port: 443
-  password: d310f62c-6d12-4354-a2a4-460c0994ece7
-  sni: data.amazon-azure.com
-- name: SubFree-IN-30
-  type: vless
-  server: mediafire.com
-  port: 2095
-  uuid: 9b97bb00-48b8-46dd-a9f2-ecd2e16fc41c
-  network: ws
-  ws-opts:
-    path: /?ed=2048
-    headers:
-      Host: it1.vlessx.xyz
-- name: SubFree-TW-41
-  type: trojan
-  server: 165.154.227.234
-  port: 443
-  password: 0df905b2-a67d-48b4-b43b-894a52e0aaee
-  sni: data.amazon-azure.com
-  skip-cert-verify: true
-- name: SubFree-TW-42
-  type: trojan
-  server: 165.154.227.234
-  port: 443
-  password: 53721367-b66d-4641-828a-f10313794e0d
-  sni: data.amazon-azure.com
-- name: SubFree-TW-43
-  type: trojan
-  server: 165.154.227.234
-  port: 443
-  password: 53721367-b66d-4641-828a-f10313794e0d
-  sni: data.amazon-azure.com
-  skip-cert-verify: true
-- name: SubFree-TW-44
-  type: trojan
-  server: 165.154.227.234
-  port: 443
-  password: 99c7049b-1015-44d2-8fbf-c69acbabdf0d
-  sni: data.amazon-azure.com
-  skip-cert-verify: true
-- name: SubFree-IN-31
+- name: SubFree-IN-20
   type: vless
   server: 199.232.169.135
   port: 80
@@ -3902,14 +3308,179 @@ proxies:
     path: /MinoVpnCh?ed=2048
     headers:
       Host: googleb.net
-- name: SubFree-TW-45
-  type: trojan
-  server: 165.154.227.234
+- name: SubFree-IN-21
+  type: vless
+  server: 45.192.2.115
   port: 443
-  password: 961bb2dd-88e4-475e-bcb0-231e4a8db06c
-  sni: data.amazon-azure.com
+  uuid: 0b8dfc50-9e2d-4b3c-85cd-870b478312a0
+  sni: yandex.net
+- name: SubFree-PH-05
+  type: vless
+  server: 199.232.170.241
+  port: 80
+  uuid: cfde0aba-0985-4034-ab92-50b1534b126c
+  network: ws
+  ws-opts:
+    path: /?Telegram-WangCai2🇨🇳
+    headers:
+      Host: BankMelat.glObal.ssl.faStly.nEt
+- name: SubFree-PH-06
+  type: vless
+  server: 199.232.170.246
+  port: 80
+  uuid: cfde0aba-0985-4034-ab92-50b1534b126c
+  network: ws
+  ws-opts:
+    path: /?Telegram-WangCai2🇨🇳
+    headers:
+      Host: BankMelat.glObal.ssl.faStly.nEt
+- name: SubFree-TH-08
+  type: vless
+  server: 152.233.35.228
+  port: 8443
+  uuid: 394f6981-a782-4779-9a85-e6cf22935d93
+  tls: true
+  sni: de1.fromblancwithlove.com
+- name: SubFree-IN-22
+  type: vless
+  server: 146.75.119.82
+  port: 80
+  uuid: 40a43f7c-5752-4eea-a079-83dde7422380
+  network: ws
+  ws-opts:
+    path: ws/?ed=2048/@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz/?2048
+    headers:
+      Host: rb24.ir
+- name: SubFree-PH-07
+  type: vless
+  server: 199.232.170.246
+  port: 80
+  uuid: cfde0aba-0985-4034-ab92-50b1534b126c
+  network: ws
+  ws-opts:
+    path: /?Telegram-WangCai2🇨🇳
+    headers:
+      Host: BankMelat.glObal.ssl.faStly.nEt
+- name: SubFree-TW-03
+  type: trojan
+  server: 103.137.22.71
+  port: 443
+  password: '114514'
+  sni: tjaaa.hhllfly.kdns.fr
+  network: ws
+  ws-opts:
+    path: https://t.me/WangCai2
+    headers:
+      Host: tjaaa.hhllfly.kdns.fr
+- name: SubFree-TW-04
+  type: trojan
+  server: 151.242.189.137
+  port: 443
+  password: '114514'
+  tls: true
+  sni: tjaaa.hhllfly.kdns.fr
+- name: SubFree-PH-08
+  type: vless
+  server: 51.158.206.103
+  port: 23576
+  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
+  sni: fuck.rkn
+- name: SubFree-PH-09
+  type: vless
+  server: 85.159.229.77
+  port: 443
+  uuid: ac5313ae-803b-4104-a047-94c97ecb621e
+  sni: ie.orpheous.ru
+- name: SubFree-IN-23
+  type: vless
+  server: 45.95.233.185
+  port: 19168
+  uuid: c90fdc71-d7ac-4b66-8c0c-2be2a7b4ae0c
+  sni: apple.com
+  network: grpc
+  grpc-opts:
+    grpc-service-name: api
+- name: SubFree-IN-24
+  type: vless
+  server: 130.49.185.196
+  port: 443
+  uuid: e3c56988-5261-400f-b21b-6af5fa6efae1
+  sni: site.rumedia-cdn.com
+- name: SubFree-TW-06
+  type: trojan
+  server: 103.137.22.71
+  port: 443
+  password: '114514'
+  sni: tjaaa.hhllfly.kdns.fr
+  network: ws
+  ws-opts:
+    path: https://t.me/WangCai2🇨🇳
+    headers:
+      Host: tjaaa.hhllfly.kdns.fr
+- name: SubFree-TW-07
+  type: trojan
+  server: 85.237.207.189
+  port: 443
+  password: 3ac6a6ca99f74941b1eaf892818e2ddb
+- name: SubFree-TW-08
+  type: trojan
+  server: 85.237.207.189
+  port: 443
+  password: 3ac6a6ca99f74941b1eaf892818e2ddb
+  tls: true
+- name: SubFree-TW-09
+  type: trojan
+  server: 151.242.189.137
+  port: 443
+  password: '521314'
+  sni: hhtj.hhllfly.kdns.fr
   skip-cert-verify: true
-- name: SubFree-IN-32
+- name: SubFree-TW-16
+  type: trojan
+  server: 60.250.152.208
+  port: 3462
+  password: 736cd94d-7b94-3e44-8106-3419f64eaf09
+  tls: true
+  sni: 45.32.28.232
+- name: SubFree-IN-25
+  type: vless
+  server: 93.152.205.216
+  port: 444
+  uuid: 0b9bcbc1-b289-4a64-86fa-a5b731b65384
+  sni: web.max.ru
+  network: grpc
+  grpc-opts:
+    grpc-service-name: web.max.ru
+- name: SubFree-IN-26
+  type: vless
+  server: 199.232.169.135
+  port: 443
+  uuid: f408696c-cdbe-49a1-90e9-ab602003315c
+  tls: true
+  sni: speedtest.net
+  network: ws
+  ws-opts:
+    path: /MinoVpnCh?ed=2048
+    headers:
+      Host: googleb.net
+- name: SubFree-IN-27
+  type: vless
+  server: 212.192.2.193
+  port: 13206
+  uuid: 07107d99-86d9-4334-8829-98d32d5c72e4
+  sni: play.google.com
+- name: SubFree-IN-28
+  type: vless
+  server: 51.158.206.96
+  port: 23576
+  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
+  sni: fuck.rkn
+- name: SubFree-IN-29
+  type: vless
+  server: 45.13.119.219
+  port: 8888
+  uuid: eb77be10-9d9e-527b-a78d-8caaf58992d6
+- name: SubFree-IN-30
   type: vless
   server: 92.223.124.29
   port: 443
@@ -3921,169 +3492,335 @@ proxies:
     path: /telegram?ed=2048
     headers:
       Host: zema-brand.ir
-- name: SubFree-IN-33
+- name: SubFree-IN-31
   type: vless
-  server: 146.75.119.82
-  port: 80
-  uuid: 42d7b7fd-0612-4dbb-884b-894ff8a37a04
+  server: 51.91.251.198
+  port: 443
+  uuid: 4d10c997-4781-4cd9-82c3-15453523e12c
+  tls: true
+  sni: support.zoom.us.yxls.eu.cc
   network: ws
   ws-opts:
-    path: ws/?ed=2048/@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz/?2048
+    path: /sg-melbi
     headers:
-      Host: rb24.ir
+      Host: support.zoom.us.yxls.eu.cc
+- name: SubFree-TW-20
+  type: trojan
+  server: 125.228.236.138
+  port: 443
+  password: 5a2c16f9
+  tls: true
+  sni: 5c.hhhhh.eu.org
+  network: ws
+  ws-opts:
+    path: /125.228.236.138:443
+    headers:
+      Host: 5c.hhhhh.eu.org
+- name: SubFree-IN-32
+  type: vless
+  server: 159.195.46.178
+  port: 443
+  uuid: 859a537b-09cf-4bce-8da4-ecbb72950e3a
+  sni: 4.oncloudnineservicestreang.com
+- name: SubFree-IN-33
+  type: vless
+  server: 162.19.228.119
+  port: 80
+  uuid: dc8eccdb-ecfa-435f-9ac1-5dc4882e7b51
+  network: ws
+  ws-opts:
+    path: /http
 - name: SubFree-IN-34
   type: vless
-  server: 91.107.139.186
-  port: 50417
-  uuid: 500cdc83-b189-4d79-b06b-139c7972a57f
+  server: 210.203.195.52
+  port: 33890
+  uuid: 1d16c6e0-1bbe-435b-b661-90043fee999c
+  tls: true
+  sni: notls.lukongtou.eu.org
+  network: ws
+  ws-opts:
+    path: /Telegram-WangCai2🇨🇳
+    headers:
+      Host: notls.lukongtou.eu.org
+- name: SubFree-TH-09
+  type: vless
+  server: 152.233.35.228
+  port: 8443
+  uuid: 394f6981-a782-4779-9a85-e6cf22935d93
+  tls: true
+  sni: de1.fromblancwithlove.com
 - name: SubFree-IN-35
   type: vless
-  server: 23.26.37.119
+  server: 193.233.126.104
   port: 8443
-  uuid: dcba77d7-bb59-4802-b32c-37fd7011fca4
-  sni: google.com
+  uuid: b12eebc2-369c-4f3c-96a0-a8bd150ca8d5
+  sni: 00.img.avito.st
 - name: SubFree-IN-36
   type: vless
-  server: 45.196.182.39
-  port: 443
-  uuid: 701ea834-7c31-4544-95d6-f0a4dfe40b36
-  sni: storage.yandex.net
-- name: SubFree-PH-10
-  type: vless
-  server: 45.59.125.228
-  port: 443
-  uuid: 8569bb38-2453-47e8-be26-752281fd0e0f
-  sni: www.amd.com
-- name: SubFree-TW-46
-  type: trojan
-  server: 179.237.75.190
-  port: 27070
-  password: 8jEL40AOkV
-  sni: rd.autos.yahoo.com:40069
+  server: 83.228.231.239
+  port: 12001
+  uuid: e912f8d6-f59a-48b1-b5ad-bbe548d7ebf3
 - name: SubFree-IN-37
-  type: trojan
-  server: 86.106.84.195
-  port: 53261
-  password: y3b03zx3tznhyo538p4c
-  tls: true
+  type: vless
+  server: 195.254.165.243
+  port: 443
+  uuid: 1f6531a1-a6eb-4274-9f51-4a0899456fcf
+  sni: play.google.com
 - name: SubFree-IN-38
   type: vless
-  server: 45.196.182.78
-  port: 443
-  uuid: 701ea834-7c31-4544-95d6-f0a4dfe40b36
-  sni: storage.yandex.net
-- name: SubFree-PH-11
-  type: vless
-  server: 83.228.224.216
-  port: 443
-  uuid: X_market2-X_market2-X_market2
+  server: 78.47.104.140
+  port: 22012
+  uuid: efeefecf-72f9-4118-9e25-634ca2b2ca11
   sni: login.yahoo.com
-- name: SubFree-TW-47
+- name: SubFree-PH-10
+  type: vless
+  server: 46.226.166.205
+  port: 39133
+  uuid: ae963fa1-4bee-460c-8ba4-4256eb990125
+  sni: www.amazon.com
+- name: SubFree-HK-18
+  type: trojan
+  server: 45.67.201.210
+  port: 20013
+  password: 7e70223b-f331-41d5-9313-02b8d2df2885
+  tls: true
+  sni: hk.catxstar.com
+- name: SubFree-HK-48
+  type: trojan
+  server: 154.16.183.190
+  port: 443
+  password: 8r%253C%255B9%2527l6hAO%25238ZQi
+  sni: Koma-YT.PAGeS.Dev
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /trTelegram @WangCai2
+    headers:
+      Host: Koma-YT.PAGeS.Dev
+- name: SubFree-HK-49
+  type: trojan
+  server: 154.16.183.190
+  port: 443
+  password: 8r%253C%255B9%2527l6hAO%25238ZQi
+  tls: true
+  sni: Koma-YT.PAGeS.Dev
+- name: SubFree-HK-50
+  type: trojan
+  server: 23.175.201.2
+  port: 8443
+  password: 8r%3C%5B9%27l6hAO%238ZQi
+  tls: true
+  sni: Koma-YT.PAGeS.Dev
+- name: SubFree-TW-26
   type: trojan
   server: 165.154.227.234
   port: 443
-  password: 9006342b-be5d-4328-94a3-e54e4622d4d6
+  password: 53721367-b66d-4641-828a-f10313794e0d
   sni: data.amazon-azure.com
-- name: SubFree-TW-48
+- name: SubFree-TW-27
   type: trojan
   server: 165.154.227.234
   port: 443
-  password: 9006342b-be5d-4328-94a3-e54e4622d4d6
+  password: b64911c7-c458-4078-ad7d-84b781f293b9
   sni: data.amazon-azure.com
   skip-cert-verify: true
-- name: SubFree-TW-49
+- name: SubFree-IN-39
+  type: vless
+  server: yx.cloudflare.182682.xyz
+  port: 443
+  uuid: eeb6823c-b926-4ea2-866a-5542edd26e59
+  tls: true
+  sni: t1s1.rittbo.kdns.fr
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: t1s1.rittbo.kdns.fr
+- name: SubFree-PH-11
+  type: vless
+  server: 130.49.77.3
+  port: 443
+  uuid: e51796bb-3305-ac88-f39d-22fd9dd63b4f
+  sni: download.nvidia.com
+- name: SubFree-TW-28
+  type: trojan
+  server: 165.154.227.234
+  port: 443
+  password: 961bb2dd-88e4-475e-bcb0-231e4a8db06c
+  sni: data.amazon-azure.com
+  skip-cert-verify: true
+- name: SubFree-TW-29
+  type: trojan
+  server: 61.220.126.180
+  port: 443
+  password: 981db44e-9f07-49eb-9ba0-6ab4939919a2
+  tls: true
+  sni: twnode11.oportal.cc
+- name: SubFree-IN-40
+  type: vless
+  server: 162.19.228.119
+  port: 80
+  uuid: dc8eccdb-ecfa-435f-9ac1-5dc4882e7b51
+  network: ws
+  ws-opts:
+    path: /http
+    headers:
+      Host: de.vpnbase.net
+- name: SubFree-TW-30
+  type: trojan
+  server: 165.154.227.234
+  port: 443
+  password: 23bd63cd-67a9-4f5e-8522-8433598a3167
+  sni: data.amazon-azure.com
+  skip-cert-verify: true
+- name: SubFree-TW-31
+  type: trojan
+  server: 165.154.227.234
+  port: 443
+  password: 2bd32a2b-713a-4060-8ec1-b2fecf6f159e
+  sni: data.amazon-azure.com
+  skip-cert-verify: true
+- name: SubFree-TW-32
+  type: trojan
+  server: 165.154.227.234
+  port: 443
+  password: 99c7049b-1015-44d2-8fbf-c69acbabdf0d
+  sni: data.amazon-azure.com
+  skip-cert-verify: true
+- name: SubFree-TW-33
+  type: trojan
+  server: 165.154.227.234
+  port: 443
+  password: d310f62c-6d12-4354-a2a4-460c0994ece7
+  sni: data.amazon-azure.com
+- name: SubFree-TW-34
   type: trojan
   server: 165.154.227.234
   port: 443
   password: e658399b-fa8a-45e6-b87b-827349bf9aef
   sni: data.amazon-azure.com
   skip-cert-verify: true
-- name: SubFree-IN-39
-  type: vless
-  server: 46.8.229.48
+- name: SubFree-TW-35
+  type: trojan
+  server: 165.154.227.234
   port: 443
-  uuid: 2c634977-584e-4e1f-b501-1b70c77a6743
-  tls: true
-  sni: furrycdn.net
-  network: ws
-  ws-opts:
-    path: /api/v1/video-stream
-    headers:
-      Host: furrycdn.net
-- name: SubFree-IN-40
-  type: vless
-  server: 51.158.206.96
-  port: 23576
-  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
-  sni: fuck.rkn
+  password: f25d1510-3763-4fcf-9804-86d6c1566629
+  sni: data.amazon-azure.com
 - name: SubFree-IN-41
+  type: vless
+  server: 144.31.113.56
+  port: 58427
+  uuid: f6a2cd4a-b755-4b9f-b854-40101e28e217
+  sni: ymail.com
+- name: SubFree-TW-36
+  type: trojan
+  server: 165.154.227.234
+  port: 443
+  password: 53721367-b66d-4641-828a-f10313794e0d
+  sni: data.amazon-azure.com
+  skip-cert-verify: true
+- name: SubFree-IN-42
+  type: vless
+  server: 45.144.53.99
+  port: 443
+  uuid: c01c2da7-6977-4b53-a493-cda17fa61b4f
+  sni: gitea.voidmoor.com
+- name: SubFree-TW-37
+  type: trojan
+  server: 165.154.227.234
+  port: 443
+  password: 23bd63cd-67a9-4f5e-8522-8433598a3167
+  sni: data.amazon-azure.com
+- name: SubFree-TW-38
+  type: trojan
+  server: 165.154.227.234
+  port: 443
+  password: 518e8d1a-9a9d-4aed-99ba-4503f171d54a
+  sni: data.amazon-azure.com
+  skip-cert-verify: true
+- name: SubFree-TW-39
+  type: trojan
+  server: 165.154.227.234
+  port: 443
+  password: f25d1510-3763-4fcf-9804-86d6c1566629
+  sni: data.amazon-azure.com
+- name: SubFree-TW-40
+  type: trojan
+  server: 165.154.227.234
+  port: 443
+  password: 0df905b2-a67d-48b4-b43b-894a52e0aaee
+  sni: data.amazon-azure.com
+  skip-cert-verify: true
+- name: SubFree-TW-41
+  type: trojan
+  server: 165.154.227.234
+  port: 443
+  password: 9006342b-be5d-4328-94a3-e54e4622d4d6
+  sni: data.amazon-azure.com
+- name: SubFree-TW-42
+  type: trojan
+  server: 165.154.227.234
+  port: 443
+  password: 9006342b-be5d-4328-94a3-e54e4622d4d6
+  sni: data.amazon-azure.com
+  skip-cert-verify: true
+- name: SubFree-IN-43
+  type: vless
+  server: 91.218.143.194
+  port: 43798
+  uuid: b7725d23-840a-4f8e-993c-69b40424cfc0
+  sni: yahoo.com
+- name: SubFree-TW-43
+  type: trojan
+  server: 165.154.227.234
+  port: 443
+  password: a4408756-1d34-4df0-a6c9-e63226e0ab93
+  sni: data.amazon-azure.com
+- name: SubFree-TW-44
+  type: trojan
+  server: 165.154.227.234
+  port: 443
+  password: a4408756-1d34-4df0-a6c9-e63226e0ab93
+  sni: data.amazon-azure.com
+  skip-cert-verify: true
+- name: SubFree-TR-01
+  type: vless
+  server: 185.226.93.120
+  port: 8443
+  uuid: 1ae6bff4-1516-44f3-b9da-87bcab5191b1
+  sni: play.google.com
+  skip-cert-verify: true
+- name: SubFree-TR-02
+  type: vless
+  server: 141.98.118.70
+  port: 443
+  uuid: de64aaa6-a0ea-48d0-853b-1c3cbc7fb42c
+  sni: www.google.com
+- name: SubFree-IN-44
+  type: vless
+  server: 2.27.13.17
+  port: 443
+  uuid: 3ef170be-05d0-479c-9753-aa2f860964ea
+  sni: cloudflare.com
+- name: SubFree-PH-12
+  type: vless
+  server: 45.196.201.120
+  port: 443
+  uuid: f75814f6-8f81-4847-b792-168c41f2dc85
+  sni: storage.yandex.net
+- name: SubFree-IN-45
+  type: vless
+  server: 51.91.158.180
+  port: 443
+  uuid: 7b4b7d4e-7a53-4c0c-bd8e-9f3b1b2c7f21
+  sni: www.speedtest.net
+- name: SubFree-PH-13
   type: vless
   server: 151.80.147.30
   port: 443
   uuid: a1750ade-801f-4e3e-a5d2-de825771205d
   sni: speedtest.net
-- name: SubFree-IN-42
-  type: vless
-  server: 207.174.133.111
-  port: 8443
-  uuid: c1c04450-bf71-4049-ad0c-9cf6d94d9f1f
-  tls: true
-  sni: ty986gfazs.cainiaohub.xyz
-  network: ws
-  ws-opts:
-    path: /81574b6b-c9d7-44a0-b83d-dad56e8cb530
-    headers:
-      Host: ty986gfazs.cainiaohub.xyz
-- name: SubFree-IN-43
-  type: vless
-  server: 54.37.75.187
-  port: 443
-  uuid: a0b067ac-162d-4237-956d-10b8b471d3f5
-  sni: www.speedtest.net
-- name: SubFree-IN-44
-  type: vless
-  server: 176.125.241.103
-  port: 443
-  uuid: c01c2da7-6977-4b53-a493-cda17fa61b4f
-  sni: 3cx.com
-- name: SubFree-IN-45
-  type: vless
-  server: 207.148.125.245
-  port: 8443
-  uuid: eeb6823c-b926-4ea2-866a-5542edd26e59
-  tls: true
-  sni: t1s1.rittbo.kdns.fr
-  network: ws
-  ws-opts:
-    path: /fp=chrome
-    headers:
-      Host: t1s1.rittbo.kdns.fr
 - name: SubFree-IN-46
-  type: vless
-  server: 185.155.97.58
-  port: 45176
-  uuid: dc7940e0-6bff-45e3-853d-4007561803c3
-  sni: www.googletagmanager.com
-- name: SubFree-IN-47
-  type: vless
-  server: 45.196.182.41
-  port: 443
-  uuid: 701ea834-7c31-4544-95d6-f0a4dfe40b36
-  sni: storage.yandex.net
-- name: SubFree-IN-48
-  type: vless
-  server: 62.238.56.217
-  port: 41982
-  uuid: ff864ed6-390a-4a1f-a5c1-5666941247fe
-- name: SubFree-MY-01
-  type: trojan
-  server: 130.94.68.100
-  port: 443
-  password: l64tlWoGT6USQr%3D3WnjWedzvVSHXn8TNTE
-  tls: true
-  sni: www.rolll.click
-  skip-cert-verify: true
-- name: SubFree-IN-49
   type: vless
   server: 185.247.16.3
   port: 2200
@@ -4093,26 +3830,433 @@ proxies:
     path: /v1
     headers:
       Host: rzd.ru
-- name: SubFree-TW-50
+- name: SubFree-TR-03
   type: trojan
-  server: 165.154.227.234
+  server: 188.132.232.192
+  port: 2053
+  password: 8r%3C%5B9%27l6hAO%238ZQi
+  tls: true
+  sni: Koma-YT.PAGeS.Dev
+  network: ws
+  ws-opts:
+    path: /trTelegram🇨🇳+@WangCai2
+    headers:
+      Host: Koma-YT.PAGeS.Dev
+- name: SubFree-TR-04
+  type: vless
+  server: 185.226.93.120
+  port: 8443
+  uuid: 1ae6bff4-1516-44f3-b9da-87bcab5191b1
+  sni: play.google.com
+- name: SubFree-IN-47
+  type: vless
+  server: 157.180.20.177
   port: 443
-  password: f25d1510-3763-4fcf-9804-86d6c1566629
-  sni: data.amazon-azure.com
-- name: SubFree-MY-03
+  uuid: 23e895c5-1f50-dfc4-bc3f-b134581a80d4
+  sni: icloud.com
+- name: SubFree-TR-05
+  type: vless
+  server: 141.98.118.70
+  port: 443
+  uuid: de64aaa6-a0ea-48d0-853b-1c3cbc7fb42c
+  sni: www.google.com
+- name: SubFree-TR-06
+  type: trojan
+  server: 185.113.223.183
+  port: 8443
+  password: 8r%3C%5B9%27l6hAO%238ZQi
+  tls: true
+  sni: Koma-YT.PAGeS.Dev
+- name: SubFree-TR-07
+  type: trojan
+  server: 188.132.232.192
+  port: 2053
+  password: 8r%3C%5B9%27l6hAO%238ZQi
+  tls: true
+  sni: Koma-YT.PAGeS.Dev
+  network: ws
+  ws-opts:
+    path: /trTelegram🇨🇳 @WangCai2
+    headers:
+      Host: Koma-YT.PAGeS.Dev
+- name: SubFree-TR-08
+  type: trojan
+  server: 188.132.232.192
+  port: 8443
+  password: 8r%3C%5B9%27l6hAO%238ZQi
+  tls: true
+  sni: Koma-YT.PAGeS.Dev
+  network: ws
+  ws-opts:
+    path: /trTelegram🇨🇳+@WangCai2
+    headers:
+      Host: Koma-YT.PAGeS.Dev
+- name: SubFree-TR-09
+  type: vless
+  server: 45.196.201.181
+  port: 443
+  uuid: f75814f6-8f81-4847-b792-168c41f2dc85
+  tls: true
+  sni: storage.yandex.net
+- name: SubFree-TR-10
+  type: vless
+  server: 45.196.201.239
+  port: 443
+  uuid: f75814f6-8f81-4847-b792-168c41f2dc85
+  tls: true
+  sni: storage.yandex.net
+- name: SubFree-IN-48
+  type: vless
+  server: 2.27.105.172
+  port: 443
+  uuid: 75bf4758-0dfa-4b7e-8a73-813088edb780
+  sni: www.yandex.ru
+- name: SubFree-TR-11
+  type: trojan
+  server: 130.94.1.150
+  port: 443
+  password: 8r%3C%5B9%27l6hAO%238ZQi
+  sni: Koma-YT.PAGeS.Dev
+- name: SubFree-TR-12
+  type: trojan
+  server: 185.113.223.183
+  port: 8443
+  password: 8r%3C%5B9%27l6hAO%238ZQi
+  tls: true
+  sni: Koma-YT.PAGeS.Dev
+  network: ws
+  ws-opts:
+    path: /trTelegram🇨🇳+@WangCai2
+    headers:
+      Host: Koma-YT.PAGeS.Dev
+- name: SubFree-TR-13
+  type: trojan
+  server: 155.103.71.224
+  port: 2095
+  password: Ud8-Y7Z5TbaaXVTfrOaeGRrlJadnWOVk
+  sni: www.yahoo.com
+- name: SubFree-TR-14
+  type: trojan
+  server: 155.103.71.224
+  port: 2095
+  password: Ud8-Y7Z5TbaaXVTfrOaeGRrlJadnWOVk
+  sni: www.yahoo.com
+- name: SubFree-TR-15
+  type: vless
+  server: 93.114.98.129
+  port: 443
+  uuid: c9693fc6-a9d5-43e8-851a-3d46da90bd1b
+- name: SubFree-TR-16
+  type: trojan
+  server: 185.113.223.183
+  port: 8443
+  password: 8r%3C%5B9%27l6hAO%238ZQi
+  sni: Koma-YT.PAGeS.Dev
+  network: ws
+  ws-opts:
+    path: /trTelegram @WangCai2
+- name: SubFree-TR-17
+  type: vless
+  server: 45.196.201.213
+  port: 443
+  uuid: f75814f6-8f81-4847-b792-168c41f2dc85
+  tls: true
+  sni: storage.yandex.net
+- name: SubFree-TR-18
+  type: trojan
+  server: 188.132.232.192
+  port: 8443
+  password: 8r%3C%5B9%27l6hAO%238ZQi
+  tls: true
+  sni: Koma-YT.PAGeS.Dev
+  network: ws
+  ws-opts:
+    path: /trTelegram🇨🇳 @WangCai2
+    headers:
+      Host: Koma-YT.PAGeS.Dev
+- name: SubFree-TR-19
+  type: trojan
+  server: 155.103.71.224
+  port: 2095
+  password: RW9ApzRi2YpNmukvJYr839OR0Dku6yT8
+  sni: www.yahoo.com
+- name: SubFree-IN-49
+  type: vless
+  server: 81.85.78.78
+  port: 2200
+  uuid: 9501f3d6-483f-45c1-ab2c-33266520cd5c
+  network: ws
+  ws-opts:
+    path: /v1
+    headers:
+      Host: rzd.ru
+- name: SubFree-TR-20
+  type: trojan
+  server: 103.83.87.111
+  port: 443
+  password: '521314'
+  tls: true
+  sni: tjplay.lxdxo.kdns.fr
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: tjplay.lxdxo.kdns.fr
+- name: SubFree-TR-21
+  type: trojan
+  server: 103.83.87.133
+  port: 443
+  password: '521314'
+  tls: true
+  sni: tjplay.lxdxo.kdns.fr
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: tjplay.lxdxo.kdns.fr
+- name: SubFree-IN-50
+  type: vless
+  server: 194.87.161.60
+  port: 4100
+  uuid: 9b44bfb4-9d28-4870-9fc3-5154d6d462ff
+  network: ws
+  ws-opts:
+    path: /v1
+- name: SubFree-TR-22
+  type: trojan
+  server: 155.103.71.224
+  port: 2095
+  password: Bpi3Yj8lqdWvz6I2JSAZhT57kx5QqTbG
+  sni: play.google.com
+- name: SubFree-TR-23
+  type: trojan
+  server: 155.103.71.224
+  port: 2095
+  password: 7PeoMMvjGdDlnhoj0_nNo4NAhde9LQk0
+  sni: www.yahoo.com
+- name: SubFree-TR-24
+  type: trojan
+  server: 155.103.71.224
+  port: 2095
+  password: IoZsscDb4P1rkP0ZRpXiuKVC8CLwJO5H
+  sni: www.yahoo.com
+- name: SubFree-TR-25
+  type: trojan
+  server: 155.103.71.224
+  port: 2095
+  password: NCdJzWKiRmAn6qkNNCS3ZVv3Y2hiZ6KM
+  sni: www.yahoo.com
+- name: SubFree-TR-26
+  type: trojan
+  server: 93.115.10.237
+  port: 2053
+  password: 8r%3C%5B9%27l6hAO%238ZQi
+  tls: true
+  sni: Koma-YT.PAGeS.Dev
+  network: ws
+  ws-opts:
+    path: /trTelegram🇨🇳 @WangCai2
+    headers:
+      Host: Koma-YT.PAGeS.Dev
+- name: SubFree-TR-27
+  type: trojan
+  server: 155.103.71.224
+  port: 2095
+  password: QP4hFJB42D95JkLK8fjhmahWe1ZaqPzt
+  sni: www.yahoo.com
+- name: SubFree-TR-28
+  type: trojan
+  server: 155.103.71.224
+  port: 2095
+  password: WeF67m5iY-WT4WI6bK_o3xRKaqinZGaP
+  sni: play.google.com
+- name: SubFree-TR-29
+  type: vless
+  server: 45.196.201.134
+  port: 443
+  uuid: f75814f6-8f81-4847-b792-168c41f2dc85
+  tls: true
+  sni: storage.yandex.net
+- name: SubFree-TR-30
+  type: trojan
+  server: 103.83.87.133
+  port: 443
+  password: '521314'
+  sni: tjplay.lxdxo.kdns.fr
+- name: SubFree-TR-31
+  type: vless
+  server: 141.98.118.70
+  port: 443
+  uuid: de64aaa6-a0ea-48d0-853b-1c3cbc7fb42c
+  sni: www.google.com
+- name: SubFree-TR-32
+  type: trojan
+  server: 130.94.1.150
+  port: 443
+  password: 8r%3C%5B9%27l6hAO%238ZQi
+  sni: Koma-YT.PAGeS.Dev
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /trTelegram @WangCai2
+    headers:
+      Host: Koma-YT.PAGeS.Dev
+- name: SubFree-TR-33
+  type: vless
+  server: 141.98.118.70
+  port: 443
+  uuid: de64aaa6-a0ea-48d0-853b-1c3cbc7fb42c
+  sni: www.google.com
+  skip-cert-verify: true
+- name: SubFree-TR-34
+  type: trojan
+  server: 103.83.87.133
+  port: 443
+  password: '521314'
+  sni: tjplay.lxdxo.kdns.fr
+- name: SubFree-TR-35
+  type: trojan
+  server: 130.94.1.150
+  port: 443
+  password: 8r%3C%5B9%27l6hAO%238ZQi
+  tls: true
+  sni: Koma-YT.PAGeS.Dev
+- name: SubFree-TR-36
+  type: trojan
+  server: 155.103.71.224
+  port: 2095
+  password: Z3DIZL59uwEexcZoavFlpeYj8d3am3oZ
+  sni: www.yahoo.com
+- name: SubFree-TR-37
+  type: trojan
+  server: 103.83.87.133
+  port: 443
+  password: '521314'
+  tls: true
+  sni: tjplay.lxdxo.kdns.fr
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: tjplay.lxdxo.kdns.fr
+- name: SubFree-TR-38
+  type: trojan
+  server: 93.115.10.237
+  port: 8443
+  password: 8r%3C%5B9%27l6hAO%238ZQi
+  tls: true
+  sni: Koma-YT.PAGeS.Dev
+  network: ws
+  ws-opts:
+    path: /trTelegram🇨🇳+@WangCai2
+    headers:
+      Host: Koma-YT.PAGeS.Dev
+- name: SubFree-TR-39
+  type: trojan
+  server: 155.103.71.224
+  port: 2095
+  password: IoZsscDb4P1rkP0ZRpXiuKVC8CLwJO5H
+  sni: www.yahoo.com
+- name: SubFree-TR-40
+  type: trojan
+  server: 155.103.71.224
+  port: 2095
+  password: _Q0DYrO6Z8PO1ZyUWApoUCPBKWq-aSs_
+  sni: www.yahoo.com
+- name: SubFree-TR-42
+  type: vless
+  server: 45.196.201.217
+  port: 443
+  uuid: f75814f6-8f81-4847-b792-168c41f2dc85
+  tls: true
+  sni: storage.yandex.net
+- name: SubFree-TR-43
+  type: trojan
+  server: 93.115.10.237
+  port: 8443
+  password: 8r%3C%5B9%27l6hAO%238ZQi
+  tls: true
+  sni: Koma-YT.PAGeS.Dev
+  network: ws
+  ws-opts:
+    path: /trTelegram🇨🇳 @WangCai2
+    headers:
+      Host: Koma-YT.PAGeS.Dev
+- name: SubFree-TR-44
+  type: trojan
+  server: 155.103.71.224
+  port: 2095
+  password: R3ny7Q2e9sURuaNi_fPXRmwfCIOCJLbI
+  sni: www.yahoo.com
+- name: SubFree-TR-45
+  type: trojan
+  server: 155.103.71.224
+  port: 2095
+  password: Bpi3Yj8lqdWvz6I2JSAZhT57kx5QqTbG
+  sni: play.google.com
+- name: SubFree-TR-46
+  type: trojan
+  server: 155.103.71.224
+  port: 2095
+  password: 47PM2O3HwDZsMZ7-XTnJznFvIH4jSu96
+  sni: play.google.com
+- name: SubFree-TR-47
+  type: trojan
+  server: 155.103.71.224
+  port: 2095
+  password: FPcaAjpG1ktsRcb_top1pGz0Zw8QXnfC
+  sni: play.google.com
+- name: SubFree-TR-48
+  type: trojan
+  server: 155.103.71.224
+  port: 2095
+  password: MUoz0FFWQ3vaMuhtSjkYq8Bpn8crjRXc
+  sni: www.yahoo.com
+- name: SubFree-TR-49
+  type: trojan
+  server: 188.132.192.190
+  port: 2053
+  password: 8r%3C%5B9%27l6hAO%238ZQi
+  sni: Koma-YT.PAGeS.Dev
+  network: ws
+  ws-opts:
+    path: /trTelegram @WangCai2
+    headers:
+      Host: Koma-YT.PAGeS.Dev
+- name: SubFree-MY-01
   type: trojan
   server: 130.94.68.100
   port: 443
-  password: l64tlWoGT6USQr%3D3WnjWedzvVSHXn8TNTE
-  sni: www.rolll.click
-- name: SubFree-MY-04
-  type: trojan
-  server: 130.94.68.100
-  port: 443
-  password: l64tlWoGT6USQr%3D3WnjWedzvVSHXn8TNTE
+  password: l64tlWoGT6USQr=3WnjWedzvVSHXn8TNTE
   tls: true
   sni: www.rolll.click
-- name: SubFree-MY-05
+- name: SubFree-PH-14
+  type: trojan
+  server: 47.80.107.173
+  port: 2398
+  password: '3632736327'
+  tls: true
+  sni: flb06181447.tmdsb.org
+- name: SubFree-TR-50
+  type: trojan
+  server: 93.115.10.237
+  port: 2053
+  password: 8r%3C%5B9%27l6hAO%238ZQi
+  tls: true
+  sni: Koma-YT.PAGeS.Dev
+  network: ws
+  ws-opts:
+    path: /trTelegram🇨🇳+@WangCai2
+    headers:
+      Host: Koma-YT.PAGeS.Dev
+- name: SubFree-MY-02
+  type: trojan
+  server: 130.94.68.100
+  port: 443
+  password: l64tlWoGT6USQr%3D3WnjWedzvVSHXn8TNTE
+  sni: www.rolll.click
+- name: SubFree-MY-03
   type: trojan
   server: 130.94.68.100
   port: 443
@@ -4120,25 +4264,43 @@ proxies:
   tls: true
   sni: www.rolll.click
   skip-cert-verify: true
+- name: SubFree-MY-04
+  type: trojan
+  server: 130.94.68.100
+  port: 443
+  password: l64tlWoGT6USQr=3WnjWedzvVSHXn8TNTE
+  sni: www.rolll.click
+- name: SubFree-MY-05
+  type: trojan
+  server: 130.94.68.100
+  port: 443
+  password: l64tlWoGT6USQr=3WnjWedzvVSHXn8TNTE
+  tls: true
+  sni: www.rolll.click
 - name: SubFree-MY-06
   type: trojan
   server: 130.94.68.100
   port: 443
   password: l64tlWoGT6USQr=3WnjWedzvVSHXn8TNTE
   sni: www.rolll.click
-  skip-cert-verify: true
 - name: SubFree-MY-07
   type: trojan
   server: 130.94.68.100
   port: 443
-  password: l64tlWoGT6USQr%3D3WnjWedzvVSHXn8TNTE
+  password: l64tlWoGT6USQr=3WnjWedzvVSHXn8TNTE
   sni: www.rolll.click
-  skip-cert-verify: true
+- name: SubFree-PH-15
+  type: trojan
+  server: 47.80.107.173
+  port: 2398
+  password: '3632736327'
+  tls: true
+  sni: flb06181447.tmdsb.org
 - name: SubFree-MY-08
   type: trojan
   server: 130.94.68.100
   port: 443
-  password: l64tlWoGT6USQr=3WnjWedzvVSHXn8TNTE
+  password: l64tlWoGT6USQr%3D3WnjWedzvVSHXn8TNTE
   tls: true
   sni: www.rolll.click
 - name: SubFree-MY-09
@@ -4146,35 +4308,34 @@ proxies:
   server: 130.94.68.100
   port: 443
   password: l64tlWoGT6USQr%3D3WnjWedzvVSHXn8TNTE
-  tls: true
   sni: www.rolll.click
-  skip-cert-verify: true
 - name: SubFree-MY-10
   type: trojan
   server: 130.94.68.100
   port: 443
-  password: l64tlWoGT6USQr%3D3WnjWedzvVSHXn8TNTE
+  password: l64tlWoGT6USQr=3WnjWedzvVSHXn8TNTE
   tls: true
   sni: www.rolll.click
 - name: SubFree-MY-11
   type: trojan
   server: 130.94.68.100
   port: 443
-  password: l64tlWoGT6USQr%3D3WnjWedzvVSHXn8TNTE
+  password: l64tlWoGT6USQr=3WnjWedzvVSHXn8TNTE
   tls: true
   sni: www.rolll.click
+  skip-cert-verify: true
 - name: SubFree-MY-12
   type: trojan
   server: 130.94.68.100
   port: 443
-  password: l64tlWoGT6USQr%3D3WnjWedzvVSHXn8TNTE
-  tls: true
+  password: l64tlWoGT6USQr=3WnjWedzvVSHXn8TNTE
   sni: www.rolll.click
+  skip-cert-verify: true
 - name: SubFree-MY-13
   type: trojan
   server: 130.94.68.100
   port: 443
-  password: l64tlWoGT6USQr%3D3WnjWedzvVSHXn8TNTE
+  password: l64tlWoGT6USQr=3WnjWedzvVSHXn8TNTE
   sni: www.rolll.click
 - name: SubFree-MY-14
   type: trojan
@@ -4182,45 +4343,56 @@ proxies:
   port: 443
   password: l64tlWoGT6USQr=3WnjWedzvVSHXn8TNTE
   sni: www.rolll.click
-  skip-cert-verify: true
+- name: SubFree-PH-16
+  type: trojan
+  server: 47.80.107.173
+  port: 2398
+  password: '3632736327'
+  tls: true
+  sni: flb06181447.tmdsb.org
 - name: SubFree-MY-15
   type: trojan
   server: 130.94.68.100
   port: 443
-  password: l64tlWoGT6USQr=3WnjWedzvVSHXn8TNTE
-  tls: true
+  password: l64tlWoGT6USQr%3D3WnjWedzvVSHXn8TNTE
   sni: www.rolll.click
+  skip-cert-verify: true
 - name: SubFree-MY-16
   type: trojan
   server: 130.94.68.100
   port: 443
-  password: l64tlWoGT6USQr=3WnjWedzvVSHXn8TNTE
+  password: l64tlWoGT6USQr%3D3WnjWedzvVSHXn8TNTE
   tls: true
   sni: www.rolll.click
+  skip-cert-verify: true
 - name: SubFree-MY-17
   type: trojan
   server: 130.94.68.100
   port: 443
-  password: l64tlWoGT6USQr=3WnjWedzvVSHXn8TNTE
+  password: l64tlWoGT6USQr%3D3WnjWedzvVSHXn8TNTE
+  tls: true
   sni: www.rolll.click
-  skip-cert-verify: true
 - name: SubFree-MY-18
   type: trojan
   server: 130.94.68.100
   port: 443
-  password: l64tlWoGT6USQr=3WnjWedzvVSHXn8TNTE
+  password: l64tlWoGT6USQr%3D3WnjWedzvVSHXn8TNTE
+  tls: true
   sni: www.rolll.click
+  skip-cert-verify: true
 - name: SubFree-MY-19
   type: trojan
   server: 130.94.68.100
   port: 443
-  password: l64tlWoGT6USQr=3WnjWedzvVSHXn8TNTE
+  password: l64tlWoGT6USQr%3D3WnjWedzvVSHXn8TNTE
+  tls: true
   sni: www.rolll.click
 - name: SubFree-MY-20
   type: trojan
   server: 130.94.68.100
   port: 443
-  password: l64tlWoGT6USQr=3WnjWedzvVSHXn8TNTE
+  password: l64tlWoGT6USQr%3D3WnjWedzvVSHXn8TNTE
+  tls: true
   sni: www.rolll.click
 - name: SubFree-MY-21
   type: trojan
@@ -4228,12 +4400,12 @@ proxies:
   port: 443
   password: l64tlWoGT6USQr=3WnjWedzvVSHXn8TNTE
   sni: www.rolll.click
+  skip-cert-verify: true
 - name: SubFree-MY-22
   type: trojan
   server: 130.94.68.100
   port: 443
   password: l64tlWoGT6USQr=3WnjWedzvVSHXn8TNTE
-  tls: true
   sni: www.rolll.click
   skip-cert-verify: true
 - name: SubFree-MY-23
@@ -4247,6 +4419,7 @@ proxies:
   server: 130.94.68.100
   port: 443
   password: l64tlWoGT6USQr=3WnjWedzvVSHXn8TNTE
+  tls: true
   sni: www.rolll.click
 - name: SubFree-MY-25
   type: trojan
@@ -4256,373 +4429,152 @@ proxies:
   tls: true
   sni: www.rolll.click
   skip-cert-verify: true
-- name: SubFree-IN-50
-  type: vless
-  server: 168.222.140.204
-  port: 4100
-  uuid: 155e8dd4-a559-407a-9ea8-13a5e829f066
-  network: ws
-  ws-opts:
-    path: /v1
-- name: SubFree-TR-02
+- name: SubFree-PH-17
   type: trojan
-  server: 130.94.1.150
-  port: 443
-  password: 8r%3C%5B9%27l6hAO%238ZQi
+  server: 47.80.107.173
+  port: 2398
+  password: '3632736327'
   tls: true
-  sni: Koma-YT.PAGeS.Dev
-- name: SubFree-TR-03
-  type: vless
-  server: 204.10.192.226
-  port: 45872
-  uuid: 72beabbc-dbae-4aee-86d2-6b37981e40f9
-  sni: trendyol.com
-- name: SubFree-TR-04
-  type: trojan
-  server: 130.94.1.150
-  port: 443
-  password: 8r%3C%5B9%27l6hAO%238ZQi
-  sni: Koma-YT.PAGeS.Dev
-- name: SubFree-TR-05
-  type: trojan
-  server: 188.132.232.192
-  port: 2053
-  password: 8r%3C%5B9%27l6hAO%238ZQi
-  tls: true
-  sni: Koma-YT.PAGeS.Dev
-  network: ws
-  ws-opts:
-    path: /trTelegram🇨🇳+@WangCai2
-    headers:
-      Host: Koma-YT.PAGeS.Dev
-- name: SubFree-TR-06
-  type: vless
-  server: 45.196.201.8
-  port: 443
-  uuid: f75814f6-8f81-4847-b792-168c41f2dc85
-  tls: true
-  sni: storage.yandex.net
-- name: SubFree-TR-07
-  type: vless
-  server: 141.98.118.70
-  port: 443
-  uuid: de64aaa6-a0ea-48d0-853b-1c3cbc7fb42c
-  sni: www.google.com
-- name: SubFree-PH-12
-  type: vless
-  server: 78.159.250.214
-  port: 443
-  uuid: eb78e1f0-d921-4ca9-a889-261fcc5a0547
-  sni: qq.utiltools.ru
-- name: SubFree-PH-13
-  type: vless
-  server: 45.196.201.120
-  port: 443
-  uuid: f75814f6-8f81-4847-b792-168c41f2dc85
-  sni: storage.yandex.net
-- name: SubFree-VN-02
-  type: trojan
-  server: 103.195.236.24
-  port: 443
-  password: 8078dd51-d4d9-4024-89df-50e358a00a54
-  tls: true
-- name: SubFree-VN-03
-  type: trojan
-  server: 103.195.236.24
-  port: 443
-  password: 8078dd51-d4d9-4024-89df-50e3nhb58a00a54
-  tls: true
-- name: SubFree-TR-08
-  type: trojan
-  server: 130.94.1.150
-  port: 443
-  password: 8r%3C%5B9%27l6hAO%238ZQi
-  sni: Koma-YT.PAGeS.Dev
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /trTelegram @WangCai2
-    headers:
-      Host: Koma-YT.PAGeS.Dev
+  sni: flb06181447.tmdsb.org
 - name: SubFree-MY-26
   type: trojan
   server: 130.94.68.100
   port: 443
   password: l64tlWoGT6USQr=3WnjWedzvVSHXn8TNTE
-  tls: true
   sni: www.rolll.click
-- name: SubFree-VN-04
+- name: SubFree-PH-18
   type: trojan
-  server: 103.195.236.24
-  port: 443
-  password: 8078dd51-d4d9-4024-89df-50e358a00a54
+  server: 47.80.107.173
+  port: 2398
+  password: '3632736327'
   tls: true
-- name: SubFree-VN-05
+  sni: flb06181447.tmdsb.org
+- name: SubFree-PH-19
+  type: trojan
+  server: 47.80.107.173
+  port: 2398
+  password: '3632736327'
+  tls: true
+  sni: flb06181447.tmdsb.org
+- name: SubFree-PH-20
+  type: trojan
+  server: 47.80.107.173
+  port: 2398
+  password: '3632736327'
+  tls: true
+  sni: flb06181447.tmdsb.org
+- name: SubFree-PH-21
+  type: trojan
+  server: 47.80.107.173
+  port: 2398
+  password: '3632736327'
+  tls: true
+  sni: flb06181447.tmdsb.org
+- name: SubFree-PH-22
+  type: trojan
+  server: 47.80.107.173
+  port: 2398
+  password: '3632736327'
+  tls: true
+  sni: flb06181447.tmdsb.org
+- name: SubFree-PH-23
+  type: trojan
+  server: 47.80.107.173
+  port: 2398
+  password: '3632736327'
+  tls: true
+  sni: flb06181447.tmdsb.org
+- name: SubFree-PH-24
+  type: trojan
+  server: 47.80.107.173
+  port: 2398
+  password: '3632736327'
+  tls: true
+  sni: flb06181447.tmdsb.org
+- name: SubFree-PH-25
+  type: trojan
+  server: 47.80.107.173
+  port: 2398
+  password: '3632736327'
+  tls: true
+  sni: flb06181447.tmdsb.org
+- name: SubFree-PH-26
+  type: trojan
+  server: 47.80.107.173
+  port: 2398
+  password: '3632736327'
+  tls: true
+  sni: flb06181447.tmdsb.org
+- name: SubFree-VN-02
   type: trojan
   server: 103.195.236.24
   port: 443
   password: 8078dd51-d4d9-4024-89df-50e358ha00a54
   tls: true
-- name: SubFree-VN-06
-  type: trojan
-  server: 103.195.236.24
-  port: 443
-  password: 8078dd51-d4d9-4024-89df-50e3b58a00a54
-  tls: true
-- name: SubFree-VN-07
+- name: SubFree-VN-03
   type: trojan
   server: 103.195.236.24
   port: 443
   password: 8078dd51-d4d9-4024-89df-50e3bg58a00a54
   tls: true
-- name: SubFree-MY-27
+- name: SubFree-VN-04
   type: trojan
-  server: 130.94.68.100
+  server: 103.195.236.24
   port: 443
-  password: l64tlWoGT6USQr=3WnjWedzvVSHXn8TNTE
-  sni: www.rolll.click
+  password: 8078dd51-d4d9-4024-89df-50e3nhb58a00a54
+  tls: true
+- name: SubFree-PH-27
+  type: trojan
+  server: 47.80.107.173
+  port: 2398
+  password: '3632736327'
+  tls: true
+  sni: flb06181447.tmdsb.org
+- name: SubFree-VN-06
+  type: trojan
+  server: 103.195.236.24
+  port: 443
+  password: 8078dd51-d4d9-4024-89df-50e358a00a54
+  tls: true
 - name: SubFree-MY-28
   type: trojan
   server: 130.94.68.100
   port: 443
   password: l64tlWoGT6USQr=3WnjWedzvVSHXn8TNTE
   sni: www.rolll.click
-- name: SubFree-TR-10
-  type: trojan
-  server: 103.83.87.133
-  port: 443
-  password: '521314'
-  sni: tjplay.lxdxo.kdns.fr
-- name: SubFree-TR-11
-  type: trojan
-  server: 103.83.87.133
-  port: 443
-  password: '521314'
-  tls: true
-  sni: tjplay.lxdxo.kdns.fr
-  network: ws
-  ws-opts:
-    path: /
-- name: SubFree-VN-08
-  type: trojan
-  server: 103.195.236.24
-  port: 443
-  password: 52171d41-9367-429f-baa6-43660a6c84e4
-  tls: true
-  sni: 103.195.236.24
-- name: SubFree-TR-12
-  type: trojan
-  server: 185.113.223.183
-  port: 8443
-  password: 8r%3C%5B9%27l6hAO%238ZQi
-  tls: true
-  sni: Koma-YT.PAGeS.Dev
-- name: SubFree-TR-13
-  type: trojan
-  server: 188.132.232.192
-  port: 8443
-  password: 8r%3C%5B9%27l6hAO%238ZQi
-  tls: true
-  sni: Koma-YT.PAGeS.Dev
-  network: ws
-  ws-opts:
-    path: /trTelegram🇨🇳+@WangCai2
-    headers:
-      Host: Koma-YT.PAGeS.Dev
-- name: SubFree-VN-09
-  type: trojan
-  server: 103.166.185.11
-  port: 443
-  password: mothai3456789080898
-  sni: dl.kgvn.garenanow.com
-  skip-cert-verify: true
-- name: SubFree-TR-14
-  type: trojan
-  server: 103.83.87.133
-  port: 443
-  password: '521314'
-  tls: true
-  sni: tjplay.lxdxo.kdns.fr
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: tjplay.lxdxo.kdns.fr
-- name: SubFree-VN-10
-  type: trojan
-  server: 103.195.236.24
-  port: 443
-  password: 5623be5f-c9da-4511-81a9-b4b39b16edae
-  skip-cert-verify: true
-- name: SubFree-VN-11
-  type: trojan
-  server: 103.195.236.24
-  port: 443
-  password: 5623be5f-c9da-4511-81a9-b4b39b16edae
-  tls: true
-- name: SubFree-TR-15
-  type: trojan
-  server: 188.132.232.192
-  port: 2053
-  password: 8r%3C%5B9%27l6hAO%238ZQi
-  tls: true
-  sni: Koma-YT.PAGeS.Dev
-  network: ws
-  ws-opts:
-    path: /trTelegram🇨🇳 @WangCai2
-    headers:
-      Host: Koma-YT.PAGeS.Dev
-- name: SubFree-TR-16
-  type: trojan
-  server: 188.132.232.192
-  port: 8443
-  password: 8r%3C%5B9%27l6hAO%238ZQi
-  tls: true
-  sni: Koma-YT.PAGeS.Dev
-  network: ws
-  ws-opts:
-    path: /trTelegram🇨🇳 @WangCai2
-    headers:
-      Host: Koma-YT.PAGeS.Dev
-- name: SubFree-TR-17
-  type: trojan
-  server: 193.124.46.134
-  port: 8441
-  password: tunnel-ljlcf
-- name: SubFree-TR-18
-  type: trojan
-  server: 193.124.46.134
-  port: 8441
-  password: tunnel-ljlcf
-  tls: true
-- name: SubFree-TR-19
-  type: trojan
-  server: 193.124.46.134
-  port: 8441
-  password: tunnel-ljlcf
-  sni: 193.124.46.134
-  skip-cert-verify: true
-- name: SubFree-TR-20
-  type: trojan
-  server: 193.124.46.134
-  port: 8441
-  password: tunnel-ljlcf
-  sni: creativecommons.org
-  skip-cert-verify: true
-- name: SubFree-TR-21
-  type: vless
-  server: 141.98.118.70
-  port: 443
-  uuid: de64aaa6-a0ea-48d0-853b-1c3cbc7fb42c
-  sni: www.google.com
-- name: SubFree-TR-22
-  type: vless
-  server: 141.98.118.70
-  port: 443
-  uuid: de64aaa6-a0ea-48d0-853b-1c3cbc7fb42c
-  sni: www.google.com
-- name: SubFree-TR-23
-  type: trojan
-  server: 185.113.223.183
-  port: 8443
-  password: 8r%3C%5B9%27l6hAO%238ZQi
-  sni: Koma-YT.PAGeS.Dev
-  network: ws
-  ws-opts:
-    path: /trTelegram @WangCai2
-- name: SubFree-TR-24
-  type: trojan
-  server: 185.113.223.183
-  port: 8443
-  password: 8r%3C%5B9%27l6hAO%238ZQi
-  tls: true
-  sni: Koma-YT.PAGeS.Dev
-  network: ws
-  ws-opts:
-    path: /trTelegram🇨🇳+@WangCai2
-    headers:
-      Host: Koma-YT.PAGeS.Dev
-- name: SubFree-TR-25
-  type: trojan
-  server: 193.124.46.134
-  port: 8441
-  password: tunnel-ljlcf
-  sni: creativecommons.org
-  skip-cert-verify: true
-- name: SubFree-TR-26
-  type: trojan
-  server: 193.124.46.134
-  port: 8441
-  password: tunnel-ljlcf
-  sni: tr-1.stunnel.cc
-- name: SubFree-TR-27
-  type: trojan
-  server: 193.124.46.134
-  port: 8441
-  password: tunnel-ljlcf
-  sni: tr-1.stunnel.cc
-- name: SubFree-TR-28
-  type: trojan
-  server: 193.124.46.134
-  port: 8441
-  password: tunnel-ljlcf
-  sni: tr-1.stunnel.cc
-- name: SubFree-TR-29
-  type: trojan
-  server: 193.124.46.134
-  port: 8441
-  password: tunnel-ljlcf
-  sni: tr-1.stunnel.cc
-- name: SubFree-TR-30
-  type: trojan
-  server: 193.124.46.134
-  port: 8441
-  password: tunnel-telegram-ibahad
-  tls: true
-  sni: creativecommons.org
-- name: SubFree-TR-31
-  type: trojan
-  server: 103.83.87.111
-  port: 443
-  password: '521314'
-  tls: true
-  sni: tjplay.lxdxo.kdns.fr
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: tjplay.lxdxo.kdns.fr
-- name: SubFree-TR-32
-  type: trojan
-  server: 103.83.87.133
-  port: 443
-  password: '521314'
-  sni: tjplay.lxdxo.kdns.fr
 - name: SubFree-TH-10
-  type: trojan
-  server: 203.159.92.232
-  port: 443
-  password: a4408756-1d34-4df0-a6c9-e63226e0ab93
-  sni: data.amazon-azure.com
-  skip-cert-verify: true
-- name: SubFree-TR-33
   type: vless
-  server: 45.196.201.140
-  port: 443
-  uuid: f75814f6-8f81-4847-b792-168c41f2dc85
-  tls: true
-  sni: storage.yandex.net
-- name: SubFree-TR-34
-  type: trojan
-  server: 188.132.192.190
+  server: 165.154.247.187
   port: 2053
-  password: 8r%3C%5B9%27l6hAO%238ZQi
-  sni: Koma-YT.PAGeS.Dev
-  network: ws
-  ws-opts:
-    path: /trTelegram @WangCai2
+  uuid: e4f229c9-bd67-45d4-873b-b85a43a2be54
+  sni: www.amazon.com
 - name: SubFree-TH-11
+  type: vless
+  server: 165.154.247.187
+  port: 2053
+  uuid: e4f229c9-bd67-45d4-873b-b85a43a2be54
+  sni: www.amazon.com
+- name: SubFree-PH-28
+  type: trojan
+  server: 47.80.107.173
+  port: 2398
+  password: '3632736327'
+  tls: true
+  sni: flb06181447.tmdsb.org
+- name: SubFree-VN-07
+  type: trojan
+  server: 103.195.236.24
+  port: 443
+  password: 6b4ced5e-835a-4a7a-9d03-6a46e94668cb
+  tls: true
+- name: SubFree-PH-29
+  type: trojan
+  server: 47.80.107.173
+  port: 2398
+  password: '3632736327'
+  tls: true
+  sni: flb06181447.tmdsb.org
+- name: SubFree-TH-13
   type: trojan
   server: 45.150.128.181
   port: 443
@@ -4635,166 +4587,47 @@ proxies:
     path: /trTelegram🇨🇳 @WangCai2
     headers:
       Host: Koma-YT.PAGeS.Dev
-- name: SubFree-TR-35
-  type: vless
-  server: 204.10.192.226
-  port: 45872
-  uuid: 72beabbc-dbae-4aee-86d2-6b37981e40f9
-  sni: trendyol.com
-- name: SubFree-TR-36
+- name: SubFree-TH-14
   type: trojan
-  server: 107.161.174.99
+  server: 203.159.92.232
   port: 443
-  password: '521314'
-  tls: true
-  sni: tjplay.lxdxo.kdns.fr
-  network: ws
-  ws-opts:
-    path: /
-- name: SubFree-TR-37
-  type: trojan
-  server: 193.124.46.134
-  port: 8441
-  password: tunnel-ljlcf
-  sni: 193.124.46.134
+  password: a4408756-1d34-4df0-a6c9-e63226e0ab93
+  sni: data.amazon-azure.com
   skip-cert-verify: true
-- name: SubFree-TR-38
+- name: SubFree-VN-08
   type: trojan
-  server: 103.83.87.133
+  server: 103.166.185.11
   port: 443
-  password: '521314'
-  tls: true
-  sni: tjplay.lxdxo.kdns.fr
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: tjplay.lxdxo.kdns.fr
-- name: SubFree-TR-39
+  password: mothai3456789080898
+  sni: dl.kgvn.garenanow.com
+  skip-cert-verify: true
+- name: SubFree-PH-30
   type: trojan
-  server: 188.132.192.190
-  port: 2053
-  password: 8r%3C%5B9%27l6hAO%238ZQi
+  server: 47.80.107.173
+  port: 2398
+  password: '3632736327'
   tls: true
-  sni: Koma-YT.PAGeS.Dev
-  network: ws
-  ws-opts:
-    path: /trTelegram🇨🇳+@WangCai2
-    headers:
-      Host: Koma-YT.PAGeS.Dev
-- name: SubFree-TR-40
-  type: vless
-  server: 45.196.201.144
+  sni: flb06181447.tmdsb.org
+- name: SubFree-PH-31
+  type: trojan
+  server: 47.80.107.173
+  port: 2398
+  password: '3632736327'
+  tls: true
+  sni: flb06181447.tmdsb.org
+- name: SubFree-VN-09
+  type: trojan
+  server: 103.195.236.24
   port: 443
-  uuid: f75814f6-8f81-4847-b792-168c41f2dc85
-  tls: true
-  sni: storage.yandex.net
-- name: SubFree-TR-41
-  type: vless
-  server: 143.246.136.41
-  port: 443
-  uuid: 9bda1917-09d6-4e20-aaaa-9f0e52ea095d
-  sni: play.google.com
-- name: SubFree-TR-42
+  password: 52171d41-9367-429f-baa6-43660a6c84e4
+- name: SubFree-PH-32
   type: trojan
-  server: 188.132.192.190
-  port: 2053
-  password: 8r%3C%5B9%27l6hAO%238ZQi
+  server: 47.80.107.173
+  port: 2398
+  password: '3632736327'
   tls: true
-  sni: Koma-YT.PAGeS.Dev
-  network: ws
-  ws-opts:
-    path: /trTelegram🇨🇳 @WangCai2
-    headers:
-      Host: Koma-YT.PAGeS.Dev
-- name: SubFree-TR-43
-  type: trojan
-  server: 188.132.192.190
-  port: 2053
-  password: 8r%3C%5B9%27l6hAO%238ZQi
-  sni: Koma-YT.PAGeS.Dev
-  network: ws
-  ws-opts:
-    path: /trTelegram @WangCai2
-    headers:
-      Host: Koma-YT.PAGeS.Dev
-- name: SubFree-TR-44
-  type: vless
-  server: 194.135.34.121
-  port: 443
-  uuid: 547c0d9e-9bb5-4e83-b6e7-09953bc6004b
-  tls: true
-  sni: cloudflare.vhub.pro
-  network: ws
-  ws-opts:
-    path: /websocket
-    headers:
-      Host: cloudflare.vhub.pro
-- name: SubFree-TR-45
-  type: trojan
-  server: 188.132.192.190
-  port: 2053
-  password: 8r%3C%5B9%27l6hAO%238ZQi
-  tls: true
-  sni: Koma-YT.PAGeS.Dev
-- name: SubFree-TR-46
-  type: trojan
-  server: 188.132.192.190
-  port: 2053
-  password: 8r%3C%5B9%27l6hAO%238ZQi
-  sni: Koma-YT.PAGeS.Dev
-  network: ws
-  ws-opts:
-    path: /trTelegram
-- name: SubFree-TR-47
-  type: trojan
-  server: 93.115.10.237
-  port: 8443
-  password: 8r%3C%5B9%27l6hAO%238ZQi
-  tls: true
-  sni: Koma-YT.PAGeS.Dev
-  network: ws
-  ws-opts:
-    path: /trTelegram🇨🇳 @WangCai2
-    headers:
-      Host: Koma-YT.PAGeS.Dev
-- name: SubFree-TR-48
-  type: trojan
-  server: 93.115.10.237
-  port: 8443
-  password: 8r%3C%5B9%27l6hAO%238ZQi
-  tls: true
-  sni: Koma-YT.PAGeS.Dev
-  network: ws
-  ws-opts:
-    path: /trTelegram🇨🇳+@WangCai2
-    headers:
-      Host: Koma-YT.PAGeS.Dev
-- name: SubFree-TR-49
-  type: trojan
-  server: 93.115.10.237
-  port: 2053
-  password: 8r%3C%5B9%27l6hAO%238ZQi
-  tls: true
-  sni: Koma-YT.PAGeS.Dev
-  network: ws
-  ws-opts:
-    path: /trTelegram🇨🇳+@WangCai2
-    headers:
-      Host: Koma-YT.PAGeS.Dev
-- name: SubFree-TR-50
-  type: trojan
-  server: 93.115.10.237
-  port: 2053
-  password: 8r%3C%5B9%27l6hAO%238ZQi
-  tls: true
-  sni: Koma-YT.PAGeS.Dev
-  network: ws
-  ws-opts:
-    path: /trTelegram🇨🇳 @WangCai2
-    headers:
-      Host: Koma-YT.PAGeS.Dev
-- name: SubFree-TH-12
+  sni: flb06181447.tmdsb.org
+- name: SubFree-TH-15
   type: vless
   server: 18.239.134.69
   port: 80
@@ -4804,7 +4637,19 @@ proxies:
     path: /
     headers:
       Host: d2e1v87ko56lyw.cloudfront.net:assets.opensignal.com
-- name: SubFree-TH-13
+- name: SubFree-VN-10
+  type: trojan
+  server: 103.195.236.24
+  port: 443
+  password: 8078dd51-d4d9-4024-89df-50e358a00a54
+  tls: true
+- name: SubFree-VN-11
+  type: trojan
+  server: 103.195.236.24
+  port: 443
+  password: 8078dd51-d4d9-4024-89df-50e3b58a00a54
+  tls: true
+- name: SubFree-TH-16
   type: vless
   server: 18.239.134.69
   port: 80
@@ -4814,7 +4659,33 @@ proxies:
     path: /
     headers:
       Host: d2e1v87ko56lyw.cloudfront.net:assets.opensignal.com
-- name: SubFree-PH-14
+- name: SubFree-PH-33
+  type: trojan
+  server: 47.80.107.173
+  port: 2398
+  password: '3632736327'
+  tls: true
+  sni: flb06181447.tmdsb.org
+- name: SubFree-VN-12
+  type: trojan
+  server: 103.195.236.24
+  port: 443
+  password: 5623be5f-c9da-4511-81a9-b4b39b16edae
+  skip-cert-verify: true
+- name: SubFree-VN-13
+  type: trojan
+  server: 103.195.236.24
+  port: 443
+  password: 5623be5f-c9da-4511-81a9-b4b39b16edae
+  tls: true
+- name: SubFree-VN-14
+  type: trojan
+  server: 103.195.236.24
+  port: 443
+  password: 52171d41-9367-429f-baa6-43660a6c84e4
+  tls: true
+  sni: 103.195.236.24
+- name: SubFree-PH-34
   type: vless
   server: brenna.ns.cloudflare.com
   port: 2096
@@ -4826,61 +4697,48 @@ proxies:
     path: /45.76.183.217=49292
     headers:
       Host: hetz.x-smm.com
-- name: SubFree-PH-15
+- name: SubFree-PH-35
+  type: vless
+  server: icook.tw
+  port: 8880
+  uuid: aa7461af-3176-42a3-8974-59930189c521
+  network: ws
+  ws-opts:
+    path: /pyip=ProxyIP.US.CMLiussss.net
+    headers:
+      Host: round-block-e864.326.workers.dev
+- name: SubFree-PH-36
+  type: trojan
+  server: www.gossipglove.com
+  port: 443
+  password: humanity
+  tls: true
+  sni: www.gossipglove.com
+  network: ws
+  ws-opts:
+    path: /assignment
+- name: SubFree-PH-37
+  type: vless
+  server: nl16.sodahub.online
+  port: 443
+  uuid: 8bba3194-4856-46d1-8319-075817d87eb1
+  sni: nl16.sodahub.online
+- name: SubFree-PH-38
   type: vless
   server: sca34.mysilipdir.com
   port: 8880
   uuid: 8dc7722c-2767-4eea-a28b-2f8daacc07e3
   network: grpc
   grpc-opts: {}
-- name: SubFree-PH-16
-  type: trojan
-  server: 0101010101010101010101001010101010110010101010101010101010101.poki-pakipon.ir
-  port: 24154
-  password: Xpp4J8jfbWRwCFPbFQ0PaugqS8VZLKkm
-  sni: rd.autos.yahoo.com:443
-  network: grpc
-  grpc-opts:
-    grpc-service-name: BanV2ray-------BanV2ray------BanV2ray-------BanV2ray------BanV2ray-------BanV2ray------BanV2ray-------BanV2ray------BanV2ray-------BanV2ray------BanV2ray-------BanV2ray------BanV2ray-------BanV2ray------BanV2ray-------BanV2ray
-- name: SubFree-PH-17
+- name: SubFree-PH-39
   type: vless
-  server: engreal.greewebservices.ir
-  port: 6606
-  uuid: 654bdb75-bb91-4356-abac-ab5e1c306da6
-  sni: yahoo.com
-- name: SubFree-PH-18
-  type: vless
-  server: uk.levikogjgfdd.ir
-  port: 2053
-  uuid: 70f28a55-1e6c-4082-aef4-2dc2cfa78fca
+  server: md.gilangard.ir
+  port: 11431
+  uuid: 8db764be-f144-4df0-ae5d-21d5f2551290
   sni: play.google.com
-  network: grpc
-  grpc-opts:
-    grpc-service-name: api.v1.data
-- name: SubFree-PH-19
+- name: SubFree-PH-40
   type: vless
-  server: arda.uptalk.ir
+  server: qq.utiltools.ru
   port: 443
-  uuid: dc7aefdc-a8da-4139-a948-04e9dec9a9f6
-  sni: www.amd.com
-- name: SubFree-PH-20
-  type: trojan
-  server: mmd.asan9720.ir
-  port: 8880
-  password: hGGbs2T6hf
-  sni: www.aparat.com
-- name: SubFree-PH-21
-  type: vless
-  server: fn.fifapes.monster
-  port: 2090
-  uuid: eab915bc-d2df-73d1-47d0-6eb240497055
-- name: SubFree-TH-14
-  type: vless
-  server: www.true.th
-  port: 80
-  uuid: f27894bf-349c-44e6-a0ce-4c787e18476f
-  network: ws
-  ws-opts:
-    path: /GDkX4xpB/
-    headers:
-      Host: duatoup3wk8q2.cloudfront.net
+  uuid: eb78e1f0-d921-4ca9-a889-261fcc5a0547
+  sni: qq.utiltools.ru
