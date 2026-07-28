@@ -22,37 +22,56 @@ def get_mihomo_core():
     print("\n⬇️ 未检测到 Mihomo 内核，正在从 GitHub Prerelease-Alpha 抓取...")
     arch_map = {"x86_64": "amd64", "AMD64": "amd64", "aarch64": "arm64", "arm64": "arm64"}
     sys_arch = arch_map.get(platform.machine(), "amd64")
-    sys_os = "windows" if platform.system() == "Windows" else "linux"
+    
+    is_windows = platform.system() == "Windows"
+    sys_os = "windows" if is_windows else "linux"
+    
+    # 强制要求匹配后缀名，避免误下 .deb 或 .rpm
+    target_ext = ".zip" if is_windows else ".gz"
     
     api_url = "https://api.github.com/repos/vernesong/mihomo/releases/tags/Prerelease-Alpha"
     req = urllib.request.Request(api_url, headers={'User-Agent': 'Mozilla/5.0'})
     
+    import json
     with urllib.request.urlopen(req) as response:
         data = json.loads(response.read().decode())
         
     download_url = None
     for asset in data.get('assets', []):
         name = asset['name']
-        if sys_os in name and sys_arch in name and "compatible" not in name:
+        # 精准匹配：系统、架构，排除兼容包，且后缀必须是 .gz 或 .zip
+        if sys_os in name and sys_arch in name and "compatible" not in name and name.endswith(target_ext):
             download_url = asset['browser_download_url']
             break
             
     if not download_url:
-        raise Exception(f"❌ 未找到适合当前系统({sys_os}-{sys_arch})的 Mihomo 内核文件！")
+        raise Exception(f"❌ 未找到适合当前系统({sys_os}-{sys_arch})的 {target_ext} 格式内核文件！")
 
-    gz_file = "mihomo_temp.gz"
+    temp_file = f"mihomo_temp{target_ext}"
     print(f"📦 正在下载: {download_url}")
-    urllib.request.urlretrieve(download_url, gz_file)
+    urllib.request.urlretrieve(download_url, temp_file)
     
     print("🔧 正在解压内核...")
-    with gzip.open(gz_file, 'rb') as f_in:
-        with open(core_name, 'wb') as f_out:
-            shutil.copyfileobj(f_in, f_out)
-            
-    os.remove(gz_file)
-    if platform.system() != "Windows":
+    if is_windows:
+        import zipfile
+        with zipfile.ZipFile(temp_file, 'r') as zip_ref:
+            # 找到压缩包里的 .exe 文件并提取
+            for file_info in zip_ref.infolist():
+                if file_info.filename.endswith('.exe'):
+                    zip_ref.extract(file_info, path=".")
+                    # 重命名以确保一致性
+                    if file_info.filename != core_name:
+                        if os.path.exists(core_name):
+                            os.remove(core_name)
+                        os.rename(file_info.filename, core_name)
+                    break
+    else:
+        with gzip.open(temp_file, 'rb') as f_in:
+            with open(core_name, 'wb') as f_out:
+                shutil.copyfileobj(f_in, f_out)
         os.chmod(core_name, 0o755) # 赋予执行权限
-        
+            
+    os.remove(temp_file)
     print("✅ 内核准备就绪！")
     return os.path.abspath(core_name)
 
