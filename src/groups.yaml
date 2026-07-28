@@ -126,6 +126,9 @@ proxy-groups:
   - name: Tiktok
     <<: *Groupp
     icon: "https://cdn.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/TikTok.png"
+  - name: Reddit
+    <<: *Groupp
+    icon: "https://cdn.jsdelivr.net/gh/CLorant/readme-social-icons@main/medium/colored/reddit.svg"
   - name: Discord
     <<: *Groupp
     icon: "https://cdn.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/GitHub.png"
