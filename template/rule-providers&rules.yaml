@@ -440,7 +440,7 @@ rule-providers:
     <<: *ipc
     path: ./rules/cloudflare_ip.mrs
     url: "https://cdn.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@meta/geo/geoip/cloudflare.mrs"
-  ai-chat-!cn:
+  "ai-chat-!cn":
     <<: *dom
     path: ./rules/ai-chat-!cn.mrs
     url: "https://cdn.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@meta/geo/geosite/category-ai-chat-!cn.mrs"
@@ -464,7 +464,7 @@ rule-providers:
     <<: *dom
     path: ./rules/discord.mrs
     url: "https://cdn.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@meta/geo/geosite/discord.mrs"
-  geolocation-!cn:
+  "geolocation-!cn":
     <<: *dom
     path: ./rules/geolocation-!cn.mrs
     url: "https://cdn.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@meta/geo/geosite/geolocation-!cn.mrs"
@@ -601,7 +601,7 @@ rules:
 - RULE-SET,google,Google
 - RULE-SET,google_ip,Google,no-resolve
 - RULE-SET,github,Github
-- RULE-SET,ai-chat-!cn,Ai
+- "RULE-SET,ai-chat-!cn,Ai"
 - RULE-SET,reddit,Reddit
 - RULE-SET,porn-hub,Porn
 - RULE-SET,mindgeek-porn,Porn
@@ -610,7 +610,7 @@ rules:
 - RULE-SET,microsoft,Microsoft
 
 # 🛡️ 9. 【兜底规则】
-- RULE-SET,geolocation-!cn,Foreign
+- "RULE-SET,geolocation-!cn,Foreign"
 - RULE-SET,cn,Domestic
 - RULE-SET,cn_ip,Domestic,no-resolve
 - MATCH,Final
