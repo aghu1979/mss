@@ -67,11 +67,18 @@ Groupp: &Groupp
     - ☁️ SubCF-All
     - 🌐 默认代理
 
-Smartp: &Smartp
+# ==========================================================
+# [新增] 纯净的测速模板 (仅包含规则，不包含下级策略组，供底层池使用)
+# ==========================================================
+UrlTestBase: &UrlTestBase
   type: url-test
   url: "https://www.gstatic.com/generate_204"
   interval: 300
   tolerance: 50
+
+# [原有的智能合并模板保持不变，供上层地区使用]
+Smartp: &Smartp
+  <<: *UrlTestBase
   proxies:
     - 👑 SubPre-All
     - ☁️ SubCF-All
