@@ -102,14 +102,16 @@ proxy-providers:
     exclude-filter: (?i)(?:佣金|套餐|官网|官方|网址|售后|免翻|过期|剩余|到期|流量|更新|点外|重置|免流|使用|教程|优惠|超实惠|址|AFF|Days|Date)
     health-check: &id001
       enable: true
-      url: https://www.gstatic.com/generate_204
-      interval: 600
+      url: https://cp.cloudflare.com
+      interval: 300
+      timeout: 1000
+      tolerance: 100
     header: &id002
       User-Agent:
       - ClashMetaForAndroid/2.11.2.Meta
       - clash.meta
       - mihomo
-    path: ./proxies/SubPre.yaml
+    path: ./proxy_provider/SubPre.yaml
     url: https://github.boki.moe/https://raw.githubusercontent.com/aghu1979/mss/refs/heads/release/subs/SubPre.yaml
   SubCF:
     type: http
@@ -117,7 +119,7 @@ proxy-providers:
     exclude-filter: (?i)(?:佣金|套餐|官网|官方|网址|售后|免翻|过期|剩余|到期|流量|更新|点外|重置|免流|使用|教程|优惠|超实惠|址|AFF|Days|Date)
     health-check: *id001
     header: *id002
-    path: ./proxies/SubCF.yaml
+    path: ./proxy_provider/SubCF.yaml
     url: https://github.boki.moe/https://raw.githubusercontent.com/aghu1979/mss/refs/heads/release/subs/SubCF.yaml
   SubFree:
     type: http
@@ -125,7 +127,7 @@ proxy-providers:
     exclude-filter: (?i)(?:佣金|套餐|官网|官方|网址|售后|免翻|过期|剩余|到期|流量|更新|点外|重置|免流|使用|教程|优惠|超实惠|址|AFF|Days|Date)
     health-check: *id001
     header: *id002
-    path: ./proxies/SubFree.yaml
+    path: ./proxy_provider/SubFree.yaml
     url: https://github.boki.moe/https://raw.githubusercontent.com/aghu1979/mss/refs/heads/release/subs/SubFree.yaml
   Baidu:
     type: http
@@ -133,7 +135,7 @@ proxy-providers:
     exclude-filter: (?i)(?:佣金|套餐|官网|官方|网址|售后|免翻|过期|剩余|到期|流量|更新|点外|重置|免流|使用|教程|优惠|超实惠|址|AFF|Days|Date)
     health-check: *id001
     header: *id002
-    path: ./proxies/Baidu.yaml
+    path: ./proxy_provider/Baidu.yaml
     url: https://cdn.jsdelivr.net/gh/MeALiYeYe/ProxyConfigFiles@main/Mihomo/BaiduProxy.yaml
 rule-providers:
   ads-all:
