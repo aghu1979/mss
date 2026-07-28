@@ -42,15 +42,18 @@ x-group-anchors:
       - ☁️ SubCF-台湾
       - ☁️ SubCF-美国
       - ☁️ SubCF-其它
-      - 👑 SubPre-All
+      - 🟢 直连
+    interval: 300
+    url: "https://www.gstatic.com/generate_204"
+    hidden: false
+
+  Groups: &Groups
+    type: select
+    proxies:
       - ☁️ SubCF-All
       - 🆓 SubFree-All
-      - 🆓 SubFree-新加坡
-      - 🆓 SubFree-日本
-      - 🆓 SubFree-香港
-      - 🆓 SubFree-台湾
-      - 🆓 SubFree-美国
-      - 🆓 SubFree-其它
+      - 👑 SubPre-All
+      - 🟢 直连
     interval: 300
     url: "https://www.gstatic.com/generate_204"
     hidden: false
@@ -102,22 +105,22 @@ proxy-groups:
     <<: *Groupd
     icon: "https://cdn.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Domestic.png"
   - name: Emby
-    <<: *Groupp
+    <<: *Groups
     icon: "https://cdn.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Emby.png"
   - name: Youtube
-    <<: *Groupp
+    <<: *Groups
     icon: "https://cdn.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/YouTube.png"
   - name: Media
-    <<: *Groupp
+    <<: *Groups
     icon: "https://cdn.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/ForeignMedia.png"
   - name: Ai
     <<: *Groupp
     icon: "https://cdn.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/ChatGPT.png"
   - name: Telegram
-    <<: *Groupp
+    <<: *Groups
     icon: "https://cdn.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Telegram.png"
   - name: Cloudflare
-    <<: *Groupp
+    <<: *Groups
     icon: "https://cdn.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Cloudflare.png"
   - name: Google
     <<: *Groupp
@@ -126,13 +129,13 @@ proxy-groups:
     <<: *Groupp
     icon: "https://cdn.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/GitHub.png"
   - name: Microsoft
-    <<: *Groupp
+    <<: *Groups
     icon: "https://cdn.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Microsoft.png"
   - name: Apple
-    <<: *Groupp
+    <<: *Groups
     icon: "https://cdn.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Apple.png"
   - name: Foreign
-    <<: *Groupp
+    <<: *Groups
     icon: "https://cdn.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Global.png"
   - name: Final
     <<: *Groupp
