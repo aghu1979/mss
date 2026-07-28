@@ -159,6 +159,18 @@ proxy-groups:
       - 🌐 默认代理
     icon: "https://cdn.jsdelivr.net/gh/CLorant/readme-social-icons@main/medium/colored/reddit.svg"
 
+  - name: Discord
+    type: select
+    proxies:
+      - ☁️ SubCF-新加坡
+      - ☁️ SubCF-日本
+      - ☁️ SubCF-香港
+      - 👑 SubPre-新加坡
+      - 👑 SubPre-日本
+      - 👑 SubPre-香港
+      - 🌐 默认代理
+    icon: "https://cdn.jsdelivr.net/gh/CLorant/readme-social-icons@main/medium/colored/discord.svg"
+
   - name: Porn
     type: select
     proxies:
@@ -444,10 +456,14 @@ rule-providers:
     <<: *ipc
     path: ./rules/apple_ip.mrs
     url: "https://cdn.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@meta/geo-lite/geoip/apple.mrs"
-  microsoft:
+  tiktok:
     <<: *dom
-    path: ./rules/microsoft.mrs
-    url: "https://cdn.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@meta/geo/geosite/microsoft.mrs"
+    path: ./rules/tiktok.mrs
+    url: "https://cdn.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@meta/geo/geosite/tiktok.mrs"
+   discord:
+    <<: *dom
+    path: ./rules/discord.mrs
+    url: "https://cdn.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@meta/geo/geosite/discord.mrs"
   geolocation-!cn:
     <<: *dom
     path: ./rules/geolocation-!cn.mrs
@@ -576,7 +592,7 @@ rules:
 # 🛡️ 8. 【常规业务分流】
 - RULE-SET,youtube,Youtube
 - RULE-SET,tiktok,Tiktok
-# - RULE-SET,discord,Discord # 注释说明：原文件中该规则缺少对应的 rule-provider 和 proxy-group，已注释以防内核启动报错。
+- RULE-SET,discord,Discord
 - RULE-SET,cloudflare,Cloudflare
 - RULE-SET,cloudflare_ip,Cloudflare,no-resolve 
 - RULE-SET,entertainment,Media
