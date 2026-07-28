@@ -58,15 +58,15 @@ sniffer:
   - miwifi.com
 tun:
   enable: true
-  device: Mihomo
+  device: Meta
   stack: mixed
   dns-hijack:
   - any:53
   - tcp://any:53
   udp-timeout: 300
-  auto-route: false
+  auto-route: true
   auto-detect-interface: true
-  strict-route: false
+  strict-route: true
 dns:
   enable: true
   listen: :1053
@@ -83,7 +83,6 @@ dns:
   default-nameserver:
   - 223.5.5.5
   - 119.29.29.29
-  - 2400:3200::1
   nameserver-policy:
     RULE-SET:ads-all,ads-awavenue,rejects: rcode://name_error
     domain:boki.moe,jsdelivr.net,ghproxy.com,ghproxy.net,fastgit.org,staticdn.net,kkgithub.com,v1.mk,dash.xn--cp3a08l.com:
@@ -93,8 +92,8 @@ dns:
     - quic://dns.alidns.com#🟢 直连
     - https://dns.alidns.com/dns-query#🟢 直连
   nameserver:
-  - https://dns.google/dns-query#Google
-  - https://cloudflare-dns.com/dns-query#Cloudflare
+  - https://dns.alidns.com/dns-query
+  - https://doh.pub/dns-query
 proxy-providers:
   SubPre:
     type: http
