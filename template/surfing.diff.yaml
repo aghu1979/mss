@@ -16,10 +16,28 @@ external-ui: ./ui/
 external-ui-url: "https://github.com/Zephyruso/zashboard/releases/latest/download/dist.zip"
 secret: ""
 
-# 3. TUN 虚拟网卡 (受 App 控制)
+# 3. 嗅探功能
+sniffer:
+  enable: true
+  force-dns-mapping: true
+  parse-pure-ip: true
+  override-destination: true
+  sniff:
+    HTTP:
+      ports: [80, 8080-8880]
+    TLS:
+      ports: [443, 5228, 8443]
+    QUIC:
+      ports: [443, 8443]
+  force-domain:
+    - "+.v2ex.com"
+  skip-domain: # 如遇需内部通信的应用请放行该域名
+    - "+.io.mi.com"
+
+# 4. TUN 虚拟网卡 (受 App 控制)
 tun:
   enable: true
-  device: meta
+  device: Meta
   stack: gvisor # Box 默认推荐 gvisor，混合模式下可改 mixed
   dns-hijack:
     - any:53
