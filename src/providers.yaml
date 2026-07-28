@@ -209,7 +209,10 @@ rule-providers:
     <<: *dom
     path: rules/webrtc.mrs
     url: "https://cdn.jsdelivr.net/gh/MeALiYeYe/ProxyConfigFiles@main/Mihomo/rule/WebRTC/WebRTC.mrs"
-
+  reddit:
+    <<: *dom
+    path: rules/reddit.mrs
+    url: "https://cdn.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@meta/geo/geosite/reddit.mrs"
   discord:
     <<: *dom
     path: rules/discord.mrs
