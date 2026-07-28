@@ -564,27 +564,10 @@ proxy-groups:
   icon: https://cdn.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Domestic.png
 - type: select
   proxies: &id004
-  - 👑 SubPre-新加坡
-  - 👑 SubPre-日本
-  - 👑 SubPre-香港
-  - 👑 SubPre-台湾
-  - 👑 SubPre-美国
-  - 👑 SubPre-其它
-  - ☁️ SubCF-新加坡
-  - ☁️ SubCF-日本
-  - ☁️ SubCF-香港
-  - ☁️ SubCF-台湾
-  - ☁️ SubCF-美国
-  - ☁️ SubCF-其它
-  - 👑 SubPre-All
   - ☁️ SubCF-All
   - 🆓 SubFree-All
-  - 🆓 SubFree-新加坡
-  - 🆓 SubFree-日本
-  - 🆓 SubFree-香港
-  - 🆓 SubFree-台湾
-  - 🆓 SubFree-美国
-  - 🆓 SubFree-其它
+  - 👑 SubPre-All
+  - 🟢 直连
   interval: 300
   url: https://www.gstatic.com/generate_204
   hidden: false
@@ -605,7 +588,20 @@ proxy-groups:
   name: Media
   icon: https://cdn.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/ForeignMedia.png
 - type: select
-  proxies: *id004
+  proxies: &id005
+  - 👑 SubPre-新加坡
+  - 👑 SubPre-日本
+  - 👑 SubPre-香港
+  - 👑 SubPre-台湾
+  - 👑 SubPre-美国
+  - 👑 SubPre-其它
+  - ☁️ SubCF-新加坡
+  - ☁️ SubCF-日本
+  - ☁️ SubCF-香港
+  - ☁️ SubCF-台湾
+  - ☁️ SubCF-美国
+  - ☁️ SubCF-其它
+  - 🟢 直连
   interval: 300
   url: https://www.gstatic.com/generate_204
   hidden: false
@@ -626,14 +622,14 @@ proxy-groups:
   name: Cloudflare
   icon: https://cdn.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Cloudflare.png
 - type: select
-  proxies: *id004
+  proxies: *id005
   interval: 300
   url: https://www.gstatic.com/generate_204
   hidden: false
   name: Google
   icon: https://cdn.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Google_Search.png
 - type: select
-  proxies: *id004
+  proxies: *id005
   interval: 300
   url: https://www.gstatic.com/generate_204
   hidden: false
@@ -661,7 +657,7 @@ proxy-groups:
   name: Foreign
   icon: https://cdn.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Global.png
 - type: select
-  proxies: *id004
+  proxies: *id005
   interval: 300
   url: https://www.gstatic.com/generate_204
   hidden: false
