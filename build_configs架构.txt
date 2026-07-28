@@ -1,0 +1,12 @@
+mss/
+├── src/
+│   ├── base.yaml          # 全局配置 (DNS, tun, sniffer, dns等)
+│   ├── providers.yaml     # rule-providers 和 proxy-providers
+│   ├── groups.yaml        # 刚刚写的 proxy-groups 策略组
+│   ├── rules.yaml         # 路由规则
+│   └── diffs/
+│       ├── box.diff.yaml      # Box 专属端口配置
+│       └── surfing.diff.yaml  # Surfing 专属端口配置
+├── scripts/
+│   └── build_configs.py   # Python 组合构建脚本
+└── configs/               # 自动生成的产物目录 (release分支目标)

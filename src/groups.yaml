@@ -1,0 +1,175 @@
+# 局部锚点辅助键 (将被构建脚本自动清理)
+x-group-anchors:
+  Filters:
+    HK: &FilterHK '(?i)(?:港|香港|🇭🇰|HK|Hong\s?Kong)'
+    TW: &FilterTW '(?i)(?:台|台湾|🇼🇸|🇹🇼|TW|Taiwan)'
+    SG: &FilterSG '(?i)(?:坡|新加坡|🇸🇬|SG|Singapore)'
+    JP: &FilterJP '(?i)(?:日|日本|🇯🇵|JP|Japan)'
+    US: &FilterUS '(?i)(?:美|美国|🇺🇸|US|States|America)'
+    Other: &FilterOther '^(?!.*(香港|台湾|新加坡|日本|美国|🇭🇰|🇼🇸|🇨🇳|🇹🇼|🇸🇬|🇯🇵|🇺🇸|HK|TW|SG|JP|US))'
+  Smartp: &Smartp
+    type: smart
+    include-all-providers: true
+    uselightgbm: true
+    collectdata: false
+    prefer-asn: true
+    interval: 120
+    url: "https://www.gstatic.com/generate_204"
+    hidden: true
+  Groupd: &Groupd
+    type: select
+    proxies:
+      - 🟢 直连
+      - 江苏
+      - 广东
+      - 北京
+    interval: 300
+    url: "https://wifi.vivo.com.cn/generate_204"
+    hidden: false
+  # 全局统一引用的细粒度代理列表
+  Groupp: &Groupp
+    type: select
+    proxies:
+      - 👑 SubPre-新加坡
+      - 👑 SubPre-日本
+      - 👑 SubPre-香港
+      - 👑 SubPre-台湾
+      - 👑 SubPre-美国
+      - 👑 SubPre-其它
+      - ☁️ SubCF-新加坡
+      - ☁️ SubCF-日本
+      - ☁️ SubCF-香港
+      - ☁️ SubCF-台湾
+      - ☁️ SubCF-美国
+      - ☁️ SubCF-其它
+      - 👑 SubPre-All
+      - ☁️ SubCF-All
+      - 🆓 SubFree-All
+      - 🆓 SubFree-新加坡
+      - 🆓 SubFree-日本
+      - 🆓 SubFree-香港
+      - 🆓 SubFree-台湾
+      - 🆓 SubFree-美国
+      - 🆓 SubFree-其它
+    interval: 300
+    url: "https://www.gstatic.com/generate_204"
+    hidden: false
+
+proxies:
+  - name: 🟢 直连
+    type: direct
+    udp: true
+  - name: ⛔️ 拒绝
+    type: reject
+  - name: ⭕️ DNS_Hijack
+    type: dns
+
+proxy-groups:
+  # ==================================
+  # 第一部分：3个订阅源的细粒度拆分
+  # ==================================
+  - {name: 👑 SubPre-新加坡, type: url-test, use: [SubPre], filter: *FilterSG}
+  - {name: 👑 SubPre-日本, type: url-test, use: [SubPre], filter: *FilterJP}
+  - {name: 👑 SubPre-香港, type: url-test, use: [SubPre], filter: *FilterHK}
+  - {name: 👑 SubPre-台湾, type: url-test, use: [SubPre], filter: *FilterTW}
+  - {name: 👑 SubPre-美国, type: url-test, use: [SubPre], filter: *FilterUS}
+  - {name: 👑 SubPre-其它, type: url-test, use: [SubPre], filter: *FilterOther}
+  - {name: 👑 SubPre-All, type: select, use: [SubPre]}
+
+  - {name: ☁️ SubCF-新加坡, type: url-test, use: [SubCF], filter: *FilterSG}
+  - {name: ☁️ SubCF-日本, type: url-test, use: [SubCF], filter: *FilterJP}
+  - {name: ☁️ SubCF-香港, type: url-test, use: [SubCF], filter: *FilterHK}
+  - {name: ☁️ SubCF-台湾, type: url-test, use: [SubCF], filter: *FilterTW}
+  - {name: ☁️ SubCF-美国, type: url-test, use: [SubCF], filter: *FilterUS}
+  - {name: ☁️ SubCF-其它, type: url-test, use: [SubCF], filter: *FilterOther}
+  - {name: ☁️ SubCF-All, type: select, use: [SubCF]}
+
+  - {name: 🆓 SubFree-新加坡, type: url-test, use: [SubFree], filter: *FilterSG}
+  - {name: 🆓 SubFree-日本, type: url-test, use: [SubFree], filter: *FilterJP}
+  - {name: 🆓 SubFree-香港, type: url-test, use: [SubFree], filter: *FilterHK}
+  - {name: 🆓 SubFree-台湾, type: url-test, use: [SubFree], filter: *FilterTW}
+  - {name: 🆓 SubFree-美国, type: url-test, use: [SubFree], filter: *FilterUS}
+  - {name: 🆓 SubFree-其它, type: url-test, use: [SubFree], filter: *FilterOther}
+  - {name: 🆓 SubFree-All, type: select, use: [SubFree]}
+
+  # ==================================
+  # 第二部分：应用路由策略组 (注入细粒度代理)
+  # ==================================
+  - name: Location
+    <<: *Groupd
+    icon: "https://cdn.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Bypass.png"
+  - name: Domestic
+    <<: *Groupd
+    icon: "https://cdn.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Domestic.png"
+  - name: Emby
+    <<: *Groupp
+    icon: "https://cdn.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Emby.png"
+  - name: Youtube
+    <<: *Groupp
+    icon: "https://cdn.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/YouTube.png"
+  - name: Media
+    <<: *Groupp
+    icon: "https://cdn.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/ForeignMedia.png"
+  - name: Ai
+    <<: *Groupp
+    icon: "https://cdn.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/ChatGPT.png"
+  - name: Telegram
+    <<: *Groupp
+    icon: "https://cdn.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Telegram.png"
+  - name: Cloudflare
+    <<: *Groupp
+    icon: "https://cdn.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Cloudflare.png"
+  - name: Google
+    <<: *Groupp
+    icon: "https://cdn.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Google_Search.png"
+  - name: Github
+    <<: *Groupp
+    icon: "https://cdn.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/GitHub.png"
+  - name: Microsoft
+    <<: *Groupp
+    icon: "https://cdn.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Microsoft.png"
+  - name: Apple
+    <<: *Groupp
+    icon: "https://cdn.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Apple.png"
+  - name: Foreign
+    <<: *Groupp
+    icon: "https://cdn.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Global.png"
+  - name: Final
+    <<: *Groupp
+    icon: "https://cdn.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Final.png"
+
+  # ==================================
+  # 第三部分：地区专属测速组 (LightGBM)
+  # ==================================
+  - name: 江苏
+    <<: *Smartp
+    filter: '(?i)(?:南京|苏州)'
+    icon: "https://cdn.jsdelivr.net/gh/lige47/QuanX-icon-rule@main/icon/05icon/lightning(1).png"
+  - name: 广东
+    <<: *Smartp
+    filter: '(?i)(?:广州)'
+    icon: "https://cdn.jsdelivr.net/gh/lige47/QuanX-icon-rule@main/icon/05icon/lightning(2).png"
+  - name: 北京
+    <<: *Smartp
+    filter: '(?i)(?:北京|保定)'
+    icon: "https://cdn.jsdelivr.net/gh/lige47/QuanX-icon-rule@main/icon/05icon/lightning(3).png"
+  - name: 香港
+    <<: *Smartp
+    filter: *FilterHK
+    icon: "https://cdn.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Hong_Kong.png"
+  - name: 台湾
+    <<: *Smartp
+    filter: *FilterTW
+    icon: "https://cdn.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Taiwan.png"
+  - name: 狮城
+    <<: *Smartp
+    filter: *FilterSG
+    icon: "https://cdn.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Singapore.png"
+  - name: 日本
+    <<: *Smartp
+    filter: *FilterJP
+    icon: "https://cdn.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Japan.png"
+  - name: 美国
+    <<: *Smartp
+    filter: *FilterUS
+    icon: "https://cdn.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/United_States.png"

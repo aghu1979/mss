@@ -1,0 +1,34 @@
+rules:
+  - OR,((DST-PORT,5228-5230),(RULE-SET,googlefcm)),🟢 直连
+  - OR,((DST-PORT,123),(RULE-SET,ntp)),🟢 直连
+  - RULE-SET,private,🟢 直连
+  - RULE-SET,private_ip,🟢 直连,no-resolve
+  - RULE-SET,ads-all,⛔️ 拒绝
+  - RULE-SET,ads-awavenue,⛔️ 拒绝
+  - RULE-SET,httpdns-cn,⛔️ 拒绝
+  - RULE-SET,rejects,⛔️ 拒绝
+  - RULE-SET,rejects_ip,⛔️ 拒绝,no-resolve
+  - RULE-SET,directs,Domestic
+  - RULE-SET,directs_ip,Domestic,no-resolve
+  - RULE-SET,proxys,Foreign
+  - RULE-SET,proxys_ip,Foreign,no-resolve
+  - RULE-SET,fakelocation,Location
+  - RULE-SET,fakelocation_ip,Location,no-resolve
+  - RULE-SET,emby,Emby
+  - RULE-SET,youtube,Youtube
+  - RULE-SET,entertainment,Media
+  - RULE-SET,telegram,Telegram
+  - RULE-SET,telegram_ip,Telegram,no-resolve
+  - RULE-SET,google,Google
+  - RULE-SET,google_ip,Google,no-resolve
+  - RULE-SET,cloudflare,Cloudflare
+  - RULE-SET,cloudflare_ip,Cloudflare,no-resolve
+  - RULE-SET,ai-chat-!cn,Ai
+  - RULE-SET,github,Github
+  - RULE-SET,apple,Apple
+  - RULE-SET,apple_ip,Apple,no-resolve
+  - RULE-SET,microsoft,Microsoft
+  - RULE-SET,geolocation-!cn,Foreign
+  - RULE-SET,cn,Domestic
+  - RULE-SET,cn_ip,Domestic,no-resolve
+  - MATCH,Final
