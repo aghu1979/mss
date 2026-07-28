@@ -25,38 +25,19 @@ jobs:
       - name: Install Dependencies
         run: pip install pyyaml
 
-      - name: Generate Configs
+      - name: Build and Validate Configs
+        # 你的 Python 脚本现在包揽了：清洗文本 -> 深度合并 -> 动态拉取 Alpha 内核 -> 执行 -t 强校验
+        # 如果脚本中抛出 Exception 或校验失败，此步骤会自动阻断后续的推送
         run: python scripts/build_configs.py
 
-      - name: Download Prerelease-Alpha Mihomo Core
-        run: |
-          echo "📥 正在拉取 Prerelease-Alpha 内核..."
-          wget -q https://github.com/vernesong/mihomo/releases/download/Prerelease-Alpha/mihomo-linux-amd64-alpha.gz
-          gunzip mihomo-linux-amd64-alpha.gz
-          chmod +x mihomo-linux-amd64-alpha
-          mv mihomo-linux-amd64-alpha mihomo
-          ./mihomo -v
-
-      - name: Validate Box Config
-        run: |
-          echo "🔍 开始使用内核校验 Box 模块配置..."
-          ./mihomo -t -f configs/box.yaml || { echo "❌ Box 配置校验失败，请检查上方日志！"; exit 1; }
-          echo "✅ Box 配置验证通过！"
-
-      - name: Validate Surfing Config
-        run: |
-          echo "🔍 开始使用内核校验 Surfing 模块配置..."
-          ./mihomo -t -f configs/surfing.yaml || { echo "❌ Surfing 配置校验失败，请检查上方日志！"; exit 1; }
-          echo "✅ Surfing 配置验证通过！"
-
       - name: Deploy to Release Branch
-        # 依赖于 peaceiris 的 actions-gh-pages 插件将产物推送到指定分支
+        # 仅当 Python 脚本 100% 成功执行完毕后，才会将产物推送到发布分支
         if: success()
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_branch: release
           publish_dir: ./configs
-          destination_dir: configs # 最终文件路径将位于 mss/release/configs
-          keep_files: true         # 避免覆盖 release 分支上已有的其他文件 (如 subs)
+          destination_dir: configs 
+          keep_files: true         
           commit_message: "Auto-build and validated configs by Mihomo Alpha"
