@@ -1,4 +1,14 @@
 rules:
+  # === 核心：打破订阅与依赖死锁的直连绿通 (已剔除 GitHub) ===
+  - DOMAIN-SUFFIX,boki.moe,🟢 直连
+  - DOMAIN-SUFFIX,jsdelivr.net,🟢 直连
+  - DOMAIN-SUFFIX,ghproxy.com,🟢 直连
+  - DOMAIN-SUFFIX,ghproxy.net,🟢 直连
+  - DOMAIN-SUFFIX,fastgit.org,🟢 直连
+  - DOMAIN-SUFFIX,staticdn.net,🟢 直连
+  - DOMAIN-SUFFIX,kkgithub.com,🟢 直连
+  - DOMAIN-SUFFIX,v1.mk,🟢 直连
+  # ===================================
   - OR,((DST-PORT,5228-5230),(RULE-SET,googlefcm)),🟢 直连
   - OR,((DST-PORT,123),(RULE-SET,ntp)),🟢 直连
   - RULE-SET,private,🟢 直连
