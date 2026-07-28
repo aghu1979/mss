@@ -1,0 +1,62 @@
+name: Build and Validate Mihomo Configs
+
+# 触发条件: 监听到 main 分支的 src 或 scripts 目录变动，或者网页端手动触发
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - 'src/**'
+      - 'scripts/**'
+  workflow_dispatch:
+
+jobs:
+  build-validate-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.10'
+
+      - name: Install Dependencies
+        run: pip install pyyaml
+
+      - name: Generate Configs
+        run: python scripts/build_configs.py
+
+      - name: Download Prerelease-Alpha Mihomo Core
+        run: |
+          echo "📥 正在拉取 Prerelease-Alpha 内核..."
+          wget -q https://github.com/vernesong/mihomo/releases/download/Prerelease-Alpha/mihomo-linux-amd64-alpha.gz
+          gunzip mihomo-linux-amd64-alpha.gz
+          chmod +x mihomo-linux-amd64-alpha
+          mv mihomo-linux-amd64-alpha mihomo
+          ./mihomo -v
+
+      - name: Validate Box Config
+        run: |
+          echo "🔍 开始使用内核校验 Box 模块配置..."
+          ./mihomo -t -f configs/box.yaml || { echo "❌ Box 配置校验失败，请检查上方日志！"; exit 1; }
+          echo "✅ Box 配置验证通过！"
+
+      - name: Validate Surfing Config
+        run: |
+          echo "🔍 开始使用内核校验 Surfing 模块配置..."
+          ./mihomo -t -f configs/surfing.yaml || { echo "❌ Surfing 配置校验失败，请检查上方日志！"; exit 1; }
+          echo "✅ Surfing 配置验证通过！"
+
+      - name: Deploy to Release Branch
+        # 依赖于 peaceiris 的 actions-gh-pages 插件将产物推送到指定分支
+        if: success()
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_branch: release
+          publish_dir: ./configs
+          destination_dir: configs # 最终文件路径将位于 mss/release/configs
+          keep_files: true         # 避免覆盖 release 分支上已有的其他文件 (如 subs)
+          commit_message: "Auto-build and validated configs by Mihomo Alpha"
