@@ -5,7 +5,7 @@ unified-delay: true
 tcp-concurrent: true
 allow-lan: true
 external-controller: 127.0.0.1:9090
-external-ui: ./ui/
+external-ui: ./dashboard
 external-ui-url: https://cdn.jsdelivr.net/gh/MeALiYeYe/ProxyConfigFiles@main/Mihomo/static/dist.zip
 secret: ''
 skip-auth-prefixes:
