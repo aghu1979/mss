@@ -98,6 +98,43 @@ proxy-groups:
   # ==================================
   # 第二部分：应用路由策略组 (注入细粒度代理)
   # ==================================
+
+  - name: Ai
+    <<: *Groupp
+    icon: "https://cdn.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/ChatGPT.png"
+  - name: GoogleFCM
+    <<: *Groupp
+    icon: "https://cdn.jsdelivr.net/gh/GitMetaio/Surfing@main/app/icon/GoogleFCM.svg"
+  - name: Google
+    <<: *Groupp
+    icon: "https://cdn.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Google_Search.png"
+  - name: Github
+    <<: *Groupp
+    icon: "https://cdn.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/GitHub.png"
+  - name: Cloudflare
+    <<: *Groups
+    icon: "https://cdn.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Cloudflare.png"
+  - name: Youtube
+    <<: *Groups
+    icon: "https://cdn.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/YouTube.png"
+  - name: Media
+    <<: *Groups
+    icon: "https://cdn.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/ForeignMedia.png"
+  - name: Telegram
+    <<: *Groups
+    icon: "https://cdn.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Telegram.png"
+  - name: Tiktok
+    <<: *Groupp
+    icon: "https://cdn.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/TikTok.png"
+  - name: Discord
+    <<: *Groupp
+    icon: "https://cdn.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/GitHub.png"
+#   --- WebRTC 防泄漏开关。平时保持"拒绝"，使用网页视频会议(如Zoom网页版)没声音/画面时再切"直连"。 ---
+  - name: WebRTC
+    type: select
+    proxies: [⛔️ 拒绝, ⭕️ DNS_Hijack, 🟢 直连]
+#    hidden: true
+  icon: "https://cdn.jsdelivr.net/gh/GitMetaio/Surfing@main/app/icon/WebRTC.svg"
   - name: Location
     <<: *Groupd
     icon: "https://cdn.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Bypass.png"
@@ -107,27 +144,6 @@ proxy-groups:
   - name: Emby
     <<: *Groups
     icon: "https://cdn.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Emby.png"
-  - name: Youtube
-    <<: *Groups
-    icon: "https://cdn.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/YouTube.png"
-  - name: Media
-    <<: *Groups
-    icon: "https://cdn.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/ForeignMedia.png"
-  - name: Ai
-    <<: *Groupp
-    icon: "https://cdn.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/ChatGPT.png"
-  - name: Telegram
-    <<: *Groups
-    icon: "https://cdn.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Telegram.png"
-  - name: Cloudflare
-    <<: *Groups
-    icon: "https://cdn.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Cloudflare.png"
-  - name: Google
-    <<: *Groupp
-    icon: "https://cdn.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Google_Search.png"
-  - name: Github
-    <<: *Groupp
-    icon: "https://cdn.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/GitHub.png"
   - name: Microsoft
     <<: *Groups
     icon: "https://cdn.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Microsoft.png"
