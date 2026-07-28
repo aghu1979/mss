@@ -36,13 +36,15 @@ def merge_dicts(dict1, dict2):
             dict1[k] = v
     return dict1
 
+import time
+
 def get_mihomo_core():
-    """动态获取并准备当前平台最新的 Mihomo Alpha 内核"""
+    """动态获取并准备当前平台最新的 Mihomo Smart Alpha 内核 (带网络容错与精准匹配)"""
     core_name = "mihomo.exe" if platform.system() == "Windows" else "./mihomo"
     if os.path.exists(core_name):
         return os.path.abspath(core_name)
 
-    print("\n⬇️ 未检测到 Mihomo 内核，正在从 GitHub Prerelease-Alpha 抓取...")
+    print("\n⬇️ 未检测到 Mihomo 内核，正在从 vernesong/mihomo 抓取 Smart 专属内核...")
     arch_map = {"x86_64": "amd64", "AMD64": "amd64", "aarch64": "arm64", "arm64": "arm64"}
     sys_arch = arch_map.get(platform.machine(), "amd64")
     
@@ -50,26 +52,55 @@ def get_mihomo_core():
     sys_os = "windows" if is_windows else "linux"
     target_ext = ".zip" if is_windows else ".gz"
     
+    # 坚决使用带有 smart 编译特性的 vernesong 仓库
     api_url = "https://api.github.com/repos/vernesong/mihomo/releases/tags/Prerelease-Alpha"
     req = urllib.request.Request(api_url, headers={'User-Agent': 'Mozilla/5.0'})
     
-    # 优化：增加 timeout 防止网络阻塞挂起
-    with urllib.request.urlopen(req, timeout=15) as response:
-        data = json.loads(response.read().decode())
+    # 引入重试补偿机制，硬抗 504 Gateway Timeout
+    max_retries = 3
+    data = None
+    for attempt in range(max_retries):
+        try:
+            with urllib.request.urlopen(req, timeout=15) as response:
+                data = json.loads(response.read().decode())
+            break
+        except urllib.error.URLError as e:
+            print(f"⚠️ API 请求失败 ({attempt + 1}/{max_retries}): {e}")
+            if attempt == max_retries - 1:
+                raise Exception("❌ 获取内核下载链接失败，API 网关持续超时，请稍后重试！")
+            time.sleep(3)
         
     download_url = None
     for asset in data.get('assets', []):
         name = asset['name']
-        if sys_os in name and sys_arch in name and "compatible" not in name and name.endswith(target_ext):
+        # 精准匹配策略：必须包含系统、架构、"smart"关键字，且排除不兼容的衍生版
+        if (sys_os in name and 
+            sys_arch in name and 
+            "smart" in name and 
+            "compatible" not in name and 
+            "-v1" not in name and 
+            "-v2" not in name and 
+            "-v3" not in name and 
+            "go12" not in name and 
+            name.endswith(target_ext)):
             download_url = asset['browser_download_url']
             break
             
     if not download_url:
-        raise Exception(f"❌ 未找到适合当前系统({sys_os}-{sys_arch})的 {target_ext} 格式内核文件！")
+        raise Exception(f"❌ 未找到适合当前系统({sys_os}-{sys_arch})的 smart 核心文件！")
 
     temp_file = f"mihomo_temp{target_ext}"
     print(f"📦 正在下载: {download_url}")
-    urllib.request.urlretrieve(download_url, temp_file)
+    
+    for attempt in range(max_retries):
+        try:
+            urllib.request.urlretrieve(download_url, temp_file)
+            break
+        except urllib.error.URLError as e:
+            print(f"⚠️ 下载文件失败 ({attempt + 1}/{max_retries}): {e}")
+            if attempt == max_retries - 1:
+                raise Exception("❌ 内核文件下载持续失败！")
+            time.sleep(3)
     
     print("🔧 正在解压内核...")
     if is_windows:
@@ -90,7 +121,7 @@ def get_mihomo_core():
         os.chmod(core_name, 0o755)
             
     os.remove(temp_file)
-    print("✅ 内核准备就绪！")
+    print("✅ Smart 内核准备就绪！")
     return os.path.abspath(core_name)
 
 def build_profile(module_name, strategy_type, core_path):
