@@ -297,33 +297,33 @@ proxy-groups:
     icon: "https://cdn.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/United_States.png"
 
 
-  # ====================================================
+# ====================================================
   # [2级] 资产粗筛池 (仅作全量合并，方便上层调用)
   # ====================================================
-  - {name: 👑 SubPre-All, <<: *Smartp, use: [SubPre]}
-  - {name: ☁️ SubCF-All, <<: *Smartp, use: [SubCF]}
-  # 已按建议将不稳定的免费池改为 fallback，避免 hash 死节点导致断流
+  - {name: 👑 SubPre-All, <<: *UrlTestBase, use: [SubPre]}
+  - {name: ☁️ SubCF-All, <<: *UrlTestBase, use: [SubCF]}
+  # 免费池保持不变
   - {name: 🆓 SubFree-All, type: fallback, use: [SubFree]}
 
   # ====================================================
   # [3级] 细粒度池 - SubPre (优质付费订阅隔离)
   # ====================================================
-  - {name: 👑 SubPre-香港, <<: *Smartp, use: [SubPre], filter: *FilterHK}
-  - {name: 👑 SubPre-台湾, <<: *Smartp, use: [SubPre], filter: *FilterTW}
-  - {name: 👑 SubPre-日本, <<: *Smartp, use: [SubPre], filter: *FilterJP}
-  - {name: 👑 SubPre-新加坡, <<: *Smartp, use: [SubPre], filter: *FilterSG}
-  - {name: 👑 SubPre-美国, <<: *Smartp, use: [SubPre], filter: *FilterUS}
-  - {name: 👑 SubPre-其它, <<: *Smartp, use: [SubPre], filter: *FilterOther}
+  - {name: 👑 SubPre-香港, <<: *UrlTestBase, use: [SubPre], filter: *FilterHK}
+  - {name: 👑 SubPre-台湾, <<: *UrlTestBase, use: [SubPre], filter: *FilterTW}
+  - {name: 👑 SubPre-日本, <<: *UrlTestBase, use: [SubPre], filter: *FilterJP}
+  - {name: 👑 SubPre-新加坡, <<: *UrlTestBase, use: [SubPre], filter: *FilterSG}
+  - {name: 👑 SubPre-美国, <<: *UrlTestBase, use: [SubPre], filter: *FilterUS}
+  - {name: 👑 SubPre-其它, <<: *UrlTestBase, use: [SubPre], filter: *FilterOther}
 
   # ====================================================
   # [3级] 细粒度池 - SubCF (自建免费大带宽隔离)
   # ====================================================
-  - {name: ☁️ SubCF-香港, <<: *Smartp, use: [SubCF], filter: *FilterHK}
-  - {name: ☁️ SubCF-台湾, <<: *Smartp, use: [SubCF], filter: *FilterTW}
-  - {name: ☁️ SubCF-日本, <<: *Smartp, use: [SubCF], filter: *FilterJP}
-  - {name: ☁️ SubCF-新加坡, <<: *Smartp, use: [SubCF], filter: *FilterSG}
-  - {name: ☁️ SubCF-美国, <<: *Smartp, use: [SubCF], filter: *FilterUS}
-  - {name: ☁️ SubCF-其它, <<: *Smartp, use: [SubCF], filter: *FilterOther}
+  - {name: ☁️ SubCF-香港, <<: *UrlTestBase, use: [SubCF], filter: *FilterHK}
+  - {name: ☁️ SubCF-台湾, <<: *UrlTestBase, use: [SubCF], filter: *FilterTW}
+  - {name: ☁️ SubCF-日本, <<: *UrlTestBase, use: [SubCF], filter: *FilterJP}
+  - {name: ☁️ SubCF-新加坡, <<: *UrlTestBase, use: [SubCF], filter: *FilterSG}
+  - {name: ☁️ SubCF-美国, <<: *UrlTestBase, use: [SubCF], filter: *FilterUS}
+  - {name: ☁️ SubCF-其它, <<: *UrlTestBase, use: [SubCF], filter: *FilterOther}
 
   # ====================================================
   # [3级] 细粒度池 - SubFree (免费脏流量池隔离)
