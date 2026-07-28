@@ -137,7 +137,7 @@ proxy-groups:
     type: select
     proxies: [⛔️ 拒绝, ⭕️ DNS_Hijack, 🟢 直连]
 #    hidden: true
-  icon: "https://cdn.jsdelivr.net/gh/GitMetaio/Surfing@main/app/icon/WebRTC.svg"
+    icon: "https://cdn.jsdelivr.net/gh/GitMetaio/Surfing@main/app/icon/WebRTC.svg"
   - name: Location
     <<: *Groupd
     icon: "https://cdn.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Bypass.png"
