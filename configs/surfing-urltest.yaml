@@ -250,6 +250,13 @@ rule-providers:
     interval: 86400
     path: ./rules/entertainment.mrs
     url: https://cdn.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@meta/geo/geosite/category-entertainment.mrs
+  reddit:
+    type: http
+    behavior: domain
+    format: mrs
+    interval: 86400
+    path: rules/reddit.mrs
+    url: https://cdn.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@meta/geo/geosite/reddit.mrs
   telegram:
     type: http
     behavior: domain
@@ -404,6 +411,13 @@ rule-providers:
     interval: 86400
     path: rules/webrtc.mrs
     url: https://cdn.jsdelivr.net/gh/MeALiYeYe/ProxyConfigFiles@main/Mihomo/rule/WebRTC/WebRTC.mrs
+  discord:
+    type: http
+    behavior: domain
+    format: mrs
+    interval: 86400
+    path: rules/discord.mrs
+    url: https://cdn.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@meta/geo/geosite/discord.mrs
 proxies:
 - name: 🟢 直连
   type: direct
@@ -553,49 +567,6 @@ proxy-groups:
   - SubFree
 - type: select
   proxies: &id003
-  - 🟢 直连
-  - 江苏
-  - 广东
-  - 北京
-  interval: 300
-  url: https://wifi.vivo.com.cn/generate_204
-  hidden: false
-  name: Location
-  icon: https://cdn.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Bypass.png
-- type: select
-  proxies: *id003
-  interval: 300
-  url: https://wifi.vivo.com.cn/generate_204
-  hidden: false
-  name: Domestic
-  icon: https://cdn.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Domestic.png
-- type: select
-  proxies: &id004
-  - ☁️ SubCF-All
-  - 🆓 SubFree-All
-  - 👑 SubPre-All
-  - 🟢 直连
-  interval: 300
-  url: https://www.gstatic.com/generate_204
-  hidden: false
-  name: Emby
-  icon: https://cdn.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Emby.png
-- type: select
-  proxies: *id004
-  interval: 300
-  url: https://www.gstatic.com/generate_204
-  hidden: false
-  name: Youtube
-  icon: https://cdn.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/YouTube.png
-- type: select
-  proxies: *id004
-  interval: 300
-  url: https://www.gstatic.com/generate_204
-  hidden: false
-  name: Media
-  icon: https://cdn.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/ForeignMedia.png
-- type: select
-  proxies: &id005
   - 👑 SubPre-新加坡
   - 👑 SubPre-日本
   - 👑 SubPre-香港
@@ -615,6 +586,52 @@ proxy-groups:
   name: Ai
   icon: https://cdn.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/ChatGPT.png
 - type: select
+  proxies: *id003
+  interval: 300
+  url: https://www.gstatic.com/generate_204
+  hidden: false
+  name: GoogleFCM
+  icon: https://cdn.jsdelivr.net/gh/GitMetaio/Surfing@main/app/icon/GoogleFCM.svg
+- type: select
+  proxies: *id003
+  interval: 300
+  url: https://www.gstatic.com/generate_204
+  hidden: false
+  name: Google
+  icon: https://cdn.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Google_Search.png
+- type: select
+  proxies: *id003
+  interval: 300
+  url: https://www.gstatic.com/generate_204
+  hidden: false
+  name: Github
+  icon: https://cdn.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/GitHub.png
+- type: select
+  proxies: &id004
+  - ☁️ SubCF-All
+  - 🆓 SubFree-All
+  - 👑 SubPre-All
+  - 🟢 直连
+  interval: 300
+  url: https://www.gstatic.com/generate_204
+  hidden: false
+  name: Cloudflare
+  icon: https://cdn.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Cloudflare.png
+- type: select
+  proxies: *id004
+  interval: 300
+  url: https://www.gstatic.com/generate_204
+  hidden: false
+  name: Youtube
+  icon: https://cdn.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/YouTube.png
+- type: select
+  proxies: *id004
+  interval: 300
+  url: https://www.gstatic.com/generate_204
+  hidden: false
+  name: Media
+  icon: https://cdn.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/ForeignMedia.png
+- type: select
   proxies: *id004
   interval: 300
   url: https://www.gstatic.com/generate_204
@@ -622,26 +639,58 @@ proxy-groups:
   name: Telegram
   icon: https://cdn.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Telegram.png
 - type: select
+  proxies: *id003
+  interval: 300
+  url: https://www.gstatic.com/generate_204
+  hidden: false
+  name: Tiktok
+  icon: https://cdn.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/TikTok.png
+- type: select
+  proxies: *id003
+  interval: 300
+  url: https://www.gstatic.com/generate_204
+  hidden: false
+  name: Reddit
+  icon: https://cdn.jsdelivr.net/gh/CLorant/readme-social-icons@main/medium/colored/reddit.svg
+- type: select
+  proxies: *id003
+  interval: 300
+  url: https://www.gstatic.com/generate_204
+  hidden: false
+  name: Discord
+  icon: https://cdn.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/GitHub.png
+- name: WebRTC
+  type: select
+  proxies:
+  - ⛔️ 拒绝
+  - ⭕️ DNS_Hijack
+  - 🟢 直连
+  icon: https://cdn.jsdelivr.net/gh/GitMetaio/Surfing@main/app/icon/WebRTC.svg
+- type: select
+  proxies: &id005
+  - 🟢 直连
+  - 江苏
+  - 广东
+  - 北京
+  interval: 300
+  url: https://wifi.vivo.com.cn/generate_204
+  hidden: false
+  name: Location
+  icon: https://cdn.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Bypass.png
+- type: select
+  proxies: *id005
+  interval: 300
+  url: https://wifi.vivo.com.cn/generate_204
+  hidden: false
+  name: Domestic
+  icon: https://cdn.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Domestic.png
+- type: select
   proxies: *id004
   interval: 300
   url: https://www.gstatic.com/generate_204
   hidden: false
-  name: Cloudflare
-  icon: https://cdn.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Cloudflare.png
-- type: select
-  proxies: *id005
-  interval: 300
-  url: https://www.gstatic.com/generate_204
-  hidden: false
-  name: Google
-  icon: https://cdn.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Google_Search.png
-- type: select
-  proxies: *id005
-  interval: 300
-  url: https://www.gstatic.com/generate_204
-  hidden: false
-  name: Github
-  icon: https://cdn.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/GitHub.png
+  name: Emby
+  icon: https://cdn.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Emby.png
 - type: select
   proxies: *id004
   interval: 300
@@ -664,7 +713,7 @@ proxy-groups:
   name: Foreign
   icon: https://cdn.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Global.png
 - type: select
-  proxies: *id005
+  proxies: *id003
   interval: 300
   url: https://www.gstatic.com/generate_204
   hidden: false
