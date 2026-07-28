@@ -548,10 +548,6 @@ rule-providers:
     <<: *dom
     path: ./rules/emby.mrs
     url: "https://cdn.jsdelivr.net/gh/MeALiYeYe/ProxyConfigFiles@main/Mihomo/rule/Emby/Emby.mrs"
-  awavenue:
-    <<: *dom
-    path: ./rules/awavenue.mrs
-    url: "https://cdn.jsdelivr.net/gh/TG-Twilight/AWAvenue-Ads-Rule@main/Filters/AWAvenue-Ads-Rule-Clash.mrs"
   private:
     <<: *dom
     path: ./rules/private.mrs
@@ -564,10 +560,6 @@ rule-providers:
     <<: *dom
     path: ./rules/ntp.mrs
     url: "https://cdn.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@meta/geo/geosite//category-ntp.mrs"
-  ads-all:
-    <<: *dom
-    path: ./rules/ads-all.mrs
-    url: "https://cdn.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@meta/geo/geosite/category-ads-all.mrs"
   httpdns-cn:
     <<: *dom
     path: ./rules/httpdns-cn.mrs
