@@ -7,3 +7,6 @@
 mixed-port: 7890
 redir-port: 9797
 tproxy-port: 9898
+
+# Zashboard 面板路径
+external-ui: "./dashboard"
