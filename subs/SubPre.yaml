@@ -1,7 +1,7 @@
 proxies:
 - name: SubPre-US-01
   type: vless
-  server: 142.248.218.130
+  server: 142.248.218.235
   port: 2053
   uuid: 0eefa577-6dc5-4e5f-8bfc-79919140f823
   tls: true
@@ -13,32 +13,32 @@ proxies:
       Host: dewei01.pages.dev
 - name: SubPre-US-02
   type: vless
-  server: 23.94.213.132
-  port: 27149
+  server: 142.248.218.176
+  port: 2053
   uuid: 0eefa577-6dc5-4e5f-8bfc-79919140f823
   tls: true
-  sni: dewei01.dewei.dpdns.org
+  sni: dewei01.pages.dev
   network: ws
   ws-opts:
     path: /
     headers:
-      Host: dewei01.dewei.dpdns.org
+      Host: dewei01.pages.dev
 - name: SubPre-US-03
   type: vless
-  server: 129.159.37.19
-  port: 30488
+  server: 142.248.219.232
+  port: 2053
   uuid: 0eefa577-6dc5-4e5f-8bfc-79919140f823
   tls: true
-  sni: dewei01.dewei.dpdns.org
+  sni: dewei01.pages.dev
   network: ws
   ws-opts:
     path: /
     headers:
-      Host: dewei01.dewei.dpdns.org
+      Host: dewei01.pages.dev
 - name: SubPre-US-04
   type: vless
-  server: 138.2.231.58
-  port: 45638
+  server: 195.123.241.122
+  port: 50008
   uuid: 0eefa577-6dc5-4e5f-8bfc-79919140f823
   tls: true
   sni: dewei01.pages.dev
@@ -49,56 +49,8 @@ proxies:
       Host: dewei01.pages.dev
 - name: SubPre-US-05
   type: vless
-  server: 104.168.176.241
-  port: 24264
-  uuid: 0eefa577-6dc5-4e5f-8bfc-79919140f823
-  tls: true
-  sni: dewei01.pages.dev
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: dewei01.pages.dev
-- name: SubPre-US-06
-  type: vless
-  server: 154.53.63.79
+  server: 152.67.224.161
   port: 8443
-  uuid: 0eefa577-6dc5-4e5f-8bfc-79919140f823
-  tls: true
-  sni: dewei01.pages.dev
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: dewei01.pages.dev
-- name: SubPre-US-07
-  type: vless
-  server: 144.202.46.202
-  port: 443
-  uuid: 0eefa577-6dc5-4e5f-8bfc-79919140f823
-  tls: true
-  sni: dewei01.pages.dev
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: dewei01.pages.dev
-- name: SubPre-JP-01
-  type: vless
-  server: 140.83.57.20
-  port: 13118
-  uuid: 0eefa577-6dc5-4e5f-8bfc-79919140f823
-  tls: true
-  sni: dewei01.pages.dev
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: dewei01.pages.dev
-- name: SubPre-GB-01
-  type: vless
-  server: 138.68.158.50
-  port: 443
   uuid: 0eefa577-6dc5-4e5f-8bfc-79919140f823
   tls: true
   sni: dewei01.dewei.dpdns.org
@@ -107,10 +59,22 @@ proxies:
     path: /
     headers:
       Host: dewei01.dewei.dpdns.org
-- name: SubPre-KR-01
+- name: SubPre-GB-01
   type: vless
-  server: 152.70.239.134
-  port: 34237
+  server: 159.65.94.176
+  port: 8080
+  uuid: 0eefa577-6dc5-4e5f-8bfc-79919140f823
+  tls: true
+  sni: dewei01.pages.dev
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: dewei01.pages.dev
+- name: SubPre-GB-02
+  type: vless
+  server: 193.219.99.168
+  port: 8443
   uuid: 0eefa577-6dc5-4e5f-8bfc-79919140f823
   tls: true
   sni: dewei01.dewei.dpdns.org
@@ -121,32 +85,8 @@ proxies:
       Host: dewei01.dewei.dpdns.org
 - name: SubPre-DE-01
   type: vless
-  server: 178.128.204.59
-  port: 2053
-  uuid: 0eefa577-6dc5-4e5f-8bfc-79919140f823
-  tls: true
-  sni: dewei01.pages.dev
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: dewei01.pages.dev
-- name: SubPre-KR-02
-  type: vless
-  server: 152.67.223.73
-  port: 4433
-  uuid: 0eefa577-6dc5-4e5f-8bfc-79919140f823
-  tls: true
-  sni: dewei01.pages.dev
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: dewei01.pages.dev
-- name: SubPre-DE-02
-  type: vless
-  server: 152.53.224.23
-  port: 8443
+  server: 143.20.160.17
+  port: 443
   uuid: 0eefa577-6dc5-4e5f-8bfc-79919140f823
   tls: true
   sni: dewei01.dewei.dpdns.org
@@ -155,9 +95,21 @@ proxies:
     path: /
     headers:
       Host: dewei01.dewei.dpdns.org
+- name: SubPre-DE-02
+  type: vless
+  server: 146.70.20.101
+  port: 443
+  uuid: 0eefa577-6dc5-4e5f-8bfc-79919140f823
+  tls: true
+  sni: dewei01.pages.dev
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: dewei01.pages.dev
 - name: SubPre-DE-03
   type: vless
-  server: 109.71.252.4
+  server: 194.59.9.71
   port: 443
   uuid: 0eefa577-6dc5-4e5f-8bfc-79919140f823
   tls: true
@@ -169,8 +121,8 @@ proxies:
       Host: dewei01.dewei.dpdns.org
 - name: SubPre-DE-04
   type: vless
-  server: 45.131.71.183
-  port: 8443
+  server: 94.159.98.113
+  port: 443
   uuid: 0eefa577-6dc5-4e5f-8bfc-79919140f823
   tls: true
   sni: dewei01.dewei.dpdns.org
@@ -181,8 +133,8 @@ proxies:
       Host: dewei01.dewei.dpdns.org
 - name: SubPre-DE-05
   type: vless
-  server: 167.71.43.254
-  port: 2053
+  server: 168.119.116.6
+  port: 443
   uuid: 0eefa577-6dc5-4e5f-8bfc-79919140f823
   tls: true
   sni: dewei01.pages.dev
@@ -193,7 +145,55 @@ proxies:
       Host: dewei01.pages.dev
 - name: SubPre-DE-06
   type: vless
-  server: 138.68.70.30
+  server: 209.38.253.211
+  port: 2087
+  uuid: 0eefa577-6dc5-4e5f-8bfc-79919140f823
+  tls: true
+  sni: dewei01.dewei.dpdns.org
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: dewei01.dewei.dpdns.org
+- name: SubPre-US-06
+  type: vless
+  server: 159.255.33.206
+  port: 443
+  uuid: 0eefa577-6dc5-4e5f-8bfc-79919140f823
+  tls: true
+  sni: dewei01.pages.dev
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: dewei01.pages.dev
+- name: SubPre-DE-07
+  type: vless
+  server: 89.167.83.117
+  port: 443
+  uuid: 0eefa577-6dc5-4e5f-8bfc-79919140f823
+  tls: true
+  sni: dewei01.dewei.dpdns.org
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: dewei01.dewei.dpdns.org
+- name: SubPre-RU-01
+  type: vless
+  server: 185.185.71.66
+  port: 443
+  uuid: 0eefa577-6dc5-4e5f-8bfc-79919140f823
+  tls: true
+  sni: dewei01.dewei.dpdns.org
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: dewei01.dewei.dpdns.org
+- name: SubPre-RU-02
+  type: vless
+  server: 213.226.124.66
   port: 443
   uuid: 0eefa577-6dc5-4e5f-8bfc-79919140f823
   tls: true
@@ -205,20 +205,8 @@ proxies:
       Host: dewei01.pages.dev
 - name: SubPre-TR-01
   type: vless
-  server: 185.219.132.27
+  server: 138.124.107.35
   port: 443
-  uuid: 0eefa577-6dc5-4e5f-8bfc-79919140f823
-  tls: true
-  sni: dewei01.dewei.dpdns.org
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: dewei01.dewei.dpdns.org
-- name: SubPre-DE-07
-  type: vless
-  server: 50.114.115.208
-  port: 8443
   uuid: 0eefa577-6dc5-4e5f-8bfc-79919140f823
   tls: true
   sni: dewei01.pages.dev
@@ -227,10 +215,34 @@ proxies:
     path: /
     headers:
       Host: dewei01.pages.dev
-- name: SubPre-RU-01
+- name: SubPre-JP-01
   type: vless
-  server: 95.85.240.155
-  port: 443
+  server: 138.2.10.149
+  port: 45638
+  uuid: 0eefa577-6dc5-4e5f-8bfc-79919140f823
+  tls: true
+  sni: dewei01.dewei.dpdns.org
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: dewei01.dewei.dpdns.org
+- name: SubPre-JP-02
+  type: vless
+  server: 138.2.18.82
+  port: 8880
+  uuid: 0eefa577-6dc5-4e5f-8bfc-79919140f823
+  tls: true
+  sni: dewei01.dewei.dpdns.org
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: dewei01.dewei.dpdns.org
+- name: SubPre-KR-01
+  type: vless
+  server: 152.67.211.114
+  port: 58337
   uuid: 0eefa577-6dc5-4e5f-8bfc-79919140f823
   tls: true
   sni: dewei01.dewei.dpdns.org
@@ -241,8 +253,20 @@ proxies:
       Host: dewei01.dewei.dpdns.org
 - name: SubPre-SG-01
   type: vless
-  server: 213.35.108.135
-  port: 12596
+  server: 129.212.225.217
+  port: 443
+  uuid: 0eefa577-6dc5-4e5f-8bfc-79919140f823
+  tls: true
+  sni: dewei01.pages.dev
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: dewei01.pages.dev
+- name: SubPre-SG-02
+  type: vless
+  server: 216.107.138.117
+  port: 34237
   uuid: 0eefa577-6dc5-4e5f-8bfc-79919140f823
   tls: true
   sni: dewei01.dewei.dpdns.org
@@ -251,9 +275,9 @@ proxies:
     path: /
     headers:
       Host: dewei01.dewei.dpdns.org
-- name: SubPre-SG-02
+- name: SubPre-US-07
   type: vless
-  server: 165.22.253.232
+  server: Join.my.Telegram.channel.CMLiussss.to.unlock.more.premium.nodes.cf.090227.xyz
   port: 443
   uuid: 0eefa577-6dc5-4e5f-8bfc-79919140f823
   tls: true
@@ -265,8 +289,8 @@ proxies:
       Host: dewei01.dewei.dpdns.org
 - name: SubPre-US-08
   type: vless
-  server: Join.my.Telegram.channel.CMLiussss.to.unlock.more.premium.nodes.cf.090227.xyz
-  port: 443
+  server: 192.9.135.182
+  port: 7800
   uuid: 0eefa577-6dc5-4e5f-8bfc-79919140f823
   tls: true
   sni: dewei01.pages.dev
@@ -275,3 +299,15 @@ proxies:
     path: /
     headers:
       Host: dewei01.pages.dev
+- name: SubPre-DE-08
+  type: vless
+  server: 178.105.120.141
+  port: 443
+  uuid: 0eefa577-6dc5-4e5f-8bfc-79919140f823
+  tls: true
+  sni: dewei01.dewei.dpdns.org
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: dewei01.dewei.dpdns.org
