@@ -58,7 +58,7 @@ sniffer:
   - miwifi.com
 tun:
   enable: true
-  device: Meta
+  device: Mihomo
   stack: mixed
   dns-hijack:
   - any:53
@@ -70,7 +70,7 @@ tun:
 dns:
   enable: true
   listen: :1053
-  ipv6: true
+  ipv6: false
   prefer-h3: true
   enhanced-mode: fake-ip
   fake-ip-range: 198.18.0.0/16
@@ -82,11 +82,13 @@ dns:
   - RULE-SET:cn
   default-nameserver:
   - 223.5.5.5
-  - 223.6.6.6
+  - 119.29.29.29
   - 2400:3200::1
-  - 2400:3200:baba::1
   nameserver-policy:
     RULE-SET:ads-all,ads-awavenue,rejects: rcode://name_error
+    domain:boki.moe,jsdelivr.net,ghproxy.com,ghproxy.net,fastgit.org,staticdn.net,kkgithub.com,v1.mk,dash.xn--cp3a08l.com:
+    - quic://dns.alidns.com#🟢 直连
+    - https://dns.alidns.com/dns-query#🟢 直连
     RULE-SET:cn,apple,microsoft,directs:
     - quic://dns.alidns.com#🟢 直连
     - https://dns.alidns.com/dns-query#🟢 直连
