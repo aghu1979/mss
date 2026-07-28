@@ -103,6 +103,10 @@ rule-providers:
     <<: *dom
     path: ./rules/entertainment.mrs
     url: "https://cdn.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@meta/geo/geosite/category-entertainment.mrs"
+  reddit:
+    <<: *dom
+    path: rules/reddit.mrs
+    url: "https://cdn.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@meta/geo/geosite/reddit.mrs"
   telegram:
     <<: *dom
     path: ./rules/telegram.mrs
@@ -205,3 +209,8 @@ rule-providers:
     <<: *dom
     path: rules/webrtc.mrs
     url: "https://cdn.jsdelivr.net/gh/MeALiYeYe/ProxyConfigFiles@main/Mihomo/rule/WebRTC/WebRTC.mrs"
+
+  discord:
+    <<: *dom
+    path: rules/discord.mrs
+    url: "https://cdn.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@meta/geo/geosite/discord.mrs"
