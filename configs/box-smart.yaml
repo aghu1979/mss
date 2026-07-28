@@ -763,6 +763,7 @@ rules:
 - DOMAIN-SUFFIX,staticdn.net,🟢 直连
 - DOMAIN-SUFFIX,kkgithub.com,🟢 直连
 - DOMAIN-SUFFIX,v1.mk,🟢 直连
+- DOMAIN-SUFFIX,dash.xn--cp3a08l.com,🟢 直连
 - OR,((DST-PORT,5228-5230),(RULE-SET,googlefcm)),🟢 直连
 - OR,((DST-PORT,123),(RULE-SET,ntp)),🟢 直连
 - RULE-SET,private,🟢 直连
