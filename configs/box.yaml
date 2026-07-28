@@ -1,780 +1,294 @@
-# ==========================================================
-# ===== Mihomo 构建模板 --- 软件差异化 box.diff
-# ===== 作者：Mary
-# ===== 2026.07.27
-# ==========================================================
+# ==============================================================================
+# Mihomo Universal Config for KernelSU (Box & Surfing Compatible)
+# Architecture: Standard 3-Tier Proxy Pool Allocation (Strict Anchor Version)
+# ==============================================================================
 
-# 1. 代理通信端口 (必须与 settings.ini 严格一致)
+# 1. 基础全局配置
 mixed-port: 7890
 redir-port: 9797
 tproxy-port: 9898
+ipv6: true
+mode: Rule
+log-level: warning
+allow-lan: true
+unified-delay: true
+tcp-concurrent: true
+find-process-mode: always
 
-# 2. 面板与 API 接口 (脚本会检测并动态注入)
-external-controller: 127.0.0.1:9090
-external-ui: ./ui/
-external-ui-url: "https://github.com/Zephyruso/zashboard/releases/latest/download/dist.zip"
-secret: ""
-
-# 3. TUN 虚拟网卡 (受 App 控制)
-tun:
-  enable: true
-  device: meta
-  stack: gvisor # Box 默认推荐 gvisor，混合模式下可改 mixed
-  dns-hijack:
-    - any:53
-    - tcp://any:53
-  udp-timeout: 300
-  auto-route: true
-  auto-detect-interface: true
-  strict-route: true # 开启大陆IP分流时，Box 脚本会自动接管并修改此处
-
-# ==========================================================
-# ===== Mihomo 全局字典库 (锚点配置表)
-# ==========================================================
-
-# [正则筛选] 按国家全称严格分类
-FilterHK: &FilterHK '(?i)(?:港|香港|🇭🇰|HK|Hong\s?Kong)'
-FilterTW: &FilterTW '(?i)(?:台|台湾|🇼🇸|🇹🇼|TW|Taiwan)'
-FilterSG: &FilterSG '(?i)(?:坡|新加坡|🇸🇬|SG|Singapore)'
-FilterJP: &FilterJP '(?i)(?:日|日本|🇯🇵|JP|Japan)'
-FilterUS: &FilterUS '(?i)(?:美|美国|🇺🇸|US|States|America)'
-FilterOther: &FilterOther '^(?!.*(香港|台湾|新加坡|日本|美国|🇭🇰|🇼🇸|🇨🇳|🇹🇼|🇸🇬|🇯🇵|🇺🇸|HK|TW|SG|JP|US))'
-
-# [垃圾过滤净化列表]
-ExcludeFilter: &ExcludeFilter '(?i)(?:佣金|套餐|官网|官方|网址|售后|免翻|过期|剩余|到期|流量|更新|点外|重置|免流|使用|教程|优惠|超实惠|址|频道|群|订阅|AFF|Days|Date|TG)'
-
-# [外部资源与模型更新]
-geo-auto-update: true
-geo-update-interval: 168
-geox-url:
-  asn: "https://cdn.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@release/GeoLite2-ASN.mmdb"
-
-lgbm-auto-update: true
-lgbm-update-interval: 360
-lgbm-url: "https://github.com/vernesong/mihomo/releases/download/LightGBM-Model/Model-middle.bin"
-
+# 2. 存储与面板
 profile:
   store-selected: true
   store-fake-ip: true
-  smart-collector-size: 100
 
-# [DNS 接管]
-dns:
-  enable: true
-  listen: :1053
-  ipv6: false
-  prefer-h3: true
-  enhanced-mode: fake-ip
-  fake-ip-range: 198.18.0.0/16
-  fake-ip-filter:
-    - "RULE-SET:private"
-    - "RULE-SET:ntp"
-  default-nameserver:
-    - 223.5.5.5
-    - 119.29.29.29
-  cndoh: &cndoh
-    - 'quic://dns.alidns.com#🟢 直连'
-    - 'https://dns.alidns.com/dns-query#🟢 直连'
-  cgdoh: &cgdoh
-    - 'https://dns.google/dns-query#👑 SubPre-All'
-    - 'https://cloudflare-dns.com/dns-query#👑 SubPre-All'
-  nameserver-policy:
-    'RULE-SET:ads-all,awavenue,rejects': rcode://name_error
-    'RULE-SET:cn,apple,microsoft,directs': *cndoh
-  nameserver: *cgdoh
+external-controller: 0.0.0.0:9090
+external-ui: ./dashboard
+external-ui-url: "https://github.com/Zephyruso/zashboard/releases/latest/download/dist.zip"
+secret: ""
 
-# [全局策略组模板锚点 (供 rule-providers&rules 模块调用)]
-Groupd: &Groupd
-  type: select
-  proxies:
-    - 🟢 直连
-    - 🌐 默认代理
-
-Groupp: &Groupp
-  type: select
-  proxies:
-    - 👑 SubPre-All
-    - ☁️ SubCF-All
-    - 🌐 默认代理
-
-Smartp: &Smartp
-  type: url-test
-  url: "https://www.gstatic.com/generate_204"
-  interval: 300
-  tolerance: 50
-  proxies:
-    - 👑 SubPre-All
-    - ☁️ SubCF-All
-
-# ==========================================================
-# ===== Mihomo 构建模板 --- 订阅提供商
-# ==========================================================
-
-SubPre: &SubPre "https://github.boki.moe/https://raw.githubusercontent.com/aghu1979/mss/refs/heads/release/subs/SubPre.yaml"
-SubCF: &SubCF "https://github.boki.moe/https://raw.githubusercontent.com/aghu1979/mss/refs/heads/release/subs/SubCF.yaml"
-SubFree: &SubFree "https://github.boki.moe/https://raw.githubusercontent.com/aghu1979/mss/refs/heads/release/subs/SubFree.yaml"
-BaiduUrl: &BaiduUrl "https://cdn.jsdelivr.net/gh/MeALiYeYe/ProxyConfigFiles@main/Mihomo/BaiduProxy.yaml"
-
-# [订阅测速网址]
-ProxyTest: &ProxyTest "https://www.gstatic.com/generate_204"
-DirecTest: &DirecTest "https://wifi.vivo.com.cn/generate_204"
-
-# ==========================================================
-# [核心痛点优化：订阅拉取模板定义]
-# 必须放在 proxy-providers 引用之前！
-# ==========================================================
-Proxyer: &Proxyer
-  type: http
-  interval: 86400
-  exclude-filter: *ExcludeFilter
-  health-check: 
-    enable: true
-    url: *ProxyTest
-    interval: 86400 
-  header:
-    User-Agent:
-    - "ClashMetaForAndroid/2.11.2.Meta"
-    - "clash.meta"
-    - "mihomo"
-
-dom: &dom
-  type: http
-  behavior: domain
-  format: mrs
-  interval: 86400
-
-ipc: &ipc
-  type: http
-  behavior: ipcidr
-  format: mrs
-  interval: 86400
-
-# ==========================================================
-# 具体的订阅商配置 (向下引用上方的模板)
-# ==========================================================
+# 3. 节点订阅池定义 (Proxy Providers) - 已使用内联锚点适配 Box
 proxy-providers:
-  Sub1:
-    <<: *Proxyer
+  SubPre:
+    <<: *provider_base
+    url: "https://dash.xn--cp3a08l.com/api/v1/pq/909f78b80b755c1018ef61da52294367"
     path: ./proxies/SubPre.yaml
-    url: *SubPre
-  Sub2:
-    <<: *Proxyer
+    override:
+      additional-prefix: "👑 "
+
+  SubCF:
+    <<: *provider_base
+    url: "https://github.boki.moe/https://raw.githubusercontent.com/aghu1979/mss/refs/heads/release/subs/SubCF.yaml"
     path: ./proxies/SubCF.yaml
-    url: *SubCF
-  Sub3:
-    <<: *Proxyer
+    override:
+      additional-prefix: "☁️ "
+
+  SubFree:
+    <<: *provider_base
+    url: "https://github.boki.moe/https://raw.githubusercontent.com/aghu1979/mss/refs/heads/release/subs/SubFree.yaml"
     path: ./proxies/SubFree.yaml
-    url: *SubFree
-  Baidu:
-    <<: *Proxyer
-    path: ./proxies/Baidu.yaml
-    url: *BaiduUrl
+    override:
+      additional-prefix: "🆓 "
 
-# ==========================================================
-# ===== Mihomo 构建模板 --- 规则与策略 (语法修复版)
-# ===== 作者：Mary
-# ===== 2026.07.27
-# ==========================================================
+# 4. 策略组配置 (Proxy Groups)
+proxy-groups:
+  # ----------------- 业务分流入口 -----------------
+  - name: 🚀 节点选择
+    type: select
+    proxies:
+      - 👑 SubPre-All
+      - ☁️ SubCF-All
+      - 👑 SubPre-香港
+      - 👑 SubPre-新加坡
+      - 👑 SubPre-日本
+      - 👑 SubPre-美国
+      - 🟢 直连
 
+  - name: 🤖 AI 智能
+    type: select
+    proxies:
+      - 👑 SubPre-美国
+      - 👑 SubPre-新加坡
+      - 👑 SubPre-日本
+      - 👑 SubPre-All
+
+  - name: 📺 境外媒体
+    type: select
+    proxies:
+      - 👑 SubPre-香港
+      - 👑 SubPre-新加坡
+      - 👑 SubPre-日本
+      - 👑 SubPre-台湾
+      - ☁️ SubCF-All
+
+  - name: 📲 Telegram
+    type: select
+    proxies:
+      - 👑 SubPre-新加坡
+      - 👑 SubPre-香港
+      - ☁️ SubCF-All
+
+  - name: 🛑 广告拦截
+    type: select
+    proxies:
+      - ⛔️ 拒绝
+      - 🟢 直连
+
+  - name: 🐟 漏网之鱼
+    type: select
+    proxies:
+      - 🚀 节点选择
+      - 🟢 直连
+
+  # ----------------- 细分策略池 (SubCF 组) -----------------
+  - name: ☁️ SubCF-All
+    type: select
+    use: [SubCF]
+
+  - name: ☁️ SubCF-香港
+    type: select
+    use: [SubCF]
+    filter: '(?i)(?:港|香港|🇭🇰|HK|Hong\s?Kong)'
+
+  - name: ☁️ SubCF-台湾
+    type: select
+    use: [SubCF]
+    filter: '(?i)(?:台|台湾|🇼🇸|🇹🇼|TW|Taiwan)'
+
+  - name: ☁️ SubCF-新加坡
+    type: select
+    use: [SubCF]
+    filter: '(?i)(?:坡|新加坡|🇸🇬|SG|Singapore)'
+
+  - name: ☁️ SubCF-日本
+    type: select
+    use: [SubCF]
+    filter: '(?i)(?:日|日本|🇯🇵|JP|Japan)'
+
+  - name: ☁️ SubCF-美国
+    type: select
+    use: [SubCF]
+    filter: '(?i)(?:美|美国|🇺🇸|US|States|America)'
+
+  - name: ☁️ SubCF-其它
+    type: select
+    use: [SubCF]
+    filter: '^(?!.*(香港|台湾|新加坡|日本|美国|🇭🇰|🇹🇼|🇸🇬|🇯🇵|🇺🇸|HK|TW|SG|JP|US|港|台|坡|日|美)).*'
+
+  # ----------------- 细分策略池 (SubPre 组) -----------------
+  - name: 👑 SubPre-All
+    type: select
+    use: [SubPre]
+
+  - name: 👑 SubPre-香港
+    type: select
+    use: [SubPre]
+    filter: '(?i)(?:港|香港|🇭🇰|HK|Hong\s?Kong)'
+
+  - name: 👑 SubPre-台湾
+    type: select
+    use: [SubPre]
+    filter: '(?i)(?:台|台湾|🇼🇸|🇹🇼|TW|Taiwan)'
+
+  - name: 👑 SubPre-新加坡
+    type: select
+    use: [SubPre]
+    filter: '(?i)(?:坡|新加坡|🇸🇬|SG|Singapore)'
+
+  - name: 👑 SubPre-日本
+    type: select
+    use: [SubPre]
+    filter: '(?i)(?:日|日本|🇯🇵|JP|Japan)'
+
+  - name: 👑 SubPre-美国
+    type: select
+    use: [SubPre]
+    filter: '(?i)(?:美|美国|🇺🇸|US|States|America)'
+
+  - name: 👑 SubPre-其它
+    type: select
+    use: [SubPre]
+    filter: '^(?!.*(香港|台湾|新加坡|日本|美国|🇭🇰|🇹🇼|🇸🇬|🇯🇵|🇺🇸|HK|TW|SG|JP|US|港|台|坡|日|美)).*'
+
+  # ----------------- 细分策略池 (SubFree 组) -----------------
+  - name: 🆓 SubFree-All
+    type: select
+    use: [SubFree]
+
+# 5. 基础代理定义
 proxies:
   - name: 🟢 直连
     type: direct
     udp: true
   - name: ⛔️ 拒绝
     type: reject
-  - name: ⭕️ DNS_Hijack
-    type: dns
 
-proxy-groups:
-  # ====================================================
-  # [1级] 顶层控制台 (供客户端 UI 界面点选，主力优先)
-  # ====================================================
-  - name: 🌐 默认代理
-    type: select
-    proxies:
-      - ☁️ SubCF-All
-      - 👑 SubPre-All
-      - 🆓 SubFree-All
-      - 🟢 直连
+# 6. TUN 网卡模块
+tun:
+  enable: true
+  device: Mihomo
+  stack: mixed
+  dns-hijack:
+    - any:53
+    - tcp://any:53
+  udp-timeout: 300
+  auto-route: true
+  auto-redirect: false
+  auto-detect-interface: true
+  strict-route: false
 
-  # ====================================================
-  # [业务级] 细粒度分流策略 (深度优化视频与网页加载体验)
-  # ====================================================
-  - name: 纯净IP
-    type: select
-    proxies:
-      - 👑 SubPre-新加坡
-      - 👑 SubPre-日本
-      - 👑 SubPre-香港
-      - 👑 SubPre-台湾
-      - 👑 SubPre-美国
-      - 👑 SubPre-其它
-      - ☁️ SubCF-新加坡
-      - ☁️ SubCF-日本
-      - ☁️ SubCF-香港
-      - ☁️ SubCF-台湾
-      - ☁️ SubCF-美国
-      - ☁️ SubCF-其它
-      - 🌐 默认代理
-    icon: "https://cdn.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/ChatGPT.png"
+# 7. 流量嗅探
+sniffer:
+  enable: true
+  force-dns-mapping: true
+  parse-pure-ip: true
+  sniff:
+    HTTP:
+      ports: [80, 8080-8880]
+      override-destination: true
+    TLS:
+      ports: [443, 8443]
+    QUIC:
+      ports: [443, 8443]
+  skip-domain:
+    - "+.local"
+    - "+.lan"
+    - "localhost"
 
-  - name: 无纯净IP要求
-    type: select
-    proxies:
-      - ☁️ SubCF-All
-      - ☁️ SubCF-新加坡
-      - ☁️ SubCF-日本
-      - ☁️ SubCF-香港
-      - ☁️ SubCF-台湾
-      - ☁️ SubCF-美国
-      - ☁️ SubCF-其它
-      - 🆓 SubFree-All
-      - 👑 SubPre-All
-      - 🌐 默认代理
-    icon: "https://cdn.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/ChatGPT.png"
+# 8. DNS 防泄漏配置
+dns:
+  enable: true
+  listen: 0.0.0.0:1053
+  ipv6: true
+  enhanced-mode: fake-ip
+  fake-ip-range: 198.18.0.0/16
+  fake-ip-filter:
+    - "RULE-SET:private"
+    - "RULE-SET:googlefcm"
+    - "RULE-SET:cn"
+    - "+.market.xiaomi.com"
+  default-nameserver:
+    - 223.5.5.5
+    - 119.29.29.29
+  nameserver-policy:
+    "RULE-SET:cn,private":
+      - https://dns.alidns.com/dns-query#🟢 直连
+      - https://doh.pub/dns-query#🟢 直连
+  nameserver:
+    - https://dns.google/dns-query#🚀 节点选择
+    - https://1.1.1.1/dns-query#🚀 节点选择
 
-  - name: Ai
-    type: select
-    proxies:
-      - 👑 SubPre-新加坡
-      - 👑 SubPre-日本
-      - 👑 SubPre-香港
-      - 👑 SubPre-台湾
-      - 👑 SubPre-美国
-      - 👑 SubPre-其它
-      - ☁️ SubCF-新加坡
-      - ☁️ SubCF-日本
-      - ☁️ SubCF-香港
-      - ☁️ SubCF-台湾
-      - ☁️ SubCF-美国
-      - ☁️ SubCF-其它
-      - 🌐 默认代理
-    icon: "https://cdn.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/ChatGPT.png"
-
-  - name: HiPDA
-    type: select
-    proxies:
-      - ☁️ SubCF-日本
-      - 👑 SubPre-All
-      - 🆓 SubFree-All
-      - 🌐 默认代理
-    icon: "https://cdn.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/ChatGPT.png"
-
-  - name: Google
-    type: select
-    proxies:
-      - 👑 SubPre-新加坡
-      - 👑 SubPre-日本
-      - 👑 SubPre-香港
-      - 👑 SubPre-台湾
-      - 👑 SubPre-美国
-      - 👑 SubPre-其它
-      - ☁️ SubCF-新加坡
-      - ☁️ SubCF-日本
-      - ☁️ SubCF-香港
-      - ☁️ SubCF-台湾
-      - ☁️ SubCF-美国
-      - ☁️ SubCF-其它
-      - 🌐 默认代理
-    icon: "https://cdn.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Google_Search.png"
-
-  - name: GoogleFCM
-    type: select
-    proxies:
-      - 🟢 直连
-      - 🌐 默认代理
-    icon: "https://cdn.jsdelivr.net/gh/GitMetaio/Surfing@main/app/icon/GoogleFCM.svg"
-
-  - name: Github
-    type: select
-    proxies:
-      - ☁️ SubCF-All
-      - ☁️ SubCF-新加坡
-      - ☁️ SubCF-日本
-      - ☁️ SubCF-香港
-      - ☁️ SubCF-台湾
-      - ☁️ SubCF-美国
-      - ☁️ SubCF-其它
-      - 🆓 SubFree-All
-      - 👑 SubPre-All
-      - 🌐 默认代理
-    icon: "https://cdn.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/GitHub.png"
-
-  - name: Cloudflare
-    type: select
-    proxies:
-      - 🟢 直连
-      - 🌐 默认代理
-    icon: "https://cdn.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Cloudflare.png"
-
-  - name: Telegram
-    type: select
-    proxies:
-      - ☁️ SubCF-新加坡
-      - ☁️ SubCF-日本
-      - ☁️ SubCF-香港
-      - 👑 SubPre-新加坡
-      - 👑 SubPre-日本
-      - 👑 SubPre-香港
-      - 🌐 默认代理
-    icon: "https://cdn.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Telegram.png"
-
-  - name: Reddit
-    type: select
-    proxies:
-      - ☁️ SubCF-新加坡
-      - ☁️ SubCF-日本
-      - ☁️ SubCF-香港
-      - 👑 SubPre-新加坡
-      - 👑 SubPre-日本
-      - 👑 SubPre-香港
-      - 🌐 默认代理
-    icon: "https://cdn.jsdelivr.net/gh/CLorant/readme-social-icons@main/medium/colored/reddit.svg"
-
-  - name: Porn
-    type: select
-    proxies:
-      - ☁️ SubCF-All
-      - 🆓 SubFree-All
-      - 👑 SubPre-All
-    icon: "https://cdn.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Pornhub_1.png"
-
-  - name: Youtube
-    type: select
-    proxies:
-      - ☁️ SubCF-All
-      - 🆓 SubFree-All
-      - 👑 SubPre-All
-    icon: "https://cdn.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/YouTube.png"
-
-  - name: Tiktok
-    type: select
-    proxies:
-      - ☁️ SubCF-新加坡
-      - ☁️ SubCF-日本
-      - ☁️ SubCF-香港
-      - 👑 SubPre-新加坡
-      - 👑 SubPre-日本
-      - 👑 SubPre-香港
-      - 🌐 默认代理
-    icon: "https://cdn.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/TikTok.png"
-
-  - name: Apple
-    type: select
-    proxies:
-      - 🟢 直连
-      - 🌐 默认代理
-    icon: "https://cdn.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Apple.png"
-    hidden: true
-
-  - name: Microsoft
-    type: select
-    proxies:
-      - 🟢 直连
-      - 🌐 默认代理
-    icon: "https://cdn.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Microsoft.png"
-    hidden: true
-
-  # --- WebRTC 防泄漏开关。平时保持"拒绝"，使用网页视频会议(如Zoom网页版)没声音/画面时再切"直连"。 ---
-  - name: WebRTC
-    type: select
-    proxies:
-      - ⛔️ 拒绝
-      - ⭕️ DNS_Hijack
-      - 🟢 直连
-    icon: "https://cdn.jsdelivr.net/gh/GitMetaio/Surfing@main/app/icon/WebRTC.svg"
-
-  - name: Foreign
-    type: select
-    proxies:
-      - 🌐 默认代理
-      - 🟢 直连
-    icon: "https://cdn.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Global.png"
-
-  - name: Emby
-    type: select
-    proxies:
-      - 🟢 直连
-      - 🌐 默认代理
-    icon: "https://cdn.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Emby.png"
-    hidden: true
-
-  - name: Location
-    type: select
-    proxies:
-      - 👑 SubPre-美国
-      - ☁️ SubCF-美国
-      - 🌐 默认代理
-    icon: "https://cdn.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Bypass.png"
-
-  - name: Domestic
-    type: select
-    proxies:
-      - 🟢 直连
-      - 🌐 默认代理
-    icon: "https://cdn.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Domestic.png"
-
-  - name: Final
-    type: select
-    proxies:
-      - 🌐 默认代理
-      - 🟢 直连
-    icon: "https://cdn.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Final.png"
-
-  # ====================================================
-  # [补充] 遗漏的路由所需策略组及地区专属策略组
-  # ====================================================
-  - name: Media
-    <<: *Groupp
-    icon: "https://cdn.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/ForeignMedia.png"
-
-  - name: 台湾
-    <<: *Smartp
-    filter: *FilterTW
-    icon: "https://cdn.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Taiwan.png"
-
-  - name: 江苏
-    <<: *Smartp
-    filter: '(?i)(?:南京|苏州)'
-    icon: "https://cdn.jsdelivr.net/gh/lige47/QuanX-icon-rule@main/icon/05icon/lightning(1).png"
-
-  - name: 广东
-    <<: *Smartp
-    filter: '(?i)(?:广州)'
-    icon: "https://cdn.jsdelivr.net/gh/lige47/QuanX-icon-rule@main/icon/05icon/lightning(2).png"
-
-  - name: 北京
-    <<: *Smartp
-    filter: '(?i)(?:北京|保定)'
-    icon: "https://cdn.jsdelivr.net/gh/lige47/QuanX-icon-rule@main/icon/05icon/lightning(3).png"
-
-  - name: 香港
-    <<: *Smartp
-    filter: *FilterHK
-    icon: "https://cdn.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Hong_Kong.png"
-
-  - name: 狮城
-    <<: *Smartp
-    filter: *FilterSG
-    icon: "https://cdn.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Singapore.png"
-
-  - name: 日本
-    <<: *Smartp
-    filter: *FilterJP
-    icon: "https://cdn.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Japan.png"
-
-  - name: 美国
-    <<: *Smartp
-    filter: *FilterUS
-    icon: "https://cdn.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/United_States.png"
-
-
-  # ====================================================
-  # [2级] 资产粗筛池 (仅作全量合并，方便上层调用)
-  # ====================================================
-  - {name: 👑 SubPre-All, <<: *Smartp, use: [SubPre]}
-  - {name: ☁️ SubCF-All, <<: *Smartp, use: [SubCF]}
-  # 已按建议将不稳定的免费池改为 fallback，避免 hash 死节点导致断流
-  - {name: 🆓 SubFree-All, type: fallback, use: [SubFree]}
-
-  # ====================================================
-  # [3级] 细粒度池 - SubPre (优质付费订阅隔离)
-  # ====================================================
-  - {name: 👑 SubPre-香港, <<: *Smartp, use: [SubPre], filter: *FilterHK}
-  - {name: 👑 SubPre-台湾, <<: *Smartp, use: [SubPre], filter: *FilterTW}
-  - {name: 👑 SubPre-日本, <<: *Smartp, use: [SubPre], filter: *FilterJP}
-  - {name: 👑 SubPre-新加坡, <<: *Smartp, use: [SubPre], filter: *FilterSG}
-  - {name: 👑 SubPre-美国, <<: *Smartp, use: [SubPre], filter: *FilterUS}
-  - {name: 👑 SubPre-其它, <<: *Smartp, use: [SubPre], filter: *FilterOther}
-
-  # ====================================================
-  # [3级] 细粒度池 - SubCF (自建免费大带宽隔离)
-  # ====================================================
-  - {name: ☁️ SubCF-香港, <<: *Smartp, use: [SubCF], filter: *FilterHK}
-  - {name: ☁️ SubCF-台湾, <<: *Smartp, use: [SubCF], filter: *FilterTW}
-  - {name: ☁️ SubCF-日本, <<: *Smartp, use: [SubCF], filter: *FilterJP}
-  - {name: ☁️ SubCF-新加坡, <<: *Smartp, use: [SubCF], filter: *FilterSG}
-  - {name: ☁️ SubCF-美国, <<: *Smartp, use: [SubCF], filter: *FilterUS}
-  - {name: ☁️ SubCF-其它, <<: *Smartp, use: [SubCF], filter: *FilterOther}
-
-  # ====================================================
-  # [3级] 细粒度池 - SubFree (免费脏流量池隔离)
-  # ====================================================
-  - {name: 🆓 SubFree-香港, type: fallback, use: [SubFree], filter: *FilterHK}
-  - {name: 🆓 SubFree-台湾, type: fallback, use: [SubFree], filter: *FilterTW}
-  - {name: 🆓 SubFree-日本, type: fallback, use: [SubFree], filter: *FilterJP}
-  - {name: 🆓 SubFree-新加坡, type: fallback, use: [SubFree], filter: *FilterSG}
-  - {name: 🆓 SubFree-美国, type: fallback, use: [SubFree], filter: *FilterUS}
-  - {name: 🆓 SubFree-其它, type: fallback, use: [SubFree], filter: *FilterOther}
-
-# ====================================================
-# 分流规则提供者 (全 Mrs 格式，大幅节省常驻内存)
-# ====================================================
+# 9. 规则集定义 (Rule Providers) - 已使用内联锚点适配 Box
 rule-providers:
-
-  directs:
-    <<: *dom
-    path: ./rules/directs.mrs
-    url: "https://cdn.jsdelivr.net/gh/MeALiYeYe/ProxyConfigFiles@main/Mihomo/rule/Direct/Direct.mrs"
-  directs_ip:
-    <<: *ipc
-    path: ./rules/directs_ip.mrs
-    url: "https://cdn.jsdelivr.net/gh/MeALiYeYe/ProxyConfigFiles@main/Mihomo/rule/Direct/Direct_ip.mrs"
-  rejects:
-    <<: *dom
-    path: ./rules/rejects.mrs
-    url: "https://cdn.jsdelivr.net/gh/MeALiYeYe/ProxyConfigFiles@main/Mihomo/rule/Reject/Reject.mrs"
-  rejects_ip:
-    <<: *ipc
-    path: ./rules/rejects_ip.mrs
-    url: "https://cdn.jsdelivr.net/gh/MeALiYeYe/ProxyConfigFiles@main/Mihomo/rule/Reject/Reject_ip.mrs"
-  proxys:
-    <<: *dom
-    path: ./rules/proxys.mrs
-    url: "https://cdn.jsdelivr.net/gh/MeALiYeYe/ProxyConfigFiles@main/Mihomo/rule/Proxy/Proxy.mrs"
-  proxys_ip:
-    <<: *ipc
-    path: ./rules/proxys_ip.mrs
-    url: "https://cdn.jsdelivr.net/gh/MeALiYeYe/ProxyConfigFiles@main/Mihomo/rule/Proxy/Proxy_ip.mrs"
-  fakelocation:
-    <<: *dom
-    path: ./rules/fakelocation.mrs
-    url: "https://cdn.jsdelivr.net/gh/MeALiYeYe/ProxyConfigFiles@main/Mihomo/rule/FakeLocation/FakeLocation.mrs"
-  fakelocation_ip:
-    <<: *ipc
-    path: ./rules/fakelocation_ip.mrs
-    url: "https://cdn.jsdelivr.net/gh/MeALiYeYe/ProxyConfigFiles@main/Mihomo/rule/FakeLocation/FakeLocation_ip.mrs"
-  emby:
-    <<: *dom
-    path: ./rules/emby.mrs
-    url: "https://cdn.jsdelivr.net/gh/MeALiYeYe/ProxyConfigFiles@main/Mihomo/rule/Emby/Emby.mrs"
-  awavenue:
-    <<: *dom
-    path: ./rules/awavenue.mrs
-    url: "https://cdn.jsdelivr.net/gh/TG-Twilight/AWAvenue-Ads-Rule@main/Filters/AWAvenue-Ads-Rule-Clash.mrs"
   private:
-    <<: *dom
+    <<: &dom
+      type: http
+      behavior: domain
+      format: mrs
+      interval: 86400
     path: ./rules/private.mrs
     url: "https://cdn.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@meta/geo/geosite/private.mrs"
-  private_ip:
-    <<: *ipc
-    path: ./rules/private_ip.mrs
-    url: "https://cdn.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@meta/geo/geoip/private.mrs"
-  ntp:
+  ads:
     <<: *dom
-    path: ./rules/ntp.mrs
-    url: "https://cdn.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@meta/geo/geosite//category-ntp.mrs"
-  ads-all:
-    <<: *dom
-    path: ./rules/ads-all.mrs
+    path: ./rules/ads.mrs
     url: "https://cdn.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@meta/geo/geosite/category-ads-all.mrs"
-  httpdns-cn:
-    <<: *dom
-    path: ./rules/httpdns-cn.mrs
-    url: "https://cdn.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@meta/geo/geosite/category-httpdns-cn.mrs"
-  youtube:
-    <<: *dom
-    path: ./rules/youtube.mrs
-    url: "https://cdn.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@meta/geo/geosite/youtube.mrs"
-  entertainment:
-    <<: *dom
-    path: ./rules/entertainment.mrs
-    url: "https://cdn.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@meta/geo/geosite/category-entertainment.mrs"
-  telegram:
-    <<: *dom
-    path: ./rules/telegram.mrs
-    url: "https://cdn.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@meta/geo/geosite/telegram.mrs"
-  telegram_ip:
-    <<: *ipc
-    path: ./rules/telegram_ip.mrs
-    url: "https://cdn.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@meta/geo/geoip/telegram.mrs"
   googlefcm:
     <<: *dom
     path: ./rules/googlefcm.mrs
     url: "https://cdn.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@meta/geo/geosite/googlefcm.mrs"
-  google:
+  ai:
     <<: *dom
-    path: ./rules/google.mrs
-    url: "https://cdn.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@meta/geo/geosite/google.mrs"
-  google_ip:
-    <<: *ipc
-    path: ./rules/google_ip.mrs
-    url: "https://cdn.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@meta/geo/geoip/google.mrs"
-  cloudflare:
-    <<: *dom
-    path: ./rules/cloudflare.mrs
-    url: "https://cdn.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@meta/geo/geosite/cloudflare.mrs"
-  cloudflare_ip:
-    <<: *ipc
-    path: ./rules/cloudflare_ip.mrs
-    url: "https://cdn.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@meta/geo/geoip/cloudflare.mrs"
-  ai-chat-!cn:
-    <<: *dom
-    path: ./rules/ai-chat-!cn.mrs
+    path: ./rules/ai.mrs
     url: "https://cdn.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@meta/geo/geosite/category-ai-chat-!cn.mrs"
-  github:
+  youtube:
     <<: *dom
-    path: ./rules/github.mrs
-    url: "https://cdn.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@meta/geo/geosite/github.mrs"
-  apple:
+    path: ./rules/youtube.mrs
+    url: "https://cdn.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@meta/geo/geosite/youtube.mrs"
+  telegram:
     <<: *dom
-    path: ./rules/apple.mrs
-    url: "https://cdn.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@meta/geo-lite/geosite/apple.mrs"
-  apple_ip:
-    <<: *ipc
-    path: ./rules/apple_ip.mrs
-    url: "https://cdn.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@meta/geo-lite/geoip/apple.mrs"
-  microsoft:
-    <<: *dom
-    path: ./rules/microsoft.mrs
-    url: "https://cdn.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@meta/geo/geosite/microsoft.mrs"
-  geolocation-!cn:
-    <<: *dom
-    path: ./rules/geolocation-!cn.mrs
-    url: "https://cdn.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@meta/geo/geosite/geolocation-!cn.mrs"
+    path: ./rules/telegram.mrs
+    url: "https://cdn.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@meta/geo/geosite/telegram.mrs"
   cn:
     <<: *dom
     path: ./rules/cn.mrs
     url: "https://cdn.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@meta/geo/geosite/cn.mrs"
   cn_ip:
-    <<: *ipc
+    <<: &ipc
+      type: http
+      behavior: ipcidr
+      format: mrs
+      interval: 86400
     path: ./rules/cn_ip.mrs
     url: "https://cdn.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@meta/geo/geoip/cn.mrs"
 
-# ⛔️ 去广告规则
-  ads-awavenue:
-    <<: *dom
-    path: rules/ads-awavenue.mrs
-    url: "https://cdn.jsdelivr.net/gh/TG-Twilight/AWAvenue-Ads-Rule@main/Filters/AWAvenue-Ads-Rule-Clash.mrs"
-  ads-mrxx007:
-    <<: *dom
-    path: rules/ads-mrxx007.mrs
-    url: "https://raw.githubusercontent.com/MRXX007/myadrules-convert/refs/heads/main/10007.mrs"
-  ads-all:
-    <<: *dom
-    path: rules/ads-all.mrs
-    url: "https://cdn.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@meta/geo/geosite/category-ads-all.mrs"
-#   ads-blackmatrix7规则过大，暂不考虑生效，如需生效该规则，需一并修改下方# 2. 基础系统与去广告服务 (匹配即抛弃，速度极快) 和 # 📡 DNS 解析模块 (Fake-IP Enhance 模式) 部分的注释。
-#   ads-blackmatrix7:
-#     <<: *cla
-#     path: rules/ads-blackmatrix7.yaml
-#     url: "https://cdn.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Clash/Advertising/Advertising_Classical.yaml"
-
-# 🔞 成人网站规则
-  porn-hub:
-    type: http
-    behavior: domain
-    format: yaml
-    interval: 86400
-    path: rules/porn-hub.yaml
-    url: "https://raw.githubusercontent.com/Accademia/Additional_Rule_For_Clash/refs/heads/main/Pornhub/Pornhub_Domain.yaml"  
-  mindgeek-porn:
-    <<: *dom
-    path: rules/mindgeek-porn.mrs
-    url: "https://cdn.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@meta/geo/geosite/mindgeek-porn.mrs"
-  category-porn:
-    <<: *dom
-    path: rules/category-porn.mrs
-    url: "https://cdn.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@meta/geo/geosite/category-porn.mrs"
-
-# WebRTC规则
-  webrtc:
-    <<: *dom
-    path: rules/webrtc.mrs
-    url: "https://cdn.jsdelivr.net/gh/MeALiYeYe/ProxyConfigFiles@main/Mihomo/rule/WebRTC/WebRTC.mrs"
-
-# ====================================================
-# 路由规则匹配
-# ====================================================
+# 10. 分流规则 (Rules)
 rules:
-# 🛡️ 0. 【优先处理特定自定义域名】
-- DOMAIN-SUFFIX,4d4y.com,HiPDA
+  - RULE-SET,private,🟢 直连
+  - RULE-SET,ads,🛑 广告拦截
+  - RULE-SET,googlefcm,🟢 直连
+  - RULE-SET,ai,🤖 AI 智能
+  - RULE-SET,youtube,📺 境外媒体
+  - RULE-SET,telegram,📲 Telegram
+  - RULE-SET,cn,🟢 直连
+  - RULE-SET,cn_ip,🟢 直连,no-resolve
+  - MATCH,🐟 漏网之鱼
 
-# 🛡️ 1. 【DNS 劫持放行 (最高优先级)】
-- DST-PORT,53,⭕️ DNS_Hijack
-- DST-PORT,853,⭕️ DNS_Hijack
-- DST-PORT,8853,⭕️ DNS_Hijack
-
-# 🛡️ 2. 【独立 WebRTC 强效防御特权区】
-- DOMAIN-KEYWORD,stun,WebRTC
-- DOMAIN-KEYWORD,turn,WebRTC
-- AND,((NETWORK,udp),(DST-PORT,3478-3479)),WebRTC
-- AND,((NETWORK,udp),(DST-PORT,5349-5350)),WebRTC
-- AND,((NETWORK,udp),(DST-PORT,19302-19309)),WebRTC
-- RULE-SET,webrtc,WebRTC
-
-# 🛡️ 3. 【Android 手机主控端特权区】
-- PROCESS-NAME,com.carriez.rustdesk,🟢 直连
-- PROCESS-NAME,com.anydesk.anydeskandroid,🟢 直连
-- PROCESS-NAME,com.teamviewer.teamviewer.market.mobile,🟢 直连
-- PROCESS-NAME,com.microsoft.rdc.androidx,🟢 直连
-- PROCESS-NAME,com.oray.sunlogin.mac,🟢 直连
-
-# ️🛡️ 4. 【通用协议与端口直连】
-- DOMAIN-SUFFIX,rustdesk.com,🟢 直连
-- DOMAIN-SUFFIX,anydesk.com,🟢 直连
-- DOMAIN-SUFFIX,net.anydesk.com,🟢 直连
-- DOMAIN-SUFFIX,teamviewer.com,🟢 直连
-- DOMAIN-SUFFIX,oray.com,🟢 直连
-- DOMAIN-SUFFIX,oray.net,🟢 直连
-- DOMAIN-SUFFIX,easytier.top,🟢 直连
-- DST-PORT,3389,🟢 直连
-- DST-PORT,5938,🟢 直连
-- DST-PORT,11080,🟢 直连
-
-# 🛡️ 5. 【局域网直连绕透】
-- IP-CIDR,192.168.0.0/16,🟢 直连,no-resolve
-- IP-CIDR,10.0.0.0/8,🟢 直连,no-resolve
-- IP-CIDR,172.16.0.0/12,🟢 直连,no-resolve
-- IP-CIDR,127.0.0.0/8,🟢 直连,no-resolve
-- IP-CIDR6,fc00::/7,🟢 直连,no-resolve
-- IP-CIDR6,fe80::/10,🟢 直连,no-resolve
-
-# 🛡️ 6. 【Android FCM 推送调度】
-- DST-PORT,5228-5230,GoogleFCM
-- RULE-SET,googlefcm,GoogleFCM
-
-# 🛡️ 7. 【常规基础直连与拦截】
-- DST-PORT,123,🟢 直连
-- RULE-SET,ntp,🟢 直连
-- RULE-SET,httpdns-cn,🟢 直连
-- RULE-SET,private,🟢 直连
-- RULE-SET,private_ip,🟢 直连,no-resolve
-- RULE-SET,ads-awavenue,⛔️ 拒绝
-- RULE-SET,ads-mrxx007,⛔️ 拒绝
-- RULE-SET,ads-all,⛔️ 拒绝
-# - RULE-SET,ads-blackmatrix7,⛔️ 拒绝
-- RULE-SET,rejects,⛔️ 拒绝
-- RULE-SET,rejects_ip,⛔️ 拒绝,no-resolve
-- RULE-SET,directs,Domestic
-- RULE-SET,directs_ip,Domestic,no-resolve
-- RULE-SET,proxys,Foreign
-- RULE-SET,proxys_ip,Foreign,no-resolve
-- RULE-SET,fakelocation,Location
-- RULE-SET,fakelocation_ip,Location,no-resolve
-
-# 🛡️ 8. 【常规业务分流】
-- RULE-SET,youtube,Youtube
-- RULE-SET,tiktok,Tiktok
-# - RULE-SET,discord,Discord # 注释说明：原文件中该规则缺少对应的 rule-provider 和 proxy-group，已注释以防内核启动报错。
-- RULE-SET,cloudflare,Cloudflare
-- RULE-SET,cloudflare_ip,Cloudflare,no-resolve 
-- RULE-SET,entertainment,Media
-- RULE-SET,telegram,Telegram
-- RULE-SET,telegram_ip,Telegram,no-resolve
-- RULE-SET,google,Google
-- RULE-SET,google_ip,Google,no-resolve
-- RULE-SET,github,Github
-- RULE-SET,ai-chat-!cn,Ai
-- RULE-SET,reddit,Reddit
-- RULE-SET,porn-hub,Porn
-- RULE-SET,mindgeek-porn,Porn
-- RULE-SET,category-porn,Porn
-- RULE-SET,apple,Apple
-- RULE-SET,microsoft,Microsoft
-
-# 🛡️ 9. 【兜底规则】
-- RULE-SET,geolocation-!cn,Foreign
-- RULE-SET,cn,Domestic
-- RULE-SET,cn_ip,Domestic,no-resolve
-- MATCH,Final
+# 配置文件结束
