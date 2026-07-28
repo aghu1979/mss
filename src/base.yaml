@@ -6,7 +6,7 @@ unified-delay: true
 tcp-concurrent: true
 allow-lan: true
 external-controller: 127.0.0.1:9090
-external-ui: ./ui/
+# external-ui: ./ui/
 external-ui-url: "https://cdn.jsdelivr.net/gh/MeALiYeYe/ProxyConfigFiles@main/Mihomo/static/dist.zip"
 secret: ""
 skip-auth-prefixes:
@@ -15,9 +15,12 @@ skip-auth-prefixes:
   - 192.168.0.1/16
 
 geo-auto-update: true
-geo-update-interval: 168
+geo-update-interval: 360
 geox-url:
-  asn: "https://cdn.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@release/GeoLite2-ASN.mmdb"
+  geoip: "https://cdn.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@release/geoip.metadb"
+  geosite: "https://cdn.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@release/geosite.dat"
+  asn: "https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@release/GeoLite2-ASN.mmdb"
+#  asn: "https://cdn.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@release/GeoLite2-ASN.mmdb"
 
 lgbm-auto-update: true
 lgbm-update-interval: 360
@@ -50,11 +53,18 @@ sniffer:
   force-domain:
     - "+.v2ex.com"
   skip-domain:
-    - "+.local"
-    - "+.lan"
-    - "localhost"
-    - "Mijia Cloud"
-    - "miwifi.com"
+  - "+.local"
+  - "+.lan"
+  - "localhost"
+  - "Mijia Cloud"
+  - "miwifi.com"
+  - "+.ts.net"
+  - "+.rustdesk.com"
+  - "+.anydesk.com"
+  - "+.teamviewer.com"
+  - "+.oray.com"
+  - "+.oray.net"
+  - "+.easytier.top"
 
 tun:
   enable: true
@@ -92,7 +102,7 @@ dns:
     'RULE-SET:cn,apple,microsoft,directs':
       - 'quic://dns.alidns.com#🟢 直连'
       - 'https://dns.alidns.com/dns-query#🟢 直连'
-  # 【核心修复】将底层解析全部换为国内高可用 DoH，彻底打破 DNS 死锁！
+  # 将底层解析全部换为国内高可用 DoH，彻底打破 DNS 死锁！
   nameserver:
     - https://dns.alidns.com/dns-query
     - https://doh.pub/dns-query
