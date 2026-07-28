@@ -57,43 +57,42 @@ sniffer:
     - "miwifi.com"
 
 tun:
-  enable: true             # 开启 Tun 供 Box/Surfing 脚本接管
-  device: Mihomo
+  enable: true
+  device: Meta
   stack: mixed
   dns-hijack:
     - any:53
     - tcp://any:53
   udp-timeout: 300
-  auto-route: false        # 关闭自动路由，防止与模块脚本发生夺权冲突
+  auto-route: true
   auto-detect-interface: true
-  strict-route: false
+  strict-route: true
 
 dns:
   enable: true
   listen: :1053
-  ipv6: false              # 核心：DNS 层关闭 IPv6，防止由于死节点导致的解析超时
+  ipv6: false                
   prefer-h3: true
   enhanced-mode: fake-ip
   fake-ip-range: 198.18.0.0/16
   fake-ip-range6: fdfe:dcba:9876::/64
   fake-ip-filter:
-    - "RULE-SET:private"
-    - "RULE-SET:googlefcm"
-    - "RULE-SET:ntp"
-    - "RULE-SET:cn"
+    - RULE-SET:private
+    - RULE-SET:googlefcm
+    - RULE-SET:ntp
+    - RULE-SET:cn
   default-nameserver:
     - 223.5.5.5
-    - 119.29.29.29         # 补充腾讯 DNS 增加容错
-    - 2400:3200::1
+    - 119.29.29.29
   nameserver-policy:
     'RULE-SET:ads-all,ads-awavenue,rejects': rcode://name_error
-    # 核心修复点：强制订阅源与镜像站使用国内 DNS 解析，规避依赖 Google DNS 的死锁
     'domain:boki.moe,jsdelivr.net,ghproxy.com,ghproxy.net,fastgit.org,staticdn.net,kkgithub.com,v1.mk,dash.xn--cp3a08l.com':
       - 'quic://dns.alidns.com#🟢 直连'
       - 'https://dns.alidns.com/dns-query#🟢 直连'
     'RULE-SET:cn,apple,microsoft,directs':
       - 'quic://dns.alidns.com#🟢 直连'
       - 'https://dns.alidns.com/dns-query#🟢 直连'
+  # 【核心修复】将底层解析全部换为国内高可用 DoH，彻底打破 DNS 死锁！
   nameserver:
-    - 'https://dns.google/dns-query#Google'
-    - 'https://cloudflare-dns.com/dns-query#Cloudflare'
+    - https://dns.alidns.com/dns-query
+    - https://doh.pub/dns-query
