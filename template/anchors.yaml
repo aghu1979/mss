@@ -130,15 +130,15 @@ ipc: &ipc
 # 具体的订阅商配置 (向下引用上方的模板)
 # ==========================================================
 proxy-providers:
-  Sub1:
+  SubPre:
     <<: *Proxyer
     path: ./proxies/SubPre.yaml
     url: *SubPre
-  Sub2:
+  SubCF:
     <<: *Proxyer
     path: ./proxies/SubCF.yaml
     url: *SubCF
-  Sub3:
+  SubFree:
     <<: *Proxyer
     path: ./proxies/SubFree.yaml
     url: *SubFree
