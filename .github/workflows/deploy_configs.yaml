@@ -1,0 +1,43 @@
+name: 自动部署 Mihomo Configs
+
+on:
+  workflow_run:
+    workflows: ["自动节点清洗与探活流水线"]
+    types:
+      - completed
+  workflow_dispatch: # 保留手动触发以备不时之需
+
+jobs:
+  build-validate-deploy:
+    runs-on: ubuntu-latest
+    # 关键：只在清洗流水线成功时才执行
+    if: ${{ github.event.workflow_run.conclusion == 'success' || github.event_name == 'workflow_dispatch' }}
+
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.10'
+
+      - name: Install Dependencies
+        run: pip install pyyaml
+
+      - name: Build and Validate Configs
+        # 你的 Python 脚本现在包揽了：清洗文本 -> 深度合并 -> 动态拉取 Alpha 内核 -> 执行 -t 强校验
+        # 如果脚本中抛出 Exception 或校验失败，此步骤会自动阻断后续的推送
+        run: python scripts/deploy_configs.py
+
+      - name: Deploy to Release Branch
+        # 仅当 Python 脚本 100% 成功执行完毕后，才会将产物推送到发布分支
+        if: success()
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_branch: release
+          publish_dir: ./configs
+          destination_dir: configs 
+          keep_files: true         
+          commit_message: "Auto-build and validated configs by Mihomo Alpha"
