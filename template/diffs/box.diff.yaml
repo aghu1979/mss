@@ -1,0 +1,12 @@
+# ==========================================================
+# ===== Mihomo 构建模板 --- 软件差异化 Box.diff
+# ===== mixed-port: 7890 / redir-port: 9797 / tproxy-port: 9898
+# ==========================================================
+
+# 代理通信端口
+mixed-port: 7890
+redir-port: 9797
+tproxy-port: 9898
+
+# Zashboard 面板路径
+external-ui: "./dashboard"
